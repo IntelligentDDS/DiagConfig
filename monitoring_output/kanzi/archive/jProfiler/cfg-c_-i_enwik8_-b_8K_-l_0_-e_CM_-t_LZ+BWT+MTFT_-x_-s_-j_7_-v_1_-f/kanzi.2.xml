@@ -1,0 +1,1535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree type="Hot Spots" threadSelection="All thread groups" threadStatus="Runnable" aggregationLevel="Methods" hotSpotCalculation="Self times" unprofiledClasses="Show separately">
+  <hotspot leaf="false" class="java.lang.Thread" methodName="yield" methodSignature="()V" time="14220218" count="21757040" lineNumber="-1" percent="33.7">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="14220218" count="21757040" lineNumber="-1" percent="33.7">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="14220218" count="21757040" lineNumber="-1" percent="33.7">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="14220218" count="21757040" lineNumber="-1" percent="33.7">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="14220218" count="21757040" lineNumber="-1" percent="33.7"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.util.hash.XXHash32" methodName="hash" methodSignature="([BII)I" time="7226525" count="12208" lineNumber="-1" percent="17.1">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="7226525" count="12208" lineNumber="-1" percent="17.1">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="7226525" count="12208" lineNumber="-1" percent="17.1">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="7226525" count="12208" lineNumber="-1" percent="17.1">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="7226525" count="12208" lineNumber="-1" percent="17.1"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="5336858" count="12208" lineNumber="-1" percent="12.6">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="5336858" count="12208" lineNumber="-1" percent="12.6">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="5336858" count="12208" lineNumber="-1" percent="12.6">
+        <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="5336858" count="12208" lineNumber="-1" percent="12.6"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Memory$LittleEndian" methodName="readInt32" methodSignature="([BI)I" time="2888982" count="25000000" lineNumber="-1" percent="6.8">
+    <node leaf="false" class="kanzi.util.hash.XXHash32" methodName="hash" methodSignature="([BII)I" time="2888982" count="25000000" lineNumber="-1" percent="6.8">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2888982" count="25000000" lineNumber="-1" percent="6.8">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2888982" count="25000000" lineNumber="-1" percent="6.8">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2888982" count="25000000" lineNumber="-1" percent="6.8">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2888982" count="25000000" lineNumber="-1" percent="6.8"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.util.hash.XXHash32" methodName="round" methodSignature="(II)I" time="2797118" count="25000000" lineNumber="-1" percent="6.6">
+    <node leaf="false" class="kanzi.util.hash.XXHash32" methodName="hash" methodSignature="([BII)I" time="2797118" count="25000000" lineNumber="-1" percent="6.6">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2797118" count="25000000" lineNumber="-1" percent="6.6">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2797118" count="25000000" lineNumber="-1" percent="6.6">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2797118" count="25000000" lineNumber="-1" percent="6.6">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2797118" count="25000000" lineNumber="-1" percent="6.6"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="2295714" count="24416" lineNumber="-1" percent="5.4">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2272969" count="12208" lineNumber="-1" percent="5.4">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2272969" count="12208" lineNumber="-1" percent="5.4">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2272969" count="12208" lineNumber="-1" percent="5.4">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2272969" count="12208" lineNumber="-1" percent="5.4"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="encode" methodSignature="([BII)I" time="22745" count="12208" lineNumber="-1" percent="0.1">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="22745" count="12208" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="22745" count="12208" lineNumber="-1" percent="0.1">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="22745" count="12208" lineNumber="-1" percent="0.1">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="22745" count="12208" lineNumber="-1" percent="0.1"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.concurrent.atomic.AtomicInteger" methodName="get" methodSignature="()I" time="2063369" count="21783200" lineNumber="-1" percent="4.9">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2063118" count="21781456" lineNumber="-1" percent="4.9">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2063118" count="21781456" lineNumber="-1" percent="4.9">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2063118" count="21781456" lineNumber="-1" percent="4.9">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2063118" count="21781456" lineNumber="-1" percent="4.9"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="251" count="1744" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="251" count="1743" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="251" count="1743" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="251" count="1743" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="251" count="1743" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="pushCurrent" methodSignature="()V" time="2048183" count="9402864" lineNumber="-1" percent="4.8">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="2039481" count="9375776" lineNumber="-1" percent="4.8">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2039481" count="9375776" lineNumber="-1" percent="4.8">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2039481" count="9375776" lineNumber="-1" percent="4.8">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2039481" count="9375776" lineNumber="-1" percent="4.8">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2039481" count="9375776" lineNumber="-1" percent="4.8"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="(JI)I" time="8702" count="27088" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="7016" count="22890" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="encode" methodSignature="([BII)I" time="4243" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="4243" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="4243" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="4243" count="12208" lineNumber="-1" percent="0.0">
+                <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="4243" count="12208" lineNumber="-1" percent="0.0"/>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2773" count="10682" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2773" count="10682" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2773" count="10682" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2773" count="10682" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1202" count="4196" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1202" count="4196" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1202" count="4196" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1202" count="4196" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="writeHeader" methodSignature="()V" time="484" count="2" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="484" count="2" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="484" count="2" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="484" count="2" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="484" count="2" lineNumber="-1" percent="0.0">
+                <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="484" count="2" lineNumber="-1" percent="0.0"/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Memory$BigEndian" methodName="writeLong64" methodSignature="([BIJ)V" time="948558" count="9402864" lineNumber="-1" percent="2.2">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="pushCurrent" methodSignature="()V" time="948558" count="9402864" lineNumber="-1" percent="2.2">
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="941749" count="9375776" lineNumber="-1" percent="2.2">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="941749" count="9375776" lineNumber="-1" percent="2.2">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="941749" count="9375776" lineNumber="-1" percent="2.2">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="941749" count="9375776" lineNumber="-1" percent="2.2">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="941749" count="9375776" lineNumber="-1" percent="2.2"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="(JI)I" time="6809" count="27088" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="writeHeader" methodSignature="()V" time="3158" count="2" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="3158" count="2" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="3158" count="2" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3158" count="2" lineNumber="-1" percent="0.0">
+                <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3158" count="2" lineNumber="-1" percent="0.0">
+                  <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3158" count="2" lineNumber="-1" percent="0.0"/>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="3104" count="22890" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="encode" methodSignature="([BII)I" time="1822" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1822" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1822" count="12208" lineNumber="-1" percent="0.0">
+                <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1822" count="12208" lineNumber="-1" percent="0.0">
+                  <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1822" count="12208" lineNumber="-1" percent="0.0"/>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1282" count="10682" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1282" count="10682" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1282" count="10682" lineNumber="-1" percent="0.0">
+                <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1282" count="10682" lineNumber="-1" percent="0.0"/>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="547" count="4196" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="547" count="4196" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="547" count="4196" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="547" count="4196" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Memory$BigEndian" methodName="readLong64" methodSignature="([BI)J" time="940604" count="9375776" lineNumber="-1" percent="2.2">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="940604" count="9375776" lineNumber="-1" percent="2.2">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="940604" count="9375776" lineNumber="-1" percent="2.2">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="940604" count="9375776" lineNumber="-1" percent="2.2">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="940604" count="9375776" lineNumber="-1" percent="2.2">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="940604" count="9375776" lineNumber="-1" percent="2.2"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="computeFirstOrderEntropy1024" methodSignature="(I[I)I" time="192655" count="12208" lineNumber="-1" percent="0.5">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="192655" count="12208" lineNumber="-1" percent="0.5">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="192655" count="12208" lineNumber="-1" percent="0.5">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="192655" count="12208" lineNumber="-1" percent="0.5">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="192655" count="12208" lineNumber="-1" percent="0.5"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.io.OutputStream" methodName="close" methodSignature="()V" time="190183" count="1" lineNumber="-1" percent="0.5">
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="190183" count="1" lineNumber="-1" percent="0.5">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="190183" count="1" lineNumber="-1" percent="0.5">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="190183" count="1" lineNumber="-1" percent="0.5"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="computeHistogramOrder0" methodSignature="([BII[IZ)V" time="169408" count="12208" lineNumber="-1" percent="0.4">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="169408" count="12208" lineNumber="-1" percent="0.4">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="169408" count="12208" lineNumber="-1" percent="0.4">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="169408" count="12208" lineNumber="-1" percent="0.4">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="169408" count="12208" lineNumber="-1" percent="0.4"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="log2_1024" methodSignature="(I)I" time="157061" count="1182539" lineNumber="-1" percent="0.4">
+    <node leaf="false" class="kanzi.Global" methodName="computeFirstOrderEntropy1024" methodSignature="(I[I)I" time="157061" count="1182539" lineNumber="-1" percent="0.4">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="157061" count="1182539" lineNumber="-1" percent="0.4">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="157061" count="1182539" lineNumber="-1" percent="0.4">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="157061" count="1182539" lineNumber="-1" percent="0.4">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="157061" count="1182539" lineNumber="-1" percent="0.4"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="138885" count="7" lineNumber="-1" percent="0.3">
+    <node leaf="true" time="138885" count="7" lineNumber="-1" percent="0.3" filtered="true"/>
+  </hotspot>
+  <hotspot leaf="false" class="java.io.OutputStream" methodName="write" methodSignature="([BII)V" time="86887" count="12590" lineNumber="-1" percent="0.2">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="flush" methodSignature="()V" time="86887" count="12590" lineNumber="-1" percent="0.2">
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="pushCurrent" methodSignature="()V" time="58332" count="278" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="58332" count="278" lineNumber="-1" percent="0.1">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="58332" count="278" lineNumber="-1" percent="0.1">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="58332" count="278" lineNumber="-1" percent="0.1">
+              <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="58332" count="278" lineNumber="-1" percent="0.1">
+                <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="58332" count="278" lineNumber="-1" percent="0.1"/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="22037" count="103" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="22037" count="103" lineNumber="-1" percent="0.1">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="22037" count="103" lineNumber="-1" percent="0.1">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="22037" count="103" lineNumber="-1" percent="0.1">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="22037" count="103" lineNumber="-1" percent="0.1"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="close" methodSignature="()V" time="6518" count="12209" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="6365" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="6365" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="6365" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="6365" count="12208" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="153" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="153" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="153" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="153" count="1" lineNumber="-1" percent="0.0">
+                <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="153" count="1" lineNumber="-1" percent="0.0"/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.io.ByteArrayOutputStream" methodName="&lt;init&gt;" methodSignature="(I)V" time="50211" count="12208" lineNumber="-1" percent="0.1">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$CustomByteArrayOutputStream" methodName="&lt;init&gt;" methodSignature="([BI)V" time="50211" count="12208" lineNumber="-1" percent="0.1">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="50211" count="12208" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="50211" count="12208" lineNumber="-1" percent="0.1">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="50211" count="12208" lineNumber="-1" percent="0.1">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="50211" count="12208" lineNumber="-1" percent="0.1"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;I)V" time="46245" count="12209" lineNumber="-1" percent="0.1">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="46154" count="12208" lineNumber="-1" percent="0.1">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="46154" count="12208" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="46154" count="12208" lineNumber="-1" percent="0.1">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="46154" count="12208" lineNumber="-1" percent="0.1"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="91" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="91" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="91" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="91" count="1" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="(JI)I" time="34780" count="244170" lineNumber="-1" percent="0.1">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="25590" count="183120" lineNumber="-1" percent="0.1">
+      <node leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="encode" methodSignature="([BII)I" time="14280" count="97664" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="14280" count="97664" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="14280" count="97664" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="14280" count="97664" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="14280" count="97664" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="11310" count="85456" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="11310" count="85456" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="11310" count="85456" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="11310" count="85456" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="9186" count="61040" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="9186" count="61040" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="9186" count="61040" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="9186" count="61040" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="writeHeader" methodSignature="()V" time="3" count="8" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="3" count="8" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="3" count="8" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3" count="8" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3" count="8" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3" count="8" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="1" count="2" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="1" count="2" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="2" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="2" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="2" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.concurrent.ExecutorService" methodName="invokeAll" methodSignature="(Ljava/util/Collection;)Ljava/util/List;" time="31432" count="1744" lineNumber="-1" percent="0.1">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="31432" count="1744" lineNumber="-1" percent="0.1">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="31413" count="1743" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="31413" count="1743" lineNumber="-1" percent="0.1">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="31413" count="1743" lineNumber="-1" percent="0.1">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="31413" count="1743" lineNumber="-1" percent="0.1"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="19" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="19" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="19" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="19" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="19" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="28017" count="1744" lineNumber="-1" percent="0.1">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="28010" count="1743" lineNumber="-1" percent="0.1">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="28010" count="1743" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="28010" count="1743" lineNumber="-1" percent="0.1">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="28010" count="1743" lineNumber="-1" percent="0.1"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="7" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="7" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="7" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="7" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="7" count="1" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.io.InputStream" methodName="read" methodSignature="([BII)I" time="28008" count="1527" lineNumber="-1" percent="0.1">
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="28008" count="1527" lineNumber="-1" percent="0.1">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="28008" count="1527" lineNumber="-1" percent="0.1">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="28008" count="1527" lineNumber="-1" percent="0.1"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.System" methodName="arraycopy" methodSignature="(Ljava/lang/Object;ILjava/lang/Object;II)V" time="23716" count="39777" lineNumber="-1" percent="0.1">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="9157" count="15361" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="encode" methodSignature="([BII)I" time="6540" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="6540" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="6540" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="6540" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="6540" count="12208" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2617" count="3153" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2617" count="3153" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2617" count="3153" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2617" count="3153" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.transform.NullTransform" methodName="doCopy" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="7893" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.transform.NullTransform" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="7893" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.transform.Sequence" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="7893" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="7893" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="7893" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="7893" count="12208" lineNumber="-1" percent="0.0">
+                <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="7893" count="12208" lineNumber="-1" percent="0.0"/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="6666" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="6666" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="6666" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="6666" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.Integer" methodName="numberOfLeadingZeros" methodSignature="(I)I" time="19632" count="160305" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.Global" methodName="log2_1024" methodSignature="(I)I" time="16176" count="135890" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.Global" methodName="computeFirstOrderEntropy1024" methodSignature="(I[I)I" time="16176" count="135890" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="16176" count="135890" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="16176" count="135890" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="16176" count="135890" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="16176" count="135890" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.Global" methodName="log2" methodSignature="(I)I" time="3456" count="24415" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="3456" count="24415" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="3456" count="24415" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="3456" count="24415" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="3456" count="24415" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="_get_skipBlocks" methodSignature="(Ljava/util/Map;)Z" time="11720" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="11720" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="11720" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="11720" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="11720" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.io.FileOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/File;)V" time="11213" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="11213" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="11213" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="11213" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="10561" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="10561" count="12208" lineNumber="-1" percent="0.0"/>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.HashMap" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="10344" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="10344" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="10344" count="12201" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="10344" count="12201" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="10344" count="12201" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="10344" count="12201" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.TransformFactory" methodName="newFunction" methodSignature="(Ljava/util/Map;J)Lkanzi/transform/Sequence;" time="9204" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="9204" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="9204" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="9204" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="9204" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="close" methodSignature="()V" time="9198" count="12209" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="9196" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="9196" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="9196" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="9196" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="2" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="2" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="1" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="log2" methodSignature="(I)I" time="9066" count="24416" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="9066" count="24416" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="9066" count="24416" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="9066" count="24416" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="9066" count="24416" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="8716" count="1526" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="8716" count="1526" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="8716" count="1526" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="8716" count="1526" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.Integer" methodName="valueOf" methodSignature="(I)Ljava/lang/Integer;" time="8648" count="36633" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="7160" count="24416" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="7160" count="24416" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="7160" count="24416" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="7160" count="24416" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1476" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1473" count="12201" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1473" count="12201" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1473" count="12201" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1473" count="12201" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="3" count="7" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="3" count="7" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3" count="7" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3" count="7" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3" count="7" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="processCommandLine" methodSignature="([Ljava/lang/String;Ljava/util/Map;)I" time="6" count="4" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="6" count="4" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3" count="4" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3" count="4" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="_get_jobs" methodSignature="(Ljava/util/Map;)I" time="3" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="3" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="3" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.Sequence" methodName="getMaxEncodedLength" methodSignature="(I)I" time="8554" count="24416" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="4822" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="4822" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="4822" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="4822" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.transform.Sequence" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="3732" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="3732" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="3732" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="3732" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="3732" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.Sequence" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="8421" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="8421" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="8421" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="8421" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="8421" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="isClosed" methodSignature="()Z" time="8212" count="49215" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="4650" count="24416" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2714" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2714" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2714" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2714" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="encode" methodSignature="([BII)I" time="1936" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1936" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1936" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1936" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1936" count="12208" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="flush" methodSignature="()V" time="1797" count="12590" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="close" methodSignature="()V" time="1685" count="12209" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1685" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1685" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1685" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1685" count="12208" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="67" count="103" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="67" count="103" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="67" count="103" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="67" count="103" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="67" count="103" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="pushCurrent" methodSignature="()V" time="45" count="278" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="45" count="278" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="45" count="278" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="45" count="278" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="45" count="278" lineNumber="-1" percent="0.0">
+                <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="45" count="278" lineNumber="-1" percent="0.0"/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="close" methodSignature="()V" time="1765" count="12209" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1765" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1765" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1765" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1765" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.Map" methodName="put" methodSignature="(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" time="7497" count="36649" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="5697" count="24416" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="5697" count="24416" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="5697" count="24416" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="5697" count="24416" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1527" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1526" count="12201" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1526" count="12201" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1526" count="12201" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1526" count="12201" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="1" count="7" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="1" count="7" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="7" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="7" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="7" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="processCommandLine" methodSignature="([Ljava/lang/String;Ljava/util/Map;)I" time="260" count="12" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="260" count="12" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="13" count="13" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="13" count="13" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.String" methodName="format" methodSignature="(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" time="7138" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="7138" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="7138" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="7138" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="6508" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="6508" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="6508" count="12208" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="6490" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="6490" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="6490" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="flush" methodSignature="()V" time="6341" count="12590" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="close" methodSignature="()V" time="5933" count="12209" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="5931" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="5931" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="5931" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="5931" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="2" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="2" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="pushCurrent" methodSignature="()V" time="312" count="278" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="312" count="278" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="312" count="278" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="312" count="278" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="312" count="278" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="312" count="278" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="writeBits" methodSignature="([BII)I" time="96" count="103" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="96" count="103" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="96" count="103" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="96" count="103" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="96" count="103" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.TransformFactory" methodName="newFunctionToken" methodSignature="(Ljava/util/Map;I)Lkanzi/ByteTransform;" time="5662" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.transform.TransformFactory" methodName="newFunction" methodSignature="(Ljava/util/Map;J)Lkanzi/transform/Sequence;" time="5662" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="5662" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="5662" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="5662" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="5662" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.entropy.EntropyCodecFactory" methodName="newEncoder" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;I)Lkanzi/EntropyEncoder;" time="5646" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="5646" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="5646" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="5646" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="5646" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.NullTransform" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="5619" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.transform.Sequence" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="5619" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="5619" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="5619" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="5619" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="5619" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="encode" methodSignature="([BII)I" time="4984" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="4984" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="4984" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="4984" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="4984" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="4573" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="4573" count="1" lineNumber="-1" percent="0.0"/>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.NullTransform" methodName="doCopy" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="4544" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.transform.NullTransform" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="4544" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.transform.Sequence" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="4544" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="4544" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="4544" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="4544" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="4544" count="12208" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.Math" methodName="min" methodSignature="(JJ)J" time="4409" count="24416" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="4409" count="24416" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="4409" count="24416" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="4409" count="24416" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="4409" count="24416" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="4291" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="true" time="4291" count="1" lineNumber="-1" percent="0.0" filtered="true"/>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.concurrent.Executors" methodName="newFixedThreadPool" methodSignature="(I)Ljava/util/concurrent/ExecutorService;" time="4097" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="4097" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="4097" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream$CustomByteArrayOutputStream" methodName="&lt;init&gt;" methodSignature="([BI)V" time="3851" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="3851" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="3851" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="3851" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="3851" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="initSquash" methodSignature="()[I" time="3549" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.Global" methodName="&lt;clinit&gt;" methodSignature="()V" time="3549" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="3549" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="3549" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3549" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3549" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3549" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.nio.file.Paths" methodName="get" methodSignature="(Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;" time="3543" count="2" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="createFileList" methodSignature="(Ljava/lang/String;Ljava/util/List;)V" time="3533" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3533" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3533" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="10" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="10" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.Map" methodName="getOrDefault" methodSignature="(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" time="3485" count="12210" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="_get_skipBlocks" methodSignature="(Ljava/util/Map;)Z" time="3481" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="3481" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="3481" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="3481" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="3481" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="_get_jobs" methodSignature="(Ljava/util/Map;)I" time="3" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="3" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="3" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="1" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="1" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="1" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="squash" methodSignature="(I)I" time="3345" count="3895" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.Global" methodName="initStretch" methodSignature="()[I" time="3345" count="3895" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.Global" methodName="&lt;clinit&gt;" methodSignature="()V" time="3345" count="3895" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="3345" count="3895" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="3345" count="3895" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3345" count="3895" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3345" count="3895" lineNumber="-1" percent="0.0">
+                <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3345" count="3895" lineNumber="-1" percent="0.0"/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.NullTransform" methodName="getMaxEncodedLength" methodSignature="(I)I" time="3175" count="24416" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.transform.Sequence" methodName="getMaxEncodedLength" methodSignature="(I)I" time="3175" count="24416" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1607" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1607" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1607" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1607" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.transform.Sequence" methodName="forward" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;)Z" time="1568" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1568" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1568" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1568" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1568" count="12208" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="initStretch" methodSignature="()[I" time="3079" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.Global" methodName="&lt;clinit&gt;" methodSignature="()V" time="3079" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="3079" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="3079" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3079" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3079" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3079" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.Math" methodName="min" methodSignature="(II)I" time="2766" count="26161" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="2497" count="24415" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2497" count="24415" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2497" count="24415" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2497" count="24415" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="248" count="1744" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="248" count="1743" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="248" count="1743" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="248" count="1743" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="248" count="1743" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="19" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="19" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="2" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="2" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="1" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="2726" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="2726" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2726" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2726" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2726" count="1" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.Boolean" methodName="valueOf" methodSignature="(Z)Ljava/lang/Boolean;" time="2483" count="12215" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="_get_skipBlocks" methodSignature="(Ljava/util/Map;)Z" time="2458" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2458" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2458" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2458" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2458" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="processCommandLine" methodSignature="([Ljava/lang/String;Ljava/util/Map;)I" time="23" count="3" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="23" count="3" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2" count="4" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="4" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.concurrent.atomic.AtomicInteger" methodName="incrementAndGet" methodSignature="()I" time="2462" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2462" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2462" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2462" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2462" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.Sequence" methodName="getNbFunctions" methodSignature="()I" time="2333" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2333" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2333" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2333" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2333" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.NullTransform" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="2328" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.transform.TransformFactory" methodName="newFunctionToken" methodSignature="(Ljava/util/Map;I)Lkanzi/ByteTransform;" time="2328" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.transform.TransformFactory" methodName="newFunction" methodSignature="(Ljava/util/Map;J)Lkanzi/transform/Sequence;" time="2328" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2328" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2328" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2328" count="12208" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2328" count="12208" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;)V" time="2147" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.entropy.EntropyCodecFactory" methodName="newEncoder" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;I)Lkanzi/EntropyEncoder;" time="2147" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2147" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2147" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2147" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2147" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.TransformFactory" methodName="&lt;init&gt;" methodSignature="()V" time="2135" count="12210" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2128" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2128" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2128" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2128" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="5" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="5" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="2" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="2" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="1" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.entropy.NullEntropyEncoder" methodName="dispose" methodSignature="()V" time="2011" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="2011" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="2011" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="2011" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="2011" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.io.OutputStream" methodName="flush" methodSignature="()V" time="1996" count="12209" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="close" methodSignature="()V" time="1996" count="12209" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1981" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1981" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1981" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1981" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="15" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="15" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="15" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="15" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="15" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.Sequence" methodName="&lt;init&gt;" methodSignature="([Lkanzi/ByteTransform;)V" time="1990" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.transform.TransformFactory" methodName="newFunction" methodSignature="(Ljava/util/Map;J)Lkanzi/transform/Sequence;" time="1990" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1990" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1990" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1990" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1990" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.bitstream.DefaultOutputBitStream" methodName="written" methodSignature="()J" time="1961" count="12211" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1961" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1961" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1961" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1961" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.Iterator" methodName="hasNext" methodSignature="()Z" time="1898" count="13956" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1875" count="13952" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1873" count="13944" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1873" count="13944" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1873" count="13944" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1873" count="13944" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="2" count="8" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="2" count="8" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2" count="8" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2" count="8" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="8" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="20" count="3" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="20" count="3" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.Boolean" methodName="booleanValue" methodSignature="()Z" time="1836" count="12213" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="_get_skipBlocks" methodSignature="(Ljava/util/Map;)Z" time="1829" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1829" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1829" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1829" count="12208" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1829" count="12208" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="_get_overwrite" methodSignature="()Z" time="3" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3" count="1" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="2" count="3" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="3" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="_get_checksum" methodSignature="(Ljava/util/Map;)Z" time="2" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="2" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="2" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.transform.Sequence" methodName="getSkipFlags" methodSignature="()B" time="1812" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1812" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1812" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1812" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1812" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="1811" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1811" count="1" lineNumber="-1" percent="0.0"/>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream$Status" methodName="&lt;init&gt;" methodSignature="(IILjava/lang/String;)V" time="1764" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1764" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1764" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1764" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1764" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.entropy.EntropyCodecFactory" methodName="&lt;init&gt;" methodSignature="()V" time="1719" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="encodeBlock" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJII)Lkanzi/io/CompressedOutputStream$Status;" time="1719" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Lkanzi/io/CompressedOutputStream$Status;" time="1719" count="12208" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="call" methodSignature="()Ljava/lang/Object;" time="1719" count="12208" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="1719" count="12208" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.Iterator" methodName="next" methodSignature="()Ljava/lang/Object;" time="1699" count="12210" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1693" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1693" count="12201" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1693" count="12201" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1693" count="12201" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1693" count="12201" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="6" count="2" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="6" count="2" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream$EncodingTask" methodName="&lt;init&gt;" methodSignature="(Lkanzi/SliceByteArray;Lkanzi/SliceByteArray;IJIILkanzi/OutputBitStream;Lkanzi/util/hash/XXHash32;Ljava/util/concurrent/atomic/AtomicInteger;[Lkanzi/Listener;Ljava/util/Map;)V" time="1546" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1546" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1545" count="12201" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1545" count="12201" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1545" count="12201" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1545" count="12201" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="1" count="7" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="1" count="7" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="7" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="7" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="7" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.List" methodName="add" methodSignature="(Ljava/lang/Object;)Z" time="1536" count="12209" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1530" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1530" count="12201" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1530" count="12201" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1530" count="12201" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1530" count="12201" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="createFileList" methodSignature="(Ljava/lang/String;Ljava/util/List;)V" time="6" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="6" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="6" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="(I)V" time="1425" count="10682" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1425" count="10682" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1425" count="10682" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1425" count="10682" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1425" count="10682" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.concurrent.atomic.AtomicBoolean" methodName="getAndSet" methodSignature="(Z)Z" time="1400" count="1745" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1399" count="1744" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1399" count="1743" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1399" count="1743" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1399" count="1743" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1399" count="1743" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="1" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="1" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="1" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.nio.file.Files" methodName="exists" methodSignature="(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z" time="1396" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="createFileList" methodSignature="(Ljava/lang/String;Ljava/util/List;)V" time="1396" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1396" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1396" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.concurrent.Future" methodName="get" methodSignature="()Ljava/lang/Object;" time="1368" count="12208" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1368" count="12208" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1368" count="12201" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1368" count="12201" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1368" count="12201" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1368" count="12201" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.List" methodName="iterator" methodSignature="()Ljava/util/Iterator;" time="1315" count="1745" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="1310" count="1744" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="1309" count="1743" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1309" count="1743" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1309" count="1743" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1309" count="1743" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="1" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="1" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="5" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="5" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="5" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="1029" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1029" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1029" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1029" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.Math" methodName="max" methodSignature="(II)I" time="989" count="10465" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="985" count="10464" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="985" count="10464" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="985" count="10464" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="985" count="10464" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="4" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="4" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="4" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="4" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="4" count="1" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.app.Kanzi" methodName="processCommandLine" methodSignature="([Ljava/lang/String;Ljava/util/Map;)I" time="974" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="974" count="1" lineNumber="-1" percent="0.0"/>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="computeJobsPerTask" methodSignature="([III)[I" time="896" count="1744" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="896" count="1744" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="895" count="1743" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="895" count="1743" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="895" count="1743" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="895" count="1743" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="1" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="1" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.nio.file.Files" methodName="isRegularFile" methodSignature="(Ljava/nio/file/Path;[Ljava/nio/file/LinkOption;)Z" time="687" count="2" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="createFileList" methodSignature="(Ljava/lang/String;Ljava/util/List;)V" time="687" count="2" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="687" count="2" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="687" count="2" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.List" methodName="size" methodSignature="()I" time="686" count="3491" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="682" count="3488" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="681" count="3486" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="681" count="3486" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="681" count="3486" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="681" count="3486" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="close" methodSignature="()V" time="1" count="2" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="dispose" methodSignature="()V" time="1" count="2" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="2" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="2" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="2" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="3" count="2" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="3" count="2" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="3" count="2" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.ArrayList" methodName="&lt;init&gt;" methodSignature="(I)V" time="619" count="1746" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="613" count="1744" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="613" count="1743" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="613" count="1743" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="613" count="1743" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="613" count="1743" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="4" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="4" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="2" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="2" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="2" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="2" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="2" count="1" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.List" methodName="toArray" methodSignature="([Ljava/lang/Object;)[Ljava/lang/Object;" time="619" count="1744" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="619" count="1744" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="619" count="1743" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="619" count="1743" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="619" count="1743" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="619" count="1743" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.Arrays" methodName="fill" methodSignature="([II)V" time="473" count="1744" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.Global" methodName="computeJobsPerTask" methodSignature="([III)[I" time="473" count="1744" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="473" count="1744" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="473" count="1743" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="473" count="1743" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="473" count="1743" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="473" count="1743" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.Global" methodName="positiveOrNull" methodSignature="(I)I" time="456" count="3895" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.Global" methodName="squash" methodSignature="(I)I" time="456" count="3895" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.Global" methodName="initStretch" methodSignature="()[I" time="456" count="3895" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.Global" methodName="&lt;clinit&gt;" methodSignature="()V" time="456" count="3895" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="processBlock" methodSignature="()V" time="456" count="3895" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="write" methodSignature="([BII)V" time="456" count="3895" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="456" count="3895" lineNumber="-1" percent="0.0">
+                <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="456" count="3895" lineNumber="-1" percent="0.0">
+                  <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="456" count="3895" lineNumber="-1" percent="0.0"/>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.io.PrintStream" methodName="println" methodSignature="(Ljava/lang/String;)V" time="381" count="7" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="printOut" methodSignature="(Ljava/lang/String;Z)V" time="230" count="3" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.Kanzi" methodName="processCommandLine" methodSignature="([Ljava/lang/String;Ljava/util/Map;)I" time="230" count="3" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="230" count="3" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="printOut" methodSignature="(Ljava/lang/String;Z)V" time="151" count="4" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="75" count="2" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="75" count="2" lineNumber="-1" percent="0.0"/>
+      </node>
+      <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="44" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="44" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="44" count="1" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+      <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="32" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="32" count="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="340" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="340" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="340" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.String" methodName="equals" methodSignature="(Ljava/lang/Object;)Z" time="285" count="356" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="processCommandLine" methodSignature="([Ljava/lang/String;Ljava/util/Map;)I" time="282" count="352" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="282" count="352" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+    <node leaf="false" class="kanzi.entropy.EntropyCodecFactory" methodName="getType" methodSignature="(Ljava/lang/String;)I" time="1" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Lkanzi/OutputBitStream;Ljava/util/Map;)V" time="1" count="1" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.io.CompressedOutputStream" methodName="&lt;init&gt;" methodSignature="(Ljava/io/OutputStream;Ljava/util/Map;)V" time="1" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="kanzi.app.BlockCompressor$FileCompressTask" methodName="call" methodSignature="()Lkanzi/app/BlockCompressor$FileCompressResult;" time="1" count="1" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="1" count="1" lineNumber="-1" percent="0.0">
+              <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="1" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="false" class="kanzi.transform.TransformFactory" methodName="getTypeToken" methodSignature="(Ljava/lang/String;)J" time="1" count="2" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="kanzi.transform.TransformFactory" methodName="getType" methodSignature="(Ljava/lang/String;)J" time="1" count="2" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="1" count="1" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="1" count="1" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.Character" methodName="valueOf" methodSignature="(C)Ljava/lang/Character;" time="252" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="processCommandLine" methodSignature="([Ljava/lang/String;Ljava/util/Map;)I" time="252" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="252" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="kanzi.app.Kanzi" methodName="createFileList" methodSignature="(Ljava/lang/String;Ljava/util/List;)V" time="156" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="call" methodSignature="()Ljava/lang/Integer;" time="156" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="156" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.util.Map" methodName="keySet" methodSignature="()Ljava/util/Set;" time="102" count="1" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.BlockCompressor" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;)V" time="102" count="1" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="102" count="1" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+  <hotspot leaf="false" class="java.lang.String" methodName="startsWith" methodSignature="(Ljava/lang/String;)Z" time="83" count="75" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="kanzi.app.Kanzi" methodName="processCommandLine" methodSignature="([Ljava/lang/String;Ljava/util/Map;)I" time="83" count="75" lineNumber="-1" percent="0.0">
+      <node leaf="true" class="kanzi.app.Kanzi" methodName="main" methodSignature="([Ljava/lang/String;)V" time="83" count="75" lineNumber="-1" percent="0.0"/>
+    </node>
+  </hotspot>
+</tree>

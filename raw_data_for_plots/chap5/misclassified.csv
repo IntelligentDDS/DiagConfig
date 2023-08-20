@@ -1,0 +1,114 @@
+﻿option,description
+cache_load_timeout_seconds,"# Number of seconds the server will wait for each cache (row, key, etc ...) to load while starting
+# the Cassandra process. Setting this to a negative value is equivalent to disabling all cache loading on startup
+# while still having the cache during runtime."
+periodic_commitlog_sync_lag_block_in_ms,"# When in periodic commitlog mode, the number of milliseconds to block writes
+# while waiting for a slow disk flush to complete."
+native_transport_flush_in_batches_legacy,"# Use native transport TCP message coalescing. If on upgrade to 4.0 you found your throughput decreasing, and in
+# particular you run an old kernel or have very fewer client connections, this option might be worth evaluating."
+server_encryption_options,"# Configure server-to-server internode encryption
+#
+# JVM and netty defaults for supported SSL socket protocols and cipher suites can
+# be replaced using custom encryption options. This is not recommended
+# unless you have policies in place that dictate certain settings, or
+# need to disable vulnerable ciphers or protocols in case the JVM cannot
+# be updated.
+#
+# FIPS compliant settings can be configured at JVM level and should not
+# involve changing encryption settings here:
+# https://docs.oracle.com/javase/8/docs/technotes/guides/security/jsse/FIPS.html
+#
+# **NOTE** this default configuration is an insecure configuration. If you need to
+# enable server-to-server encryption generate server keystores (and truststores for mutual
+# authentication) per:
+# http://download.oracle.com/javase/8/docs/technotes/guides/security/jsse/JSSERefGuide.html#CreateKeystore
+# Then perform the following configuration changes:
+#
+# Step 1: Set internode_encryption=<dc|rack|all> and explicitly set optional=true. Restart all nodes
+#
+# Step 2: Set optional=false (or remove it) and if you generated truststores and want to use mutual
+# auth set require_client_auth=true. Restart all nodes"
+hinted_handoff_throttle_in_kb,"# Maximum throttle in KBs per second, per delivery thread.  This will be
+# reduced proportionally to the number of nodes in the cluster.  (If there
+# are two nodes in the cluster, each delivery thread will use the maximum
+# rate; if there are three, each will throttle to half of the maximum,
+# since we expect two nodes to be delivering hints simultaneously.)"
+key_cache_size_in_mb,"# Maximum size of the key cache in memory.
+#
+# Each key cache hit saves 1 seek and each row cache hit saves 2 seeks at the
+# minimum, sometimes more. The key cache is fairly tiny for the amount of
+# time it saves, so it's worthwhile to use it at large numbers.
+# The row cache saves even more time, but must contain the entire row,
+# so it is extremely space-intensive. It's best to only use the
+# row cache if you have hot rows or static rows.
+#
+# NOTE: if you reduce the size, you may not get you hottest keys loaded on startup.
+#
+# Default value is empty to make it ""auto"" (min(5% of Heap (in MB), 100MB)). Set to 0 to disable key cache."
+inter_dc_tcp_nodelay,"# Enable or disable tcp_nodelay for inter-dc communication.
+# Disabling it will result in larger (but fewer) network packets being sent,
+# reducing overhead from the TCP protocol itself, at the cost of increasing
+# latency if you block for cross-datacenter responses."
+read_request_timeout_in_ms,"# How long the coordinator should wait for read operations to complete.
+# Lowest acceptable value is 10 ms."
+roles_validity_in_ms,"# Validity period for roles cache (fetching granted roles can be an expensive
+# operation depending on the role manager, CassandraRoleManager is one example)
+# Granted roles are cached for authenticated sessions in AuthenticatedUser and
+# after the period specified here, become eligible for (async) reload.
+# Defaults to 2000, set to 0 to disable caching entirely.
+# Will be disabled automatically for AllowAllAuthenticator."
+dynamic_snitch_update_interval_in_ms,"# controls how often to perform the more expensive part of host score
+# calculation"
+prepared_statements_cache_size_mb,"# Maximum size of the native protocol prepared statement cache
+#
+# Valid values are either ""auto"" (omitting the value) or a value greater 0.
+#
+# Note that specifying a too large value will result in long running GCs and possbily
+# out-of-memory errors. Keep the value at a small fraction of the heap.
+#
+# If you constantly see ""prepared statements discarded in the last minute because
+# cache limit reached"" messages, the first step is to investigate the root cause
+# of these messages and check whether prepared statements are used correctly -
+# i.e. use bind markers for variable parts.
+#
+# Do only change the default value, if you really have more prepared statements than
+# fit in the cache. In most cases it is not neccessary to change this value.
+# Constantly re-preparing statements is a performance penalty.
+#
+# Default value (""auto"") is 1/256th of the heap or 10MB, whichever is greater"
+commitlog_sync,"# commitlog_sync may be either ""periodic"", ""group"", or ""batch."" 
+# 
+# When in batch mode, Cassandra won't ack writes until the commit log
+# has been flushed to disk.  Each incoming write will trigger the flush task.
+# commitlog_sync_batch_window_in_ms is a deprecated value. Previously it had
+# almost no value, and is being removed.
+#
+# commitlog_sync_batch_window_in_ms: 2
+#
+# group mode is similar to batch mode, where Cassandra will not ack writes
+# until the commit log has been flushed to disk. The difference is group
+# mode will wait up to commitlog_sync_group_window_in_ms between flushes.
+#
+# commitlog_sync_group_window_in_ms: 1000
+#
+# the default option is ""periodic"" where writes may be acked immediately
+# and the CommitLog is simply synced every commitlog_sync_period_in_ms
+# milliseconds."
+native_transport_max_threads,"# Enabling native transport encryption in client_encryption_options allows you to either use
+# encryption for the standard port or to use a dedicated, additional port along with the unencrypted
+# standard native_transport_port.
+# Enabling client encryption and keeping native_transport_port_ssl disabled will use encryption
+# for native_transport_port. Setting native_transport_port_ssl to a different value
+# from native_transport_port will use encryption for native_transport_port_ssl while
+# keeping native_transport_port unencrypted.
+# native_transport_port_ssl: 9142
+# The maximum threads for handling requests (note that idle threads are stopped
+# after 30 seconds so there is not corresponding minimum setting)."
+ideal_consistency_level,"# Track a metric per keyspace indicating whether replication achieved the ideal consistency
+# level for writes without timing out. This is different from the consistency level requested by
+# each write which may be lower in order to facilitate availability."
+hints_flush_period_in_ms,"# How often hints should be flushed from the internal buffers to disk.
+# Will *not* trigger fsync."
+write_request_timeout_in_ms,"# How long the coordinator should wait for writes to complete.
+# Lowest acceptable value is 10 ms."
+compaction_large_partition_warning_threshold_mb,# Log a warning when compacting partitions larger than this value

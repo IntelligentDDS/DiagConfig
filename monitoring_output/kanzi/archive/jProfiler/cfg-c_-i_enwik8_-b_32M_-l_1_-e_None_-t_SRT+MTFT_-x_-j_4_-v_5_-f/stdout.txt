@@ -1,0 +1,45 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [NONE]
+Warning: providing the 'level' option forces the transform. Ignoring [SRT+MTFT]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 33554432 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to true
+Using TEXT+LZ transform (stage 1)
+Using HUFFMAN entropy codec (stage 2)
+Using 4 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":1041402500601752 }
+{ "type":"BEFORE_TRANSFORM", "id":3, "size":32891136, "time":1041404800554940, "hash":742879c2 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":33554432, "time":1041404830569074, "hash":666d2643 }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":33554432, "time":1041404971329294, "hash":580b9ece }
+{ "type":"AFTER_TRANSFORM", "id":3, "size":12408973, "time":1041427405917860, "hash":742879c2 } [22605 ms]
+{ "type":"BEFORE_ENTROPY", "id":3, "size":12408973, "time":1041427415677809, "hash":742879c2 } [9 ms]
+{ "type":"AFTER_TRANSFORM", "id":1, "size":12676443, "time":1041428616512765, "hash":666d2643 } [23785 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":12676443, "time":1041428659244801, "hash":666d2643 } [42 ms]
+{ "type":"AFTER_TRANSFORM", "id":2, "size":12634027, "time":1041429654102649, "hash":580b9ece } [24682 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":11162503, "time":1041429654464169, "hash":666d2643 } [995 ms]
+Block 1: 33554432 => 12676443 [23785 ms] => 11162503 [995 ms] (33%)  [666d2643]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":12634027, "time":1041429655660468, "hash":580b9ece } [1 ms]
+{ "type":"AFTER_ENTROPY", "id":2, "size":11123105, "time":1041430648098123, "hash":580b9ece } [992 ms]
+Block 2: 33554432 => 12634027 [24682 ms] => 11123105 [992 ms] (33%)  [580b9ece]
+{ "type":"AFTER_ENTROPY", "id":3, "size":10917923, "time":1041431273354119, "hash":742879c2 } [3857 ms]
+Block 3: 32891136 => 12408973 [22605 ms] => 10917923 [3857 ms] (33%)  [742879c2]
+
+Encoding:          29393 ms
+Input size:        100000000
+Output size:       33203559
+Compression ratio: 0.332036
+Throughput (KB/s): 3322
+
+{ "type":"COMPRESSION_END", "size":33203559, "time":1041431895088059 }

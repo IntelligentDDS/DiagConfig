@@ -1,0 +1,60 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [CM]
+Warning: providing the 'level' option forces the transform. Ignoring [ROLZX]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 16777216 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to false
+Using X86+RLT+TEXT transform (stage 1)
+Using TPAQX entropy codec (stage 2)
+Using 7 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":1033636334794374 }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":16777216, "time":1033636408825265 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":16777216, "time":1033636408766115 }
+{ "type":"BEFORE_TRANSFORM", "id":5, "size":16777216, "time":1033636409223136 }
+{ "type":"BEFORE_TRANSFORM", "id":4, "size":16777216, "time":1033636409237173 }
+{ "type":"BEFORE_TRANSFORM", "id":3, "size":16777216, "time":1033636409270071 }
+{ "type":"BEFORE_TRANSFORM", "id":6, "size":16113920, "time":1033636414324765 }
+{ "type":"AFTER_TRANSFORM", "id":1, "size":10346472, "time":1033645309045727 } [8900 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":10346472, "time":1033645319398672 } [10 ms]
+{ "type":"AFTER_TRANSFORM", "id":6, "size":9781068, "time":1033646484472224 } [10070 ms]
+{ "type":"BEFORE_ENTROPY", "id":6, "size":9781068, "time":1033646491532457 } [7 ms]
+{ "type":"AFTER_TRANSFORM", "id":4, "size":10271828, "time":1033647476946346 } [11067 ms]
+{ "type":"BEFORE_ENTROPY", "id":4, "size":10271828, "time":1033647485863817 } [8 ms]
+{ "type":"AFTER_TRANSFORM", "id":5, "size":10383586, "time":1033648401289842 } [11992 ms]
+{ "type":"BEFORE_ENTROPY", "id":5, "size":10383586, "time":1033648723881573 } [322 ms]
+{ "type":"AFTER_TRANSFORM", "id":2, "size":10232375, "time":1033649144495216 } [12735 ms]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":10232375, "time":1033649145341361 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":3, "size":10193365, "time":1033650711836194 } [14302 ms]
+{ "type":"BEFORE_ENTROPY", "id":3, "size":10193365, "time":1033650714565524 } [2 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":3465379, "time":1033869716107388 } [224396 ms]
+Block 1: 16777216 => 10346472 [8900 ms] => 3465379 [224396 ms] (20%)
+{ "type":"AFTER_ENTROPY", "id":2, "size":3435495, "time":1033869995916475 } [220850 ms]
+Block 2: 16777216 => 10232375 [12735 ms] => 3435495 [220850 ms] (20%)
+{ "type":"AFTER_ENTROPY", "id":3, "size":3462411, "time":1033870400855180 } [219686 ms]
+Block 3: 16777216 => 10193365 [14302 ms] => 3462411 [219686 ms] (20%)
+{ "type":"AFTER_ENTROPY", "id":4, "size":3473975, "time":1033870614624809 } [223128 ms]
+Block 4: 16777216 => 10271828 [11067 ms] => 3473975 [223128 ms] (20%)
+{ "type":"AFTER_ENTROPY", "id":5, "size":3465771, "time":1033870617434693 } [221893 ms]
+Block 5: 16777216 => 10383586 [11992 ms] => 3465771 [221893 ms] (20%)
+{ "type":"AFTER_ENTROPY", "id":6, "size":3317355, "time":1033870802363820 } [224310 ms]
+Block 6: 16113920 => 9781068 [10070 ms] => 3317355 [224310 ms] (20%)
+
+Encoding:          234.7 s
+Input size:        100000000
+Output size:       20620426
+Compression ratio: 0.206204
+Throughput (KB/s): 416
+
+{ "type":"COMPRESSION_END", "size":20620426, "time":1033871011436126 }

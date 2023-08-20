@@ -1,0 +1,40 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [RANGE]
+Warning: providing the 'level' option forces the transform. Ignoring [TEXT+RANK]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 67108864 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to true
+Using TEXT+FSD+ROLZ transform (stage 1)
+Using no entropy codec (stage 2)
+Using 5 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":1000924858121402 }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":32891136, "time":1000927211066919, "hash":742879c2 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":67108864, "time":1000929515447683, "hash":a195fc7c }
+{ "type":"AFTER_TRANSFORM", "id":2, "size":9154551, "time":1000955158145355, "hash":742879c2 } [27947 ms]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":9154551, "time":1000955166047865, "hash":742879c2 } [7 ms]
+{ "type":"AFTER_TRANSFORM", "id":1, "size":18441001, "time":1000982105345134, "hash":a195fc7c } [52589 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":18441001, "time":1000982111288387, "hash":a195fc7c } [5 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":18441010, "time":1000982114647086, "hash":a195fc7c } [3 ms]
+Block 1: 67108864 => 18441001 [52589 ms] => 18441010 [3 ms] (27%)  [a195fc7c]
+{ "type":"AFTER_ENTROPY", "id":2, "size":9154559, "time":1000983069137655, "hash":742879c2 } [27903 ms]
+Block 2: 32891136 => 9154551 [27947 ms] => 9154559 [27903 ms] (27%)  [742879c2]
+
+Encoding:          58720 ms
+Input size:        100000000
+Output size:       27595595
+Compression ratio: 0.275956
+Throughput (KB/s): 1663
+
+{ "type":"COMPRESSION_END", "size":27595595, "time":1000983580142860 }

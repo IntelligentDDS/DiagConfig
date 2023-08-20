@@ -1,0 +1,45 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [CM]
+Warning: providing the 'level' option forces the transform. Ignoring [BWT]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 33554432 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to false
+Using X86+RLT+TEXT transform (stage 1)
+Using TPAQ entropy codec (stage 2)
+Using 4 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":999314736275557 }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":33554432, "time":999314804053574 }
+{ "type":"BEFORE_TRANSFORM", "id":3, "size":32891136, "time":999314804030573 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":33554432, "time":999314804042635 }
+{ "type":"AFTER_TRANSFORM", "id":3, "size":19992642, "time":999327307078212 } [12503 ms]
+{ "type":"BEFORE_ENTROPY", "id":3, "size":19992642, "time":999327314581286 } [7 ms]
+{ "type":"AFTER_TRANSFORM", "id":2, "size":20266760, "time":999327796831885 } [12992 ms]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":20266760, "time":999327798432820 } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":1, "size":20395963, "time":999327887597134 } [13083 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":20395963, "time":999327889713702 } [2 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":6906824, "time":999538880714269 } [210991 ms]
+Block 1: 33554432 => 20395963 [13083 ms] => 6906824 [210991 ms] (20%)
+{ "type":"AFTER_ENTROPY", "id":2, "size":6931476, "time":999539251652461 } [211453 ms]
+Block 2: 33554432 => 20266760 [12992 ms] => 6931476 [211453 ms] (20%)
+{ "type":"AFTER_ENTROPY", "id":3, "size":6787528, "time":999539612123079 } [212297 ms]
+Block 3: 32891136 => 19992642 [12503 ms] => 6787528 [212297 ms] (20%)
+
+Encoding:          225.3 s
+Input size:        100000000
+Output size:       20625857
+Compression ratio: 0.206259
+Throughput (KB/s): 433
+
+{ "type":"COMPRESSION_END", "size":20625857, "time":999539995490845 }

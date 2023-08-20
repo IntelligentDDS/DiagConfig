@@ -1,0 +1,45 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [HUFFMAN]
+Warning: providing the 'level' option forces the transform. Ignoring [BWT+MTFT]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 33554432 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to false
+Using X86+RLT+TEXT transform (stage 1)
+Using TPAQX entropy codec (stage 2)
+Using 4 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":1000663710392386 }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":33554432, "time":1000663779479177 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":33554432, "time":1000663779409886 }
+{ "type":"BEFORE_TRANSFORM", "id":3, "size":32891136, "time":1000663779763321 }
+{ "type":"AFTER_TRANSFORM", "id":1, "size":20389010, "time":1000676723268317 } [12943 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":20389010, "time":1000676730939091 } [7 ms]
+{ "type":"AFTER_TRANSFORM", "id":3, "size":19987044, "time":1000676797358533 } [13017 ms]
+{ "type":"BEFORE_ENTROPY", "id":3, "size":19987044, "time":1000676808322261 } [10 ms]
+{ "type":"AFTER_TRANSFORM", "id":2, "size":20260145, "time":1000676907224571 } [13127 ms]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":20260145, "time":1000676919667045 } [12 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":6708240, "time":1000921725127653 } [244994 ms]
+Block 1: 33554432 => 20389010 [12943 ms] => 6708240 [244994 ms] (19%)
+{ "type":"AFTER_ENTROPY", "id":2, "size":6732976, "time":1000922098238868 } [245178 ms]
+Block 2: 33554432 => 20260145 [13127 ms] => 6732976 [245178 ms] (20%)
+{ "type":"AFTER_ENTROPY", "id":3, "size":6593872, "time":1000922456388154 } [245648 ms]
+Block 3: 32891136 => 19987044 [13017 ms] => 6593872 [245648 ms] (20%)
+
+Encoding:          259.1 s
+Input size:        100000000
+Output size:       20035117
+Compression ratio: 0.200351
+Throughput (KB/s): 376
+
+{ "type":"COMPRESSION_END", "size":20035117, "time":1000922845782554 }

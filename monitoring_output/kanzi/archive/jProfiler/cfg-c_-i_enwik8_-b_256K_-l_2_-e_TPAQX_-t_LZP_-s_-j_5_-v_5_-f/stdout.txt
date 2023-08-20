@@ -1,0 +1,1940 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [TPAQX]
+Warning: providing the 'level' option forces the transform. Ignoring [LZP]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 262144 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to false
+Using TEXT+FSD+LZX transform (stage 1)
+Using HUFFMAN entropy codec (stage 2)
+Using 5 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":878291157549208 }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":262144, "time":878291194169518 }
+{ "type":"BEFORE_TRANSFORM", "id":5, "size":262144, "time":878291194609094 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":262144, "time":878291194162280 }
+{ "type":"BEFORE_TRANSFORM", "id":3, "size":262144, "time":878291194163756 }
+{ "type":"BEFORE_TRANSFORM", "id":4, "size":262144, "time":878291194624955 }
+{ "type":"AFTER_TRANSFORM", "id":2, "size":116913, "time":878291663141601 } [468 ms]
+{ "type":"AFTER_TRANSFORM", "id":5, "size":122009, "time":878291670167997 } [475 ms]
+{ "type":"AFTER_TRANSFORM", "id":1, "size":112210, "time":878291662423492 } [468 ms]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":116913, "time":878291672433807 } [9 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":112210, "time":878291672503806 } [10 ms]
+{ "type":"BEFORE_ENTROPY", "id":5, "size":122009, "time":878291672455605 } [2 ms]
+{ "type":"AFTER_TRANSFORM", "id":3, "size":116128, "time":878291674871331 } [480 ms]
+{ "type":"BEFORE_ENTROPY", "id":3, "size":116128, "time":878291675207871 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":4, "size":118166, "time":878291691502398 } [496 ms]
+{ "type":"BEFORE_ENTROPY", "id":4, "size":118166, "time":878291691858996 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":95673, "time":878291715471309 } [42 ms]
+Block 1: 262144 => 112210 [468 ms] => 95673 [42 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":2, "size":100054, "time":878291731481269 } [59 ms]
+Block 2: 262144 => 116913 [468 ms] => 100054 [59 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":3, "size":99426, "time":878291742964537 } [67 ms]
+Block 3: 262144 => 116128 [480 ms] => 99426 [67 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":4, "size":100421, "time":878291754558830 } [62 ms]
+Block 4: 262144 => 118166 [496 ms] => 100421 [62 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":5, "size":104455, "time":878291766296574 } [93 ms]
+Block 5: 262144 => 122009 [475 ms] => 104455 [93 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":6, "size":262144, "time":878291777696160 }
+{ "type":"BEFORE_TRANSFORM", "id":10, "size":262144, "time":878291777769160 }
+{ "type":"BEFORE_TRANSFORM", "id":9, "size":262144, "time":878291777758816 }
+{ "type":"BEFORE_TRANSFORM", "id":7, "size":262144, "time":878291777718910 }
+{ "type":"BEFORE_TRANSFORM", "id":8, "size":262144, "time":878291777733889 }
+{ "type":"AFTER_TRANSFORM", "id":8, "size":125642, "time":878292040376367 } [262 ms]
+{ "type":"BEFORE_ENTROPY", "id":8, "size":125642, "time":878292040656448 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":10, "size":118409, "time":878292103945939 } [326 ms]
+{ "type":"BEFORE_ENTROPY", "id":10, "size":118409, "time":878292104681568 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":6, "size":119766, "time":878292160772635 } [383 ms]
+{ "type":"BEFORE_ENTROPY", "id":6, "size":119766, "time":878292161094278 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":6, "size":102609, "time":878292180831851 } [19 ms]
+Block 6: 262144 => 119766 [383 ms] => 102609 [19 ms] (39%)
+{ "type":"AFTER_TRANSFORM", "id":9, "size":120723, "time":878292198620444 } [420 ms]
+{ "type":"BEFORE_ENTROPY", "id":9, "size":120723, "time":878292198967861 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":7, "size":122711, "time":878292220348854 } [442 ms]
+{ "type":"BEFORE_ENTROPY", "id":7, "size":122711, "time":878292220734033 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":7, "size":104606, "time":878292241521545 } [20 ms]
+Block 7: 262144 => 122711 [442 ms] => 104606 [20 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":8, "size":107229, "time":878292254757492 } [214 ms]
+Block 8: 262144 => 125642 [262 ms] => 107229 [214 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":9, "size":103676, "time":878292265620498 } [66 ms]
+Block 9: 262144 => 120723 [420 ms] => 103676 [66 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":10, "size":101494, "time":878292273457056 } [168 ms]
+Block 10: 262144 => 118409 [326 ms] => 101494 [168 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":11, "size":262144, "time":878292279580522 }
+{ "type":"BEFORE_TRANSFORM", "id":12, "size":262144, "time":878292279642163 }
+{ "type":"BEFORE_TRANSFORM", "id":13, "size":262144, "time":878292279675664 }
+{ "type":"BEFORE_TRANSFORM", "id":14, "size":262144, "time":878292279727008 }
+{ "type":"BEFORE_TRANSFORM", "id":15, "size":262144, "time":878292279740541 }
+{ "type":"AFTER_TRANSFORM", "id":14, "size":119116, "time":878292508359318 } [228 ms]
+{ "type":"BEFORE_ENTROPY", "id":14, "size":119116, "time":878292508663042 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":15, "size":118285, "time":878292509534222 } [229 ms]
+{ "type":"BEFORE_ENTROPY", "id":15, "size":118285, "time":878292509731468 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":13, "size":124442, "time":878292642086462 } [362 ms]
+{ "type":"BEFORE_ENTROPY", "id":13, "size":124442, "time":878292642390961 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":12, "size":124843, "time":878292648876167 } [369 ms]
+{ "type":"BEFORE_ENTROPY", "id":12, "size":124843, "time":878292649129595 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":11, "size":124537, "time":878292649484684 } [369 ms]
+{ "type":"BEFORE_ENTROPY", "id":11, "size":124537, "time":878292649745401 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":11, "size":106271, "time":878292668167713 } [18 ms]
+Block 11: 262144 => 124537 [369 ms] => 106271 [18 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":12, "size":106422, "time":878292669131900 } [20 ms]
+Block 12: 262144 => 124843 [369 ms] => 106422 [20 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":13, "size":106744, "time":878292681773704 } [39 ms]
+Block 13: 262144 => 124442 [362 ms] => 106744 [39 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":14, "size":102004, "time":878292687688559 } [179 ms]
+Block 14: 262144 => 119116 [228 ms] => 102004 [179 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":15, "size":101130, "time":878292693145109 } [183 ms]
+Block 15: 262144 => 118285 [229 ms] => 101130 [183 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":16, "size":262144, "time":878292699112117 }
+{ "type":"BEFORE_TRANSFORM", "id":18, "size":262144, "time":878292699201532 }
+{ "type":"BEFORE_TRANSFORM", "id":19, "size":262144, "time":878292699221202 }
+{ "type":"BEFORE_TRANSFORM", "id":20, "size":262144, "time":878292699289908 }
+{ "type":"BEFORE_TRANSFORM", "id":17, "size":262144, "time":878292699174231 }
+{ "type":"AFTER_TRANSFORM", "id":19, "size":123251, "time":878292893897717 } [194 ms]
+{ "type":"BEFORE_ENTROPY", "id":19, "size":123251, "time":878292894161029 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":18, "size":122890, "time":878292900731515 } [201 ms]
+{ "type":"BEFORE_ENTROPY", "id":18, "size":122890, "time":878292900958969 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":20, "size":118875, "time":878293058778416 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":20, "size":118875, "time":878293058957867 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":16, "size":119363, "time":878293068023170 } [368 ms]
+{ "type":"BEFORE_ENTROPY", "id":16, "size":119363, "time":878293068192112 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":17, "size":124189, "time":878293080656067 } [381 ms]
+{ "type":"BEFORE_ENTROPY", "id":17, "size":124189, "time":878293080884332 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":16, "size":101687, "time":878293085695350 } [17 ms]
+Block 16: 262144 => 119363 [368 ms] => 101687 [17 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":17, "size":105767, "time":878293108005357 } [27 ms]
+Block 17: 262144 => 124189 [381 ms] => 105767 [27 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":18, "size":104744, "time":878293120831922 } [219 ms]
+Block 18: 262144 => 122890 [201 ms] => 104744 [219 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":19, "size":105368, "time":878293121503013 } [227 ms]
+Block 19: 262144 => 123251 [194 ms] => 105368 [227 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":20, "size":100793, "time":878293121848871 } [62 ms]
+Block 20: 262144 => 118875 [359 ms] => 100793 [62 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":22, "size":262144, "time":878293127861877 }
+{ "type":"BEFORE_TRANSFORM", "id":24, "size":262144, "time":878293127903817 }
+{ "type":"BEFORE_TRANSFORM", "id":23, "size":262144, "time":878293127885340 }
+{ "type":"BEFORE_TRANSFORM", "id":21, "size":262144, "time":878293127851204 }
+{ "type":"BEFORE_TRANSFORM", "id":25, "size":262144, "time":878293127925810 }
+{ "type":"AFTER_TRANSFORM", "id":24, "size":123137, "time":878293348388333 } [220 ms]
+{ "type":"BEFORE_ENTROPY", "id":24, "size":123137, "time":878293348688879 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":23, "size":121456, "time":878293351253707 } [223 ms]
+{ "type":"BEFORE_ENTROPY", "id":23, "size":121456, "time":878293351467503 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":22, "size":121993, "time":878293492397592 } [364 ms]
+{ "type":"BEFORE_ENTROPY", "id":22, "size":121993, "time":878293492613766 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":25, "size":123010, "time":878293501050199 } [373 ms]
+{ "type":"BEFORE_ENTROPY", "id":25, "size":123010, "time":878293501200017 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":21, "size":126178, "time":878293514574976 } [386 ms]
+{ "type":"BEFORE_ENTROPY", "id":21, "size":126178, "time":878293514734881 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":21, "size":107971, "time":878293535056231 } [20 ms]
+Block 21: 262144 => 126178 [386 ms] => 107971 [20 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":22, "size":104496, "time":878293535593225 } [42 ms]
+Block 22: 262144 => 121993 [364 ms] => 104496 [42 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":23, "size":103604, "time":878293541299029 } [189 ms]
+Block 23: 262144 => 121456 [223 ms] => 103604 [189 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":24, "size":105216, "time":878293541739346 } [193 ms]
+Block 24: 262144 => 123137 [220 ms] => 105216 [193 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":25, "size":104705, "time":878293548101040 } [46 ms]
+Block 25: 262144 => 123010 [373 ms] => 104705 [46 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":26, "size":262144, "time":878293559680366 }
+{ "type":"BEFORE_TRANSFORM", "id":28, "size":262144, "time":878293559751904 }
+{ "type":"BEFORE_TRANSFORM", "id":29, "size":262144, "time":878293559773347 }
+{ "type":"BEFORE_TRANSFORM", "id":27, "size":262144, "time":878293559685219 }
+{ "type":"BEFORE_TRANSFORM", "id":30, "size":262144, "time":878293559785491 }
+{ "type":"AFTER_TRANSFORM", "id":29, "size":120160, "time":878293765754349 } [205 ms]
+{ "type":"BEFORE_ENTROPY", "id":29, "size":120160, "time":878293765937445 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":27, "size":126702, "time":878293797829397 } [238 ms]
+{ "type":"BEFORE_ENTROPY", "id":27, "size":126702, "time":878293797978992 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":28, "size":127038, "time":878293914480353 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":28, "size":127038, "time":878293914645417 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":26, "size":126038, "time":878293925928850 } [366 ms]
+{ "type":"BEFORE_ENTROPY", "id":26, "size":126038, "time":878293926061658 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":30, "size":128631, "time":878293932408604 } [372 ms]
+{ "type":"BEFORE_ENTROPY", "id":30, "size":128631, "time":878293932516502 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":26, "size":107479, "time":878293945825947 } [19 ms]
+Block 26: 262144 => 126038 [366 ms] => 107479 [19 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":27, "size":107997, "time":878293959027185 } [161 ms]
+Block 27: 262144 => 126702 [238 ms] => 107997 [161 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":28, "size":107583, "time":878293966158983 } [51 ms]
+Block 28: 262144 => 127038 [354 ms] => 107583 [51 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":29, "size":101725, "time":878293972108447 } [206 ms]
+Block 29: 262144 => 120160 [205 ms] => 101725 [206 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":30, "size":109073, "time":878293977472241 } [44 ms]
+Block 30: 262144 => 128631 [372 ms] => 109073 [44 ms] (41%)
+{ "type":"BEFORE_TRANSFORM", "id":31, "size":262144, "time":878293989725900 }
+{ "type":"BEFORE_TRANSFORM", "id":35, "size":262144, "time":878293989790683 }
+{ "type":"BEFORE_TRANSFORM", "id":34, "size":262144, "time":878293989779499 }
+{ "type":"BEFORE_TRANSFORM", "id":33, "size":262144, "time":878293989757827 }
+{ "type":"BEFORE_TRANSFORM", "id":32, "size":262144, "time":878293989742819 }
+{ "type":"AFTER_TRANSFORM", "id":32, "size":125488, "time":878294275752354 } [286 ms]
+{ "type":"BEFORE_ENTROPY", "id":32, "size":125488, "time":878294275911498 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":35, "size":122696, "time":878294284373687 } [294 ms]
+{ "type":"BEFORE_ENTROPY", "id":35, "size":122696, "time":878294285407090 } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":33, "size":119382, "time":878294286177561 } [296 ms]
+{ "type":"BEFORE_ENTROPY", "id":33, "size":119382, "time":878294286281419 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":34, "size":124988, "time":878294312802934 } [323 ms]
+{ "type":"BEFORE_ENTROPY", "id":34, "size":124988, "time":878294312928060 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":31, "size":117630, "time":878294370280060 } [380 ms]
+{ "type":"BEFORE_ENTROPY", "id":31, "size":117630, "time":878294370469625 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":31, "size":100508, "time":878294390712740 } [20 ms]
+Block 31: 262144 => 117630 [380 ms] => 100508 [20 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":32, "size":106694, "time":878294403035663 } [127 ms]
+Block 32: 262144 => 125488 [286 ms] => 106694 [127 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":33, "size":101379, "time":878294415767245 } [129 ms]
+Block 33: 262144 => 119382 [296 ms] => 101379 [129 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":34, "size":106401, "time":878294421260006 } [108 ms]
+Block 34: 262144 => 124988 [323 ms] => 106401 [108 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":35, "size":104422, "time":878294426943941 } [141 ms]
+Block 35: 262144 => 122696 [294 ms] => 104422 [141 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":36, "size":262144, "time":878294432902662 }
+{ "type":"BEFORE_TRANSFORM", "id":39, "size":262144, "time":878294432957890 }
+{ "type":"BEFORE_TRANSFORM", "id":38, "size":262144, "time":878294432940355 }
+{ "type":"BEFORE_TRANSFORM", "id":37, "size":262144, "time":878294432924723 }
+{ "type":"BEFORE_TRANSFORM", "id":40, "size":262144, "time":878294432966216 }
+{ "type":"AFTER_TRANSFORM", "id":40, "size":115665, "time":878294660266397 } [227 ms]
+{ "type":"BEFORE_ENTROPY", "id":40, "size":115665, "time":878294660444801 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":39, "size":120752, "time":878294781202219 } [348 ms]
+{ "type":"BEFORE_ENTROPY", "id":39, "size":120752, "time":878294781373797 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":38, "size":122219, "time":878294788468286 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":38, "size":122219, "time":878294788606446 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":36, "size":120790, "time":878294792646459 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":36, "size":120790, "time":878294792767876 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":37, "size":127301, "time":878294802871462 } [369 ms]
+{ "type":"BEFORE_ENTROPY", "id":37, "size":127301, "time":878294803028617 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":36, "size":102893, "time":878294810812219 } [18 ms]
+Block 36: 262144 => 120790 [359 ms] => 102893 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":37, "size":107760, "time":878294823937086 } [20 ms]
+Block 37: 262144 => 127301 [369 ms] => 107760 [20 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":38, "size":104629, "time":878294836556468 } [47 ms]
+Block 38: 262144 => 122219 [355 ms] => 104629 [47 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":39, "size":103577, "time":878294842253925 } [60 ms]
+Block 39: 262144 => 120752 [348 ms] => 103577 [60 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":40, "size":98686, "time":878294847539053 } [187 ms]
+Block 40: 262144 => 115665 [227 ms] => 98686 [187 ms] (37%)
+{ "type":"BEFORE_TRANSFORM", "id":41, "size":262144, "time":878294853094832 }
+{ "type":"BEFORE_TRANSFORM", "id":42, "size":262144, "time":878294853144569 }
+{ "type":"BEFORE_TRANSFORM", "id":44, "size":262144, "time":878294853192667 }
+{ "type":"BEFORE_TRANSFORM", "id":43, "size":262144, "time":878294853160331 }
+{ "type":"BEFORE_TRANSFORM", "id":45, "size":262144, "time":878294853210967 }
+{ "type":"AFTER_TRANSFORM", "id":45, "size":122389, "time":878295044202707 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":45, "size":122389, "time":878295044335810 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":43, "size":123629, "time":878295207767872 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":43, "size":123629, "time":878295207909446 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":44, "size":124248, "time":878295209644971 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":44, "size":124248, "time":878295209721936 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":42, "size":122702, "time":878295220009442 } [366 ms]
+{ "type":"BEFORE_ENTROPY", "id":42, "size":122702, "time":878295220156462 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":41, "size":121759, "time":878295224155210 } [371 ms]
+{ "type":"BEFORE_ENTROPY", "id":41, "size":121759, "time":878295224281024 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":41, "size":104271, "time":878295244151129 } [19 ms]
+Block 41: 262144 => 121759 [371 ms] => 104271 [19 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":42, "size":105207, "time":878295256935635 } [36 ms]
+Block 42: 262144 => 122702 [366 ms] => 105207 [36 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":43, "size":105567, "time":878295267175557 } [59 ms]
+Block 43: 262144 => 123629 [354 ms] => 105567 [59 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":44, "size":106241, "time":878295280121896 } [70 ms]
+Block 44: 262144 => 124248 [356 ms] => 106241 [70 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":45, "size":104646, "time":878295285713252 } [241 ms]
+Block 45: 262144 => 122389 [190 ms] => 104646 [241 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":46, "size":262144, "time":878295293035326 }
+{ "type":"BEFORE_TRANSFORM", "id":50, "size":262144, "time":878295293100010 }
+{ "type":"BEFORE_TRANSFORM", "id":49, "size":262144, "time":878295293088476 }
+{ "type":"BEFORE_TRANSFORM", "id":48, "size":262144, "time":878295293075810 }
+{ "type":"BEFORE_TRANSFORM", "id":47, "size":262144, "time":878295293059753 }
+{ "type":"AFTER_TRANSFORM", "id":50, "size":126767, "time":878295533776439 } [240 ms]
+{ "type":"BEFORE_ENTROPY", "id":50, "size":126767, "time":878295533920026 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":47, "size":113400, "time":878295585599511 } [292 ms]
+{ "type":"BEFORE_ENTROPY", "id":47, "size":113400, "time":878295585738664 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":48, "size":126431, "time":878295652780273 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":48, "size":126431, "time":878295652914133 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":49, "size":125948, "time":878295660485728 } [367 ms]
+{ "type":"BEFORE_ENTROPY", "id":49, "size":125948, "time":878295660584866 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":46, "size":127495, "time":878295667395891 } [374 ms]
+{ "type":"BEFORE_ENTROPY", "id":46, "size":127495, "time":878295667573402 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":46, "size":108552, "time":878295685930571 } [18 ms]
+Block 46: 262144 => 127495 [374 ms] => 108552 [18 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":47, "size":95907, "time":878295698045340 } [112 ms]
+Block 47: 262144 => 113400 [292 ms] => 95907 [112 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":48, "size":107763, "time":878295703110128 } [50 ms]
+Block 48: 262144 => 126431 [359 ms] => 107763 [50 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":49, "size":107683, "time":878295716233534 } [55 ms]
+Block 49: 262144 => 125948 [367 ms] => 107683 [55 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":50, "size":107967, "time":878295721781083 } [187 ms]
+Block 50: 262144 => 126767 [240 ms] => 107967 [187 ms] (41%)
+{ "type":"BEFORE_TRANSFORM", "id":51, "size":262144, "time":878295727967967 }
+{ "type":"BEFORE_TRANSFORM", "id":52, "size":262144, "time":878295727981249 }
+{ "type":"BEFORE_TRANSFORM", "id":53, "size":262144, "time":878295728025688 }
+{ "type":"BEFORE_TRANSFORM", "id":55, "size":262144, "time":878295728073951 }
+{ "type":"BEFORE_TRANSFORM", "id":54, "size":262144, "time":878295728056637 }
+{ "type":"AFTER_TRANSFORM", "id":55, "size":121492, "time":878295922890608 } [194 ms]
+{ "type":"BEFORE_ENTROPY", "id":55, "size":121492, "time":878295923007713 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":52, "size":124738, "time":878295929952714 } [201 ms]
+{ "type":"BEFORE_ENTROPY", "id":52, "size":124738, "time":878295930019277 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":53, "size":123448, "time":878296094147420 } [366 ms]
+{ "type":"BEFORE_ENTROPY", "id":53, "size":123448, "time":878296094295326 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":51, "size":125834, "time":878296096890752 } [368 ms]
+{ "type":"BEFORE_ENTROPY", "id":51, "size":125834, "time":878296097007511 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":54, "size":123493, "time":878296097619521 } [369 ms]
+{ "type":"BEFORE_ENTROPY", "id":54, "size":123493, "time":878296097687808 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":51, "size":107678, "time":878296115437313 } [18 ms]
+Block 51: 262144 => 125834 [368 ms] => 107678 [18 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":52, "size":106828, "time":878296127048316 } [197 ms]
+Block 52: 262144 => 124738 [201 ms] => 106828 [197 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":53, "size":105517, "time":878296138124161 } [43 ms]
+Block 53: 262144 => 123448 [366 ms] => 105517 [43 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":54, "size":105423, "time":878296150856442 } [53 ms]
+Block 54: 262144 => 123493 [369 ms] => 105423 [53 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":55, "size":103549, "time":878296150952949 } [227 ms]
+Block 55: 262144 => 121492 [194 ms] => 103549 [227 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":56, "size":262144, "time":878296157074053 }
+{ "type":"BEFORE_TRANSFORM", "id":57, "size":262144, "time":878296157084160 }
+{ "type":"BEFORE_TRANSFORM", "id":58, "size":262144, "time":878296157130338 }
+{ "type":"BEFORE_TRANSFORM", "id":60, "size":262144, "time":878296157175752 }
+{ "type":"BEFORE_TRANSFORM", "id":59, "size":262144, "time":878296157158245 }
+{ "type":"AFTER_TRANSFORM", "id":60, "size":124210, "time":878296348566409 } [191 ms]
+{ "type":"BEFORE_ENTROPY", "id":60, "size":124210, "time":878296348686720 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":58, "size":120158, "time":878296509713908 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":58, "size":120158, "time":878296509842792 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":56, "size":114424, "time":878296512431010 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":56, "size":114424, "time":878296512508868 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":59, "size":121966, "time":878296514457405 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":59, "size":121966, "time":878296514524171 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":57, "size":123724, "time":878296519429482 } [362 ms]
+{ "type":"BEFORE_ENTROPY", "id":57, "size":123724, "time":878296519499518 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":56, "size":97068, "time":878296528896342 } [16 ms]
+Block 56: 262144 => 114424 [355 ms] => 97068 [16 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":57, "size":104984, "time":878296539584133 } [20 ms]
+Block 57: 262144 => 123724 [362 ms] => 104984 [20 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":58, "size":103205, "time":878296545195804 } [35 ms]
+Block 58: 262144 => 120158 [352 ms] => 103205 [35 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":59, "size":104421, "time":878296557449883 } [42 ms]
+Block 59: 262144 => 121966 [357 ms] => 104421 [42 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":60, "size":106099, "time":878296562773247 } [214 ms]
+Block 60: 262144 => 124210 [191 ms] => 106099 [214 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":61, "size":262144, "time":878296569129878 }
+{ "type":"BEFORE_TRANSFORM", "id":62, "size":262144, "time":878296569158199 }
+{ "type":"BEFORE_TRANSFORM", "id":64, "size":262144, "time":878296569197294 }
+{ "type":"BEFORE_TRANSFORM", "id":65, "size":262144, "time":878296569213275 }
+{ "type":"BEFORE_TRANSFORM", "id":63, "size":262144, "time":878296569183804 }
+{ "type":"AFTER_TRANSFORM", "id":65, "size":119379, "time":878296763473414 } [194 ms]
+{ "type":"BEFORE_ENTROPY", "id":65, "size":119379, "time":878296763619853 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":61, "size":120018, "time":878296920224119 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":61, "size":120018, "time":878296920348050 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":64, "size":121778, "time":878296921859794 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":64, "size":121778, "time":878296921937262 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":62, "size":120023, "time":878296922463243 } [353 ms]
+{ "type":"BEFORE_ENTROPY", "id":62, "size":120023, "time":878296922528621 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":63, "size":125000, "time":878296931020263 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":63, "size":125000, "time":878296931087359 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":61, "size":103059, "time":878296937850223 } [17 ms]
+Block 61: 262144 => 120018 [351 ms] => 103059 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":62, "size":102777, "time":878296950201101 } [27 ms]
+Block 62: 262144 => 120023 [353 ms] => 102777 [27 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":63, "size":106402, "time":878296955794511 } [24 ms]
+Block 63: 262144 => 125000 [361 ms] => 106402 [24 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":64, "size":104309, "time":878296968329600 } [46 ms]
+Block 64: 262144 => 121778 [352 ms] => 104309 [46 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":65, "size":102433, "time":878296973899539 } [210 ms]
+Block 65: 262144 => 119379 [194 ms] => 102433 [210 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":66, "size":262144, "time":878296979830308 }
+{ "type":"BEFORE_TRANSFORM", "id":68, "size":262144, "time":878296979922503 }
+{ "type":"BEFORE_TRANSFORM", "id":69, "size":262144, "time":878296979949675 }
+{ "type":"BEFORE_TRANSFORM", "id":70, "size":262144, "time":878296979976177 }
+{ "type":"BEFORE_TRANSFORM", "id":67, "size":262144, "time":878296979892808 }
+{ "type":"AFTER_TRANSFORM", "id":68, "size":122883, "time":878297175043835 } [195 ms]
+{ "type":"BEFORE_ENTROPY", "id":68, "size":122883, "time":878297175271413 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":67, "size":122234, "time":878297222473750 } [242 ms]
+{ "type":"BEFORE_ENTROPY", "id":67, "size":122234, "time":878297222573800 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":66, "size":118941, "time":878297329011067 } [349 ms]
+{ "type":"BEFORE_ENTROPY", "id":66, "size":118941, "time":878297329130332 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":69, "size":123056, "time":878297337677411 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":69, "size":123056, "time":878297337742719 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":66, "size":102234, "time":878297346390824 } [17 ms]
+Block 66: 262144 => 118941 [349 ms] => 102234 [17 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":67, "size":104362, "time":878297357612286 } [135 ms]
+Block 67: 262144 => 122234 [242 ms] => 104362 [135 ms] (39%)
+{ "type":"AFTER_TRANSFORM", "id":70, "size":125103, "time":878297361080464 } [381 ms]
+{ "type":"BEFORE_ENTROPY", "id":70, "size":125103, "time":878297361169146 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":68, "size":104841, "time":878297363218556 } [187 ms]
+Block 68: 262144 => 122883 [195 ms] => 104841 [187 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":69, "size":105541, "time":878297374596943 } [36 ms]
+Block 69: 262144 => 123056 [357 ms] => 105541 [36 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":70, "size":106937, "time":878297380147790 } [18 ms]
+Block 70: 262144 => 125103 [381 ms] => 106937 [18 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":71, "size":262144, "time":878297386226333 }
+{ "type":"BEFORE_TRANSFORM", "id":72, "size":262144, "time":878297386290661 }
+{ "type":"BEFORE_TRANSFORM", "id":73, "size":262144, "time":878297386312475 }
+{ "type":"BEFORE_TRANSFORM", "id":74, "size":262144, "time":878297386329977 }
+{ "type":"BEFORE_TRANSFORM", "id":75, "size":262144, "time":878297386342341 }
+{ "type":"AFTER_TRANSFORM", "id":72, "size":125325, "time":878297598281128 } [211 ms]
+{ "type":"BEFORE_ENTROPY", "id":72, "size":125325, "time":878297598401298 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":73, "size":118037, "time":878297667918927 } [281 ms]
+{ "type":"BEFORE_ENTROPY", "id":73, "size":118037, "time":878297668010878 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":71, "size":125576, "time":878297731708537 } [345 ms]
+{ "type":"BEFORE_ENTROPY", "id":71, "size":125576, "time":878297731846556 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":74, "size":104148, "time":878297737569746 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":74, "size":104148, "time":878297737664591 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":75, "size":103441, "time":878297738119008 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":75, "size":103441, "time":878297738176237 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":71, "size":107266, "time":878297744256032 } [12 ms]
+Block 71: 262144 => 125576 [345 ms] => 107266 [12 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":72, "size":106825, "time":878297744578877 } [146 ms]
+Block 72: 262144 => 125325 [211 ms] => 106825 [146 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":73, "size":101405, "time":878297755982975 } [87 ms]
+Block 73: 262144 => 118037 [281 ms] => 101405 [87 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":74, "size":89829, "time":878297761358678 } [23 ms]
+Block 74: 262144 => 104148 [351 ms] => 89829 [23 ms] (34%)
+{ "type":"AFTER_ENTROPY", "id":75, "size":89316, "time":878297771842464 } [33 ms]
+Block 75: 262144 => 103441 [351 ms] => 89316 [33 ms] (34%)
+{ "type":"BEFORE_TRANSFORM", "id":76, "size":262144, "time":878297776990050 }
+{ "type":"BEFORE_TRANSFORM", "id":77, "size":262144, "time":878297777007594 }
+{ "type":"BEFORE_TRANSFORM", "id":78, "size":262144, "time":878297777065674 }
+{ "type":"BEFORE_TRANSFORM", "id":79, "size":262144, "time":878297777089907 }
+{ "type":"BEFORE_TRANSFORM", "id":80, "size":262144, "time":878297777095596 }
+{ "type":"AFTER_TRANSFORM", "id":78, "size":123474, "time":878297968633215 } [191 ms]
+{ "type":"BEFORE_ENTROPY", "id":78, "size":123474, "time":878297968739524 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":76, "size":118145, "time":878297969302437 } [192 ms]
+{ "type":"BEFORE_ENTROPY", "id":76, "size":118145, "time":878297969357927 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":76, "size":100789, "time":878297978367374 } [9 ms]
+Block 76: 262144 => 118145 [192 ms] => 100789 [9 ms] (38%)
+{ "type":"AFTER_TRANSFORM", "id":79, "size":111940, "time":878298099127875 } [322 ms]
+{ "type":"BEFORE_ENTROPY", "id":79, "size":111940, "time":878298099244190 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":80, "size":122016, "time":878298111068861 } [333 ms]
+{ "type":"BEFORE_ENTROPY", "id":80, "size":122016, "time":878298111182778 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":77, "size":123056, "time":878298142431205 } [365 ms]
+{ "type":"BEFORE_ENTROPY", "id":77, "size":123056, "time":878298142574077 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":77, "size":105415, "time":878298160383745 } [17 ms]
+Block 77: 262144 => 123056 [365 ms] => 105415 [17 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":78, "size":105439, "time":878298171451999 } [202 ms]
+Block 78: 262144 => 123474 [191 ms] => 105439 [202 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":79, "size":94971, "time":878298176935827 } [77 ms]
+Block 79: 262144 => 111940 [322 ms] => 94971 [77 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":80, "size":103569, "time":878298187436717 } [76 ms]
+Block 80: 262144 => 122016 [333 ms] => 103569 [76 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":81, "size":262144, "time":878298193338254 }
+{ "type":"BEFORE_TRANSFORM", "id":82, "size":262144, "time":878298193357772 }
+{ "type":"BEFORE_TRANSFORM", "id":84, "size":262144, "time":878298193390003 }
+{ "type":"BEFORE_TRANSFORM", "id":83, "size":262144, "time":878298193372975 }
+{ "type":"BEFORE_TRANSFORM", "id":85, "size":262144, "time":878298193400290 }
+{ "type":"AFTER_TRANSFORM", "id":85, "size":119881, "time":878298414176401 } [220 ms]
+{ "type":"BEFORE_ENTROPY", "id":85, "size":119881, "time":878298414300660 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":83, "size":125395, "time":878298417528408 } [224 ms]
+{ "type":"BEFORE_ENTROPY", "id":83, "size":125395, "time":878298417581749 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":84, "size":115605, "time":878298543439247 } [350 ms]
+{ "type":"BEFORE_ENTROPY", "id":84, "size":115605, "time":878298543545755 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":81, "size":103395, "time":878298546535008 } [353 ms]
+{ "type":"BEFORE_ENTROPY", "id":81, "size":103395, "time":878298546599527 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":81, "size":87415, "time":878298561736558 } [15 ms]
+Block 81: 262144 => 103395 [353 ms] => 87415 [15 ms] (33%)
+{ "type":"AFTER_TRANSFORM", "id":82, "size":118930, "time":878298569072746 } [375 ms]
+{ "type":"BEFORE_ENTROPY", "id":82, "size":118930, "time":878298569140142 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":82, "size":101106, "time":878298586687366 } [17 ms]
+Block 82: 262144 => 118930 [375 ms] => 101106 [17 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":83, "size":107391, "time":878298586796391 } [169 ms]
+Block 83: 262144 => 125395 [224 ms] => 107391 [169 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":84, "size":98723, "time":878298592338033 } [48 ms]
+Block 84: 262144 => 115605 [350 ms] => 98723 [48 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":85, "size":102171, "time":878298597740391 } [183 ms]
+Block 85: 262144 => 119881 [220 ms] => 102171 [183 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":86, "size":262144, "time":878298603504217 }
+{ "type":"BEFORE_TRANSFORM", "id":87, "size":262144, "time":878298603521515 }
+{ "type":"BEFORE_TRANSFORM", "id":88, "size":262144, "time":878298603595538 }
+{ "type":"BEFORE_TRANSFORM", "id":90, "size":262144, "time":878298603624343 }
+{ "type":"BEFORE_TRANSFORM", "id":89, "size":262144, "time":878298603612273 }
+{ "type":"AFTER_TRANSFORM", "id":90, "size":120527, "time":878298811087488 } [207 ms]
+{ "type":"BEFORE_ENTROPY", "id":90, "size":120527, "time":878298811218821 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":88, "size":120274, "time":878298843243561 } [239 ms]
+{ "type":"BEFORE_ENTROPY", "id":88, "size":120274, "time":878298843362763 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":89, "size":118599, "time":878298959505262 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":89, "size":118599, "time":878298959612413 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":86, "size":122359, "time":878298962686514 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":86, "size":122359, "time":878298962740738 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":87, "size":122776, "time":878298975380930 } [371 ms]
+{ "type":"BEFORE_ENTROPY", "id":87, "size":122776, "time":878298975441407 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":86, "size":104699, "time":878298980991051 } [18 ms]
+Block 86: 262144 => 122359 [359 ms] => 104699 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":87, "size":105216, "time":878298993558535 } [18 ms]
+Block 87: 262144 => 122776 [371 ms] => 105216 [18 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":88, "size":102568, "time":878298993938710 } [150 ms]
+Block 88: 262144 => 120274 [239 ms] => 102568 [150 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":89, "size":100950, "time":878298994023886 } [34 ms]
+Block 89: 262144 => 118599 [355 ms] => 100950 [34 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":90, "size":103129, "time":878298999446111 } [188 ms]
+Block 90: 262144 => 120527 [207 ms] => 103129 [188 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":91, "size":262144, "time":878299005293317 }
+{ "type":"BEFORE_TRANSFORM", "id":92, "size":262144, "time":878299005342151 }
+{ "type":"BEFORE_TRANSFORM", "id":93, "size":262144, "time":878299005370575 }
+{ "type":"BEFORE_TRANSFORM", "id":94, "size":262144, "time":878299005391896 }
+{ "type":"BEFORE_TRANSFORM", "id":95, "size":262144, "time":878299005410737 }
+{ "type":"AFTER_TRANSFORM", "id":93, "size":125964, "time":878299247123568 } [241 ms]
+{ "type":"BEFORE_ENTROPY", "id":93, "size":125964, "time":878299247221339 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":94, "size":121603, "time":878299249394041 } [244 ms]
+{ "type":"BEFORE_ENTROPY", "id":94, "size":121603, "time":878299249443887 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":95, "size":119463, "time":878299280404036 } [274 ms]
+{ "type":"BEFORE_ENTROPY", "id":95, "size":119463, "time":878299280481602 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":91, "size":127138, "time":878299376217708 } [370 ms]
+{ "type":"BEFORE_ENTROPY", "id":91, "size":127138, "time":878299376337579 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":92, "size":120582, "time":878299376680814 } [371 ms]
+{ "type":"BEFORE_ENTROPY", "id":92, "size":120582, "time":878299376751118 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":91, "size":108349, "time":878299396837471 } [20 ms]
+Block 91: 262144 => 127138 [370 ms] => 108349 [20 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":92, "size":102917, "time":878299409599662 } [32 ms]
+Block 92: 262144 => 120582 [371 ms] => 102917 [32 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":93, "size":107502, "time":878299409889443 } [162 ms]
+Block 93: 262144 => 125964 [241 ms] => 107502 [162 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":94, "size":104348, "time":878299415507994 } [166 ms]
+Block 94: 262144 => 121603 [244 ms] => 104348 [166 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":95, "size":102049, "time":878299421997504 } [141 ms]
+Block 95: 262144 => 119463 [274 ms] => 102049 [141 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":96, "size":262144, "time":878299427855098 }
+{ "type":"BEFORE_TRANSFORM", "id":97, "size":262144, "time":878299427873514 }
+{ "type":"BEFORE_TRANSFORM", "id":98, "size":262144, "time":878299427889352 }
+{ "type":"BEFORE_TRANSFORM", "id":99, "size":262144, "time":878299427904046 }
+{ "type":"BEFORE_TRANSFORM", "id":100, "size":262144, "time":878299427913463 }
+{ "type":"AFTER_TRANSFORM", "id":98, "size":115202, "time":878299606258128 } [178 ms]
+{ "type":"BEFORE_ENTROPY", "id":98, "size":115202, "time":878299606348304 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":99, "size":125486, "time":878299614831815 } [186 ms]
+{ "type":"BEFORE_ENTROPY", "id":99, "size":125486, "time":878299614917531 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":96, "size":121646, "time":878299782300073 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":96, "size":121646, "time":878299782396498 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":100, "size":117439, "time":878299786500051 } [358 ms]
+{ "type":"BEFORE_ENTROPY", "id":100, "size":117439, "time":878299786561428 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":97, "size":122495, "time":878299797770455 } [369 ms]
+{ "type":"BEFORE_ENTROPY", "id":97, "size":122495, "time":878299797832652 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":96, "size":104111, "time":878299799872817 } [17 ms]
+Block 96: 262144 => 121646 [354 ms] => 104111 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":97, "size":104498, "time":878299815607417 } [17 ms]
+Block 97: 262144 => 122495 [369 ms] => 104498 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":98, "size":98351, "time":878299827661096 } [221 ms]
+Block 98: 262144 => 115202 [178 ms] => 98351 [221 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":99, "size":106681, "time":878299832904784 } [217 ms]
+Block 99: 262144 => 125486 [186 ms] => 106681 [217 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":100, "size":100732, "time":878299838670447 } [52 ms]
+Block 100: 262144 => 117439 [358 ms] => 100732 [52 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":101, "size":262144, "time":878299844392319 }
+{ "type":"BEFORE_TRANSFORM", "id":102, "size":262144, "time":878299844411586 }
+{ "type":"BEFORE_TRANSFORM", "id":103, "size":262144, "time":878299844467872 }
+{ "type":"BEFORE_TRANSFORM", "id":104, "size":262144, "time":878299844489413 }
+{ "type":"BEFORE_TRANSFORM", "id":105, "size":262144, "time":878299844499050 }
+{ "type":"AFTER_TRANSFORM", "id":104, "size":125655, "time":878300039127001 } [194 ms]
+{ "type":"BEFORE_ENTROPY", "id":104, "size":125655, "time":878300039221527 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":103, "size":122867, "time":878300042384566 } [197 ms]
+{ "type":"BEFORE_ENTROPY", "id":103, "size":122867, "time":878300042452990 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":101, "size":124303, "time":878300203347816 } [358 ms]
+{ "type":"BEFORE_ENTROPY", "id":101, "size":124303, "time":878300203478880 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":105, "size":122484, "time":878300206080357 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":105, "size":122484, "time":878300206135745 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":102, "size":124685, "time":878300211191935 } [366 ms]
+{ "type":"BEFORE_ENTROPY", "id":102, "size":124685, "time":878300211251521 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":101, "size":106286, "time":878300221396019 } [17 ms]
+Block 101: 262144 => 124303 [358 ms] => 106286 [17 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":102, "size":106531, "time":878300233574283 } [22 ms]
+Block 102: 262144 => 124685 [366 ms] => 106531 [22 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":103, "size":104803, "time":878300233920332 } [191 ms]
+Block 103: 262144 => 122867 [197 ms] => 104803 [191 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":104, "size":106685, "time":878300239387136 } [200 ms]
+Block 104: 262144 => 125655 [194 ms] => 106685 [200 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":105, "size":105261, "time":878300244995164 } [38 ms]
+Block 105: 262144 => 122484 [361 ms] => 105261 [38 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":106, "size":262144, "time":878300250896119 }
+{ "type":"BEFORE_TRANSFORM", "id":107, "size":262144, "time":878300250928210 }
+{ "type":"BEFORE_TRANSFORM", "id":108, "size":262144, "time":878300250999599 }
+{ "type":"BEFORE_TRANSFORM", "id":109, "size":262144, "time":878300251022478 }
+{ "type":"BEFORE_TRANSFORM", "id":110, "size":262144, "time":878300251032378 }
+{ "type":"AFTER_TRANSFORM", "id":108, "size":121034, "time":878300434257471 } [183 ms]
+{ "type":"BEFORE_ENTROPY", "id":108, "size":121034, "time":878300434344524 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":109, "size":124526, "time":878300437551034 } [186 ms]
+{ "type":"BEFORE_ENTROPY", "id":109, "size":124526, "time":878300437622433 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":106, "size":122948, "time":878300605880810 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":106, "size":122948, "time":878300605974838 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":110, "size":120326, "time":878300611744711 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":110, "size":120326, "time":878300611796658 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":107, "size":116531, "time":878300612238280 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":107, "size":116531, "time":878300612295120 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":106, "size":104810, "time":878300623647805 } [17 ms]
+Block 106: 262144 => 122948 [354 ms] => 104810 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":107, "size":99500, "time":878300635122828 } [22 ms]
+Block 107: 262144 => 116531 [361 ms] => 99500 [22 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":108, "size":103511, "time":878300645753275 } [211 ms]
+Block 108: 262144 => 121034 [183 ms] => 103511 [211 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":109, "size":106370, "time":878300651124663 } [213 ms]
+Block 109: 262144 => 124526 [186 ms] => 106370 [213 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":110, "size":103051, "time":878300656770122 } [44 ms]
+Block 110: 262144 => 120326 [360 ms] => 103051 [44 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":111, "size":262144, "time":878300662485497 }
+{ "type":"BEFORE_TRANSFORM", "id":112, "size":262144, "time":878300662502121 }
+{ "type":"BEFORE_TRANSFORM", "id":113, "size":262144, "time":878300662550740 }
+{ "type":"BEFORE_TRANSFORM", "id":114, "size":262144, "time":878300662589887 }
+{ "type":"BEFORE_TRANSFORM", "id":115, "size":262144, "time":878300662601473 }
+{ "type":"AFTER_TRANSFORM", "id":113, "size":123373, "time":878300852995883 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":113, "size":123373, "time":878300853086101 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":115, "size":112076, "time":878300903243725 } [240 ms]
+{ "type":"BEFORE_ENTROPY", "id":115, "size":112076, "time":878300903324584 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":114, "size":114042, "time":878300939175168 } [276 ms]
+{ "type":"BEFORE_ENTROPY", "id":114, "size":114042, "time":878300939269850 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":112, "size":124891, "time":878301024614370 } [362 ms]
+{ "type":"BEFORE_ENTROPY", "id":112, "size":124891, "time":878301024707662 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":111, "size":124122, "time":878301028468268 } [365 ms]
+{ "type":"BEFORE_ENTROPY", "id":111, "size":124122, "time":878301028567215 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":111, "size":105981, "time":878301048744489 } [20 ms]
+Block 111: 262144 => 124122 [365 ms] => 105981 [20 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":112, "size":106303, "time":878301061342987 } [36 ms]
+Block 112: 262144 => 124891 [362 ms] => 106303 [36 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":113, "size":105740, "time":878301072709417 } [219 ms]
+Block 113: 262144 => 123373 [190 ms] => 105740 [219 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":114, "size":96335, "time":878301072808106 } [133 ms]
+Block 114: 262144 => 114042 [276 ms] => 96335 [133 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":115, "size":95121, "time":878301078026501 } [174 ms]
+Block 115: 262144 => 112076 [240 ms] => 95121 [174 ms] (36%)
+{ "type":"BEFORE_TRANSFORM", "id":116, "size":262144, "time":878301083382562 }
+{ "type":"BEFORE_TRANSFORM", "id":117, "size":262144, "time":878301083399931 }
+{ "type":"BEFORE_TRANSFORM", "id":118, "size":262144, "time":878301083467948 }
+{ "type":"BEFORE_TRANSFORM", "id":119, "size":262144, "time":878301083485075 }
+{ "type":"BEFORE_TRANSFORM", "id":120, "size":262144, "time":878301083496989 }
+{ "type":"AFTER_TRANSFORM", "id":118, "size":119299, "time":878301269455739 } [185 ms]
+{ "type":"BEFORE_ENTROPY", "id":118, "size":119299, "time":878301269561855 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":120, "size":123304, "time":878301281544790 } [198 ms]
+{ "type":"BEFORE_ENTROPY", "id":120, "size":123304, "time":878301281597498 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":119, "size":117982, "time":878301431615888 } [348 ms]
+{ "type":"BEFORE_ENTROPY", "id":119, "size":117982, "time":878301431710192 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":116, "size":113652, "time":878301434045721 } [350 ms]
+{ "type":"BEFORE_ENTROPY", "id":116, "size":113652, "time":878301434102348 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":117, "size":118498, "time":878301444301297 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":117, "size":118498, "time":878301444375116 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":116, "size":97670, "time":878301450782509 } [16 ms]
+Block 116: 262144 => 113652 [350 ms] => 97670 [16 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":117, "size":101131, "time":878301462365986 } [17 ms]
+Block 117: 262144 => 118498 [360 ms] => 101131 [17 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":118, "size":102266, "time":878301473174244 } [203 ms]
+Block 118: 262144 => 119299 [185 ms] => 102266 [203 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":119, "size":101454, "time":878301478594076 } [46 ms]
+Block 119: 262144 => 117982 [348 ms] => 101454 [46 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":120, "size":105564, "time":878301483905794 } [202 ms]
+Block 120: 262144 => 123304 [198 ms] => 105564 [202 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":121, "size":262144, "time":878301490070848 }
+{ "type":"BEFORE_TRANSFORM", "id":122, "size":262144, "time":878301490087446 }
+{ "type":"BEFORE_TRANSFORM", "id":124, "size":262144, "time":878301490117517 }
+{ "type":"BEFORE_TRANSFORM", "id":125, "size":262144, "time":878301490129358 }
+{ "type":"BEFORE_TRANSFORM", "id":123, "size":262144, "time":878301490099403 }
+{ "type":"AFTER_TRANSFORM", "id":123, "size":118006, "time":878301678848782 } [188 ms]
+{ "type":"BEFORE_ENTROPY", "id":123, "size":118006, "time":878301678941589 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":125, "size":108239, "time":878301681207433 } [191 ms]
+{ "type":"BEFORE_ENTROPY", "id":125, "size":108239, "time":878301681257562 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":121, "size":114826, "time":878301838395032 } [348 ms]
+{ "type":"BEFORE_ENTROPY", "id":121, "size":114826, "time":878301838494545 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":124, "size":120193, "time":878301840137559 } [350 ms]
+{ "type":"BEFORE_ENTROPY", "id":124, "size":120193, "time":878301840188254 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":122, "size":118485, "time":878301846076791 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":122, "size":118485, "time":878301846159170 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":121, "size":97943, "time":878301855118998 } [16 ms]
+Block 121: 262144 => 114826 [348 ms] => 97943 [16 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":122, "size":101840, "time":878301866296257 } [20 ms]
+Block 122: 262144 => 118485 [355 ms] => 101840 [20 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":123, "size":100134, "time":878301877182460 } [198 ms]
+Block 123: 262144 => 118006 [188 ms] => 100134 [198 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":124, "size":103018, "time":878301882460818 } [42 ms]
+Block 124: 262144 => 120193 [350 ms] => 103018 [42 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":125, "size":93594, "time":878301882544476 } [201 ms]
+Block 125: 262144 => 108239 [191 ms] => 93594 [201 ms] (35%)
+{ "type":"BEFORE_TRANSFORM", "id":126, "size":262144, "time":878301888084271 }
+{ "type":"BEFORE_TRANSFORM", "id":127, "size":262144, "time":878301888101866 }
+{ "type":"BEFORE_TRANSFORM", "id":128, "size":262144, "time":878301888167733 }
+{ "type":"BEFORE_TRANSFORM", "id":129, "size":262144, "time":878301888178438 }
+{ "type":"BEFORE_TRANSFORM", "id":130, "size":262144, "time":878301888190505 }
+{ "type":"AFTER_TRANSFORM", "id":128, "size":120881, "time":878302089377935 } [201 ms]
+{ "type":"BEFORE_ENTROPY", "id":128, "size":120881, "time":878302089499250 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":130, "size":124986, "time":878302098194255 } [210 ms]
+{ "type":"BEFORE_ENTROPY", "id":130, "size":124986, "time":878302098255025 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":126, "size":113364, "time":878302182854779 } [294 ms]
+{ "type":"BEFORE_ENTROPY", "id":126, "size":113364, "time":878302182958867 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":126, "size":96988, "time":878302198254277 } [15 ms]
+Block 126: 262144 => 113364 [294 ms] => 96988 [15 ms] (36%)
+{ "type":"AFTER_TRANSFORM", "id":127, "size":114803, "time":878302233833261 } [345 ms]
+{ "type":"BEFORE_ENTROPY", "id":127, "size":114803, "time":878302233911256 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":127, "size":98863, "time":878302246804002 } [12 ms]
+Block 127: 262144 => 114803 [345 ms] => 98863 [12 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":128, "size":103580, "time":878302256456119 } [166 ms]
+Block 128: 262144 => 120881 [201 ms] => 103580 [166 ms] (39%)
+{ "type":"AFTER_TRANSFORM", "id":129, "size":122380, "time":878302268426866 } [380 ms]
+{ "type":"BEFORE_ENTROPY", "id":129, "size":122380, "time":878302268514425 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":129, "size":103993, "time":878302277784474 } [9 ms]
+Block 129: 262144 => 122380 [380 ms] => 103993 [9 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":130, "size":107147, "time":878302283310423 } [185 ms]
+Block 130: 262144 => 124986 [210 ms] => 107147 [185 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":131, "size":262144, "time":878302290229171 }
+{ "type":"BEFORE_TRANSFORM", "id":132, "size":262144, "time":878302290287575 }
+{ "type":"BEFORE_TRANSFORM", "id":133, "size":262144, "time":878302290369882 }
+{ "type":"BEFORE_TRANSFORM", "id":134, "size":262144, "time":878302290388003 }
+{ "type":"BEFORE_TRANSFORM", "id":135, "size":262144, "time":878302290398391 }
+{ "type":"AFTER_TRANSFORM", "id":132, "size":121338, "time":878302520017461 } [229 ms]
+{ "type":"BEFORE_ENTROPY", "id":132, "size":121338, "time":878302520110053 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":134, "size":119974, "time":878302641352101 } [350 ms]
+{ "type":"BEFORE_ENTROPY", "id":134, "size":119974, "time":878302641451389 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":133, "size":120716, "time":878302643043529 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":133, "size":120716, "time":878302643105093 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":131, "size":113645, "time":878302653001810 } [362 ms]
+{ "type":"BEFORE_ENTROPY", "id":131, "size":113645, "time":878302653083325 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":135, "size":120077, "time":878302656987463 } [366 ms]
+{ "type":"BEFORE_ENTROPY", "id":135, "size":120077, "time":878302657039440 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":131, "size":96574, "time":878302669438028 } [16 ms]
+Block 131: 262144 => 113645 [362 ms] => 96574 [16 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":132, "size":104439, "time":878302669552995 } [149 ms]
+Block 132: 262144 => 121338 [229 ms] => 104439 [149 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":133, "size":103568, "time":878302675016734 } [31 ms]
+Block 133: 262144 => 120716 [352 ms] => 103568 [31 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":134, "size":103385, "time":878302675385083 } [33 ms]
+Block 134: 262144 => 119974 [350 ms] => 103385 [33 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":135, "size":101896, "time":878302680851614 } [23 ms]
+Block 135: 262144 => 120077 [366 ms] => 101896 [23 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":136, "size":262144, "time":878302686743187 }
+{ "type":"BEFORE_TRANSFORM", "id":137, "size":262144, "time":878302686799844 }
+{ "type":"BEFORE_TRANSFORM", "id":138, "size":262144, "time":878302686821097 }
+{ "type":"BEFORE_TRANSFORM", "id":139, "size":262144, "time":878302686832651 }
+{ "type":"BEFORE_TRANSFORM", "id":140, "size":262144, "time":878302686842889 }
+{ "type":"AFTER_TRANSFORM", "id":137, "size":117036, "time":878302876687536 } [189 ms]
+{ "type":"BEFORE_ENTROPY", "id":137, "size":117036, "time":878302876783766 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":139, "size":117508, "time":878303034965241 } [348 ms]
+{ "type":"BEFORE_ENTROPY", "id":139, "size":117508, "time":878303035061729 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":140, "size":118203, "time":878303036563182 } [349 ms]
+{ "type":"BEFORE_ENTROPY", "id":140, "size":118203, "time":878303036621013 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":138, "size":122986, "time":878303042978063 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":138, "size":122986, "time":878303043045351 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":136, "size":124093, "time":878303050548426 } [363 ms]
+{ "type":"BEFORE_ENTROPY", "id":136, "size":124093, "time":878303050631367 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":136, "size":106010, "time":878303070393587 } [19 ms]
+Block 136: 262144 => 124093 [363 ms] => 106010 [19 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":137, "size":100297, "time":878303070516059 } [193 ms]
+Block 137: 262144 => 117036 [189 ms] => 100297 [193 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":138, "size":105444, "time":878303075723553 } [32 ms]
+Block 138: 262144 => 122986 [356 ms] => 105444 [32 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":139, "size":100270, "time":878303088518375 } [53 ms]
+Block 139: 262144 => 117508 [348 ms] => 100270 [53 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":140, "size":101073, "time":878303093750286 } [57 ms]
+Block 140: 262144 => 118203 [349 ms] => 101073 [57 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":141, "size":262144, "time":878303099654956 }
+{ "type":"BEFORE_TRANSFORM", "id":142, "size":262144, "time":878303099713685 }
+{ "type":"BEFORE_TRANSFORM", "id":143, "size":262144, "time":878303099734688 }
+{ "type":"BEFORE_TRANSFORM", "id":144, "size":262144, "time":878303099747484 }
+{ "type":"BEFORE_TRANSFORM", "id":145, "size":262144, "time":878303099756589 }
+{ "type":"AFTER_TRANSFORM", "id":141, "size":122277, "time":878303314809067 } [215 ms]
+{ "type":"BEFORE_ENTROPY", "id":141, "size":122277, "time":878303314896220 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":141, "size":104701, "time":878303324107539 } [9 ms]
+Block 141: 262144 => 122277 [215 ms] => 104701 [9 ms] (39%)
+{ "type":"AFTER_TRANSFORM", "id":143, "size":117227, "time":878303423571835 } [323 ms]
+{ "type":"BEFORE_ENTROPY", "id":143, "size":117227, "time":878303423662793 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":144, "size":121020, "time":878303423731144 } [323 ms]
+{ "type":"BEFORE_ENTROPY", "id":144, "size":121020, "time":878303423780769 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":142, "size":119081, "time":878303452734291 } [353 ms]
+{ "type":"BEFORE_ENTROPY", "id":142, "size":119081, "time":878303452831504 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":145, "size":120980, "time":878303465433467 } [365 ms]
+{ "type":"BEFORE_ENTROPY", "id":145, "size":120980, "time":878303465496575 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":142, "size":102316, "time":878303469983519 } [17 ms]
+Block 142: 262144 => 119081 [353 ms] => 102316 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":143, "size":99724, "time":878303480789665 } [57 ms]
+Block 143: 262144 => 117227 [323 ms] => 99724 [57 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":144, "size":103516, "time":878303481015671 } [57 ms]
+Block 144: 262144 => 121020 [323 ms] => 103516 [57 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":145, "size":103621, "time":878303486458119 } [20 ms]
+Block 145: 262144 => 120980 [365 ms] => 103621 [20 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":146, "size":262144, "time":878303492363579 }
+{ "type":"BEFORE_TRANSFORM", "id":147, "size":262144, "time":878303492420524 }
+{ "type":"BEFORE_TRANSFORM", "id":148, "size":262144, "time":878303492442450 }
+{ "type":"BEFORE_TRANSFORM", "id":149, "size":262144, "time":878303492456777 }
+{ "type":"BEFORE_TRANSFORM", "id":150, "size":262144, "time":878303492466031 }
+{ "type":"AFTER_TRANSFORM", "id":148, "size":124419, "time":878303680867033 } [188 ms]
+{ "type":"BEFORE_ENTROPY", "id":148, "size":124419, "time":878303681005069 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":150, "size":123499, "time":878303773273629 } [280 ms]
+{ "type":"BEFORE_ENTROPY", "id":150, "size":123499, "time":878303773350586 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":149, "size":121268, "time":878303776871545 } [284 ms]
+{ "type":"BEFORE_ENTROPY", "id":149, "size":121268, "time":878303776918834 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":147, "size":117038, "time":878303850019763 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":147, "size":117038, "time":878303850120618 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":146, "size":119644, "time":878303855193441 } [362 ms]
+{ "type":"BEFORE_ENTROPY", "id":146, "size":119644, "time":878303855251132 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":146, "size":101999, "time":878303873315271 } [18 ms]
+Block 146: 262144 => 119644 [362 ms] => 101999 [18 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":147, "size":100033, "time":878303885402765 } [35 ms]
+Block 147: 262144 => 117038 [357 ms] => 100033 [35 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":148, "size":106265, "time":878303890615894 } [209 ms]
+Block 148: 262144 => 124419 [188 ms] => 106265 [209 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":149, "size":103422, "time":878303901806589 } [124 ms]
+Block 149: 262144 => 121268 [284 ms] => 103422 [124 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":150, "size":105446, "time":878303901885649 } [128 ms]
+Block 150: 262144 => 123499 [280 ms] => 105446 [128 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":151, "size":262144, "time":878303907949360 }
+{ "type":"BEFORE_TRANSFORM", "id":153, "size":262144, "time":878303907976975 }
+{ "type":"BEFORE_TRANSFORM", "id":152, "size":262144, "time":878303907960270 }
+{ "type":"BEFORE_TRANSFORM", "id":154, "size":262144, "time":878303908033041 }
+{ "type":"BEFORE_TRANSFORM", "id":155, "size":262144, "time":878303908048373 }
+{ "type":"AFTER_TRANSFORM", "id":155, "size":123722, "time":878304097934846 } [189 ms]
+{ "type":"BEFORE_ENTROPY", "id":155, "size":123722, "time":878304098033712 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":154, "size":120531, "time":878304098073456 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":154, "size":120531, "time":878304098125228 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":153, "size":83196, "time":878304236222354 } [328 ms]
+{ "type":"BEFORE_ENTROPY", "id":153, "size":83196, "time":878304236323346 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":151, "size":107014, "time":878304260531504 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":151, "size":107014, "time":878304260628135 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":152, "size":125617, "time":878304264395176 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":152, "size":125617, "time":878304264447781 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":151, "size":91125, "time":878304276128338 } [15 ms]
+Block 151: 262144 => 107014 [352 ms] => 91125 [15 ms] (34%)
+{ "type":"AFTER_ENTROPY", "id":152, "size":107213, "time":878304286115063 } [21 ms]
+Block 152: 262144 => 125617 [356 ms] => 107213 [21 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":153, "size":69594, "time":878304291687790 } [55 ms]
+Block 153: 262144 => 83196 [328 ms] => 69594 [55 ms] (26%)
+{ "type":"AFTER_ENTROPY", "id":154, "size":103591, "time":878304299124870 } [200 ms]
+Block 154: 262144 => 120531 [190 ms] => 103591 [200 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":155, "size":105534, "time":878304299206456 } [201 ms]
+Block 155: 262144 => 123722 [189 ms] => 105534 [201 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":156, "size":262144, "time":878304305164092 }
+{ "type":"BEFORE_TRANSFORM", "id":158, "size":262144, "time":878304305216490 }
+{ "type":"BEFORE_TRANSFORM", "id":159, "size":262144, "time":878304305237924 }
+{ "type":"BEFORE_TRANSFORM", "id":157, "size":262144, "time":878304305187896 }
+{ "type":"BEFORE_TRANSFORM", "id":160, "size":262144, "time":878304305246191 }
+{ "type":"AFTER_TRANSFORM", "id":160, "size":120078, "time":878304498086964 } [192 ms]
+{ "type":"BEFORE_ENTROPY", "id":160, "size":120078, "time":878304498177690 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":159, "size":131204, "time":878304508734208 } [203 ms]
+{ "type":"BEFORE_ENTROPY", "id":159, "size":131204, "time":878304508787667 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":157, "size":121164, "time":878304653893744 } [348 ms]
+{ "type":"BEFORE_ENTROPY", "id":157, "size":121164, "time":878304653991868 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":158, "size":121456, "time":878304657540724 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":158, "size":121456, "time":878304657604139 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":156, "size":120372, "time":878304661642683 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":156, "size":120372, "time":878304661706986 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":156, "size":102814, "time":878304680199352 } [18 ms]
+Block 156: 262144 => 120372 [356 ms] => 102814 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":157, "size":103522, "time":878304692596289 } [38 ms]
+Block 157: 262144 => 121164 [348 ms] => 103522 [38 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":158, "size":104065, "time":878304697947091 } [40 ms]
+Block 158: 262144 => 121456 [352 ms] => 104065 [40 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":159, "size":109888, "time":878304708872188 } [200 ms]
+Block 159: 262144 => 131204 [203 ms] => 109888 [200 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":160, "size":100690, "time":878304714746573 } [216 ms]
+Block 160: 262144 => 120078 [192 ms] => 100690 [216 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":161, "size":262144, "time":878304720341136 }
+{ "type":"BEFORE_TRANSFORM", "id":162, "size":262144, "time":878304720352798 }
+{ "type":"BEFORE_TRANSFORM", "id":163, "size":262144, "time":878304720368254 }
+{ "type":"BEFORE_TRANSFORM", "id":164, "size":262144, "time":878304720424587 }
+{ "type":"BEFORE_TRANSFORM", "id":165, "size":262144, "time":878304720440014 }
+{ "type":"AFTER_TRANSFORM", "id":165, "size":123079, "time":878304912226431 } [191 ms]
+{ "type":"BEFORE_ENTROPY", "id":165, "size":123079, "time":878304912320415 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":164, "size":125136, "time":878304920767420 } [200 ms]
+{ "type":"BEFORE_ENTROPY", "id":164, "size":125136, "time":878304920835391 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":162, "size":120532, "time":878305072429257 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":162, "size":120532, "time":878305072527710 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":161, "size":119250, "time":878305075367742 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":161, "size":119250, "time":878305075421059 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":163, "size":127320, "time":878305079599348 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":163, "size":127320, "time":878305079658775 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":161, "size":101943, "time":878305093456498 } [18 ms]
+Block 161: 262144 => 119250 [355 ms] => 101943 [18 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":162, "size":103273, "time":878305105776838 } [33 ms]
+Block 162: 262144 => 120532 [352 ms] => 103273 [33 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":163, "size":108245, "time":878305111178475 } [31 ms]
+Block 163: 262144 => 127320 [359 ms] => 108245 [31 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":164, "size":107163, "time":878305122629047 } [201 ms]
+Block 164: 262144 => 125136 [200 ms] => 107163 [201 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":165, "size":105175, "time":878305128285466 } [215 ms]
+Block 165: 262144 => 123079 [191 ms] => 105175 [215 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":166, "size":262144, "time":878305136870392 }
+{ "type":"BEFORE_TRANSFORM", "id":168, "size":262144, "time":878305136912060 }
+{ "type":"BEFORE_TRANSFORM", "id":167, "size":262144, "time":878305136893785 }
+{ "type":"BEFORE_TRANSFORM", "id":170, "size":262144, "time":878305136961026 }
+{ "type":"BEFORE_TRANSFORM", "id":169, "size":262144, "time":878305136946670 }
+{ "type":"AFTER_TRANSFORM", "id":170, "size":118361, "time":878305376503711 } [239 ms]
+{ "type":"BEFORE_ENTROPY", "id":170, "size":118361, "time":878305376592689 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":167, "size":121448, "time":878305415010312 } [278 ms]
+{ "type":"BEFORE_ENTROPY", "id":167, "size":121448, "time":878305415107223 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":168, "size":121574, "time":878305489857894 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":168, "size":121574, "time":878305489954561 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":169, "size":104226, "time":878305493910370 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":169, "size":104226, "time":878305493969756 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":166, "size":121257, "time":878305494575725 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":166, "size":121257, "time":878305494624860 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":166, "size":103726, "time":878305512652276 } [18 ms]
+Block 166: 262144 => 121257 [357 ms] => 103726 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":167, "size":103282, "time":878305513019667 } [97 ms]
+Block 167: 262144 => 121448 [278 ms] => 103282 [97 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":168, "size":104565, "time":878305519151731 } [29 ms]
+Block 168: 262144 => 121574 [352 ms] => 104565 [29 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":169, "size":88585, "time":878305530184135 } [36 ms]
+Block 169: 262144 => 104226 [356 ms] => 88585 [36 ms] (33%)
+{ "type":"AFTER_ENTROPY", "id":170, "size":100822, "time":878305534957103 } [158 ms]
+Block 170: 262144 => 118361 [239 ms] => 100822 [158 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":171, "size":262144, "time":878305535580051 }
+{ "type":"BEFORE_TRANSFORM", "id":172, "size":262144, "time":878305535605576 }
+{ "type":"BEFORE_TRANSFORM", "id":173, "size":262144, "time":878305535636768 }
+{ "type":"BEFORE_TRANSFORM", "id":175, "size":262144, "time":878305535668009 }
+{ "type":"BEFORE_TRANSFORM", "id":174, "size":262144, "time":878305535658734 }
+{ "type":"AFTER_TRANSFORM", "id":174, "size":117103, "time":878305743072011 } [207 ms]
+{ "type":"BEFORE_ENTROPY", "id":174, "size":117103, "time":878305743162979 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":175, "size":120417, "time":878305780755413 } [245 ms]
+{ "type":"BEFORE_ENTROPY", "id":175, "size":120417, "time":878305780835176 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":173, "size":123767, "time":878305889657608 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":173, "size":123767, "time":878305889760839 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":172, "size":124344, "time":878305893751145 } [358 ms]
+{ "type":"BEFORE_ENTROPY", "id":172, "size":124344, "time":878305893811453 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":171, "size":121049, "time":878305897751295 } [362 ms]
+{ "type":"BEFORE_ENTROPY", "id":171, "size":121049, "time":878305897804374 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":171, "size":103536, "time":878305915784931 } [17 ms]
+Block 171: 262144 => 121049 [362 ms] => 103536 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":172, "size":106603, "time":878305928089625 } [34 ms]
+Block 172: 262144 => 124344 [358 ms] => 106603 [34 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":173, "size":105800, "time":878305928166099 } [38 ms]
+Block 173: 262144 => 123767 [354 ms] => 105800 [38 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":174, "size":99942, "time":878305939017236 } [195 ms]
+Block 174: 262144 => 117103 [207 ms] => 99942 [195 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":175, "size":102601, "time":878305946858335 } [166 ms]
+Block 175: 262144 => 120417 [245 ms] => 102601 [166 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":176, "size":262144, "time":878305952752593 }
+{ "type":"BEFORE_TRANSFORM", "id":178, "size":262144, "time":878305952796295 }
+{ "type":"BEFORE_TRANSFORM", "id":179, "size":262144, "time":878305952828848 }
+{ "type":"BEFORE_TRANSFORM", "id":177, "size":262144, "time":878305952775680 }
+{ "type":"BEFORE_TRANSFORM", "id":180, "size":262144, "time":878305952844681 }
+{ "type":"AFTER_TRANSFORM", "id":179, "size":119491, "time":878306140509371 } [187 ms]
+{ "type":"BEFORE_ENTROPY", "id":179, "size":119491, "time":878306140601113 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":180, "size":119229, "time":878306149080356 } [196 ms]
+{ "type":"BEFORE_ENTROPY", "id":180, "size":119229, "time":878306149128074 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":177, "size":118286, "time":878306299473206 } [346 ms]
+{ "type":"BEFORE_ENTROPY", "id":177, "size":118286, "time":878306299569059 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":178, "size":117298, "time":878306303052584 } [350 ms]
+{ "type":"BEFORE_ENTROPY", "id":178, "size":117298, "time":878306303117990 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":176, "size":121256, "time":878306307877237 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":176, "size":121256, "time":878306307927873 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":176, "size":103928, "time":878306326630361 } [18 ms]
+Block 176: 262144 => 121256 [355 ms] => 103928 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":177, "size":101216, "time":878306339124253 } [39 ms]
+Block 177: 262144 => 118286 [346 ms] => 101216 [39 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":178, "size":100357, "time":878306344385838 } [41 ms]
+Block 178: 262144 => 117298 [350 ms] => 100357 [41 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":179, "size":102618, "time":878306354680177 } [214 ms]
+Block 179: 262144 => 119491 [187 ms] => 102618 [214 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":180, "size":101702, "time":878306360149966 } [211 ms]
+Block 180: 262144 => 119229 [196 ms] => 101702 [211 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":181, "size":262144, "time":878306367732557 }
+{ "type":"BEFORE_TRANSFORM", "id":183, "size":262144, "time":878306367775973 }
+{ "type":"BEFORE_TRANSFORM", "id":182, "size":262144, "time":878306367756384 }
+{ "type":"BEFORE_TRANSFORM", "id":185, "size":262144, "time":878306367819081 }
+{ "type":"BEFORE_TRANSFORM", "id":184, "size":262144, "time":878306367803930 }
+{ "type":"AFTER_TRANSFORM", "id":185, "size":118572, "time":878306559189389 } [191 ms]
+{ "type":"BEFORE_ENTROPY", "id":185, "size":118572, "time":878306559277820 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":184, "size":120784, "time":878306563702259 } [195 ms]
+{ "type":"BEFORE_ENTROPY", "id":184, "size":120784, "time":878306563763052 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":182, "size":118430, "time":878306722565587 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":182, "size":118430, "time":878306722661881 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":181, "size":124050, "time":878306732253987 } [364 ms]
+{ "type":"BEFORE_ENTROPY", "id":181, "size":124050, "time":878306732309733 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":183, "size":120715, "time":878306746701148 } [378 ms]
+{ "type":"BEFORE_ENTROPY", "id":183, "size":120715, "time":878306746780885 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":181, "size":105896, "time":878306751608912 } [19 ms]
+Block 181: 262144 => 124050 [364 ms] => 105896 [19 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":182, "size":101042, "time":878306764351311 } [41 ms]
+Block 182: 262144 => 118430 [354 ms] => 101042 [41 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":183, "size":103274, "time":878306770520290 } [23 ms]
+Block 183: 262144 => 120715 [378 ms] => 103274 [23 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":184, "size":103167, "time":878306782867118 } [219 ms]
+Block 184: 262144 => 120784 [195 ms] => 103167 [219 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":185, "size":100974, "time":878306788447928 } [229 ms]
+Block 185: 262144 => 118572 [191 ms] => 100974 [229 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":187, "size":262144, "time":878306794233746 }
+{ "type":"BEFORE_TRANSFORM", "id":188, "size":262144, "time":878306794258818 }
+{ "type":"BEFORE_TRANSFORM", "id":190, "size":262144, "time":878306794277840 }
+{ "type":"BEFORE_TRANSFORM", "id":186, "size":262144, "time":878306794210688 }
+{ "type":"BEFORE_TRANSFORM", "id":189, "size":262144, "time":878306794271241 }
+{ "type":"AFTER_TRANSFORM", "id":190, "size":116923, "time":878306984672286 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":190, "size":116923, "time":878306984778624 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":188, "size":117528, "time":878307143084028 } [348 ms]
+{ "type":"BEFORE_ENTROPY", "id":188, "size":117528, "time":878307143179796 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":189, "size":108068, "time":878307144974027 } [350 ms]
+{ "type":"BEFORE_ENTROPY", "id":189, "size":108068, "time":878307145025741 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":187, "size":121883, "time":878307147329446 } [353 ms]
+{ "type":"BEFORE_ENTROPY", "id":187, "size":121883, "time":878307147390384 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":186, "size":121390, "time":878307154895772 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":186, "size":121390, "time":878307154951170 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":186, "size":103918, "time":878307175428977 } [20 ms]
+Block 186: 262144 => 121390 [360 ms] => 103918 [20 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":187, "size":104780, "time":878307188271632 } [40 ms]
+Block 187: 262144 => 121883 [353 ms] => 104780 [40 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":188, "size":100699, "time":878307193739646 } [50 ms]
+Block 188: 262144 => 117528 [348 ms] => 100699 [50 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":189, "size":92927, "time":878307205509481 } [60 ms]
+Block 189: 262144 => 108068 [350 ms] => 92927 [60 ms] (35%)
+{ "type":"AFTER_ENTROPY", "id":190, "size":99924, "time":878307210593809 } [225 ms]
+Block 190: 262144 => 116923 [190 ms] => 99924 [225 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":191, "size":262144, "time":878307216261769 }
+{ "type":"BEFORE_TRANSFORM", "id":193, "size":262144, "time":878307216285788 }
+{ "type":"BEFORE_TRANSFORM", "id":195, "size":262144, "time":878307216319822 }
+{ "type":"BEFORE_TRANSFORM", "id":192, "size":262144, "time":878307216271183 }
+{ "type":"BEFORE_TRANSFORM", "id":194, "size":262144, "time":878307216292540 }
+{ "type":"AFTER_TRANSFORM", "id":195, "size":123275, "time":878307412558254 } [196 ms]
+{ "type":"BEFORE_ENTROPY", "id":195, "size":123275, "time":878307412648005 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":192, "size":123654, "time":878307576026818 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":192, "size":123654, "time":878307576124720 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":191, "size":122471, "time":878307576797550 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":191, "size":122471, "time":878307576849844 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":194, "size":125853, "time":878307579397151 } [363 ms]
+{ "type":"BEFORE_ENTROPY", "id":194, "size":125853, "time":878307579460788 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":193, "size":120036, "time":878307579880679 } [363 ms]
+{ "type":"BEFORE_ENTROPY", "id":193, "size":120036, "time":878307579931243 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":191, "size":104436, "time":878307595060796 } [18 ms]
+Block 191: 262144 => 122471 [360 ms] => 104436 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":192, "size":105120, "time":878307607375941 } [31 ms]
+Block 192: 262144 => 123654 [359 ms] => 105120 [31 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":193, "size":101778, "time":878307612991209 } [33 ms]
+Block 193: 262144 => 120036 [363 ms] => 101778 [33 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":194, "size":107156, "time":878307624611869 } [45 ms]
+Block 194: 262144 => 125853 [363 ms] => 107156 [45 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":195, "size":105150, "time":878307624810719 } [212 ms]
+Block 195: 262144 => 123275 [196 ms] => 105150 [212 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":196, "size":262144, "time":878307630617148 }
+{ "type":"BEFORE_TRANSFORM", "id":197, "size":262144, "time":878307630626997 }
+{ "type":"BEFORE_TRANSFORM", "id":198, "size":262144, "time":878307630708215 }
+{ "type":"BEFORE_TRANSFORM", "id":199, "size":262144, "time":878307630721148 }
+{ "type":"BEFORE_TRANSFORM", "id":200, "size":262144, "time":878307630731860 }
+{ "type":"AFTER_TRANSFORM", "id":200, "size":125224, "time":878307828989106 } [198 ms]
+{ "type":"BEFORE_ENTROPY", "id":200, "size":125224, "time":878307829078454 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":199, "size":117382, "time":878307985487278 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":199, "size":117382, "time":878307985597411 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":197, "size":122348, "time":878307986329781 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":197, "size":122348, "time":878307986387932 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":196, "size":121178, "time":878307988059909 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":196, "size":121178, "time":878307988122158 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":198, "size":121361, "time":878308000227665 } [369 ms]
+{ "type":"BEFORE_ENTROPY", "id":198, "size":121361, "time":878308000326161 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":196, "size":103634, "time":878308005710485 } [17 ms]
+Block 196: 262144 => 121178 [357 ms] => 103634 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":197, "size":104529, "time":878308022994196 } [36 ms]
+Block 197: 262144 => 122348 [355 ms] => 104529 [36 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":198, "size":101864, "time":878308032875618 } [32 ms]
+Block 198: 262144 => 121361 [369 ms] => 101864 [32 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":199, "size":100000, "time":878308045033229 } [59 ms]
+Block 199: 262144 => 117382 [354 ms] => 100000 [59 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":200, "size":106522, "time":878308050724089 } [221 ms]
+Block 200: 262144 => 125224 [198 ms] => 106522 [221 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":201, "size":262144, "time":878308057342527 }
+{ "type":"BEFORE_TRANSFORM", "id":203, "size":262144, "time":878308057410443 }
+{ "type":"BEFORE_TRANSFORM", "id":204, "size":262144, "time":878308057426999 }
+{ "type":"BEFORE_TRANSFORM", "id":205, "size":262144, "time":878308057437275 }
+{ "type":"BEFORE_TRANSFORM", "id":202, "size":262144, "time":878308057391790 }
+{ "type":"AFTER_TRANSFORM", "id":203, "size":124709, "time":878308358518262 } [301 ms]
+{ "type":"BEFORE_ENTROPY", "id":203, "size":124709, "time":878308358619646 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":201, "size":121951, "time":878308372249266 } [314 ms]
+{ "type":"BEFORE_ENTROPY", "id":201, "size":121951, "time":878308372306458 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":201, "size":104079, "time":878308382255575 } [9 ms]
+Block 201: 262144 => 121951 [314 ms] => 104079 [9 ms] (39%)
+{ "type":"AFTER_TRANSFORM", "id":205, "size":125054, "time":878308414962461 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":205, "size":125054, "time":878308415086554 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":202, "size":123733, "time":878308432199809 } [374 ms]
+{ "type":"BEFORE_ENTROPY", "id":202, "size":123733, "time":878308432267821 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":202, "size":106214, "time":878308450354420 } [18 ms]
+Block 202: 262144 => 123733 [374 ms] => 106214 [18 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":203, "size":106603, "time":878308461825720 } [103 ms]
+Block 203: 262144 => 124709 [301 ms] => 106603 [103 ms] (40%)
+{ "type":"AFTER_TRANSFORM", "id":204, "size":125608, "time":878308471810678 } [414 ms]
+{ "type":"BEFORE_ENTROPY", "id":204, "size":125608, "time":878308471878523 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":204, "size":106831, "time":878308492322994 } [20 ms]
+Block 204: 262144 => 125608 [414 ms] => 106831 [20 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":205, "size":106768, "time":878308505050309 } [89 ms]
+Block 205: 262144 => 125054 [357 ms] => 106768 [89 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":206, "size":262144, "time":878308510958260 }
+{ "type":"BEFORE_TRANSFORM", "id":207, "size":262144, "time":878308510976945 }
+{ "type":"BEFORE_TRANSFORM", "id":208, "size":262144, "time":878308511023281 }
+{ "type":"BEFORE_TRANSFORM", "id":209, "size":262144, "time":878308511033552 }
+{ "type":"BEFORE_TRANSFORM", "id":210, "size":262144, "time":878308511042476 }
+{ "type":"AFTER_TRANSFORM", "id":209, "size":123118, "time":878308701969668 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":209, "size":123118, "time":878308702075205 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":208, "size":126751, "time":878308704556697 } [193 ms]
+{ "type":"BEFORE_ENTROPY", "id":208, "size":126751, "time":878308704605163 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":210, "size":121520, "time":878308872149883 } [361 ms]
+{ "type":"AFTER_TRANSFORM", "id":206, "size":122582, "time":878308872250963 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":210, "size":121520, "time":878308872264522 } [0 ms]
+{ "type":"BEFORE_ENTROPY", "id":206, "size":122582, "time":878308872309312 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":207, "size":121819, "time":878308876137896 } [365 ms]
+{ "type":"BEFORE_ENTROPY", "id":207, "size":121819, "time":878308876195902 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":206, "size":104050, "time":878308890110285 } [17 ms]
+Block 206: 262144 => 122582 [361 ms] => 104050 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":207, "size":104460, "time":878308902340295 } [26 ms]
+Block 207: 262144 => 121819 [365 ms] => 104460 [26 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":208, "size":107640, "time":878308913453922 } [208 ms]
+Block 208: 262144 => 126751 [193 ms] => 107640 [208 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":209, "size":105731, "time":878308919017582 } [216 ms]
+Block 209: 262144 => 123118 [190 ms] => 105731 [216 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":210, "size":103881, "time":878308924748196 } [52 ms]
+Block 210: 262144 => 121520 [361 ms] => 103881 [52 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":211, "size":262144, "time":878308930534036 }
+{ "type":"BEFORE_TRANSFORM", "id":212, "size":262144, "time":878308930564026 }
+{ "type":"BEFORE_TRANSFORM", "id":213, "size":262144, "time":878308930580668 }
+{ "type":"BEFORE_TRANSFORM", "id":215, "size":262144, "time":878308930602632 }
+{ "type":"BEFORE_TRANSFORM", "id":214, "size":262144, "time":878308930593643 }
+{ "type":"AFTER_TRANSFORM", "id":213, "size":123270, "time":878309120139214 } [189 ms]
+{ "type":"BEFORE_ENTROPY", "id":213, "size":123270, "time":878309120224278 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":214, "size":118565, "time":878309121312933 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":214, "size":118565, "time":878309121363385 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":211, "size":121062, "time":878309282398056 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":211, "size":121062, "time":878309282498756 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":215, "size":124234, "time":878309290613728 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":215, "size":124234, "time":878309290714394 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":211, "size":103485, "time":878309300046700 } [17 ms]
+Block 211: 262144 => 121062 [351 ms] => 103485 [17 ms] (39%)
+{ "type":"AFTER_TRANSFORM", "id":212, "size":122557, "time":878309301274386 } [370 ms]
+{ "type":"BEFORE_ENTROPY", "id":212, "size":122557, "time":878309301352697 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":212, "size":103928, "time":878309319094063 } [17 ms]
+Block 212: 262144 => 122557 [370 ms] => 103928 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":213, "size":105102, "time":878309330189801 } [209 ms]
+Block 213: 262144 => 123270 [189 ms] => 105102 [209 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":214, "size":101586, "time":878309335575843 } [214 ms]
+Block 214: 262144 => 118565 [190 ms] => 101586 [214 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":215, "size":106134, "time":878309341099098 } [50 ms]
+Block 215: 262144 => 124234 [360 ms] => 106134 [50 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":216, "size":262144, "time":878309352536394 }
+{ "type":"BEFORE_TRANSFORM", "id":217, "size":262144, "time":878309352564463 }
+{ "type":"BEFORE_TRANSFORM", "id":218, "size":262144, "time":878309352585226 }
+{ "type":"BEFORE_TRANSFORM", "id":219, "size":262144, "time":878309352601845 }
+{ "type":"BEFORE_TRANSFORM", "id":220, "size":262144, "time":878309352609829 }
+{ "type":"AFTER_TRANSFORM", "id":219, "size":115446, "time":878309602644671 } [250 ms]
+{ "type":"BEFORE_ENTROPY", "id":219, "size":115446, "time":878309602730183 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":218, "size":118497, "time":878309662063168 } [309 ms]
+{ "type":"BEFORE_ENTROPY", "id":218, "size":118497, "time":878309662155970 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":220, "size":117461, "time":878309730657477 } [378 ms]
+{ "type":"BEFORE_ENTROPY", "id":220, "size":117461, "time":878309730747631 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":216, "size":122606, "time":878309732500965 } [379 ms]
+{ "type":"BEFORE_ENTROPY", "id":216, "size":122606, "time":878309732558680 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":217, "size":125117, "time":878309749503612 } [396 ms]
+{ "type":"BEFORE_ENTROPY", "id":217, "size":125117, "time":878309749577756 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":216, "size":104415, "time":878309750588747 } [18 ms]
+Block 216: 262144 => 122606 [379 ms] => 104415 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":217, "size":106546, "time":878309770151662 } [20 ms]
+Block 217: 262144 => 125117 [396 ms] => 106546 [20 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":218, "size":100829, "time":878309783041061 } [120 ms]
+Block 218: 262144 => 118497 [309 ms] => 100829 [120 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":219, "size":98780, "time":878309789414768 } [186 ms]
+Block 219: 262144 => 115446 [250 ms] => 98780 [186 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":220, "size":100619, "time":878309794899449 } [64 ms]
+Block 220: 262144 => 117461 [378 ms] => 100619 [64 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":221, "size":262144, "time":878309800514481 }
+{ "type":"BEFORE_TRANSFORM", "id":222, "size":262144, "time":878309800586704 }
+{ "type":"BEFORE_TRANSFORM", "id":223, "size":262144, "time":878309800607798 }
+{ "type":"BEFORE_TRANSFORM", "id":224, "size":262144, "time":878309800620248 }
+{ "type":"BEFORE_TRANSFORM", "id":225, "size":262144, "time":878309800629710 }
+{ "type":"AFTER_TRANSFORM", "id":223, "size":111491, "time":878309981153495 } [180 ms]
+{ "type":"BEFORE_ENTROPY", "id":223, "size":111491, "time":878309981248239 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":222, "size":118682, "time":878309990828242 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":222, "size":118682, "time":878309990920790 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":224, "size":106698, "time":878310140358505 } [339 ms]
+{ "type":"BEFORE_ENTROPY", "id":224, "size":106698, "time":878310140456878 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":221, "size":124812, "time":878310155664701 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":221, "size":124812, "time":878310155718902 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":225, "size":121488, "time":878310161559192 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":225, "size":121488, "time":878310161622523 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":221, "size":106588, "time":878310175983437 } [20 ms]
+Block 221: 262144 => 124812 [355 ms] => 106588 [20 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":222, "size":101376, "time":878310188683742 } [197 ms]
+Block 222: 262144 => 118682 [190 ms] => 101376 [197 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":223, "size":95979, "time":878310195627032 } [214 ms]
+Block 223: 262144 => 111491 [180 ms] => 95979 [214 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":224, "size":92545, "time":878310200590790 } [60 ms]
+Block 224: 262144 => 106698 [339 ms] => 92545 [60 ms] (35%)
+{ "type":"AFTER_ENTROPY", "id":225, "size":103825, "time":878310200805123 } [39 ms]
+Block 225: 262144 => 121488 [360 ms] => 103825 [39 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":226, "size":262144, "time":878310212203720 }
+{ "type":"BEFORE_TRANSFORM", "id":227, "size":262144, "time":878310212261761 }
+{ "type":"BEFORE_TRANSFORM", "id":228, "size":262144, "time":878310212281195 }
+{ "type":"BEFORE_TRANSFORM", "id":229, "size":262144, "time":878310212296407 }
+{ "type":"BEFORE_TRANSFORM", "id":230, "size":262144, "time":878310212305935 }
+{ "type":"AFTER_TRANSFORM", "id":228, "size":122902, "time":878310401644358 } [189 ms]
+{ "type":"BEFORE_ENTROPY", "id":228, "size":122902, "time":878310401729501 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":227, "size":122277, "time":878310402347027 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":227, "size":122277, "time":878310402398552 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":230, "size":115468, "time":878310562229261 } [349 ms]
+{ "type":"BEFORE_ENTROPY", "id":230, "size":115468, "time":878310562323832 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":229, "size":117521, "time":878310567228653 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":229, "size":117521, "time":878310567284373 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":226, "size":118698, "time":878310573996839 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":226, "size":118698, "time":878310574048973 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":226, "size":100820, "time":878310594080805 } [20 ms]
+Block 226: 262144 => 118698 [361 ms] => 100820 [20 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":227, "size":105009, "time":878310606023074 } [203 ms]
+Block 227: 262144 => 122277 [190 ms] => 105009 [203 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":228, "size":104786, "time":878310606272915 } [204 ms]
+Block 228: 262144 => 122902 [189 ms] => 104786 [204 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":229, "size":100541, "time":878310611834908 } [44 ms]
+Block 229: 262144 => 117521 [354 ms] => 100541 [44 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":230, "size":99191, "time":878310611903181 } [49 ms]
+Block 230: 262144 => 115468 [349 ms] => 99191 [49 ms] (37%)
+{ "type":"BEFORE_TRANSFORM", "id":231, "size":262144, "time":878310622943230 }
+{ "type":"BEFORE_TRANSFORM", "id":232, "size":262144, "time":878310622951448 }
+{ "type":"BEFORE_TRANSFORM", "id":233, "size":262144, "time":878310623007861 }
+{ "type":"BEFORE_TRANSFORM", "id":234, "size":262144, "time":878310623030939 }
+{ "type":"BEFORE_TRANSFORM", "id":235, "size":262144, "time":878310623039925 }
+{ "type":"AFTER_TRANSFORM", "id":234, "size":120680, "time":878310821168465 } [198 ms]
+{ "type":"BEFORE_ENTROPY", "id":234, "size":120680, "time":878310821248162 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":233, "size":126320, "time":878310822531813 } [199 ms]
+{ "type":"BEFORE_ENTROPY", "id":233, "size":126320, "time":878310822578901 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":232, "size":119393, "time":878310988121402 } [365 ms]
+{ "type":"BEFORE_ENTROPY", "id":232, "size":119393, "time":878310988217608 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":231, "size":120951, "time":878310991636546 } [368 ms]
+{ "type":"BEFORE_ENTROPY", "id":231, "size":120951, "time":878310991687034 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":235, "size":122449, "time":878310993819878 } [370 ms]
+{ "type":"BEFORE_ENTROPY", "id":235, "size":122449, "time":878310993879711 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":231, "size":103413, "time":878311010485681 } [18 ms]
+Block 231: 262144 => 120951 [368 ms] => 103413 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":232, "size":101746, "time":878311022731113 } [34 ms]
+Block 232: 262144 => 119393 [365 ms] => 101746 [34 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":233, "size":107266, "time":878311028185574 } [205 ms]
+Block 233: 262144 => 126320 [199 ms] => 107266 [205 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":234, "size":103909, "time":878311033692543 } [212 ms]
+Block 234: 262144 => 120680 [198 ms] => 103909 [212 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":235, "size":104957, "time":878311033766579 } [39 ms]
+Block 235: 262144 => 122449 [370 ms] => 104957 [39 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":236, "size":262144, "time":878311045449838 }
+{ "type":"BEFORE_TRANSFORM", "id":237, "size":262144, "time":878311045457537 }
+{ "type":"BEFORE_TRANSFORM", "id":238, "size":262144, "time":878311045514962 }
+{ "type":"BEFORE_TRANSFORM", "id":239, "size":262144, "time":878311045535905 }
+{ "type":"BEFORE_TRANSFORM", "id":240, "size":262144, "time":878311045545437 }
+{ "type":"AFTER_TRANSFORM", "id":238, "size":121833, "time":878311231753543 } [186 ms]
+{ "type":"BEFORE_ENTROPY", "id":238, "size":121833, "time":878311231843080 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":239, "size":119675, "time":878311234558620 } [189 ms]
+{ "type":"BEFORE_ENTROPY", "id":239, "size":119675, "time":878311234608182 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":237, "size":121060, "time":878311402496650 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":237, "size":121060, "time":878311402596041 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":236, "size":120105, "time":878311404651309 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":236, "size":120105, "time":878311404705414 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":240, "size":121644, "time":878311407049447 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":240, "size":121644, "time":878311407104947 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":236, "size":102270, "time":878311422231563 } [17 ms]
+Block 236: 262144 => 120105 [359 ms] => 102270 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":237, "size":103487, "time":878311434184847 } [31 ms]
+Block 237: 262144 => 121060 [357 ms] => 103487 [31 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":238, "size":104503, "time":878311439811292 } [207 ms]
+Block 238: 262144 => 121833 [186 ms] => 104503 [207 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":239, "size":101386, "time":878311445188679 } [210 ms]
+Block 239: 262144 => 119675 [189 ms] => 101386 [210 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":240, "size":104290, "time":878311450489611 } [43 ms]
+Block 240: 262144 => 121644 [361 ms] => 104290 [43 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":241, "size":262144, "time":878311462229257 }
+{ "type":"BEFORE_TRANSFORM", "id":242, "size":262144, "time":878311462238704 }
+{ "type":"BEFORE_TRANSFORM", "id":243, "size":262144, "time":878311462295021 }
+{ "type":"BEFORE_TRANSFORM", "id":244, "size":262144, "time":878311462312910 }
+{ "type":"BEFORE_TRANSFORM", "id":245, "size":262144, "time":878311462321443 }
+{ "type":"AFTER_TRANSFORM", "id":244, "size":117260, "time":878311647983736 } [185 ms]
+{ "type":"BEFORE_ENTROPY", "id":244, "size":117260, "time":878311648078057 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":243, "size":122755, "time":878311652328563 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":243, "size":122755, "time":878311652388935 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":242, "size":120300, "time":878311815816223 } [353 ms]
+{ "type":"BEFORE_ENTROPY", "id":242, "size":120300, "time":878311815914607 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":241, "size":122659, "time":878311823247499 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":241, "size":122659, "time":878311823303391 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":245, "size":123621, "time":878311830922510 } [368 ms]
+{ "type":"BEFORE_ENTROPY", "id":245, "size":123621, "time":878311830975798 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":241, "size":104445, "time":878311841864338 } [18 ms]
+Block 241: 262144 => 122659 [361 ms] => 104445 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":242, "size":103105, "time":878311854043668 } [38 ms]
+Block 242: 262144 => 120300 [353 ms] => 103105 [38 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":243, "size":105073, "time":878311854275076 } [201 ms]
+Block 243: 262144 => 122755 [190 ms] => 105073 [201 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":244, "size":100094, "time":878311854374907 } [206 ms]
+Block 244: 262144 => 117260 [185 ms] => 100094 [206 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":245, "size":104454, "time":878311859627309 } [28 ms]
+Block 245: 262144 => 123621 [368 ms] => 104454 [28 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":246, "size":262144, "time":878311871009459 }
+{ "type":"BEFORE_TRANSFORM", "id":247, "size":262144, "time":878311871017693 }
+{ "type":"BEFORE_TRANSFORM", "id":248, "size":262144, "time":878311871073801 }
+{ "type":"BEFORE_TRANSFORM", "id":249, "size":262144, "time":878311871094630 }
+{ "type":"BEFORE_TRANSFORM", "id":250, "size":262144, "time":878311871105234 }
+{ "type":"AFTER_TRANSFORM", "id":248, "size":120293, "time":878312061327836 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":248, "size":120293, "time":878312061423161 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":249, "size":119867, "time":878312066516774 } [195 ms]
+{ "type":"BEFORE_ENTROPY", "id":249, "size":119867, "time":878312066562090 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":247, "size":121208, "time":878312151433325 } [280 ms]
+{ "type":"BEFORE_ENTROPY", "id":247, "size":121208, "time":878312151510313 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":250, "size":109618, "time":878312228209274 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":250, "size":109618, "time":878312228302141 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":246, "size":123183, "time":878312256591687 } [385 ms]
+{ "type":"BEFORE_ENTROPY", "id":246, "size":123183, "time":878312256682311 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":246, "size":104619, "time":878312276455368 } [19 ms]
+Block 246: 262144 => 123183 [385 ms] => 104619 [19 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":247, "size":104152, "time":878312288699839 } [137 ms]
+Block 247: 262144 => 121208 [280 ms] => 104152 [137 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":248, "size":103411, "time":878312294391113 } [232 ms]
+Block 248: 262144 => 120293 [190 ms] => 103411 [232 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":249, "size":102124, "time":878312301096090 } [234 ms]
+Block 249: 262144 => 119867 [195 ms] => 102124 [234 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":250, "size":93489, "time":878312311615202 } [83 ms]
+Block 250: 262144 => 109618 [357 ms] => 93489 [83 ms] (35%)
+{ "type":"BEFORE_TRANSFORM", "id":251, "size":262144, "time":878312312412233 }
+{ "type":"BEFORE_TRANSFORM", "id":252, "size":262144, "time":878312312435532 }
+{ "type":"BEFORE_TRANSFORM", "id":253, "size":262144, "time":878312312445215 }
+{ "type":"BEFORE_TRANSFORM", "id":255, "size":262144, "time":878312312469868 }
+{ "type":"BEFORE_TRANSFORM", "id":254, "size":262144, "time":878312312462963 }
+{ "type":"AFTER_TRANSFORM", "id":255, "size":110472, "time":878312514194984 } [201 ms]
+{ "type":"BEFORE_ENTROPY", "id":255, "size":110472, "time":878312514282436 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":252, "size":119763, "time":878312520794317 } [208 ms]
+{ "type":"BEFORE_ENTROPY", "id":252, "size":119763, "time":878312520845247 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":253, "size":118894, "time":878312663883337 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":253, "size":118894, "time":878312663976496 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":251, "size":118931, "time":878312669301120 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":251, "size":118931, "time":878312669355589 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":254, "size":124882, "time":878312672132220 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":254, "size":124882, "time":878312672188131 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":251, "size":101876, "time":878312687420332 } [18 ms]
+Block 251: 262144 => 118931 [356 ms] => 101876 [18 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":252, "size":101636, "time":878312699523073 } [178 ms]
+Block 252: 262144 => 119763 [208 ms] => 101636 [178 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":253, "size":101538, "time":878312710234359 } [46 ms]
+Block 253: 262144 => 118894 [351 ms] => 101538 [46 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":254, "size":106178, "time":878312715480404 } [43 ms]
+Block 254: 262144 => 124882 [359 ms] => 106178 [43 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":255, "size":94842, "time":878312726483861 } [212 ms]
+Block 255: 262144 => 110472 [201 ms] => 94842 [212 ms] (36%)
+{ "type":"BEFORE_TRANSFORM", "id":256, "size":262144, "time":878312732122586 }
+{ "type":"BEFORE_TRANSFORM", "id":257, "size":262144, "time":878312732135380 }
+{ "type":"BEFORE_TRANSFORM", "id":259, "size":262144, "time":878312732163492 }
+{ "type":"BEFORE_TRANSFORM", "id":258, "size":262144, "time":878312732147088 }
+{ "type":"BEFORE_TRANSFORM", "id":260, "size":262144, "time":878312732191420 }
+{ "type":"AFTER_TRANSFORM", "id":259, "size":124439, "time":878312930411870 } [198 ms]
+{ "type":"BEFORE_ENTROPY", "id":259, "size":124439, "time":878312930502101 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":257, "size":124464, "time":878312965866017 } [233 ms]
+{ "type":"BEFORE_ENTROPY", "id":257, "size":124464, "time":878312965947677 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":260, "size":121900, "time":878313082994993 } [350 ms]
+{ "type":"BEFORE_ENTROPY", "id":260, "size":121900, "time":878313083093645 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":256, "size":117609, "time":878313089505204 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":256, "size":117609, "time":878313089564576 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":258, "size":120663, "time":878313093238642 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":258, "size":120663, "time":878313093292494 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":256, "size":100575, "time":878313106719284 } [17 ms]
+Block 256: 262144 => 117609 [357 ms] => 100575 [17 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":257, "size":106313, "time":878313118162399 } [152 ms]
+Block 257: 262144 => 124464 [233 ms] => 106313 [152 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":258, "size":103002, "time":878313123852273 } [30 ms]
+Block 258: 262144 => 120663 [361 ms] => 103002 [30 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":259, "size":106210, "time":878313129297949 } [198 ms]
+Block 259: 262144 => 124439 [198 ms] => 106210 [198 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":260, "size":104502, "time":878313134870003 } [51 ms]
+Block 260: 262144 => 121900 [350 ms] => 104502 [51 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":261, "size":262144, "time":878313146206850 }
+{ "type":"BEFORE_TRANSFORM", "id":264, "size":262144, "time":878313146246226 }
+{ "type":"BEFORE_TRANSFORM", "id":263, "size":262144, "time":878313146232110 }
+{ "type":"BEFORE_TRANSFORM", "id":262, "size":262144, "time":878313146220723 }
+{ "type":"BEFORE_TRANSFORM", "id":265, "size":262144, "time":878313146258490 }
+{ "type":"AFTER_TRANSFORM", "id":263, "size":119509, "time":878313406425647 } [260 ms]
+{ "type":"BEFORE_ENTROPY", "id":263, "size":119509, "time":878313406534156 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":262, "size":119787, "time":878313440373009 } [294 ms]
+{ "type":"BEFORE_ENTROPY", "id":262, "size":119787, "time":878313443720007 } [3 ms]
+{ "type":"AFTER_TRANSFORM", "id":264, "size":122497, "time":878313446225288 } [299 ms]
+{ "type":"BEFORE_ENTROPY", "id":264, "size":122497, "time":878313446304263 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":261, "size":120974, "time":878313495908710 } [349 ms]
+{ "type":"BEFORE_ENTROPY", "id":261, "size":120974, "time":878313495982580 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":261, "size":103709, "time":878313505389565 } [9 ms]
+Block 261: 262144 => 120974 [349 ms] => 103709 [9 ms] (39%)
+{ "type":"AFTER_TRANSFORM", "id":265, "size":126611, "time":878313507335024 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":265, "size":126611, "time":878313507398594 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":262, "size":102193, "time":878313518390585 } [74 ms]
+Block 262: 262144 => 119787 [294 ms] => 102193 [74 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":263, "size":101494, "time":878313523771673 } [117 ms]
+Block 263: 262144 => 119509 [260 ms] => 101494 [117 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":264, "size":103406, "time":878313529192169 } [82 ms]
+Block 264: 262144 => 122497 [299 ms] => 103406 [82 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":265, "size":107575, "time":878313535568878 } [28 ms]
+Block 265: 262144 => 126611 [361 ms] => 107575 [28 ms] (41%)
+{ "type":"BEFORE_TRANSFORM", "id":266, "size":262144, "time":878313536426474 }
+{ "type":"BEFORE_TRANSFORM", "id":267, "size":262144, "time":878313536458137 }
+{ "type":"BEFORE_TRANSFORM", "id":268, "size":262144, "time":878313536480128 }
+{ "type":"BEFORE_TRANSFORM", "id":270, "size":262144, "time":878313536500181 }
+{ "type":"BEFORE_TRANSFORM", "id":269, "size":262144, "time":878313536489779 }
+{ "type":"AFTER_TRANSFORM", "id":267, "size":121408, "time":878313732068514 } [195 ms]
+{ "type":"BEFORE_ENTROPY", "id":267, "size":121408, "time":878313732159060 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":266, "size":125352, "time":878313796084274 } [259 ms]
+{ "type":"BEFORE_ENTROPY", "id":266, "size":125352, "time":878313796200096 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":266, "size":107235, "time":878313815097048 } [18 ms]
+Block 266: 262144 => 125352 [259 ms] => 107235 [18 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":267, "size":103690, "time":878313829543768 } [97 ms]
+Block 267: 262144 => 121408 [195 ms] => 103690 [97 ms] (39%)
+{ "type":"AFTER_TRANSFORM", "id":269, "size":120576, "time":878313883087103 } [346 ms]
+{ "type":"BEFORE_ENTROPY", "id":269, "size":120576, "time":878313883160746 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":268, "size":124216, "time":878313887587299 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":268, "size":124216, "time":878313887635976 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":270, "size":120328, "time":878313889909742 } [353 ms]
+{ "type":"BEFORE_ENTROPY", "id":270, "size":120328, "time":878313889960307 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":268, "size":106011, "time":878313896906045 } [9 ms]
+Block 268: 262144 => 124216 [351 ms] => 106011 [9 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":269, "size":103506, "time":878313902605548 } [19 ms]
+Block 269: 262144 => 120576 [346 ms] => 103506 [19 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":270, "size":102592, "time":878313907967428 } [18 ms]
+Block 270: 262144 => 120328 [353 ms] => 102592 [18 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":272, "size":262144, "time":878313919696746 }
+{ "type":"BEFORE_TRANSFORM", "id":271, "size":262144, "time":878313919688322 }
+{ "type":"BEFORE_TRANSFORM", "id":273, "size":262144, "time":878313919757222 }
+{ "type":"BEFORE_TRANSFORM", "id":274, "size":262144, "time":878313919777357 }
+{ "type":"BEFORE_TRANSFORM", "id":275, "size":262144, "time":878313919786789 }
+{ "type":"AFTER_TRANSFORM", "id":273, "size":94297, "time":878314114411918 } [194 ms]
+{ "type":"BEFORE_ENTROPY", "id":273, "size":94297, "time":878314114499125 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":274, "size":101050, "time":878314118625415 } [198 ms]
+{ "type":"BEFORE_ENTROPY", "id":274, "size":101050, "time":878314118675023 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":271, "size":112686, "time":878314277616118 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":271, "size":112686, "time":878314277712815 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":272, "size":124112, "time":878314279792490 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":272, "size":124112, "time":878314279841924 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":275, "size":125465, "time":878314284079544 } [364 ms]
+{ "type":"BEFORE_ENTROPY", "id":275, "size":125465, "time":878314284133697 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":271, "size":95410, "time":878314293961555 } [16 ms]
+Block 271: 262144 => 112686 [357 ms] => 95410 [16 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":272, "size":105922, "time":878314304757760 } [24 ms]
+Block 272: 262144 => 124112 [360 ms] => 105922 [24 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":273, "size":79642, "time":878314310521054 } [196 ms]
+Block 273: 262144 => 94297 [194 ms] => 79642 [196 ms] (30%)
+{ "type":"AFTER_ENTROPY", "id":274, "size":85683, "time":878314319171808 } [200 ms]
+Block 274: 262144 => 101050 [198 ms] => 85683 [200 ms] (32%)
+{ "type":"AFTER_ENTROPY", "id":275, "size":106695, "time":878314323769276 } [39 ms]
+Block 275: 262144 => 125465 [364 ms] => 106695 [39 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":276, "size":262144, "time":878314335256006 }
+{ "type":"BEFORE_TRANSFORM", "id":277, "size":262144, "time":878314335275731 }
+{ "type":"BEFORE_TRANSFORM", "id":278, "size":262144, "time":878314335291594 }
+{ "type":"BEFORE_TRANSFORM", "id":279, "size":262144, "time":878314335307041 }
+{ "type":"BEFORE_TRANSFORM", "id":280, "size":262144, "time":878314335317565 }
+{ "type":"AFTER_TRANSFORM", "id":276, "size":123341, "time":878314540687006 } [205 ms]
+{ "type":"BEFORE_ENTROPY", "id":276, "size":123341, "time":878314540763537 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":278, "size":125850, "time":878314546876216 } [211 ms]
+{ "type":"BEFORE_ENTROPY", "id":278, "size":125850, "time":878314546924005 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":276, "size":105517, "time":878314550049696 } [9 ms]
+Block 276: 262144 => 123341 [205 ms] => 105517 [9 ms] (40%)
+{ "type":"AFTER_TRANSFORM", "id":277, "size":120154, "time":878314670374109 } [335 ms]
+{ "type":"BEFORE_ENTROPY", "id":277, "size":120154, "time":878314670450474 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":279, "size":119471, "time":878314672151665 } [336 ms]
+{ "type":"BEFORE_ENTROPY", "id":279, "size":119471, "time":878314672207872 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":277, "size":102496, "time":878314679386182 } [8 ms]
+Block 277: 262144 => 120154 [335 ms] => 102496 [8 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":278, "size":106884, "time":878314684708554 } [137 ms]
+Block 278: 262144 => 125850 [211 ms] => 106884 [137 ms] (40%)
+{ "type":"AFTER_TRANSFORM", "id":280, "size":119011, "time":878314686501835 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":280, "size":119011, "time":878314686558091 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":279, "size":102200, "time":878314690327489 } [18 ms]
+Block 279: 262144 => 119471 [336 ms] => 102200 [18 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":280, "size":102049, "time":878314703469064 } [16 ms]
+Block 280: 262144 => 119011 [351 ms] => 102049 [16 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":281, "size":262144, "time":878314714638522 }
+{ "type":"BEFORE_TRANSFORM", "id":282, "size":262144, "time":878314714700092 }
+{ "type":"BEFORE_TRANSFORM", "id":283, "size":262144, "time":878314714724254 }
+{ "type":"BEFORE_TRANSFORM", "id":284, "size":262144, "time":878314714738773 }
+{ "type":"BEFORE_TRANSFORM", "id":285, "size":262144, "time":878314714749005 }
+{ "type":"AFTER_TRANSFORM", "id":283, "size":127048, "time":878314912181836 } [197 ms]
+{ "type":"BEFORE_ENTROPY", "id":283, "size":127048, "time":878314912294539 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":281, "size":123648, "time":878314969050374 } [254 ms]
+{ "type":"BEFORE_ENTROPY", "id":281, "size":123648, "time":878314969124826 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":281, "size":105885, "time":878314978517623 } [9 ms]
+Block 281: 262144 => 123648 [254 ms] => 105885 [9 ms] (40%)
+{ "type":"AFTER_TRANSFORM", "id":284, "size":122166, "time":878315072484798 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":284, "size":122166, "time":878315072574764 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":282, "size":121599, "time":878315074174850 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":282, "size":121599, "time":878315074218777 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":285, "size":124050, "time":878315074542790 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":285, "size":124050, "time":878315074593435 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":282, "size":103848, "time":878315083264535 } [9 ms]
+Block 282: 262144 => 121599 [359 ms] => 103848 [9 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":283, "size":107578, "time":878315088660558 } [176 ms]
+Block 283: 262144 => 127048 [197 ms] => 107578 [176 ms] (41%)
+{ "type":"AFTER_ENTROPY", "id":284, "size":104637, "time":878315094410705 } [21 ms]
+Block 284: 262144 => 122166 [357 ms] => 104637 [21 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":285, "size":106238, "time":878315099859715 } [25 ms]
+Block 285: 262144 => 124050 [359 ms] => 106238 [25 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":286, "size":262144, "time":878315100393105 }
+{ "type":"BEFORE_TRANSFORM", "id":287, "size":262144, "time":878315100397816 }
+{ "type":"BEFORE_TRANSFORM", "id":289, "size":262144, "time":878315100454309 }
+{ "type":"BEFORE_TRANSFORM", "id":288, "size":262144, "time":878315100439343 }
+{ "type":"BEFORE_TRANSFORM", "id":290, "size":262144, "time":878315100461883 }
+{ "type":"AFTER_TRANSFORM", "id":289, "size":121768, "time":878315304568021 } [204 ms]
+{ "type":"BEFORE_ENTROPY", "id":289, "size":121768, "time":878315306294034 } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":286, "size":116504, "time":878315460015077 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":286, "size":116504, "time":878315460111828 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":290, "size":122209, "time":878315462876573 } [362 ms]
+{ "type":"BEFORE_ENTROPY", "id":290, "size":122209, "time":878315462932950 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":288, "size":119090, "time":878315463894086 } [363 ms]
+{ "type":"BEFORE_ENTROPY", "id":288, "size":119090, "time":878315463947229 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":287, "size":118486, "time":878315474754600 } [374 ms]
+{ "type":"BEFORE_ENTROPY", "id":287, "size":118486, "time":878315474805885 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":286, "size":99476, "time":878315477084477 } [16 ms]
+Block 286: 262144 => 116504 [359 ms] => 99476 [16 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":287, "size":100627, "time":878315490025930 } [15 ms]
+Block 287: 262144 => 118486 [374 ms] => 100627 [15 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":288, "size":101136, "time":878315495275019 } [31 ms]
+Block 288: 262144 => 119090 [363 ms] => 101136 [31 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":289, "size":104458, "time":878315507199709 } [200 ms]
+Block 289: 262144 => 121768 [204 ms] => 104458 [200 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":290, "size":104759, "time":878315512618139 } [49 ms]
+Block 290: 262144 => 122209 [362 ms] => 104759 [49 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":291, "size":262144, "time":878315518442301 }
+{ "type":"BEFORE_TRANSFORM", "id":292, "size":262144, "time":878315518449456 }
+{ "type":"BEFORE_TRANSFORM", "id":293, "size":262144, "time":878315518508942 }
+{ "type":"BEFORE_TRANSFORM", "id":294, "size":262144, "time":878315518528781 }
+{ "type":"BEFORE_TRANSFORM", "id":295, "size":262144, "time":878315518538420 }
+{ "type":"AFTER_TRANSFORM", "id":294, "size":113044, "time":878315703544026 } [185 ms]
+{ "type":"BEFORE_ENTROPY", "id":294, "size":113044, "time":878315703649384 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":293, "size":114226, "time":878315867394552 } [348 ms]
+{ "type":"BEFORE_ENTROPY", "id":293, "size":114226, "time":878315867493903 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":291, "size":115688, "time":878315871387459 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":291, "size":115688, "time":878315871444100 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":292, "size":115409, "time":878315872802648 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":292, "size":115409, "time":878315872851791 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":295, "size":124511, "time":878315879129122 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":295, "size":124511, "time":878315879195226 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":291, "size":99265, "time":878315888395453 } [16 ms]
+Block 291: 262144 => 115688 [352 ms] => 99265 [16 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":292, "size":98935, "time":878315900199439 } [27 ms]
+Block 292: 262144 => 115409 [354 ms] => 98935 [27 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":293, "size":98077, "time":878315905432250 } [37 ms]
+Block 293: 262144 => 114226 [348 ms] => 98077 [37 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":294, "size":96835, "time":878315917234925 } [213 ms]
+Block 294: 262144 => 113044 [185 ms] => 96835 [213 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":295, "size":106586, "time":878315923922328 } [44 ms]
+Block 295: 262144 => 124511 [360 ms] => 106586 [44 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":296, "size":262144, "time":878315930863757 }
+{ "type":"BEFORE_TRANSFORM", "id":298, "size":262144, "time":878315930912312 }
+{ "type":"BEFORE_TRANSFORM", "id":300, "size":262144, "time":878315930931035 }
+{ "type":"BEFORE_TRANSFORM", "id":297, "size":262144, "time":878315930888494 }
+{ "type":"BEFORE_TRANSFORM", "id":299, "size":262144, "time":878315930927530 }
+{ "type":"AFTER_TRANSFORM", "id":299, "size":117936, "time":878316198523133 } [267 ms]
+{ "type":"BEFORE_ENTROPY", "id":299, "size":117936, "time":878316198620794 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":296, "size":123287, "time":878316258127928 } [327 ms]
+{ "type":"BEFORE_ENTROPY", "id":296, "size":123287, "time":878316258217025 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":296, "size":105487, "time":878316275919565 } [17 ms]
+Block 296: 262144 => 123287 [327 ms] => 105487 [17 ms] (40%)
+{ "type":"AFTER_TRANSFORM", "id":298, "size":123884, "time":878316278873608 } [347 ms]
+{ "type":"BEFORE_ENTROPY", "id":298, "size":123884, "time":878316278934546 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":297, "size":125637, "time":878316286665907 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":297, "size":125637, "time":878316286707994 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":300, "size":126457, "time":878316295435971 } [364 ms]
+{ "type":"BEFORE_ENTROPY", "id":300, "size":126457, "time":878316295487251 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":297, "size":107273, "time":878316296019485 } [9 ms]
+Block 297: 262144 => 125637 [355 ms] => 107273 [9 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":298, "size":105743, "time":878316301644627 } [22 ms]
+Block 298: 262144 => 123884 [347 ms] => 105743 [22 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":299, "size":101054, "time":878316312998404 } [114 ms]
+Block 299: 262144 => 117936 [267 ms] => 101054 [114 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":300, "size":107837, "time":878316323482821 } [27 ms]
+Block 300: 262144 => 126457 [364 ms] => 107837 [27 ms] (41%)
+{ "type":"BEFORE_TRANSFORM", "id":301, "size":262144, "time":878316330428635 }
+{ "type":"BEFORE_TRANSFORM", "id":303, "size":262144, "time":878316330475901 }
+{ "type":"BEFORE_TRANSFORM", "id":302, "size":262144, "time":878316330451713 }
+{ "type":"BEFORE_TRANSFORM", "id":305, "size":262144, "time":878316330501985 }
+{ "type":"BEFORE_TRANSFORM", "id":304, "size":262144, "time":878316330492354 }
+{ "type":"AFTER_TRANSFORM", "id":304, "size":119931, "time":878316577317634 } [246 ms]
+{ "type":"BEFORE_ENTROPY", "id":304, "size":119931, "time":878316577399602 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":302, "size":117665, "time":878316682874199 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":302, "size":117665, "time":878316682972044 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":301, "size":122952, "time":878316685340581 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":301, "size":122952, "time":878316685390422 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":303, "size":123447, "time":878316691142550 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":303, "size":123447, "time":878316691197335 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":305, "size":125014, "time":878316695180579 } [364 ms]
+{ "type":"BEFORE_ENTROPY", "id":305, "size":125014, "time":878316695229692 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":301, "size":105133, "time":878316703643445 } [18 ms]
+Block 301: 262144 => 122952 [354 ms] => 105133 [18 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":302, "size":100276, "time":878316716302747 } [33 ms]
+Block 302: 262144 => 117665 [352 ms] => 100276 [33 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":303, "size":105457, "time":878316721463658 } [30 ms]
+Block 303: 262144 => 123447 [360 ms] => 105457 [30 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":304, "size":103038, "time":878316735108634 } [157 ms]
+Block 304: 262144 => 119931 [246 ms] => 103038 [157 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":305, "size":106306, "time":878316742214774 } [46 ms]
+Block 305: 262144 => 125014 [364 ms] => 106306 [46 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":306, "size":262144, "time":878316748380588 }
+{ "type":"BEFORE_TRANSFORM", "id":307, "size":262144, "time":878316748446067 }
+{ "type":"BEFORE_TRANSFORM", "id":308, "size":262144, "time":878316748465770 }
+{ "type":"BEFORE_TRANSFORM", "id":309, "size":262144, "time":878316748479710 }
+{ "type":"BEFORE_TRANSFORM", "id":310, "size":262144, "time":878316748490293 }
+{ "type":"AFTER_TRANSFORM", "id":306, "size":127332, "time":878317064024017 } [315 ms]
+{ "type":"BEFORE_ENTROPY", "id":306, "size":127332, "time":878317064106005 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":306, "size":107708, "time":878317073665017 } [9 ms]
+Block 306: 262144 => 127332 [315 ms] => 107708 [9 ms] (41%)
+{ "type":"AFTER_TRANSFORM", "id":309, "size":125155, "time":878317103062269 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":309, "size":125155, "time":878317103139261 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":307, "size":121983, "time":878317105330614 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":307, "size":121983, "time":878317105378543 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":310, "size":123026, "time":878317106472418 } [357 ms]
+{ "type":"AFTER_TRANSFORM", "id":308, "size":122730, "time":878317106488227 } [358 ms]
+{ "type":"BEFORE_ENTROPY", "id":310, "size":123026, "time":878317106532146 } [0 ms]
+{ "type":"BEFORE_ENTROPY", "id":308, "size":122730, "time":878317106555458 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":307, "size":104416, "time":878317116783871 } [11 ms]
+Block 307: 262144 => 121983 [356 ms] => 104416 [11 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":308, "size":104415, "time":878317124442191 } [17 ms]
+Block 308: 262144 => 122730 [358 ms] => 104415 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":309, "size":106988, "time":878317137018497 } [33 ms]
+Block 309: 262144 => 125155 [354 ms] => 106988 [33 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":310, "size":105431, "time":878317143104088 } [36 ms]
+Block 310: 262144 => 123026 [357 ms] => 105431 [36 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":311, "size":262144, "time":878317148965304 }
+{ "type":"BEFORE_TRANSFORM", "id":312, "size":262144, "time":878317148973523 }
+{ "type":"BEFORE_TRANSFORM", "id":313, "size":262144, "time":878317149031762 }
+{ "type":"BEFORE_TRANSFORM", "id":314, "size":262144, "time":878317149051092 }
+{ "type":"BEFORE_TRANSFORM", "id":315, "size":262144, "time":878317149060989 }
+{ "type":"AFTER_TRANSFORM", "id":314, "size":122182, "time":878317344878735 } [195 ms]
+{ "type":"BEFORE_ENTROPY", "id":314, "size":122182, "time":878317344962848 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":312, "size":123650, "time":878317474182557 } [325 ms]
+{ "type":"BEFORE_ENTROPY", "id":312, "size":123650, "time":878317474300456 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":315, "size":119870, "time":878317505724533 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":315, "size":119870, "time":878317505806196 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":311, "size":117770, "time":878317507746770 } [358 ms]
+{ "type":"BEFORE_ENTROPY", "id":311, "size":117770, "time":878317507805106 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":313, "size":125925, "time":878317509795365 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":313, "size":125925, "time":878317509845871 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":311, "size":100274, "time":878317524613484 } [16 ms]
+Block 311: 262144 => 117770 [358 ms] => 100274 [16 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":312, "size":105589, "time":878317536033977 } [61 ms]
+Block 312: 262144 => 123650 [325 ms] => 105589 [61 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":313, "size":107162, "time":878317541582934 } [31 ms]
+Block 313: 262144 => 125925 [360 ms] => 107162 [31 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":314, "size":104750, "time":878317554218431 } [209 ms]
+Block 314: 262144 => 122182 [195 ms] => 104750 [209 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":315, "size":102499, "time":878317560020121 } [54 ms]
+Block 315: 262144 => 119870 [356 ms] => 102499 [54 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":316, "size":262144, "time":878317565712961 }
+{ "type":"BEFORE_TRANSFORM", "id":317, "size":262144, "time":878317565774292 }
+{ "type":"BEFORE_TRANSFORM", "id":318, "size":262144, "time":878317565830569 }
+{ "type":"BEFORE_TRANSFORM", "id":319, "size":262144, "time":878317565850925 }
+{ "type":"BEFORE_TRANSFORM", "id":320, "size":262144, "time":878317565859799 }
+{ "type":"AFTER_TRANSFORM", "id":319, "size":121951, "time":878317760076089 } [194 ms]
+{ "type":"BEFORE_ENTROPY", "id":319, "size":121951, "time":878317760175615 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":317, "size":116046, "time":878317804561362 } [238 ms]
+{ "type":"BEFORE_ENTROPY", "id":317, "size":116046, "time":878317804671916 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":318, "size":120451, "time":878317920138598 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":318, "size":120451, "time":878317920230311 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":320, "size":121810, "time":878317920773285 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":320, "size":121810, "time":878317920821767 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":316, "size":124236, "time":878317924684872 } [358 ms]
+{ "type":"BEFORE_ENTROPY", "id":316, "size":124236, "time":878317924743726 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":316, "size":106164, "time":878317942455123 } [17 ms]
+Block 316: 262144 => 124236 [358 ms] => 106164 [17 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":317, "size":98856, "time":878317953733470 } [149 ms]
+Block 317: 262144 => 116046 [238 ms] => 98856 [149 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":318, "size":103172, "time":878317959166849 } [38 ms]
+Block 318: 262144 => 120451 [354 ms] => 103172 [38 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":319, "size":104393, "time":878317959295731 } [199 ms]
+Block 319: 262144 => 121951 [194 ms] => 104393 [199 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":320, "size":104524, "time":878317965347991 } [44 ms]
+Block 320: 262144 => 121810 [354 ms] => 104524 [44 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":321, "size":262144, "time":878317971271086 }
+{ "type":"BEFORE_TRANSFORM", "id":322, "size":262144, "time":878317971310888 }
+{ "type":"BEFORE_TRANSFORM", "id":323, "size":262144, "time":878317971370254 }
+{ "type":"BEFORE_TRANSFORM", "id":324, "size":262144, "time":878317971390295 }
+{ "type":"BEFORE_TRANSFORM", "id":325, "size":262144, "time":878317971399051 }
+{ "type":"AFTER_TRANSFORM", "id":322, "size":116383, "time":878318161336668 } [190 ms]
+{ "type":"BEFORE_ENTROPY", "id":322, "size":116383, "time":878318161435258 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":324, "size":125090, "time":878318165604857 } [194 ms]
+{ "type":"BEFORE_ENTROPY", "id":324, "size":125090, "time":878318165659085 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":321, "size":113524, "time":878318321420629 } [350 ms]
+{ "type":"BEFORE_ENTROPY", "id":321, "size":113524, "time":878318321518096 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":323, "size":119010, "time":878318337688917 } [366 ms]
+{ "type":"BEFORE_ENTROPY", "id":323, "size":119010, "time":878318337761052 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":321, "size":97013, "time":878318338450746 } [16 ms]
+Block 321: 262144 => 113524 [350 ms] => 97013 [16 ms] (37%)
+{ "type":"AFTER_TRANSFORM", "id":325, "size":122671, "time":878318338698004 } [367 ms]
+{ "type":"BEFORE_ENTROPY", "id":325, "size":122671, "time":878318338746656 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":322, "size":100206, "time":878318349341980 } [187 ms]
+Block 322: 262144 => 116383 [190 ms] => 100206 [187 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":323, "size":101506, "time":878318359794133 } [22 ms]
+Block 323: 262144 => 119010 [366 ms] => 101506 [22 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":324, "size":106947, "time":878318371771120 } [206 ms]
+Block 324: 262144 => 125090 [194 ms] => 106947 [206 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":325, "size":105304, "time":878318372035102 } [33 ms]
+Block 325: 262144 => 122671 [367 ms] => 105304 [33 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":326, "size":262144, "time":878318377981839 }
+{ "type":"BEFORE_TRANSFORM", "id":327, "size":262144, "time":878318378013005 }
+{ "type":"BEFORE_TRANSFORM", "id":328, "size":262144, "time":878318378021400 }
+{ "type":"BEFORE_TRANSFORM", "id":330, "size":262144, "time":878318378059484 }
+{ "type":"BEFORE_TRANSFORM", "id":329, "size":262144, "time":878318378046642 }
+{ "type":"AFTER_TRANSFORM", "id":330, "size":118929, "time":878318569369771 } [191 ms]
+{ "type":"BEFORE_ENTROPY", "id":330, "size":118929, "time":878318569458885 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":327, "size":123276, "time":878318591499261 } [213 ms]
+{ "type":"BEFORE_ENTROPY", "id":327, "size":123276, "time":878318591569155 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":329, "size":123850, "time":878318732761445 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":329, "size":123850, "time":878318732856856 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":328, "size":123952, "time":878318734275673 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":328, "size":123952, "time":878318734324489 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":326, "size":124163, "time":878318737930874 } [359 ms]
+{ "type":"BEFORE_ENTROPY", "id":326, "size":124163, "time":878318737986437 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":326, "size":106334, "time":878318755689917 } [17 ms]
+Block 326: 262144 => 124163 [359 ms] => 106334 [17 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":327, "size":105699, "time":878318767765418 } [176 ms]
+Block 327: 262144 => 123276 [213 ms] => 105699 [176 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":328, "size":105941, "time":878318773366522 } [39 ms]
+Block 328: 262144 => 123952 [356 ms] => 105941 [39 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":329, "size":106259, "time":878318786160041 } [53 ms]
+Block 329: 262144 => 123850 [354 ms] => 106259 [53 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":330, "size":101366, "time":878318791960892 } [222 ms]
+Block 330: 262144 => 118929 [191 ms] => 101366 [222 ms] (38%)
+{ "type":"BEFORE_TRANSFORM", "id":331, "size":262144, "time":878318792527545 }
+{ "type":"BEFORE_TRANSFORM", "id":332, "size":262144, "time":878318792537948 }
+{ "type":"BEFORE_TRANSFORM", "id":335, "size":262144, "time":878318792569640 }
+{ "type":"BEFORE_TRANSFORM", "id":334, "size":262144, "time":878318792559962 }
+{ "type":"BEFORE_TRANSFORM", "id":333, "size":262144, "time":878318792552752 }
+{ "type":"AFTER_TRANSFORM", "id":332, "size":124771, "time":878318993196841 } [200 ms]
+{ "type":"BEFORE_ENTROPY", "id":332, "size":124771, "time":878318993283608 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":335, "size":120732, "time":878319038510383 } [245 ms]
+{ "type":"BEFORE_ENTROPY", "id":335, "size":120732, "time":878319038584276 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":334, "size":121902, "time":878319144262321 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":334, "size":121902, "time":878319144352357 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":331, "size":120869, "time":878319144489182 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":331, "size":120869, "time":878319144548673 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":333, "size":124041, "time":878319145365461 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":333, "size":124041, "time":878319145413811 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":331, "size":103007, "time":878319161636306 } [17 ms]
+Block 331: 262144 => 120869 [351 ms] => 103007 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":332, "size":106795, "time":878319173313654 } [180 ms]
+Block 332: 262144 => 124771 [200 ms] => 106795 [180 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":333, "size":106140, "time":878319178957788 } [33 ms]
+Block 333: 262144 => 124041 [352 ms] => 106140 [33 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":334, "size":104565, "time":878319191368956 } [47 ms]
+Block 334: 262144 => 121902 [351 ms] => 104565 [47 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":335, "size":102737, "time":878319196984247 } [158 ms]
+Block 335: 262144 => 120732 [245 ms] => 102737 [158 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":336, "size":262144, "time":878319202769349 }
+{ "type":"BEFORE_TRANSFORM", "id":337, "size":262144, "time":878319202825979 }
+{ "type":"BEFORE_TRANSFORM", "id":338, "size":262144, "time":878319202847274 }
+{ "type":"BEFORE_TRANSFORM", "id":340, "size":262144, "time":878319202863320 }
+{ "type":"BEFORE_TRANSFORM", "id":339, "size":262144, "time":878319202857848 }
+{ "type":"AFTER_TRANSFORM", "id":340, "size":121939, "time":878319408182681 } [205 ms]
+{ "type":"BEFORE_ENTROPY", "id":340, "size":121939, "time":878319408283136 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":339, "size":121208, "time":878319487695572 } [284 ms]
+{ "type":"BEFORE_ENTROPY", "id":339, "size":121208, "time":878319487771522 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":337, "size":123867, "time":878319499376669 } [296 ms]
+{ "type":"BEFORE_ENTROPY", "id":337, "size":123867, "time":878319499423623 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":336, "size":120200, "time":878319573478989 } [370 ms]
+{ "type":"BEFORE_ENTROPY", "id":336, "size":120200, "time":878319573570296 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":338, "size":121717, "time":878319585675859 } [382 ms]
+{ "type":"BEFORE_ENTROPY", "id":338, "size":121717, "time":878319585744262 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":336, "size":102459, "time":878319590554595 } [16 ms]
+Block 336: 262144 => 120200 [370 ms] => 102459 [16 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":337, "size":105195, "time":878319601366052 } [101 ms]
+Block 337: 262144 => 123867 [296 ms] => 105195 [101 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":338, "size":103829, "time":878319606897671 } [21 ms]
+Block 338: 262144 => 121717 [382 ms] => 103829 [21 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":339, "size":103740, "time":878319618952424 } [131 ms]
+Block 339: 262144 => 121208 [284 ms] => 103740 [131 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":340, "size":104285, "time":878319624836084 } [216 ms]
+Block 340: 262144 => 121939 [205 ms] => 104285 [216 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":341, "size":262144, "time":878319630681718 }
+{ "type":"BEFORE_TRANSFORM", "id":342, "size":262144, "time":878319630724769 }
+{ "type":"BEFORE_TRANSFORM", "id":343, "size":262144, "time":878319630749098 }
+{ "type":"BEFORE_TRANSFORM", "id":344, "size":262144, "time":878319630769719 }
+{ "type":"BEFORE_TRANSFORM", "id":345, "size":262144, "time":878319630776644 }
+{ "type":"AFTER_TRANSFORM", "id":342, "size":125958, "time":878319836511131 } [205 ms]
+{ "type":"BEFORE_ENTROPY", "id":342, "size":125958, "time":878319836599544 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":344, "size":120785, "time":878319888992166 } [258 ms]
+{ "type":"BEFORE_ENTROPY", "id":344, "size":120785, "time":878319889089565 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":343, "size":121490, "time":878319983762759 } [353 ms]
+{ "type":"BEFORE_ENTROPY", "id":343, "size":121490, "time":878319983856267 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":345, "size":125294, "time":878319985719934 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":345, "size":125294, "time":878319985768352 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":341, "size":125195, "time":878319986984345 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":341, "size":125195, "time":878319987039019 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":341, "size":107185, "time":878320004846422 } [17 ms]
+Block 341: 262144 => 125195 [356 ms] => 107185 [17 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":342, "size":107253, "time":878320016180151 } [179 ms]
+Block 342: 262144 => 125958 [205 ms] => 107253 [179 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":343, "size":103663, "time":878320021779772 } [37 ms]
+Block 343: 262144 => 121490 [353 ms] => 103663 [37 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":344, "size":103862, "time":878320033985177 } [144 ms]
+Block 344: 262144 => 120785 [258 ms] => 103862 [144 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":345, "size":106588, "time":878320039752806 } [53 ms]
+Block 345: 262144 => 125294 [354 ms] => 106588 [53 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":346, "size":262144, "time":878320040298384 }
+{ "type":"BEFORE_TRANSFORM", "id":347, "size":262144, "time":878320040366138 }
+{ "type":"BEFORE_TRANSFORM", "id":348, "size":262144, "time":878320040397383 }
+{ "type":"BEFORE_TRANSFORM", "id":349, "size":262144, "time":878320040439740 }
+{ "type":"BEFORE_TRANSFORM", "id":350, "size":262144, "time":878320040446991 }
+{ "type":"AFTER_TRANSFORM", "id":349, "size":125673, "time":878320234484750 } [194 ms]
+{ "type":"BEFORE_ENTROPY", "id":349, "size":125673, "time":878320234571125 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":347, "size":123790, "time":878320245072909 } [204 ms]
+{ "type":"BEFORE_ENTROPY", "id":347, "size":123790, "time":878320245130350 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":346, "size":117457, "time":878320386657225 } [346 ms]
+{ "type":"BEFORE_ENTROPY", "id":346, "size":117457, "time":878320388532790 } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":350, "size":101709, "time":878320395480872 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":350, "size":101709, "time":878320395536952 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":348, "size":123431, "time":878320398203260 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":348, "size":123431, "time":878320398252456 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":346, "size":100165, "time":878320405314555 } [16 ms]
+Block 346: 262144 => 117457 [346 ms] => 100165 [16 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":347, "size":105913, "time":878320415901268 } [170 ms]
+Block 347: 262144 => 123790 [204 ms] => 105913 [170 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":348, "size":105758, "time":878320421568262 } [23 ms]
+Block 348: 262144 => 123431 [357 ms] => 105758 [23 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":349, "size":107353, "time":878320433986032 } [199 ms]
+Block 349: 262144 => 125673 [194 ms] => 107353 [199 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":350, "size":85920, "time":878320445479239 } [49 ms]
+Block 350: 262144 => 101709 [355 ms] => 85920 [49 ms] (32%)
+{ "type":"BEFORE_TRANSFORM", "id":351, "size":262144, "time":878320446012703 }
+{ "type":"BEFORE_TRANSFORM", "id":353, "size":262144, "time":878320446063889 }
+{ "type":"BEFORE_TRANSFORM", "id":354, "size":262144, "time":878320446077835 }
+{ "type":"BEFORE_TRANSFORM", "id":352, "size":262144, "time":878320446037394 }
+{ "type":"BEFORE_TRANSFORM", "id":355, "size":262144, "time":878320446097816 }
+{ "type":"AFTER_TRANSFORM", "id":352, "size":123152, "time":878320662124060 } [216 ms]
+{ "type":"BEFORE_ENTROPY", "id":352, "size":123152, "time":878320662219112 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":354, "size":120835, "time":878320674828572 } [228 ms]
+{ "type":"BEFORE_ENTROPY", "id":354, "size":120835, "time":878320674884897 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":351, "size":122359, "time":878320721929396 } [275 ms]
+{ "type":"BEFORE_ENTROPY", "id":351, "size":122359, "time":878320722018129 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":351, "size":104362, "time":878320731170557 } [9 ms]
+Block 351: 262144 => 122359 [275 ms] => 104362 [9 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":352, "size":105348, "time":878320731390541 } [69 ms]
+Block 352: 262144 => 123152 [216 ms] => 105348 [69 ms] (40%)
+{ "type":"AFTER_TRANSFORM", "id":353, "size":122666, "time":878320800344033 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":353, "size":122666, "time":878320800436541 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":355, "size":120645, "time":878320804568652 } [358 ms]
+{ "type":"BEFORE_ENTROPY", "id":355, "size":120645, "time":878320804617976 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":353, "size":104837, "time":878320818145981 } [17 ms]
+Block 353: 262144 => 122666 [354 ms] => 104837 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":354, "size":103293, "time":878320829996862 } [155 ms]
+Block 354: 262144 => 120835 [228 ms] => 103293 [155 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":355, "size":103743, "time":878320835786347 } [31 ms]
+Block 355: 262144 => 120645 [358 ms] => 103743 [31 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":356, "size":262144, "time":878320841711805 }
+{ "type":"BEFORE_TRANSFORM", "id":357, "size":262144, "time":878320841735776 }
+{ "type":"BEFORE_TRANSFORM", "id":358, "size":262144, "time":878320841747909 }
+{ "type":"BEFORE_TRANSFORM", "id":360, "size":262144, "time":878320841772895 }
+{ "type":"BEFORE_TRANSFORM", "id":359, "size":262144, "time":878320841762690 }
+{ "type":"AFTER_TRANSFORM", "id":360, "size":122763, "time":878321076380332 } [234 ms]
+{ "type":"BEFORE_ENTROPY", "id":360, "size":122763, "time":878321076462150 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":358, "size":116392, "time":878321185145876 } [343 ms]
+{ "type":"BEFORE_ENTROPY", "id":358, "size":116392, "time":878321185246873 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":359, "size":113983, "time":878321187189724 } [345 ms]
+{ "type":"BEFORE_ENTROPY", "id":359, "size":113983, "time":878321187245879 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":356, "size":122198, "time":878321197341429 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":356, "size":122198, "time":878321197395759 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":357, "size":122783, "time":878321202748197 } [361 ms]
+{ "type":"BEFORE_ENTROPY", "id":357, "size":122783, "time":878321202812382 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":356, "size":104824, "time":878321216583744 } [19 ms]
+Block 356: 262144 => 122198 [355 ms] => 104824 [19 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":357, "size":105129, "time":878321229233839 } [26 ms]
+Block 357: 262144 => 122783 [361 ms] => 105129 [26 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":358, "size":100001, "time":878321241627947 } [56 ms]
+Block 358: 262144 => 116392 [343 ms] => 100001 [56 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":359, "size":98075, "time":878321246755356 } [59 ms]
+Block 359: 262144 => 113983 [345 ms] => 98075 [59 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":360, "size":105488, "time":878321247080715 } [170 ms]
+Block 360: 262144 => 122763 [234 ms] => 105488 [170 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":361, "size":262144, "time":878321253069786 }
+{ "type":"BEFORE_TRANSFORM", "id":362, "size":262144, "time":878321253115425 }
+{ "type":"BEFORE_TRANSFORM", "id":364, "size":262144, "time":878321253153053 }
+{ "type":"BEFORE_TRANSFORM", "id":365, "size":262144, "time":878321253168974 }
+{ "type":"BEFORE_TRANSFORM", "id":363, "size":262144, "time":878321253124577 }
+{ "type":"AFTER_TRANSFORM", "id":365, "size":122380, "time":878321592980753 } [339 ms]
+{ "type":"BEFORE_ENTROPY", "id":365, "size":122380, "time":878321593066773 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":363, "size":121078, "time":878321604441701 } [351 ms]
+{ "type":"AFTER_TRANSFORM", "id":364, "size":114745, "time":878321604453348 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":363, "size":121078, "time":878321604506253 } [0 ms]
+{ "type":"BEFORE_ENTROPY", "id":364, "size":114745, "time":878321604529199 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":361, "size":111772, "time":878321609247876 } [356 ms]
+{ "type":"BEFORE_ENTROPY", "id":361, "size":111772, "time":878321609306491 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":362, "size":120789, "time":878321610921968 } [357 ms]
+{ "type":"BEFORE_ENTROPY", "id":362, "size":120789, "time":878321610973320 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":361, "size":95064, "time":878321625996249 } [16 ms]
+Block 361: 262144 => 111772 [356 ms] => 95064 [16 ms] (36%)
+{ "type":"AFTER_ENTROPY", "id":362, "size":103450, "time":878321637293892 } [26 ms]
+Block 362: 262144 => 120789 [357 ms] => 103450 [26 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":363, "size":103262, "time":878321649791148 } [45 ms]
+Block 363: 262144 => 121078 [351 ms] => 103262 [45 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":364, "size":97884, "time":878321655067872 } [50 ms]
+Block 364: 262144 => 114745 [351 ms] => 97884 [50 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":365, "size":104980, "time":878321660263984 } [67 ms]
+Block 365: 262144 => 122380 [339 ms] => 104980 [67 ms] (40%)
+{ "type":"BEFORE_TRANSFORM", "id":366, "size":262144, "time":878321666059232 }
+{ "type":"BEFORE_TRANSFORM", "id":367, "size":262144, "time":878321666098277 }
+{ "type":"BEFORE_TRANSFORM", "id":369, "size":262144, "time":878321666120742 }
+{ "type":"BEFORE_TRANSFORM", "id":370, "size":262144, "time":878321666154136 }
+{ "type":"BEFORE_TRANSFORM", "id":368, "size":262144, "time":878321666106896 }
+{ "type":"AFTER_TRANSFORM", "id":370, "size":71564, "time":878321944321282 } [278 ms]
+{ "type":"BEFORE_ENTROPY", "id":370, "size":71564, "time":878321944436153 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":369, "size":115800, "time":878322018962523 } [352 ms]
+{ "type":"BEFORE_ENTROPY", "id":369, "size":115800, "time":878322019049550 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":368, "size":116421, "time":878322020301602 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":368, "size":116421, "time":878322020367713 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":366, "size":121117, "time":878322020371476 } [354 ms]
+{ "type":"BEFORE_ENTROPY", "id":366, "size":121117, "time":878322020423074 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":367, "size":124771, "time":878322031700216 } [365 ms]
+{ "type":"BEFORE_ENTROPY", "id":367, "size":124771, "time":878322031752033 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":366, "size":104006, "time":878322038157254 } [17 ms]
+Block 366: 262144 => 121117 [354 ms] => 104006 [17 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":367, "size":106423, "time":878322051704268 } [19 ms]
+Block 367: 262144 => 124771 [365 ms] => 106423 [19 ms] (40%)
+{ "type":"AFTER_ENTROPY", "id":368, "size":99470, "time":878322064500370 } [44 ms]
+Block 368: 262144 => 116421 [354 ms] => 99470 [44 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":369, "size":98597, "time":878322069603043 } [50 ms]
+Block 369: 262144 => 115800 [352 ms] => 98597 [50 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":370, "size":59601, "time":878322074951573 } [130 ms]
+Block 370: 262144 => 71564 [278 ms] => 59601 [130 ms] (22%)
+{ "type":"BEFORE_TRANSFORM", "id":371, "size":262144, "time":878322081394250 }
+{ "type":"BEFORE_TRANSFORM", "id":372, "size":262144, "time":878322081437825 }
+{ "type":"BEFORE_TRANSFORM", "id":373, "size":262144, "time":878322081448957 }
+{ "type":"BEFORE_TRANSFORM", "id":375, "size":262144, "time":878322081492888 }
+{ "type":"BEFORE_TRANSFORM", "id":374, "size":262144, "time":878322081477880 }
+{ "type":"AFTER_TRANSFORM", "id":375, "size":115727, "time":878322278950337 } [197 ms]
+{ "type":"BEFORE_ENTROPY", "id":375, "size":115727, "time":878322279055140 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":374, "size":118560, "time":878322428865232 } [347 ms]
+{ "type":"BEFORE_ENTROPY", "id":374, "size":118560, "time":878322428960497 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":373, "size":120841, "time":878322430714918 } [349 ms]
+{ "type":"BEFORE_ENTROPY", "id":373, "size":120841, "time":878322430769770 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":371, "size":121638, "time":878322433362113 } [351 ms]
+{ "type":"BEFORE_ENTROPY", "id":371, "size":121638, "time":878322433411082 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":372, "size":120648, "time":878322442390580 } [360 ms]
+{ "type":"BEFORE_ENTROPY", "id":372, "size":120648, "time":878322442452380 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":371, "size":104014, "time":878322451427558 } [18 ms]
+Block 371: 262144 => 121638 [351 ms] => 104014 [18 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":372, "size":103459, "time":878322463775026 } [21 ms]
+Block 372: 262144 => 120648 [360 ms] => 103459 [21 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":373, "size":103675, "time":878322476233761 } [45 ms]
+Block 373: 262144 => 120841 [349 ms] => 103675 [45 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":374, "size":101686, "time":878322476297728 } [47 ms]
+Block 374: 262144 => 118560 [347 ms] => 101686 [47 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":375, "size":98683, "time":878322481563655 } [202 ms]
+Block 375: 262144 => 115727 [197 ms] => 98683 [202 ms] (37%)
+{ "type":"BEFORE_TRANSFORM", "id":376, "size":262144, "time":878322492727635 }
+{ "type":"BEFORE_TRANSFORM", "id":379, "size":262144, "time":878322492766523 }
+{ "type":"BEFORE_TRANSFORM", "id":380, "size":262144, "time":878322492776111 }
+{ "type":"BEFORE_TRANSFORM", "id":378, "size":262144, "time":878322492752636 }
+{ "type":"BEFORE_TRANSFORM", "id":377, "size":262144, "time":878322492740742 }
+{ "type":"AFTER_TRANSFORM", "id":380, "size":121862, "time":878322731684415 } [238 ms]
+{ "type":"BEFORE_ENTROPY", "id":380, "size":121862, "time":878322731759854 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":379, "size":113483, "time":878322839998035 } [347 ms]
+{ "type":"BEFORE_ENTROPY", "id":379, "size":113483, "time":878322840090803 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":378, "size":116130, "time":878322848517367 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":378, "size":116130, "time":878322848576052 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":376, "size":115283, "time":878322848662042 } [355 ms]
+{ "type":"BEFORE_ENTROPY", "id":376, "size":115283, "time":878322848708692 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":377, "size":118918, "time":878322851171418 } [358 ms]
+{ "type":"BEFORE_ENTROPY", "id":377, "size":118918, "time":878322851219889 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":376, "size":99123, "time":878322865530591 } [16 ms]
+Block 376: 262144 => 115283 [355 ms] => 99123 [16 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":377, "size":101962, "time":878322877296061 } [26 ms]
+Block 377: 262144 => 118918 [358 ms] => 101962 [26 ms] (38%)
+{ "type":"AFTER_ENTROPY", "id":378, "size":98974, "time":878322877620363 } [29 ms]
+Block 378: 262144 => 116130 [355 ms] => 98974 [29 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":379, "size":97614, "time":878322882677972 } [42 ms]
+Block 379: 262144 => 113483 [347 ms] => 97614 [42 ms] (37%)
+{ "type":"AFTER_ENTROPY", "id":380, "size":103865, "time":878322887847514 } [156 ms]
+Block 380: 262144 => 121862 [238 ms] => 103865 [156 ms] (39%)
+{ "type":"BEFORE_TRANSFORM", "id":381, "size":262144, "time":878322899297829 }
+{ "type":"BEFORE_TRANSFORM", "id":382, "size":123136, "time":878322899357722 }
+{ "type":"AFTER_TRANSFORM", "id":382, "size":58216, "time":878322985076951 } [85 ms]
+{ "type":"BEFORE_ENTROPY", "id":382, "size":58216, "time":878322985145670 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":381, "size":119557, "time":878323079423714 } [180 ms]
+{ "type":"BEFORE_ENTROPY", "id":381, "size":119557, "time":878323079492405 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":381, "size":102537, "time":878323088487795 } [8 ms]
+Block 381: 262144 => 119557 [180 ms] => 102537 [8 ms] (39%)
+{ "type":"AFTER_ENTROPY", "id":382, "size":49234, "time":878323094444723 } [109 ms]
+Block 382: 123136 => 58216 [85 ms] => 49234 [109 ms] (39%)
+
+Encoding:          31947 ms
+Input size:        100000000
+Output size:       39252052
+Compression ratio: 0.392521
+Throughput (KB/s): 3056
+
+{ "type":"COMPRESSION_END", "size":39252052, "time":878323106291879 }

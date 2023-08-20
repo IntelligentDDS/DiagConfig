@@ -1,0 +1,150 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [CM]
+Warning: providing the 'level' option forces the transform. Ignoring [LZ]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 4194304 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to true
+Using X86+RLT+TEXT transform (stage 1)
+Using TPAQ entropy codec (stage 2)
+Using 3 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":1020557015367478 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":4194304, "time":1020557349083509, "hash":51dfbb37 }
+{ "type":"BEFORE_TRANSFORM", "id":3, "size":4194304, "time":1020557353050339, "hash":13f4a418 }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":4194304, "time":1020557354842354, "hash":d0324e95 }
+{ "type":"AFTER_TRANSFORM", "id":3, "size":2684067, "time":1020559060146529, "hash":13f4a418 } [1707 ms]
+{ "type":"BEFORE_ENTROPY", "id":3, "size":2684067, "time":1020559068064146, "hash":13f4a418 } [7 ms]
+{ "type":"AFTER_TRANSFORM", "id":1, "size":2636123, "time":1020559148747333, "hash":51dfbb37 } [1799 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":2636123, "time":1020559149999927, "hash":51dfbb37 } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":2, "size":2701618, "time":1020559286525760, "hash":d0324e95 } [1931 ms]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":2701618, "time":1020559286862498, "hash":d0324e95 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":944362, "time":1020585624206036, "hash":51dfbb37 } [26474 ms]
+Block 1: 4194304 => 2636123 [1799 ms] => 944362 [26474 ms] (22%)  [51dfbb37]
+{ "type":"AFTER_ENTROPY", "id":2, "size":954922, "time":1020586975755134, "hash":d0324e95 } [27688 ms]
+Block 2: 4194304 => 2701618 [1931 ms] => 954922 [27688 ms] (22%)  [d0324e95]
+{ "type":"AFTER_ENTROPY", "id":3, "size":960010, "time":1020587307039578, "hash":13f4a418 } [28238 ms]
+Block 3: 4194304 => 2684067 [1707 ms] => 960010 [28238 ms] (22%)  [13f4a418]
+{ "type":"BEFORE_TRANSFORM", "id":5, "size":4194304, "time":1020587666744807, "hash":d9c31a64 }
+{ "type":"BEFORE_TRANSFORM", "id":4, "size":4194304, "time":1020587686303753, "hash":a08e2684 }
+{ "type":"BEFORE_TRANSFORM", "id":6, "size":4194304, "time":1020587720024203, "hash":af8dfa91 }
+{ "type":"AFTER_TRANSFORM", "id":4, "size":2652069, "time":1020589292556291, "hash":a08e2684 } [1606 ms]
+{ "type":"BEFORE_ENTROPY", "id":4, "size":2652069, "time":1020589294211301, "hash":a08e2684 } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":6, "size":2633901, "time":1020589303753793, "hash":af8dfa91 } [1583 ms]
+{ "type":"BEFORE_ENTROPY", "id":6, "size":2633901, "time":1020589305794677, "hash":af8dfa91 } [2 ms]
+{ "type":"AFTER_TRANSFORM", "id":5, "size":2651617, "time":1020589423690346, "hash":d9c31a64 } [1756 ms]
+{ "type":"BEFORE_ENTROPY", "id":5, "size":2651617, "time":1020589424595579, "hash":d9c31a64 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":4, "size":968082, "time":1020616965765449, "hash":a08e2684 } [27671 ms]
+Block 4: 4194304 => 2652069 [1606 ms] => 968082 [27671 ms] (23%)  [a08e2684]
+{ "type":"AFTER_ENTROPY", "id":5, "size":935402, "time":1020617023724910, "hash":d9c31a64 } [27599 ms]
+Block 5: 4194304 => 2651617 [1756 ms] => 935402 [27599 ms] (22%)  [d9c31a64]
+{ "type":"AFTER_ENTROPY", "id":6, "size":954934, "time":1020617078322929, "hash":af8dfa91 } [27772 ms]
+Block 6: 4194304 => 2633901 [1583 ms] => 954934 [27772 ms] (22%)  [af8dfa91]
+{ "type":"BEFORE_TRANSFORM", "id":7, "size":4194304, "time":1020617359770073, "hash":92408ccb }
+{ "type":"BEFORE_TRANSFORM", "id":9, "size":4194304, "time":1020617360100821, "hash":a0760b62 }
+{ "type":"BEFORE_TRANSFORM", "id":8, "size":4194304, "time":1020617362267443, "hash":8d451632 }
+{ "type":"AFTER_TRANSFORM", "id":9, "size":2617453, "time":1020618862077525, "hash":a0760b62 } [1501 ms]
+{ "type":"BEFORE_ENTROPY", "id":9, "size":2617453, "time":1020618862434377, "hash":a0760b62 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":7, "size":2632611, "time":1020618895759419, "hash":92408ccb } [1535 ms]
+{ "type":"BEFORE_ENTROPY", "id":7, "size":2632611, "time":1020618896388076, "hash":92408ccb } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":8, "size":2614829, "time":1020618918768009, "hash":8d451632 } [1556 ms]
+{ "type":"BEFORE_ENTROPY", "id":8, "size":2614829, "time":1020618919122091, "hash":8d451632 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":7, "size":973734, "time":1020645786862980, "hash":92408ccb } [26890 ms]
+Block 7: 4194304 => 2632611 [1535 ms] => 973734 [26890 ms] (23%)  [92408ccb]
+{ "type":"AFTER_ENTROPY", "id":8, "size":913674, "time":1020645837954825, "hash":8d451632 } [26918 ms]
+Block 8: 4194304 => 2614829 [1556 ms] => 913674 [26918 ms] (21%)  [8d451632]
+{ "type":"AFTER_ENTROPY", "id":9, "size":954658, "time":1020645839093027, "hash":a0760b62 } [26976 ms]
+Block 9: 4194304 => 2617453 [1501 ms] => 954658 [26976 ms] (22%)  [a0760b62]
+{ "type":"BEFORE_TRANSFORM", "id":10, "size":4194304, "time":1020646168303734, "hash":509568ec }
+{ "type":"BEFORE_TRANSFORM", "id":12, "size":4194304, "time":1020646172665576, "hash":312d1fb0 }
+{ "type":"BEFORE_TRANSFORM", "id":11, "size":4194304, "time":1020646180937198, "hash":a23f1a91 }
+{ "type":"AFTER_TRANSFORM", "id":12, "size":2610795, "time":1020647689478162, "hash":312d1fb0 } [1516 ms]
+{ "type":"BEFORE_ENTROPY", "id":12, "size":2610795, "time":1020647691143457, "hash":312d1fb0 } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":10, "size":2668004, "time":1020647714777584, "hash":509568ec } [1546 ms]
+{ "type":"BEFORE_ENTROPY", "id":10, "size":2668004, "time":1020647716380671, "hash":509568ec } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":11, "size":2614827, "time":1020647768891359, "hash":a23f1a91 } [1587 ms]
+{ "type":"BEFORE_ENTROPY", "id":11, "size":2614827, "time":1020647769172133, "hash":a23f1a91 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":10, "size":941570, "time":1020674885646032, "hash":509568ec } [27169 ms]
+Block 10: 4194304 => 2668004 [1546 ms] => 941570 [27169 ms] (22%)  [509568ec]
+{ "type":"AFTER_ENTROPY", "id":11, "size":957866, "time":1020674886639423, "hash":a23f1a91 } [27117 ms]
+Block 11: 4194304 => 2614827 [1587 ms] => 957866 [27117 ms] (22%)  [a23f1a91]
+{ "type":"AFTER_ENTROPY", "id":12, "size":951070, "time":1020674937506472, "hash":312d1fb0 } [27246 ms]
+Block 12: 4194304 => 2610795 [1516 ms] => 951070 [27246 ms] (22%)  [312d1fb0]
+{ "type":"BEFORE_TRANSFORM", "id":13, "size":4194304, "time":1020675226245262, "hash":6dd41a81 }
+{ "type":"BEFORE_TRANSFORM", "id":14, "size":4194304, "time":1020675236197904, "hash":21ae996b }
+{ "type":"BEFORE_TRANSFORM", "id":15, "size":4194304, "time":1020675241521786, "hash":741211cd }
+{ "type":"AFTER_TRANSFORM", "id":14, "size":2621359, "time":1020676810210532, "hash":21ae996b } [1574 ms]
+{ "type":"BEFORE_ENTROPY", "id":14, "size":2621359, "time":1020676810520163, "hash":21ae996b } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":15, "size":2640147, "time":1020676841383028, "hash":741211cd } [1599 ms]
+{ "type":"BEFORE_ENTROPY", "id":15, "size":2640147, "time":1020676841741869, "hash":741211cd } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":13, "size":2697616, "time":1020677011305064, "hash":6dd41a81 } [1785 ms]
+{ "type":"BEFORE_ENTROPY", "id":13, "size":2697616, "time":1020677013282904, "hash":6dd41a81 } [1 ms]
+{ "type":"AFTER_ENTROPY", "id":13, "size":968710, "time":1020705500325236, "hash":6dd41a81 } [28487 ms]
+Block 13: 4194304 => 2697616 [1785 ms] => 968710 [28487 ms] (23%)  [6dd41a81]
+{ "type":"AFTER_ENTROPY", "id":14, "size":949810, "time":1020705554165379, "hash":21ae996b } [28743 ms]
+Block 14: 4194304 => 2621359 [1574 ms] => 949810 [28743 ms] (22%)  [21ae996b]
+{ "type":"AFTER_ENTROPY", "id":15, "size":957330, "time":1020705554899716, "hash":741211cd } [28713 ms]
+Block 15: 4194304 => 2640147 [1599 ms] => 957330 [28713 ms] (22%)  [741211cd]
+{ "type":"BEFORE_TRANSFORM", "id":16, "size":4194304, "time":1020705885584583, "hash":368476bd }
+{ "type":"BEFORE_TRANSFORM", "id":18, "size":4194304, "time":1020705888273421, "hash":8ead08eb }
+{ "type":"BEFORE_TRANSFORM", "id":17, "size":4194304, "time":1020705895783969, "hash":2f485e61 }
+{ "type":"AFTER_TRANSFORM", "id":18, "size":2763064, "time":1020707378455844, "hash":8ead08eb } [1490 ms]
+{ "type":"BEFORE_ENTROPY", "id":18, "size":2763064, "time":1020707378839200, "hash":8ead08eb } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":16, "size":2632164, "time":1020707409667294, "hash":368476bd } [1524 ms]
+{ "type":"BEFORE_ENTROPY", "id":16, "size":2632164, "time":1020707409982994, "hash":368476bd } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":17, "size":2676322, "time":1020707435938487, "hash":2f485e61 } [1540 ms]
+{ "type":"BEFORE_ENTROPY", "id":17, "size":2676322, "time":1020707436208165, "hash":2f485e61 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":16, "size":943658, "time":1020734374445175, "hash":368476bd } [26964 ms]
+Block 16: 4194304 => 2632164 [1524 ms] => 943658 [26964 ms] (22%)  [368476bd]
+{ "type":"AFTER_ENTROPY", "id":17, "size":959898, "time":1020734789712599, "hash":2f485e61 } [27353 ms]
+Block 17: 4194304 => 2676322 [1540 ms] => 959898 [27353 ms] (22%)  [2f485e61]
+{ "type":"AFTER_ENTROPY", "id":18, "size":930126, "time":1020736627897223, "hash":8ead08eb } [29249 ms]
+Block 18: 4194304 => 2763064 [1490 ms] => 930126 [29249 ms] (22%)  [8ead08eb]
+{ "type":"BEFORE_TRANSFORM", "id":19, "size":4194304, "time":1020736910749761, "hash":653c5f8e }
+{ "type":"BEFORE_TRANSFORM", "id":21, "size":4194304, "time":1020736911336888, "hash":4c6accf2 }
+{ "type":"BEFORE_TRANSFORM", "id":20, "size":4194304, "time":1020736918412136, "hash":7888bc1c }
+{ "type":"AFTER_TRANSFORM", "id":21, "size":2597485, "time":1020738411885369, "hash":4c6accf2 } [1500 ms]
+{ "type":"BEFORE_ENTROPY", "id":21, "size":2597485, "time":1020738412449144, "hash":4c6accf2 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":19, "size":2629208, "time":1020738434815890, "hash":653c5f8e } [1524 ms]
+{ "type":"BEFORE_ENTROPY", "id":19, "size":2629208, "time":1020738436371917, "hash":653c5f8e } [1 ms]
+{ "type":"AFTER_TRANSFORM", "id":20, "size":2661007, "time":1020738460600017, "hash":7888bc1c } [1542 ms]
+{ "type":"BEFORE_ENTROPY", "id":20, "size":2661007, "time":1020738462181932, "hash":7888bc1c } [1 ms]
+{ "type":"AFTER_ENTROPY", "id":19, "size":950722, "time":1020765051684972, "hash":653c5f8e } [26615 ms]
+Block 19: 4194304 => 2629208 [1524 ms] => 950722 [26615 ms] (22%)  [653c5f8e]
+{ "type":"AFTER_ENTROPY", "id":20, "size":969390, "time":1020765899451886, "hash":7888bc1c } [27437 ms]
+Block 20: 4194304 => 2661007 [1542 ms] => 969390 [27437 ms] (23%)  [7888bc1c]
+{ "type":"AFTER_ENTROPY", "id":21, "size":964138, "time":1020765900311696, "hash":4c6accf2 } [27487 ms]
+Block 21: 4194304 => 2597485 [1500 ms] => 964138 [27487 ms] (22%)  [4c6accf2]
+{ "type":"BEFORE_TRANSFORM", "id":24, "size":3531008, "time":1020766188881763, "hash":25505e60 }
+{ "type":"BEFORE_TRANSFORM", "id":22, "size":4194304, "time":1020766230146159, "hash":67ab0089 }
+{ "type":"BEFORE_TRANSFORM", "id":23, "size":4194304, "time":1020766241575354, "hash":61a3d788 }
+{ "type":"AFTER_TRANSFORM", "id":24, "size":2233158, "time":1020767446787496, "hash":25505e60 } [1257 ms]
+{ "type":"BEFORE_ENTROPY", "id":24, "size":2233158, "time":1020767447048518, "hash":25505e60 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":22, "size":2632037, "time":1020767753478169, "hash":67ab0089 } [1523 ms]
+{ "type":"BEFORE_ENTROPY", "id":22, "size":2632037, "time":1020767753816374, "hash":67ab0089 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":23, "size":2617198, "time":1020767778874486, "hash":61a3d788 } [1537 ms]
+{ "type":"BEFORE_ENTROPY", "id":23, "size":2617198, "time":1020767779156481, "hash":61a3d788 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":22, "size":966706, "time":1020794225330627, "hash":67ab0089 } [26471 ms]
+Block 22: 4194304 => 2632037 [1523 ms] => 966706 [26471 ms] (23%)  [67ab0089]
+{ "type":"AFTER_ENTROPY", "id":23, "size":944866, "time":1020794225993558, "hash":61a3d788 } [26446 ms]
+Block 23: 4194304 => 2617198 [1537 ms] => 944866 [26446 ms] (22%)  [61a3d788]
+{ "type":"AFTER_ENTROPY", "id":24, "size":769862, "time":1020794274514321, "hash":25505e60 } [26827 ms]
+Block 24: 3531008 => 2233158 [1257 ms] => 769862 [26827 ms] (21%)  [25505e60]
+
+Encoding:          237.3 s
+Input size:        100000000
+Output size:       22685601
+Compression ratio: 0.226856
+Throughput (KB/s): 411
+
+{ "type":"COMPRESSION_END", "size":22685601, "time":1020794276795875 }

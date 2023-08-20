@@ -1,0 +1,510 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [NONE]
+Warning: providing the 'level' option forces the transform. Ignoring [X86+LZ]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 1048576 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to true
+Using TEXT+FSD+ROLZX transform (stage 1)
+Using no entropy codec (stage 2)
+Using 5 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":1039634059839570 }
+{ "type":"BEFORE_TRANSFORM", "id":5, "size":1048576, "time":1039634197655039, "hash":6dce562 }
+{ "type":"BEFORE_TRANSFORM", "id":4, "size":1048576, "time":1039634220475679, "hash":78ced9b9 }
+{ "type":"BEFORE_TRANSFORM", "id":3, "size":1048576, "time":1039634247240314, "hash":1a6a23a5 }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":1048576, "time":1039634249232199, "hash":95752cf5 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":1048576, "time":1039634249528075, "hash":d74cf155 }
+{ "type":"AFTER_TRANSFORM", "id":5, "size":320544, "time":1039636402533509, "hash":6dce562 } [2204 ms]
+{ "type":"BEFORE_ENTROPY", "id":5, "size":320544, "time":1039636409407578, "hash":6dce562 } [6 ms]
+{ "type":"AFTER_TRANSFORM", "id":4, "size":319308, "time":1039637114402253, "hash":78ced9b9 } [2893 ms]
+{ "type":"BEFORE_ENTROPY", "id":4, "size":319308, "time":1039637115117074, "hash":78ced9b9 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":1, "size":304208, "time":1039637264564584, "hash":d74cf155 } [3015 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":304208, "time":1039637265401620, "hash":d74cf155 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":304216, "time":1039637265690773, "hash":d74cf155 } [0 ms]
+Block 1: 1048576 => 304208 [3015 ms] => 304216 [0 ms] (29%)  [d74cf155]
+{ "type":"AFTER_TRANSFORM", "id":3, "size":323708, "time":1039637353932290, "hash":1a6a23a5 } [3106 ms]
+{ "type":"BEFORE_ENTROPY", "id":3, "size":323708, "time":1039637354649558, "hash":1a6a23a5 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":2, "size":321008, "time":1039637360659567, "hash":95752cf5 } [3111 ms]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":321008, "time":1039637361440595, "hash":95752cf5 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":2, "size":321016, "time":1039637361760845, "hash":95752cf5 } [0 ms]
+Block 2: 1048576 => 321008 [3111 ms] => 321016 [0 ms] (30%)  [95752cf5]
+{ "type":"AFTER_ENTROPY", "id":3, "size":323716, "time":1039637401025514, "hash":1a6a23a5 } [46 ms]
+Block 3: 1048576 => 323708 [3106 ms] => 323716 [46 ms] (30%)  [1a6a23a5]
+{ "type":"AFTER_ENTROPY", "id":4, "size":319316, "time":1039637418523339, "hash":78ced9b9 } [303 ms]
+Block 4: 1048576 => 319308 [2893 ms] => 319316 [303 ms] (30%)  [78ced9b9]
+{ "type":"AFTER_ENTROPY", "id":5, "size":320552, "time":1039637435468797, "hash":6dce562 } [1026 ms]
+Block 5: 1048576 => 320544 [2204 ms] => 320552 [1026 ms] (30%)  [6dce562]
+{ "type":"BEFORE_TRANSFORM", "id":9, "size":1048576, "time":1039637538429403, "hash":a94e4c7a }
+{ "type":"BEFORE_TRANSFORM", "id":6, "size":1048576, "time":1039637605154446, "hash":15d98350 }
+{ "type":"BEFORE_TRANSFORM", "id":8, "size":1048576, "time":1039637605465149, "hash":eea269b4 }
+{ "type":"BEFORE_TRANSFORM", "id":7, "size":1048576, "time":1039637606651151, "hash":a64aa1cc }
+{ "type":"BEFORE_TRANSFORM", "id":10, "size":1048576, "time":1039637608102734, "hash":11b4dded }
+{ "type":"AFTER_TRANSFORM", "id":9, "size":318472, "time":1039639231997889, "hash":a94e4c7a } [1693 ms]
+{ "type":"BEFORE_ENTROPY", "id":9, "size":318472, "time":1039639232707679, "hash":a94e4c7a } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":10, "size":321552, "time":1039639418866944, "hash":11b4dded } [1810 ms]
+{ "type":"BEFORE_ENTROPY", "id":10, "size":321552, "time":1039639419409784, "hash":11b4dded } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":8, "size":320564, "time":1039640672691169, "hash":eea269b4 } [3067 ms]
+{ "type":"BEFORE_ENTROPY", "id":8, "size":320564, "time":1039640673370738, "hash":eea269b4 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":6, "size":325120, "time":1039640688577177, "hash":15d98350 } [3083 ms]
+{ "type":"BEFORE_ENTROPY", "id":6, "size":325120, "time":1039640689367811, "hash":15d98350 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":6, "size":325128, "time":1039640689636321, "hash":15d98350 } [0 ms]
+Block 6: 1048576 => 325120 [3083 ms] => 325128 [0 ms] (31%)  [15d98350]
+{ "type":"AFTER_TRANSFORM", "id":7, "size":328764, "time":1039641364981730, "hash":a64aa1cc } [3758 ms]
+{ "type":"BEFORE_ENTROPY", "id":7, "size":328764, "time":1039641365843903, "hash":a64aa1cc } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":7, "size":328772, "time":1039641366130487, "hash":a64aa1cc } [0 ms]
+Block 7: 1048576 => 328764 [3758 ms] => 328772 [0 ms] (31%)  [a64aa1cc]
+{ "type":"AFTER_ENTROPY", "id":8, "size":320572, "time":1039641407214147, "hash":eea269b4 } [733 ms]
+Block 8: 1048576 => 320564 [3067 ms] => 320572 [733 ms] (30%)  [eea269b4]
+{ "type":"AFTER_ENTROPY", "id":9, "size":318480, "time":1039641407796318, "hash":a94e4c7a } [2175 ms]
+Block 9: 1048576 => 318472 [1693 ms] => 318480 [2175 ms] (30%)  [a94e4c7a]
+{ "type":"AFTER_ENTROPY", "id":10, "size":321560, "time":1039641426206926, "hash":11b4dded } [2006 ms]
+Block 10: 1048576 => 321552 [1810 ms] => 321560 [2006 ms] (30%)  [11b4dded]
+{ "type":"BEFORE_TRANSFORM", "id":14, "size":1048576, "time":1039641515039294, "hash":2d53cb6b }
+{ "type":"BEFORE_TRANSFORM", "id":11, "size":1048576, "time":1039641515607177, "hash":579b0287 }
+{ "type":"BEFORE_TRANSFORM", "id":13, "size":1048576, "time":1039641585367160, "hash":54f0e6ff }
+{ "type":"BEFORE_TRANSFORM", "id":15, "size":1048576, "time":1039641592315709, "hash":2b38ae4d }
+{ "type":"BEFORE_TRANSFORM", "id":12, "size":1048576, "time":1039641622004315, "hash":c7428ee }
+{ "type":"AFTER_TRANSFORM", "id":14, "size":317252, "time":1039643167699744, "hash":2d53cb6b } [1652 ms]
+{ "type":"BEFORE_ENTROPY", "id":14, "size":317252, "time":1039643167907575, "hash":2d53cb6b } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":11, "size":324424, "time":1039643186908152, "hash":579b0287 } [1671 ms]
+{ "type":"BEFORE_ENTROPY", "id":11, "size":324424, "time":1039643187104458, "hash":579b0287 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":11, "size":324432, "time":1039643187258603, "hash":579b0287 } [0 ms]
+Block 11: 1048576 => 324424 [1671 ms] => 324432 [0 ms] (30%)  [579b0287]
+{ "type":"AFTER_TRANSFORM", "id":12, "size":321920, "time":1039644249132906, "hash":c7428ee } [2627 ms]
+{ "type":"BEFORE_ENTROPY", "id":12, "size":321920, "time":1039644249349774, "hash":c7428ee } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":12, "size":321928, "time":1039644249528680, "hash":c7428ee } [0 ms]
+Block 12: 1048576 => 321920 [2627 ms] => 321928 [0 ms] (30%)  [c7428ee]
+{ "type":"AFTER_TRANSFORM", "id":13, "size":330300, "time":1039644533796420, "hash":54f0e6ff } [2948 ms]
+{ "type":"BEFORE_ENTROPY", "id":13, "size":330300, "time":1039644534339285, "hash":54f0e6ff } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":13, "size":330308, "time":1039644534504810, "hash":54f0e6ff } [0 ms]
+Block 13: 1048576 => 330300 [2948 ms] => 330308 [0 ms] (31%)  [54f0e6ff]
+{ "type":"AFTER_ENTROPY", "id":14, "size":317260, "time":1039644553022367, "hash":2d53cb6b } [1385 ms]
+Block 14: 1048576 => 317252 [1652 ms] => 317260 [1385 ms] (30%)  [2d53cb6b]
+{ "type":"AFTER_TRANSFORM", "id":15, "size":324480, "time":1039644559600568, "hash":2b38ae4d } [2967 ms]
+{ "type":"BEFORE_ENTROPY", "id":15, "size":324480, "time":1039644559744480, "hash":2b38ae4d } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":15, "size":324488, "time":1039644570151254, "hash":2b38ae4d } [10 ms]
+Block 15: 1048576 => 324480 [2967 ms] => 324488 [10 ms] (30%)  [2b38ae4d]
+{ "type":"BEFORE_TRANSFORM", "id":18, "size":1048576, "time":1039644661392570, "hash":ca36333f }
+{ "type":"BEFORE_TRANSFORM", "id":19, "size":1048576, "time":1039644730273352, "hash":e6a43250 }
+{ "type":"BEFORE_TRANSFORM", "id":16, "size":1048576, "time":1039644730329908, "hash":7704be18 }
+{ "type":"BEFORE_TRANSFORM", "id":17, "size":1048576, "time":1039644736378117, "hash":e64343e }
+{ "type":"BEFORE_TRANSFORM", "id":20, "size":1048576, "time":1039644736625486, "hash":8ddea615 }
+{ "type":"AFTER_TRANSFORM", "id":18, "size":330092, "time":1039646377086372, "hash":ca36333f } [1715 ms]
+{ "type":"BEFORE_ENTROPY", "id":18, "size":330092, "time":1039646377415922, "hash":ca36333f } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":19, "size":285680, "time":1039647488786554, "hash":e6a43250 } [2758 ms]
+{ "type":"BEFORE_ENTROPY", "id":19, "size":285680, "time":1039647489019476, "hash":e6a43250 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":16, "size":321724, "time":1039647746891819, "hash":7704be18 } [3016 ms]
+{ "type":"BEFORE_ENTROPY", "id":16, "size":321724, "time":1039647747155549, "hash":7704be18 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":16, "size":321732, "time":1039647747343290, "hash":7704be18 } [0 ms]
+Block 16: 1048576 => 321724 [3016 ms] => 321732 [0 ms] (30%)  [7704be18]
+{ "type":"AFTER_TRANSFORM", "id":20, "size":317200, "time":1039647807511087, "hash":8ddea615 } [3070 ms]
+{ "type":"BEFORE_ENTROPY", "id":20, "size":317200, "time":1039647807692782, "hash":8ddea615 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":17, "size":318648, "time":1039647878158668, "hash":e64343e } [3141 ms]
+{ "type":"BEFORE_ENTROPY", "id":17, "size":318648, "time":1039647878459645, "hash":e64343e } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":17, "size":318656, "time":1039647878701794, "hash":e64343e } [0 ms]
+Block 17: 1048576 => 318648 [3141 ms] => 318656 [0 ms] (30%)  [e64343e]
+{ "type":"AFTER_ENTROPY", "id":18, "size":330100, "time":1039647916731636, "hash":ca36333f } [1539 ms]
+Block 18: 1048576 => 330092 [1715 ms] => 330100 [1539 ms] (31%)  [ca36333f]
+{ "type":"AFTER_ENTROPY", "id":19, "size":285688, "time":1039647934174966, "hash":e6a43250 } [445 ms]
+Block 19: 1048576 => 285680 [2758 ms] => 285688 [445 ms] (27%)  [e6a43250]
+{ "type":"AFTER_ENTROPY", "id":20, "size":317208, "time":1039647949293616, "hash":8ddea615 } [141 ms]
+Block 20: 1048576 => 317200 [3070 ms] => 317208 [141 ms] (30%)  [8ddea615]
+{ "type":"BEFORE_TRANSFORM", "id":24, "size":1048576, "time":1039648039672691, "hash":e3ca821a }
+{ "type":"BEFORE_TRANSFORM", "id":21, "size":1048576, "time":1039648109729952, "hash":a349a6a }
+{ "type":"BEFORE_TRANSFORM", "id":23, "size":1048576, "time":1039648109729962, "hash":eb72d31a }
+{ "type":"BEFORE_TRANSFORM", "id":25, "size":1048576, "time":1039648115637525, "hash":5b51fb5a }
+{ "type":"BEFORE_TRANSFORM", "id":22, "size":1048576, "time":1039648115969348, "hash":b0ca1d2 }
+{ "type":"AFTER_TRANSFORM", "id":24, "size":322364, "time":1039649688828946, "hash":e3ca821a } [1649 ms]
+{ "type":"BEFORE_ENTROPY", "id":24, "size":322364, "time":1039649689032484, "hash":e3ca821a } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":21, "size":305612, "time":1039651034349717, "hash":a349a6a } [2924 ms]
+{ "type":"BEFORE_ENTROPY", "id":21, "size":305612, "time":1039651034603133, "hash":a349a6a } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":21, "size":305620, "time":1039651034762651, "hash":a349a6a } [0 ms]
+Block 21: 1048576 => 305612 [2924 ms] => 305620 [0 ms] (29%)  [a349a6a]
+{ "type":"AFTER_TRANSFORM", "id":23, "size":322764, "time":1039651134230894, "hash":eb72d31a } [3024 ms]
+{ "type":"BEFORE_ENTROPY", "id":23, "size":322764, "time":1039651134736472, "hash":eb72d31a } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":25, "size":317288, "time":1039651150309948, "hash":5b51fb5a } [3034 ms]
+{ "type":"BEFORE_ENTROPY", "id":25, "size":317288, "time":1039651150458006, "hash":5b51fb5a } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":22, "size":320884, "time":1039651235947694, "hash":b0ca1d2 } [3119 ms]
+{ "type":"BEFORE_ENTROPY", "id":22, "size":320884, "time":1039651236204929, "hash":b0ca1d2 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":22, "size":320892, "time":1039651236384431, "hash":b0ca1d2 } [0 ms]
+Block 22: 1048576 => 320884 [3119 ms] => 320892 [0 ms] (30%)  [b0ca1d2]
+{ "type":"AFTER_ENTROPY", "id":23, "size":322772, "time":1039651274736080, "hash":eb72d31a } [139 ms]
+Block 23: 1048576 => 322764 [3024 ms] => 322772 [139 ms] (30%)  [eb72d31a]
+{ "type":"AFTER_ENTROPY", "id":24, "size":322372, "time":1039651291937114, "hash":e3ca821a } [1602 ms]
+Block 24: 1048576 => 322364 [1649 ms] => 322372 [1602 ms] (30%)  [e3ca821a]
+{ "type":"AFTER_ENTROPY", "id":25, "size":317296, "time":1039651292317456, "hash":5b51fb5a } [141 ms]
+Block 25: 1048576 => 317288 [3034 ms] => 317296 [141 ms] (30%)  [5b51fb5a]
+{ "type":"BEFORE_TRANSFORM", "id":30, "size":1048576, "time":1039651385995349, "hash":b876b608 }
+{ "type":"BEFORE_TRANSFORM", "id":29, "size":1048576, "time":1039651452279494, "hash":3424e319 }
+{ "type":"BEFORE_TRANSFORM", "id":26, "size":1048576, "time":1039651453864171, "hash":71c6b47f }
+{ "type":"BEFORE_TRANSFORM", "id":28, "size":1048576, "time":1039651454623781, "hash":fc563513 }
+{ "type":"BEFORE_TRANSFORM", "id":27, "size":1048576, "time":1039651467053124, "hash":eea9dcb2 }
+{ "type":"AFTER_TRANSFORM", "id":29, "size":304640, "time":1039653076049224, "hash":3424e319 } [1623 ms]
+{ "type":"BEFORE_ENTROPY", "id":29, "size":304640, "time":1039653076273840, "hash":3424e319 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":28, "size":326600, "time":1039653169771400, "hash":fc563513 } [1715 ms]
+{ "type":"BEFORE_ENTROPY", "id":28, "size":326600, "time":1039653170019497, "hash":fc563513 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":30, "size":316700, "time":1039654430168581, "hash":b876b608 } [3044 ms]
+{ "type":"BEFORE_ENTROPY", "id":30, "size":316700, "time":1039654430500198, "hash":b876b608 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":26, "size":328388, "time":1039654557018411, "hash":71c6b47f } [3103 ms]
+{ "type":"BEFORE_ENTROPY", "id":26, "size":328388, "time":1039654557417171, "hash":71c6b47f } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":26, "size":328396, "time":1039654557596563, "hash":71c6b47f } [0 ms]
+Block 26: 1048576 => 328388 [3103 ms] => 328396 [0 ms] (31%)  [71c6b47f]
+{ "type":"AFTER_TRANSFORM", "id":27, "size":320260, "time":1039655233463682, "hash":eea9dcb2 } [3766 ms]
+{ "type":"BEFORE_ENTROPY", "id":27, "size":320260, "time":1039655233778929, "hash":eea9dcb2 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":27, "size":320268, "time":1039655233986781, "hash":eea9dcb2 } [0 ms]
+Block 27: 1048576 => 320260 [3766 ms] => 320268 [0 ms] (30%)  [eea9dcb2]
+{ "type":"AFTER_ENTROPY", "id":28, "size":326608, "time":1039655274595990, "hash":fc563513 } [2104 ms]
+Block 28: 1048576 => 326600 [1715 ms] => 326608 [2104 ms] (31%)  [fc563513]
+{ "type":"AFTER_ENTROPY", "id":29, "size":304648, "time":1039655302681023, "hash":3424e319 } [2226 ms]
+Block 29: 1048576 => 304640 [1623 ms] => 304648 [2226 ms] (29%)  [3424e319]
+{ "type":"AFTER_ENTROPY", "id":30, "size":316708, "time":1039655320592040, "hash":b876b608 } [890 ms]
+Block 30: 1048576 => 316700 [3044 ms] => 316708 [890 ms] (30%)  [b876b608]
+{ "type":"BEFORE_TRANSFORM", "id":31, "size":1048576, "time":1039655480558318, "hash":bb60279b }
+{ "type":"BEFORE_TRANSFORM", "id":34, "size":1048576, "time":1039655481885185, "hash":9dee740a }
+{ "type":"BEFORE_TRANSFORM", "id":33, "size":1048576, "time":1039655483161679, "hash":ec1226d8 }
+{ "type":"BEFORE_TRANSFORM", "id":35, "size":1048576, "time":1039655488580919, "hash":77d449dc }
+{ "type":"BEFORE_TRANSFORM", "id":32, "size":1048576, "time":1039655514749830, "hash":eb243e2c }
+{ "type":"AFTER_TRANSFORM", "id":32, "size":294912, "time":1039657426802378, "hash":eb243e2c } [1912 ms]
+{ "type":"BEFORE_ENTROPY", "id":32, "size":294912, "time":1039657426982165, "hash":eb243e2c } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":31, "size":311544, "time":1039658439623313, "hash":bb60279b } [2959 ms]
+{ "type":"BEFORE_ENTROPY", "id":31, "size":311544, "time":1039658439849903, "hash":bb60279b } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":31, "size":311552, "time":1039658440000687, "hash":bb60279b } [0 ms]
+Block 31: 1048576 => 311544 [2959 ms] => 311552 [0 ms] (29%)  [bb60279b]
+{ "type":"AFTER_ENTROPY", "id":32, "size":294920, "time":1039658472828532, "hash":eb243e2c } [1045 ms]
+Block 32: 1048576 => 294912 [1912 ms] => 294920 [1045 ms] (28%)  [eb243e2c]
+{ "type":"AFTER_TRANSFORM", "id":35, "size":316968, "time":1039658511507182, "hash":77d449dc } [3022 ms]
+{ "type":"BEFORE_ENTROPY", "id":35, "size":316968, "time":1039658511647355, "hash":77d449dc } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":33, "size":319000, "time":1039658514327955, "hash":ec1226d8 } [3031 ms]
+{ "type":"BEFORE_ENTROPY", "id":33, "size":319000, "time":1039658514465393, "hash":ec1226d8 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":33, "size":319008, "time":1039658514602650, "hash":ec1226d8 } [0 ms]
+Block 33: 1048576 => 319000 [3031 ms] => 319008 [0 ms] (30%)  [ec1226d8]
+{ "type":"AFTER_TRANSFORM", "id":34, "size":320376, "time":1039658536360988, "hash":9dee740a } [3054 ms]
+{ "type":"BEFORE_ENTROPY", "id":34, "size":320376, "time":1039658536548090, "hash":9dee740a } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":34, "size":320384, "time":1039658550526718, "hash":9dee740a } [13 ms]
+Block 34: 1048576 => 320376 [3054 ms] => 320384 [13 ms] (30%)  [9dee740a]
+{ "type":"AFTER_ENTROPY", "id":35, "size":316976, "time":1039658568379430, "hash":77d449dc } [56 ms]
+Block 35: 1048576 => 316968 [3022 ms] => 316976 [56 ms] (30%)  [77d449dc]
+{ "type":"BEFORE_TRANSFORM", "id":37, "size":1048576, "time":1039658669812119, "hash":54a8fb44 }
+{ "type":"BEFORE_TRANSFORM", "id":38, "size":1048576, "time":1039658730614508, "hash":a6b2a9d6 }
+{ "type":"BEFORE_TRANSFORM", "id":39, "size":1048576, "time":1039658730670077, "hash":bcd19e03 }
+{ "type":"BEFORE_TRANSFORM", "id":36, "size":1048576, "time":1039658730899981, "hash":d5221967 }
+{ "type":"BEFORE_TRANSFORM", "id":40, "size":1048576, "time":1039658732189326, "hash":80a37406 }
+{ "type":"AFTER_TRANSFORM", "id":37, "size":318064, "time":1039660335474598, "hash":54a8fb44 } [1665 ms]
+{ "type":"BEFORE_ENTROPY", "id":37, "size":318064, "time":1039660335700816, "hash":54a8fb44 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":39, "size":296272, "time":1039661630425542, "hash":bcd19e03 } [2899 ms]
+{ "type":"BEFORE_ENTROPY", "id":39, "size":296272, "time":1039661630618167, "hash":bcd19e03 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":36, "size":318464, "time":1039661748179893, "hash":d5221967 } [3017 ms]
+{ "type":"BEFORE_ENTROPY", "id":36, "size":318464, "time":1039661748362321, "hash":d5221967 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":36, "size":318472, "time":1039661748506141, "hash":d5221967 } [0 ms]
+Block 36: 1048576 => 318464 [3017 ms] => 318472 [0 ms] (30%)  [d5221967]
+{ "type":"AFTER_TRANSFORM", "id":38, "size":315240, "time":1039661766950751, "hash":a6b2a9d6 } [3036 ms]
+{ "type":"BEFORE_ENTROPY", "id":38, "size":315240, "time":1039661767110450, "hash":a6b2a9d6 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":37, "size":318072, "time":1039661782231189, "hash":54a8fb44 } [1446 ms]
+Block 37: 1048576 => 318064 [1665 ms] => 318072 [1446 ms] (30%)  [54a8fb44]
+{ "type":"AFTER_ENTROPY", "id":38, "size":315248, "time":1039661799499975, "hash":a6b2a9d6 } [32 ms]
+Block 38: 1048576 => 315240 [3036 ms] => 315248 [32 ms] (30%)  [a6b2a9d6]
+{ "type":"AFTER_TRANSFORM", "id":40, "size":326552, "time":1039661823683723, "hash":80a37406 } [3091 ms]
+{ "type":"BEFORE_ENTROPY", "id":40, "size":326552, "time":1039661823815154, "hash":80a37406 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":39, "size":296280, "time":1039661838295021, "hash":bcd19e03 } [207 ms]
+Block 39: 1048576 => 296272 [2899 ms] => 296280 [207 ms] (28%)  [bcd19e03]
+{ "type":"AFTER_ENTROPY", "id":40, "size":326560, "time":1039661854969504, "hash":80a37406 } [31 ms]
+Block 40: 1048576 => 326552 [3091 ms] => 326560 [31 ms] (31%)  [80a37406]
+{ "type":"BEFORE_TRANSFORM", "id":42, "size":1048576, "time":1039661931748073, "hash":5d678d37 }
+{ "type":"BEFORE_TRANSFORM", "id":44, "size":1048576, "time":1039661999841059, "hash":6c1c28d0 }
+{ "type":"BEFORE_TRANSFORM", "id":45, "size":1048576, "time":1039662000567593, "hash":710ef72b }
+{ "type":"BEFORE_TRANSFORM", "id":41, "size":1048576, "time":1039662002694701, "hash":f6d672 }
+{ "type":"BEFORE_TRANSFORM", "id":43, "size":1048576, "time":1039662003973337, "hash":d5c4bdb3 }
+{ "type":"AFTER_TRANSFORM", "id":45, "size":314088, "time":1039663814213449, "hash":710ef72b } [1813 ms]
+{ "type":"BEFORE_ENTROPY", "id":45, "size":314088, "time":1039663814374629, "hash":710ef72b } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":42, "size":323200, "time":1039664694162931, "hash":5d678d37 } [2762 ms]
+{ "type":"BEFORE_ENTROPY", "id":42, "size":323200, "time":1039664694362780, "hash":5d678d37 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":43, "size":308076, "time":1039664958948785, "hash":d5c4bdb3 } [2954 ms]
+{ "type":"BEFORE_ENTROPY", "id":43, "size":308076, "time":1039664959157063, "hash":d5c4bdb3 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":41, "size":324288, "time":1039665092168611, "hash":f6d672 } [3089 ms]
+{ "type":"BEFORE_ENTROPY", "id":41, "size":324288, "time":1039665092379418, "hash":f6d672 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":41, "size":324296, "time":1039665092538190, "hash":f6d672 } [0 ms]
+Block 41: 1048576 => 324288 [3089 ms] => 324296 [0 ms] (30%)  [f6d672]
+{ "type":"AFTER_TRANSFORM", "id":44, "size":319148, "time":1039665107842197, "hash":6c1c28d0 } [3108 ms]
+{ "type":"BEFORE_ENTROPY", "id":44, "size":319148, "time":1039665108016177, "hash":6c1c28d0 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":42, "size":323208, "time":1039665131348901, "hash":5d678d37 } [436 ms]
+Block 42: 1048576 => 323200 [2762 ms] => 323208 [436 ms] (30%)  [5d678d37]
+{ "type":"AFTER_ENTROPY", "id":43, "size":308084, "time":1039665169757851, "hash":d5c4bdb3 } [210 ms]
+Block 43: 1048576 => 308076 [2954 ms] => 308084 [210 ms] (29%)  [d5c4bdb3]
+{ "type":"AFTER_ENTROPY", "id":44, "size":319156, "time":1039665186569458, "hash":6c1c28d0 } [78 ms]
+Block 44: 1048576 => 319148 [3108 ms] => 319156 [78 ms] (30%)  [6c1c28d0]
+{ "type":"AFTER_ENTROPY", "id":45, "size":314096, "time":1039665203719462, "hash":710ef72b } [1389 ms]
+Block 45: 1048576 => 314088 [1813 ms] => 314096 [1389 ms] (29%)  [710ef72b]
+{ "type":"BEFORE_TRANSFORM", "id":50, "size":1048576, "time":1039665297079126, "hash":1f1548b }
+{ "type":"BEFORE_TRANSFORM", "id":49, "size":1048576, "time":1039665363842772, "hash":45eec47 }
+{ "type":"BEFORE_TRANSFORM", "id":48, "size":1048576, "time":1039665365258415, "hash":2472599e }
+{ "type":"BEFORE_TRANSFORM", "id":46, "size":1048576, "time":1039665366161449, "hash":15716b4f }
+{ "type":"BEFORE_TRANSFORM", "id":47, "size":1048576, "time":1039665368461625, "hash":6479876e }
+{ "type":"AFTER_TRANSFORM", "id":50, "size":319584, "time":1039666962973417, "hash":1f1548b } [1665 ms]
+{ "type":"BEFORE_ENTROPY", "id":50, "size":319584, "time":1039666963157389, "hash":1f1548b } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":48, "size":312300, "time":1039668342562221, "hash":2472599e } [2977 ms]
+{ "type":"BEFORE_ENTROPY", "id":48, "size":312300, "time":1039668342762282, "hash":2472599e } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":46, "size":320276, "time":1039668411111300, "hash":15716b4f } [3044 ms]
+{ "type":"BEFORE_ENTROPY", "id":46, "size":320276, "time":1039668411306531, "hash":15716b4f } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":46, "size":320284, "time":1039668411491876, "hash":15716b4f } [0 ms]
+Block 46: 1048576 => 320276 [3044 ms] => 320284 [0 ms] (30%)  [15716b4f]
+{ "type":"AFTER_TRANSFORM", "id":49, "size":323940, "time":1039668426555151, "hash":45eec47 } [3062 ms]
+{ "type":"BEFORE_ENTROPY", "id":49, "size":323940, "time":1039668426775026, "hash":45eec47 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":47, "size":317836, "time":1039668443192176, "hash":6479876e } [3074 ms]
+{ "type":"BEFORE_ENTROPY", "id":47, "size":317836, "time":1039668443359826, "hash":6479876e } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":47, "size":317844, "time":1039668449816373, "hash":6479876e } [6 ms]
+Block 47: 1048576 => 317836 [3074 ms] => 317844 [6 ms] (30%)  [6479876e]
+{ "type":"AFTER_ENTROPY", "id":48, "size":312308, "time":1039668488074116, "hash":2472599e } [145 ms]
+Block 48: 1048576 => 312300 [2977 ms] => 312308 [145 ms] (29%)  [2472599e]
+{ "type":"AFTER_ENTROPY", "id":49, "size":323948, "time":1039668488401469, "hash":45eec47 } [61 ms]
+Block 49: 1048576 => 323940 [3062 ms] => 323948 [61 ms] (30%)  [45eec47]
+{ "type":"AFTER_ENTROPY", "id":50, "size":319592, "time":1039668506005669, "hash":1f1548b } [1542 ms]
+Block 50: 1048576 => 319584 [1665 ms] => 319592 [1542 ms] (30%)  [1f1548b]
+{ "type":"BEFORE_TRANSFORM", "id":51, "size":1048576, "time":1039668598332861, "hash":7960bf9a }
+{ "type":"BEFORE_TRANSFORM", "id":53, "size":1048576, "time":1039668665850559, "hash":47f14c08 }
+{ "type":"BEFORE_TRANSFORM", "id":52, "size":1048576, "time":1039668667519008, "hash":31d985bf }
+{ "type":"BEFORE_TRANSFORM", "id":54, "size":1048576, "time":1039668668044919, "hash":c89d0fbc }
+{ "type":"BEFORE_TRANSFORM", "id":55, "size":1048576, "time":1039668672813040, "hash":b8f6cb45 }
+{ "type":"AFTER_TRANSFORM", "id":51, "size":328540, "time":1039670282649255, "hash":7960bf9a } [1684 ms]
+{ "type":"BEFORE_ENTROPY", "id":51, "size":328540, "time":1039670282826432, "hash":7960bf9a } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":51, "size":328548, "time":1039670282937643, "hash":7960bf9a } [0 ms]
+Block 51: 1048576 => 328540 [1684 ms] => 328548 [0 ms] (31%)  [7960bf9a]
+{ "type":"AFTER_TRANSFORM", "id":53, "size":322996, "time":1039671153162523, "hash":47f14c08 } [2487 ms]
+{ "type":"BEFORE_ENTROPY", "id":53, "size":322996, "time":1039671153327072, "hash":47f14c08 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":55, "size":315332, "time":1039671166180430, "hash":b8f6cb45 } [2493 ms]
+{ "type":"BEFORE_ENTROPY", "id":55, "size":315332, "time":1039671166326399, "hash":b8f6cb45 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":54, "size":322132, "time":1039671738830152, "hash":c89d0fbc } [3070 ms]
+{ "type":"BEFORE_ENTROPY", "id":54, "size":322132, "time":1039671739002300, "hash":c89d0fbc } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":52, "size":325864, "time":1039671757389941, "hash":31d985bf } [3089 ms]
+{ "type":"BEFORE_ENTROPY", "id":52, "size":325864, "time":1039671757524017, "hash":31d985bf } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":52, "size":325872, "time":1039671757658131, "hash":31d985bf } [0 ms]
+Block 52: 1048576 => 325864 [3089 ms] => 325872 [0 ms] (31%)  [31d985bf]
+{ "type":"AFTER_ENTROPY", "id":53, "size":323004, "time":1039671796701163, "hash":47f14c08 } [643 ms]
+Block 53: 1048576 => 322996 [2487 ms] => 323004 [643 ms] (30%)  [47f14c08]
+{ "type":"AFTER_ENTROPY", "id":54, "size":322140, "time":1039671814823882, "hash":c89d0fbc } [75 ms]
+Block 54: 1048576 => 322132 [3070 ms] => 322140 [75 ms] (30%)  [c89d0fbc]
+{ "type":"AFTER_ENTROPY", "id":55, "size":315340, "time":1039671832209436, "hash":b8f6cb45 } [665 ms]
+Block 55: 1048576 => 315332 [2493 ms] => 315340 [665 ms] (30%)  [b8f6cb45]
+{ "type":"BEFORE_TRANSFORM", "id":56, "size":1048576, "time":1039671929000087, "hash":6c43cfa5 }
+{ "type":"BEFORE_TRANSFORM", "id":59, "size":1048576, "time":1039671993345484, "hash":e9dab259 }
+{ "type":"BEFORE_TRANSFORM", "id":57, "size":1048576, "time":1039671994023070, "hash":3114efb5 }
+{ "type":"BEFORE_TRANSFORM", "id":58, "size":1048576, "time":1039671994160535, "hash":c710534d }
+{ "type":"BEFORE_TRANSFORM", "id":60, "size":1048576, "time":1039671996035096, "hash":f4ab15c7 }
+{ "type":"AFTER_TRANSFORM", "id":56, "size":305328, "time":1039673882500493, "hash":6c43cfa5 } [1953 ms]
+{ "type":"BEFORE_ENTROPY", "id":56, "size":305328, "time":1039673882654167, "hash":6c43cfa5 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":56, "size":305336, "time":1039673882754670, "hash":6c43cfa5 } [0 ms]
+Block 56: 1048576 => 305328 [1953 ms] => 305336 [0 ms] (29%)  [6c43cfa5]
+{ "type":"AFTER_TRANSFORM", "id":58, "size":313628, "time":1039674479756271, "hash":c710534d } [2485 ms]
+{ "type":"BEFORE_ENTROPY", "id":58, "size":313628, "time":1039674479903511, "hash":c710534d } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":60, "size":319644, "time":1039674570582957, "hash":f4ab15c7 } [2574 ms]
+{ "type":"BEFORE_ENTROPY", "id":60, "size":319644, "time":1039674570722213, "hash":f4ab15c7 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":57, "size":321684, "time":1039675062923059, "hash":3114efb5 } [3068 ms]
+{ "type":"BEFORE_ENTROPY", "id":57, "size":321684, "time":1039675063108825, "hash":3114efb5 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":57, "size":321692, "time":1039675063245339, "hash":3114efb5 } [0 ms]
+Block 57: 1048576 => 321684 [3068 ms] => 321692 [0 ms] (30%)  [3114efb5]
+{ "type":"AFTER_TRANSFORM", "id":59, "size":323772, "time":1039675081351307, "hash":e9dab259 } [3088 ms]
+{ "type":"BEFORE_ENTROPY", "id":59, "size":323772, "time":1039675081477548, "hash":e9dab259 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":58, "size":313636, "time":1039675099356519, "hash":c710534d } [619 ms]
+Block 58: 1048576 => 313628 [2485 ms] => 313636 [619 ms] (29%)  [c710534d]
+{ "type":"AFTER_ENTROPY", "id":59, "size":323780, "time":1039675116215933, "hash":e9dab259 } [34 ms]
+Block 59: 1048576 => 323772 [3088 ms] => 323780 [34 ms] (30%)  [e9dab259]
+{ "type":"AFTER_ENTROPY", "id":60, "size":319652, "time":1039675134860417, "hash":f4ab15c7 } [564 ms]
+Block 60: 1048576 => 319644 [2574 ms] => 319652 [564 ms] (30%)  [f4ab15c7]
+{ "type":"BEFORE_TRANSFORM", "id":65, "size":1048576, "time":1039675228639978, "hash":ba8488eb }
+{ "type":"BEFORE_TRANSFORM", "id":61, "size":1048576, "time":1039675233920177, "hash":4eb464f0 }
+{ "type":"BEFORE_TRANSFORM", "id":64, "size":1048576, "time":1039675300188117, "hash":507bf33a }
+{ "type":"BEFORE_TRANSFORM", "id":63, "size":1048576, "time":1039675310842464, "hash":305696f9 }
+{ "type":"BEFORE_TRANSFORM", "id":62, "size":1048576, "time":1039675312223107, "hash":7b4f099d }
+{ "type":"AFTER_TRANSFORM", "id":61, "size":318380, "time":1039676812160287, "hash":4eb464f0 } [1578 ms]
+{ "type":"BEFORE_ENTROPY", "id":61, "size":318380, "time":1039676812320063, "hash":4eb464f0 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":61, "size":318388, "time":1039676812428755, "hash":4eb464f0 } [0 ms]
+Block 61: 1048576 => 318380 [1578 ms] => 318388 [0 ms] (30%)  [4eb464f0]
+{ "type":"AFTER_TRANSFORM", "id":65, "size":326080, "time":1039676915688468, "hash":ba8488eb } [1687 ms]
+{ "type":"BEFORE_ENTROPY", "id":65, "size":326080, "time":1039676915857635, "hash":ba8488eb } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":63, "size":309156, "time":1039677634140136, "hash":305696f9 } [2323 ms]
+{ "type":"BEFORE_ENTROPY", "id":63, "size":309156, "time":1039677634309732, "hash":305696f9 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":64, "size":309660, "time":1039677635085582, "hash":507bf33a } [2334 ms]
+{ "type":"BEFORE_ENTROPY", "id":64, "size":309660, "time":1039677635234082, "hash":507bf33a } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":62, "size":323012, "time":1039678005606466, "hash":7b4f099d } [2693 ms]
+{ "type":"BEFORE_ENTROPY", "id":62, "size":323012, "time":1039678005778374, "hash":7b4f099d } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":62, "size":323020, "time":1039678005925757, "hash":7b4f099d } [0 ms]
+Block 62: 1048576 => 323012 [2693 ms] => 323020 [0 ms] (30%)  [7b4f099d]
+{ "type":"AFTER_ENTROPY", "id":63, "size":309164, "time":1039678033851826, "hash":305696f9 } [399 ms]
+Block 63: 1048576 => 309156 [2323 ms] => 309164 [399 ms] (29%)  [305696f9]
+{ "type":"AFTER_ENTROPY", "id":64, "size":309668, "time":1039678051853554, "hash":507bf33a } [416 ms]
+Block 64: 1048576 => 309660 [2334 ms] => 309668 [416 ms] (29%)  [507bf33a]
+{ "type":"AFTER_ENTROPY", "id":65, "size":326088, "time":1039678052207324, "hash":ba8488eb } [1136 ms]
+Block 65: 1048576 => 326080 [1687 ms] => 326088 [1136 ms] (31%)  [ba8488eb]
+{ "type":"BEFORE_TRANSFORM", "id":68, "size":1048576, "time":1039678150410731, "hash":85c1c32b }
+{ "type":"BEFORE_TRANSFORM", "id":70, "size":1048576, "time":1039678220048015, "hash":3dfbe0f8 }
+{ "type":"BEFORE_TRANSFORM", "id":66, "size":1048576, "time":1039678222005121, "hash":2198e2aa }
+{ "type":"BEFORE_TRANSFORM", "id":69, "size":1048576, "time":1039678222557218, "hash":b23e31fc }
+{ "type":"BEFORE_TRANSFORM", "id":67, "size":1048576, "time":1039678224480383, "hash":b509c48c }
+{ "type":"AFTER_TRANSFORM", "id":68, "size":317504, "time":1039679821080288, "hash":85c1c32b } [1670 ms]
+{ "type":"BEFORE_ENTROPY", "id":68, "size":317504, "time":1039679821351095, "hash":85c1c32b } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":69, "size":289860, "time":1039681113170754, "hash":b23e31fc } [2890 ms]
+{ "type":"BEFORE_ENTROPY", "id":69, "size":289860, "time":1039681113346118, "hash":b23e31fc } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":70, "size":318736, "time":1039681217720013, "hash":3dfbe0f8 } [2997 ms]
+{ "type":"BEFORE_ENTROPY", "id":70, "size":318736, "time":1039681217864063, "hash":3dfbe0f8 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":66, "size":315276, "time":1039681278805409, "hash":2198e2aa } [3056 ms]
+{ "type":"BEFORE_ENTROPY", "id":66, "size":315276, "time":1039681279011380, "hash":2198e2aa } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":66, "size":315284, "time":1039681279160774, "hash":2198e2aa } [0 ms]
+Block 66: 1048576 => 315276 [3056 ms] => 315284 [0 ms] (30%)  [2198e2aa]
+{ "type":"AFTER_TRANSFORM", "id":67, "size":326892, "time":1039681470391490, "hash":b509c48c } [3245 ms]
+{ "type":"BEFORE_ENTROPY", "id":67, "size":326892, "time":1039681470563721, "hash":b509c48c } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":67, "size":326900, "time":1039681470702573, "hash":b509c48c } [0 ms]
+Block 67: 1048576 => 326892 [3245 ms] => 326900 [0 ms] (31%)  [b509c48c]
+{ "type":"AFTER_ENTROPY", "id":68, "size":317512, "time":1039681509441785, "hash":85c1c32b } [1688 ms]
+Block 68: 1048576 => 317504 [1670 ms] => 317512 [1688 ms] (30%)  [85c1c32b]
+{ "type":"AFTER_ENTROPY", "id":69, "size":289868, "time":1039681525836740, "hash":b23e31fc } [412 ms]
+Block 69: 1048576 => 289860 [2890 ms] => 289868 [412 ms] (27%)  [b23e31fc]
+{ "type":"AFTER_ENTROPY", "id":70, "size":318744, "time":1039681540996878, "hash":3dfbe0f8 } [323 ms]
+Block 70: 1048576 => 318736 [2997 ms] => 318744 [323 ms] (30%)  [3dfbe0f8]
+{ "type":"BEFORE_TRANSFORM", "id":74, "size":1048576, "time":1039681630091764, "hash":785ddd84 }
+{ "type":"BEFORE_TRANSFORM", "id":73, "size":1048576, "time":1039681701810025, "hash":ce9203ad }
+{ "type":"BEFORE_TRANSFORM", "id":75, "size":1048576, "time":1039681701820258, "hash":75dc1a6a }
+{ "type":"BEFORE_TRANSFORM", "id":71, "size":1048576, "time":1039681702702300, "hash":2cf5f16d }
+{ "type":"BEFORE_TRANSFORM", "id":72, "size":1048576, "time":1039681704045653, "hash":1673a020 }
+{ "type":"AFTER_TRANSFORM", "id":74, "size":312872, "time":1039683203560677, "hash":785ddd84 } [1573 ms]
+{ "type":"BEFORE_ENTROPY", "id":74, "size":312872, "time":1039683203755033, "hash":785ddd84 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":73, "size":313628, "time":1039684665320833, "hash":ce9203ad } [2963 ms]
+{ "type":"BEFORE_ENTROPY", "id":73, "size":313628, "time":1039684665553436, "hash":ce9203ad } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":72, "size":314280, "time":1039684746643802, "hash":1673a020 } [3042 ms]
+{ "type":"BEFORE_ENTROPY", "id":72, "size":314280, "time":1039684746780478, "hash":1673a020 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":75, "size":325788, "time":1039684757441370, "hash":75dc1a6a } [3055 ms]
+{ "type":"BEFORE_ENTROPY", "id":75, "size":325788, "time":1039684757648047, "hash":75dc1a6a } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":71, "size":324984, "time":1039684789335122, "hash":2cf5f16d } [3086 ms]
+{ "type":"BEFORE_ENTROPY", "id":71, "size":324984, "time":1039684789511386, "hash":2cf5f16d } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":71, "size":324992, "time":1039684789644438, "hash":2cf5f16d } [0 ms]
+Block 71: 1048576 => 324984 [3086 ms] => 324992 [0 ms] (30%)  [2cf5f16d]
+{ "type":"AFTER_ENTROPY", "id":72, "size":314288, "time":1039684828616043, "hash":1673a020 } [81 ms]
+Block 72: 1048576 => 314280 [3042 ms] => 314288 [81 ms] (29%)  [1673a020]
+{ "type":"AFTER_ENTROPY", "id":73, "size":313636, "time":1039684829003235, "hash":ce9203ad } [163 ms]
+Block 73: 1048576 => 313628 [2963 ms] => 313636 [163 ms] (29%)  [ce9203ad]
+{ "type":"AFTER_ENTROPY", "id":74, "size":312880, "time":1039684845175697, "hash":785ddd84 } [1641 ms]
+Block 74: 1048576 => 312872 [1573 ms] => 312880 [1641 ms] (29%)  [785ddd84]
+{ "type":"AFTER_ENTROPY", "id":75, "size":325796, "time":1039684861423075, "hash":75dc1a6a } [103 ms]
+Block 75: 1048576 => 325788 [3055 ms] => 325796 [103 ms] (31%)  [75dc1a6a]
+{ "type":"BEFORE_TRANSFORM", "id":78, "size":1048576, "time":1039684949991137, "hash":548cb60 }
+{ "type":"BEFORE_TRANSFORM", "id":80, "size":1048576, "time":1039685021586968, "hash":1441f353 }
+{ "type":"BEFORE_TRANSFORM", "id":79, "size":1048576, "time":1039685027340522, "hash":c1a08ac0 }
+{ "type":"BEFORE_TRANSFORM", "id":76, "size":1048576, "time":1039685027434021, "hash":9a49cd8f }
+{ "type":"BEFORE_TRANSFORM", "id":77, "size":1048576, "time":1039685029604644, "hash":361c839f }
+{ "type":"AFTER_TRANSFORM", "id":78, "size":323548, "time":1039686563336797, "hash":548cb60 } [1613 ms]
+{ "type":"BEFORE_ENTROPY", "id":78, "size":323548, "time":1039686563501163, "hash":548cb60 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":76, "size":319616, "time":1039686628049906, "hash":9a49cd8f } [1600 ms]
+{ "type":"BEFORE_ENTROPY", "id":76, "size":319616, "time":1039686628218156, "hash":9a49cd8f } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":76, "size":319624, "time":1039686628311941, "hash":9a49cd8f } [0 ms]
+Block 76: 1048576 => 319616 [1600 ms] => 319624 [0 ms] (30%)  [9a49cd8f]
+{ "type":"AFTER_TRANSFORM", "id":80, "size":316392, "time":1039687405989630, "hash":1441f353 } [2384 ms]
+{ "type":"BEFORE_ENTROPY", "id":80, "size":316392, "time":1039687406113850, "hash":1441f353 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":77, "size":328000, "time":1039687461994921, "hash":361c839f } [2432 ms]
+{ "type":"BEFORE_ENTROPY", "id":77, "size":328000, "time":1039687462099438, "hash":361c839f } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":77, "size":328008, "time":1039687462183688, "hash":361c839f } [0 ms]
+Block 77: 1048576 => 328000 [2432 ms] => 328008 [0 ms] (31%)  [361c839f]
+{ "type":"AFTER_ENTROPY", "id":78, "size":323556, "time":1039687479976627, "hash":548cb60 } [916 ms]
+Block 78: 1048576 => 323548 [1613 ms] => 323556 [916 ms] (30%)  [548cb60]
+{ "type":"AFTER_TRANSFORM", "id":79, "size":324412, "time":1039688036715692, "hash":c1a08ac0 } [3009 ms]
+{ "type":"BEFORE_ENTROPY", "id":79, "size":324412, "time":1039688036864348, "hash":c1a08ac0 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":79, "size":324420, "time":1039688036947985, "hash":c1a08ac0 } [0 ms]
+Block 79: 1048576 => 324412 [3009 ms] => 324420 [0 ms] (30%)  [c1a08ac0]
+{ "type":"AFTER_ENTROPY", "id":80, "size":316400, "time":1039688054564541, "hash":1441f353 } [648 ms]
+Block 80: 1048576 => 316392 [2384 ms] => 316400 [648 ms] (30%)  [1441f353]
+{ "type":"BEFORE_TRANSFORM", "id":81, "size":1048576, "time":1039688128998286, "hash":c931037 }
+{ "type":"BEFORE_TRANSFORM", "id":85, "size":1048576, "time":1039688198931139, "hash":d8755ca1 }
+{ "type":"BEFORE_TRANSFORM", "id":83, "size":1048576, "time":1039688199351762, "hash":dd3af114 }
+{ "type":"BEFORE_TRANSFORM", "id":84, "size":1048576, "time":1039688199541104, "hash":5c71ce0 }
+{ "type":"BEFORE_TRANSFORM", "id":82, "size":1048576, "time":1039688200050059, "hash":9e000b33 }
+{ "type":"AFTER_TRANSFORM", "id":81, "size":313532, "time":1039689733689016, "hash":c931037 } [1604 ms]
+{ "type":"BEFORE_ENTROPY", "id":81, "size":313532, "time":1039689735408286, "hash":c931037 } [1 ms]
+{ "type":"AFTER_ENTROPY", "id":81, "size":313540, "time":1039689735505261, "hash":c931037 } [0 ms]
+Block 81: 1048576 => 313532 [1604 ms] => 313540 [0 ms] (29%)  [c931037]
+{ "type":"AFTER_TRANSFORM", "id":82, "size":325924, "time":1039690572297224, "hash":9e000b33 } [2372 ms]
+{ "type":"BEFORE_ENTROPY", "id":82, "size":325924, "time":1039690572412294, "hash":9e000b33 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":82, "size":325932, "time":1039690572494493, "hash":9e000b33 } [0 ms]
+Block 82: 1048576 => 325924 [2372 ms] => 325932 [0 ms] (31%)  [9e000b33]
+{ "type":"AFTER_TRANSFORM", "id":85, "size":323332, "time":1039690575185862, "hash":d8755ca1 } [2376 ms]
+{ "type":"BEFORE_ENTROPY", "id":85, "size":323332, "time":1039690575264940, "hash":d8755ca1 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":83, "size":323924, "time":1039690957763938, "hash":dd3af114 } [2758 ms]
+{ "type":"BEFORE_ENTROPY", "id":83, "size":323924, "time":1039690957887359, "hash":dd3af114 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":83, "size":323932, "time":1039690957975762, "hash":dd3af114 } [0 ms]
+Block 83: 1048576 => 323924 [2758 ms] => 323932 [0 ms] (30%)  [dd3af114]
+{ "type":"AFTER_TRANSFORM", "id":84, "size":320476, "time":1039690967018213, "hash":5c71ce0 } [2767 ms]
+{ "type":"BEFORE_ENTROPY", "id":84, "size":320476, "time":1039690967093622, "hash":5c71ce0 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":84, "size":320484, "time":1039690975224277, "hash":5c71ce0 } [8 ms]
+Block 84: 1048576 => 320476 [2767 ms] => 320484 [8 ms] (30%)  [5c71ce0]
+{ "type":"AFTER_ENTROPY", "id":85, "size":323340, "time":1039690992584658, "hash":d8755ca1 } [417 ms]
+Block 85: 1048576 => 323332 [2376 ms] => 323340 [417 ms] (30%)  [d8755ca1]
+{ "type":"BEFORE_TRANSFORM", "id":86, "size":1048576, "time":1039691084946159, "hash":64cc7213 }
+{ "type":"BEFORE_TRANSFORM", "id":89, "size":1048576, "time":1039691088685275, "hash":a90f2277 }
+{ "type":"BEFORE_TRANSFORM", "id":88, "size":1048576, "time":1039691154794213, "hash":9befa171 }
+{ "type":"BEFORE_TRANSFORM", "id":87, "size":1048576, "time":1039691156947724, "hash":a9b53001 }
+{ "type":"BEFORE_TRANSFORM", "id":90, "size":1048576, "time":1039691184576240, "hash":3b6ff3cc }
+{ "type":"AFTER_TRANSFORM", "id":86, "size":325728, "time":1039692719535065, "hash":64cc7213 } [1634 ms]
+{ "type":"BEFORE_ENTROPY", "id":86, "size":325728, "time":1039692719675624, "hash":64cc7213 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":86, "size":325736, "time":1039692719765663, "hash":64cc7213 } [0 ms]
+Block 86: 1048576 => 325728 [1634 ms] => 325736 [0 ms] (31%)  [64cc7213]
+{ "type":"AFTER_TRANSFORM", "id":89, "size":320912, "time":1039692744126501, "hash":a90f2277 } [1655 ms]
+{ "type":"BEFORE_ENTROPY", "id":89, "size":320912, "time":1039692744259631, "hash":a90f2277 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":88, "size":312040, "time":1039693491822101, "hash":9befa171 } [2337 ms]
+{ "type":"BEFORE_ENTROPY", "id":88, "size":312040, "time":1039693491941402, "hash":9befa171 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":87, "size":324012, "time":1039693541033806, "hash":a9b53001 } [2384 ms]
+{ "type":"BEFORE_ENTROPY", "id":87, "size":324012, "time":1039693541157112, "hash":a9b53001 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":87, "size":324020, "time":1039693541247854, "hash":a9b53001 } [0 ms]
+Block 87: 1048576 => 324012 [2384 ms] => 324020 [0 ms] (30%)  [a9b53001]
+{ "type":"AFTER_ENTROPY", "id":88, "size":312048, "time":1039693559539697, "hash":9befa171 } [67 ms]
+Block 88: 1048576 => 312040 [2337 ms] => 312048 [67 ms] (29%)  [9befa171]
+{ "type":"AFTER_ENTROPY", "id":89, "size":320920, "time":1039693559832721, "hash":a90f2277 } [815 ms]
+Block 89: 1048576 => 320912 [1655 ms] => 320920 [815 ms] (30%)  [a90f2277]
+{ "type":"AFTER_TRANSFORM", "id":90, "size":315388, "time":1039694119277722, "hash":3b6ff3cc } [2934 ms]
+{ "type":"BEFORE_ENTROPY", "id":90, "size":315388, "time":1039694119402897, "hash":3b6ff3cc } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":90, "size":315396, "time":1039694119496026, "hash":3b6ff3cc } [0 ms]
+Block 90: 1048576 => 315388 [2934 ms] => 315396 [0 ms] (30%)  [3b6ff3cc]
+{ "type":"BEFORE_TRANSFORM", "id":94, "size":1048576, "time":1039694274060220, "hash":3c1dd5df }
+{ "type":"BEFORE_TRANSFORM", "id":91, "size":1048576, "time":1039694280210857, "hash":3c063de }
+{ "type":"BEFORE_TRANSFORM", "id":93, "size":1048576, "time":1039694280403391, "hash":ab78a548 }
+{ "type":"BEFORE_TRANSFORM", "id":92, "size":1048576, "time":1039694298415838, "hash":3e191232 }
+{ "type":"BEFORE_TRANSFORM", "id":95, "size":1048576, "time":1039694300070122, "hash":7035cc4d }
+{ "type":"AFTER_TRANSFORM", "id":91, "size":311836, "time":1039695836088503, "hash":3c063de } [1555 ms]
+{ "type":"BEFORE_ENTROPY", "id":91, "size":311836, "time":1039695836223252, "hash":3c063de } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":91, "size":311844, "time":1039695836310878, "hash":3c063de } [0 ms]
+Block 91: 1048576 => 311836 [1555 ms] => 311844 [0 ms] (29%)  [3c063de]
+{ "type":"AFTER_TRANSFORM", "id":93, "size":280880, "time":1039696540797885, "hash":ab78a548 } [2260 ms]
+{ "type":"BEFORE_ENTROPY", "id":93, "size":280880, "time":1039696540921106, "hash":ab78a548 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":92, "size":319788, "time":1039696695971119, "hash":3e191232 } [2397 ms]
+{ "type":"BEFORE_ENTROPY", "id":92, "size":319788, "time":1039696696080918, "hash":3e191232 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":92, "size":319796, "time":1039696696164853, "hash":3e191232 } [0 ms]
+Block 92: 1048576 => 319788 [2397 ms] => 319796 [0 ms] (30%)  [3e191232]
+{ "type":"AFTER_ENTROPY", "id":93, "size":280888, "time":1039696712859831, "hash":ab78a548 } [171 ms]
+Block 93: 1048576 => 280880 [2260 ms] => 280888 [171 ms] (26%)  [ab78a548]
+{ "type":"AFTER_TRANSFORM", "id":94, "size":312388, "time":1039697029135393, "hash":3c1dd5df } [2755 ms]
+{ "type":"BEFORE_ENTROPY", "id":94, "size":312388, "time":1039697029259301, "hash":3c1dd5df } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":94, "size":312396, "time":1039697029353022, "hash":3c1dd5df } [0 ms]
+Block 94: 1048576 => 312388 [2755 ms] => 312396 [0 ms] (29%)  [3c1dd5df]
+{ "type":"AFTER_TRANSFORM", "id":95, "size":311032, "time":1039697060885886, "hash":7035cc4d } [2760 ms]
+{ "type":"BEFORE_ENTROPY", "id":95, "size":311032, "time":1039697060974918, "hash":7035cc4d } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":95, "size":311040, "time":1039697061048176, "hash":7035cc4d } [0 ms]
+Block 95: 1048576 => 311032 [2760 ms] => 311040 [0 ms] (29%)  [7035cc4d]
+{ "type":"BEFORE_TRANSFORM", "id":96, "size":385280, "time":1039697137061481, "hash":bb9f61bd }
+{ "type":"AFTER_TRANSFORM", "id":96, "size":125344, "time":1039697799262504, "hash":bb9f61bd } [662 ms]
+{ "type":"BEFORE_ENTROPY", "id":96, "size":125344, "time":1039697799362492, "hash":bb9f61bd } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":96, "size":125352, "time":1039697799418897, "hash":bb9f61bd } [0 ms]
+Block 96: 385280 => 125344 [662 ms] => 125352 [0 ms] (32%)  [bb9f61bd]
+
+Encoding:          63771 ms
+Input size:        100000000
+Output size:       30325237
+Compression ratio: 0.303252
+Throughput (KB/s): 1531
+
+{ "type":"COMPRESSION_END", "size":30325237, "time":1039697832256735 }

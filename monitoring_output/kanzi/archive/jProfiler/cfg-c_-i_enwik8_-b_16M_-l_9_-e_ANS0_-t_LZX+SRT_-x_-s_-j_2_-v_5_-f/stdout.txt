@@ -1,0 +1,60 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [ANS0]
+Warning: providing the 'level' option forces the transform. Ignoring [LZX+SRT]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 16777216 bytes
+Verbosity set to 5
+Overwrite set to true
+Checksum set to true
+Using X86+RLT+TEXT transform (stage 1)
+Using TPAQX entropy codec (stage 2)
+Using 2 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+{ "type":"COMPRESSION_START", "size":0, "time":1025581529361297 }
+{ "type":"BEFORE_TRANSFORM", "id":1, "size":16777216, "time":1025582713309762, "hash":c28ebb3d }
+{ "type":"BEFORE_TRANSFORM", "id":2, "size":16777216, "time":1025582778835016, "hash":d29cc969 }
+{ "type":"AFTER_TRANSFORM", "id":1, "size":10346472, "time":1025589060061047, "hash":c28ebb3d } [6346 ms]
+{ "type":"BEFORE_ENTROPY", "id":1, "size":10346472, "time":1025589072354180, "hash":c28ebb3d } [12 ms]
+{ "type":"AFTER_TRANSFORM", "id":2, "size":10232375, "time":1025589222881597, "hash":d29cc969 } [6444 ms]
+{ "type":"BEFORE_ENTROPY", "id":2, "size":10232375, "time":1025589228319495, "hash":d29cc969 } [5 ms]
+{ "type":"AFTER_ENTROPY", "id":1, "size":3465383, "time":1025711704949632, "hash":c28ebb3d } [122632 ms]
+Block 1: 16777216 => 10346472 [6346 ms] => 3465383 [122632 ms] (20%)  [c28ebb3d]
+{ "type":"AFTER_ENTROPY", "id":2, "size":3435499, "time":1025711893160686, "hash":d29cc969 } [122664 ms]
+Block 2: 16777216 => 10232375 [6444 ms] => 3435499 [122664 ms] (20%)  [d29cc969]
+{ "type":"BEFORE_TRANSFORM", "id":3, "size":16777216, "time":1025713221841939, "hash":628fa4f7 }
+{ "type":"BEFORE_TRANSFORM", "id":4, "size":16777216, "time":1025713312319242, "hash":c66c5ca }
+{ "type":"AFTER_TRANSFORM", "id":3, "size":10193365, "time":1025719425713118, "hash":628fa4f7 } [6203 ms]
+{ "type":"BEFORE_ENTROPY", "id":3, "size":10193365, "time":1025719520388539, "hash":628fa4f7 } [94 ms]
+{ "type":"AFTER_TRANSFORM", "id":4, "size":10271828, "time":1025719679977768, "hash":c66c5ca } [6367 ms]
+{ "type":"BEFORE_ENTROPY", "id":4, "size":10271828, "time":1025719680864325, "hash":c66c5ca } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":3, "size":3462415, "time":1025839850093101, "hash":628fa4f7 } [120329 ms]
+Block 3: 16777216 => 10193365 [6203 ms] => 3462415 [120329 ms] (20%)  [628fa4f7]
+{ "type":"AFTER_ENTROPY", "id":4, "size":3473979, "time":1025840039435504, "hash":c66c5ca } [120358 ms]
+Block 4: 16777216 => 10271828 [6367 ms] => 3473979 [120358 ms] (20%)  [c66c5ca]
+{ "type":"BEFORE_TRANSFORM", "id":6, "size":16113920, "time":1025841206495859, "hash":83e70961 }
+{ "type":"BEFORE_TRANSFORM", "id":5, "size":16777216, "time":1025841207284826, "hash":cbf74004 }
+{ "type":"AFTER_TRANSFORM", "id":6, "size":9781068, "time":1025847505956710, "hash":83e70961 } [6299 ms]
+{ "type":"BEFORE_ENTROPY", "id":6, "size":9781068, "time":1025847506844757, "hash":83e70961 } [0 ms]
+{ "type":"AFTER_TRANSFORM", "id":5, "size":10383586, "time":1025847558315314, "hash":cbf74004 } [6351 ms]
+{ "type":"BEFORE_ENTROPY", "id":5, "size":10383586, "time":1025847559213713, "hash":cbf74004 } [0 ms]
+{ "type":"AFTER_ENTROPY", "id":5, "size":3465775, "time":1025972825386304, "hash":cbf74004 } [125266 ms]
+Block 5: 16777216 => 10383586 [6351 ms] => 3465775 [125266 ms] (20%)  [cbf74004]
+{ "type":"AFTER_ENTROPY", "id":6, "size":3317359, "time":1025973017272646, "hash":83e70961 } [125510 ms]
+Block 6: 16113920 => 9781068 [6299 ms] => 3317359 [125510 ms] (20%)  [83e70961]
+
+Encoding:          391.7 s
+Input size:        100000000
+Output size:       20620450
+Compression ratio: 0.206205
+Throughput (KB/s): 249
+
+{ "type":"COMPRESSION_END", "size":20620450, "time":1025973207436714 }

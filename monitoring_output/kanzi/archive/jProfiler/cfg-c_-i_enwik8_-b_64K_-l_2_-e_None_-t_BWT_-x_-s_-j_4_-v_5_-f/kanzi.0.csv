@@ -1,0 +1,106 @@
+"Hot Spot","Self Time Difference (microseconds)","Self Time Base (microseconds)","Invocations Difference","Invocations Base"
+"java.lang.Thread.yield()",23909752,0,44545304,0
+"kanzi.transform.LZCodec$LZXCodec.forward(kanzi.SliceByteArray, kanzi.SliceByteArray)",18553741,0,1526,0
+"kanzi.transform.LZCodec$LZXCodec.hash(byte[ ], int)",14970091,0,70682053,0
+"kanzi.io.CompressedOutputStream$EncodingTask.encodeBlock(kanzi.SliceByteArray, kanzi.SliceByteArray, int, long, int, int)",7163335,32867,1525,1
+"kanzi.Memory$LittleEndian.readLong64(byte[ ], int)",6611114,0,70682053,0
+"kanzi.util.hash.XXHash32.hash(byte[ ], int, int)",5857481,0,1526,0
+"kanzi.transform.TextCodec.isText(byte)",5745059,15240674,196462,100005616
+"java.lang.Math.max(int, int)",4624409,0,43462174,0
+"kanzi.transform.TextCodec$TextCodec2.forward(kanzi.SliceByteArray, kanzi.SliceByteArray)",3949596,13464763,1525,1
+"java.util.concurrent.atomic.AtomicInteger.get()",3027913,0,44548738,0
+"kanzi.transform.TextCodec.isLowerCase(byte)",2550111,7055582,196462,100005616
+"kanzi.Memory$LittleEndian.readInt32(byte[ ], int)",2346651,0,25000000,0
+"kanzi.util.hash.XXHash32.round(int, int)",2282226,0,25000000,0
+"kanzi.transform.LZCodec$LZXCodec.findMatch(byte[ ], int, int, int)",1915499,0,5143148,0
+"kanzi.bitstream.DefaultOutputBitStream.writeBits(long, int)",1797840,17816,13410010,211095
+"kanzi.entropy.HuffmanEncoder.encode(byte[ ], int, int)",1510643,0,1526,0
+"kanzi.transform.LZCodec.differentInts(byte[ ], int, int)",1503268,0,14667792,0
+"kanzi.transform.TextCodec$TextCodec2.reset(int)",1350171,30492,1525,1
+"kanzi.bitstream.DefaultOutputBitStream.pushCurrent()",1041036,844488,4856997,5283283
+"kanzi.transform.TextCodec$DictEntry.<init>(byte[ ], int, int, int, int)",1006920,39947,10415104,524288
+"kanzi.transform.LZCodec$LZXCodec.emitLiterals(byte[ ], int, byte[ ], int, int)",977441,0,2546076,0
+"java.lang.Math.min(int, int)",863383,0,8188391,0
+"kanzi.transform.LZCodec$LZXCodec.arrayChunkCopy(byte[ ], int, byte[ ], int)",605342,0,6344100,0
+"kanzi.Memory$BigEndian.writeLong64(byte[ ], int, long)",518122,368975,4856997,5283283
+"kanzi.transform.TextCodec.isDelimiter(byte)",242084,1082185,-439,13861126
+"kanzi.entropy.ExpGolombEncoder.encodeByte(byte)",196109,0,993320,0
+"kanzi.transform.TextCodec$TextCodec2.emitSymbols(byte[ ], int, byte[ ], int, int, int)",193644,462712,139178,4625539
+"kanzi.transform.TextCodec.computeStats(byte[ ], int, int, int[ ], boolean)",184358,147014,1525,1
+"kanzi.transform.LZCodec$LZXCodec.emitLength(byte[ ], int, int)",173138,0,1682647,0
+"kanzi.entropy.HuffmanEncoder.updateFrequencies(int[ ])",128018,0,4242,0
+"kanzi.Global.computeHistogramOrder0(byte[ ], int, int, int[ ], boolean)",115521,38273,4740,1028
+"java.io.PrintStream.println(java.lang.String)",90590,0,6128,0
+"java.lang.String.format(java.lang.String, java.lang.Object[ ])",77946,6808,9156,1
+"kanzi.bitstream.DefaultOutputBitStream.writeBits(byte[ ], int, int)",51429,878841,497,1029
+"java.util.concurrent.ThreadPoolExecutor$Worker.run()",37382,0,4,0
+"java.util.Arrays.sort(int[ ], int, int)",36403,0,4242,0
+"kanzi.bitstream.DefaultOutputBitStream.writeBit(int)",32668,0,367686,0
+"kanzi.Global.computeFirstOrderEntropy1024(int, int[ ])",29988,0,1526,0
+"kanzi.Global.log2_1024(int)",27409,0,237764,0
+"java.io.PrintStream.println(java.lang.Object)",24199,0,1528,0
+"kanzi.entropy.HuffmanCommon.generateCanonicalCodes(short[ ], int[ ], int[ ], int)",22804,0,4242,0
+"kanzi.app.InfoPrinter.processEvent(kanzi.Event)",21078,0,6106,0
+"java.util.concurrent.ExecutorService.invokeAll(java.util.Collection)",20513,0,382,0
+"kanzi.Event.toString()",19572,0,6106,0
+"kanzi.entropy.HuffmanEncoder.computeInPlaceSizesPhase1(int[ ], int)",13558,0,4242,0
+"java.lang.StringBuilder.append(java.lang.String)",9797,0,53471,0
+"kanzi.transform.Sequence.forward(kanzi.SliceByteArray, kanzi.SliceByteArray)",9020,0,1526,0
+"kanzi.entropy.HuffmanEncoder.computeCodeLengths(int[ ], int)",8434,0,4242,0
+"java.lang.Integer.valueOf(int)",7479,0,24425,0
+"java.lang.Integer.numberOfLeadingZeros(int)",6228,0,60335,0
+"java.util.HashMap.<init>(java.util.Map)",6186,0,1526,0
+"java.util.Map.put(java.lang.Object, java.lang.Object)",5949,0,10707,0
+"kanzi.Event.getType()",5820,0,21376,0
+"kanzi.entropy.HuffmanEncoder.computeInPlaceSizesPhase2(int[ ], int)",4520,0,4242,0
+"java.util.Map.getOrDefault(java.lang.Object, java.lang.Object)",4304,0,12210,0
+"java.lang.StringBuilder.append(long)",4275,0,12215,0
+"kanzi.transform.LZCodec.<init>(java.util.Map)",3908,0,1526,0
+"kanzi.Event.<init>(kanzi.Event$Type, int, long, int, boolean)",3791,0,6106,0
+"java.lang.Long.valueOf(long)",3737,0,13736,0
+"kanzi.transform.Sequence.getMaxEncodedLength(int)",3554,0,3052,0
+"kanzi.io.CompressedOutputStream.notifyListeners(kanzi.Listener[ ], kanzi.Event)",3486,0,6104,0
+"kanzi.Event.getId()",3107,0,12210,0
+"java.util.Map.remove(java.lang.Object)",3093,0,1536,0
+"java.lang.Integer.toHexString(int)",3048,0,7630,0
+"kanzi.transform.LZCodec$LZXCodec.getMaxEncodedLength(int)",2876,0,4578,0
+"java.util.Map.get(java.lang.Object)",2820,0,4587,0
+"kanzi.Global.log2(int)",2625,0,6104,0
+"java.lang.StringBuilder.<init>(int)",2592,0,6106,0
+"kanzi.entropy.HuffmanEncoder.<init>(kanzi.OutputBitStream, int)",2585,0,1526,0
+"java.lang.Short.valueOf(short)",2523,0,4578,0
+"java.lang.StringBuilder.append(int)",2405,0,6108,0
+"kanzi.Event.getHash()",2392,0,9156,0
+"kanzi.Event.<init>(kanzi.Event$Type, int, long, int, boolean, long)",2191,0,6106,0
+"kanzi.Memory$BigEndian.readLong64(byte[ ], int)",-17798,397993,-528921,5266221
+"kanzi.io.CompressedOutputStream.<init>(kanzi.OutputBitStream, java.util.Map)",-38150,43035,0,1
+"kanzi.transform.DivSufSort.trMedian3(int[ ], int, int, int, int)",-44027,44027,-335626,335626
+"kanzi.transform.DivSufSort.ssMedian5(int, int, int, int, int, int, int)",-63508,63508,-447834,447834
+"kanzi.transform.DivSufSort.ssMedian3(int, int, int, int, int)",-73526,73526,-543208,543208
+"kanzi.transform.BWT.forward(kanzi.SliceByteArray, kanzi.SliceByteArray)",-74951,74951,-1,1
+"kanzi.transform.DivSufSort.computeBWT(byte[ ], byte[ ], int[ ], int, int, int, int[ ], int)",-84152,84152,-1,1
+"kanzi.transform.DivSufSort.ssIlg(int)",-89948,89948,-879443,879443
+"kanzi.transform.DivSufSort.ssPartition(int, int, int, int)",-98096,98096,-437100,437100
+"kanzi.transform.DivSufSort$TRBudget.check(int)",-109845,109845,-1121148,1121148
+"kanzi.transform.DivSufSort.trPivot(int[ ], int, int, int)",-111359,111359,-535018,535018
+"kanzi.transform.TextCodec$TextCodec2.emitWordIndex(byte[ ], int, int, int)",-122032,1039165,-3187806,12697965
+"kanzi.transform.DivSufSort.ssPivot(int, int, int, int)",-197945,197945,-895009,895009
+"kanzi.transform.DivSufSort.trSort(int, int)",-232047,232047,-1,1
+"kanzi.transform.DivSufSort$Stack.push(int, int, int, int, int)",-243889,243889,-2539457,2539457
+"kanzi.transform.ZRLT.forward(kanzi.SliceByteArray, kanzi.SliceByteArray)",-246319,246319,-1,1
+"kanzi.transform.TextCodec.sameWords(byte[ ], int, byte[ ], int, int)",-263252,1350314,-3187806,12697965
+"kanzi.transform.DivSufSort.trIlg(int)",-287614,287614,-2923260,2923260
+"kanzi.transform.DivSufSort$Stack.pop()",-404963,404963,-3947293,3947293
+"kanzi.transform.DivSufSort.trInsertionSort(int, int, int)",-600885,600885,-2977117,2977117
+"kanzi.transform.DivSufSort.sortTypeBstar(int[ ], int[ ], int)",-683166,683166,-1,1
+"kanzi.transform.DivSufSort.ssMergeBackward(int, int, int, int, int, int)",-934500,934500,-2169,2169
+"kanzi.transform.SBRT.forward(kanzi.SliceByteArray, kanzi.SliceByteArray)",-956931,956931,-1,1
+"kanzi.transform.DivSufSort.trPartition(int, int, int, int, int)",-1290470,1290470,-535262,535262
+"kanzi.transform.DivSufSort.trIntroSort(int, int, int, int, kanzi.transform.DivSufSort$TRBudget)",-1403889,1403889,-1382349,1382349
+"kanzi.transform.DivSufSort.constructBWT(int[ ], int[ ], int, int, int[ ], int)",-1683686,1683686,-1,1
+"kanzi.transform.DivSufSort.ssInsertionSort(int, int, int, int)",-2221062,2221062,-1170187,1170187
+"kanzi.entropy.ANSRangeEncoder.encodeSymbol(int[ ], int, kanzi.entropy.ANSRangeEncoder$Symbol)",-2462807,2462807,-33678300,33678300
+"kanzi.entropy.ANSRangeEncoder.encodeChunk(byte[ ], int, int)",-2831974,2831974,-1028,1028
+"kanzi.transform.DivSufSort.ssCompare(int, int, int)",-3320133,3320133,-30272617,30272617
+"kanzi.transform.DivSufSort.swapInSA(int, int)",-4841531,4841531,-62866167,62866167
+"kanzi.transform.DivSufSort.ssMultiKeyIntroSort(int, int, int, int)",-7787177,7787177,-23318,23318

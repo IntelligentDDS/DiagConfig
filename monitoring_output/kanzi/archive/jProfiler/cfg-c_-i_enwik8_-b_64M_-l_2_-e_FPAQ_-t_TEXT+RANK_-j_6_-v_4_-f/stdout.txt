@@ -1,0 +1,30 @@
+
+Kanzi 2.0 (c) Frederic Langlet
+
+Warning: providing the 'level' option forces the entropy codec. Ignoring [FPAQ]
+Warning: providing the 'level' option forces the transform. Ignoring [TEXT+RANK]
+Ignoring invalid option [transform]
+Ignoring invalid option [entropy]
+1 file to compress
+
+Block size set to 67108864 bytes
+Verbosity set to 4
+Overwrite set to true
+Checksum set to false
+Using TEXT+FSD+LZX transform (stage 1)
+Using HUFFMAN entropy codec (stage 2)
+Using 6 jobs
+Input file name set to 'enwik8'
+Output file name set to 'enwik8.knz'
+
+Encoding enwik8 ...
+
+Block 1: 67108864 => 23184169 [47856 ms] => 20945551 [1765 ms] (31%)
+Block 2: 32891136 => 11556756 [24440 ms] => 10403659 [26163 ms] (31%)
+
+Encoding:          51655 ms
+Input size:        100000000
+Output size:       31349234
+Compression ratio: 0.313492
+Throughput (KB/s): 1890
+
