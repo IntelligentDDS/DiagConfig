@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Blake2b_1.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">main.java.components.hash.algorithms</a> &gt; <span class="el_source">Blake2b_1.java</span></div><h1>Blake2b_1.java</h1><pre class="source lang-java linenums">package main.java.components.hash.algorithms;
+
+/*
+ * Round-reduced Blake2b as H' for Password Hashing Scheme Catena 
+ * Copyright (C) 2015  Axel von dem Bruch
+ * 
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ * 
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ * 
+ * See:  https://www.gnu.org/licenses/lgpl-2.1.html
+ * You should have received a copy of the GNU General Public License 
+ * along with this library.
+ */
+
+import java.util.Arrays;
+
+import main.java.Helper;
+import main.java.components.hash.HashInterface;
+
+
+public class Blake2b_1 implements HashInterface {
+	
+<span class="fc" id="L30">	Helper helper = new Helper();</span>
+	
+<span class="fc" id="L32">	private final static long blake2b_IV[] = </span>
+			// Blake2b Initialization Vector: 
+			// Produced from the square root of primes 2, 3, 5, 7, 11, 13, 17, 19.
+			// The same as SHA-512 IV.
+		{
+		  0x6a09e667f3bcc908L, 0xbb67ae8584caa73bL, 
+		  0x3c6ef372fe94f82bL, 0xa54ff53a5f1d36f1L,
+		  0x510e527fade682d1L, 0x9b05688c2b3e6c1fL,
+		  0x1f83d9abfb41bd6bL, 0x5be0cd19137e2179L 
+		};
+	private final static long blake2b_IV0 = 0x6a09e667f2bdc948L;
+	
+<span class="fc" id="L44">	private final static byte[][] blake2b_sigma = // Message word permutations</span>
+		{
+		  {  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15 } ,
+		  { 14, 10,  4,  8,  9, 15, 13,  6,  1, 12,  0,  2, 11,  7,  5,  3 } ,
+		  { 11,  8, 12,  0,  5,  2, 15, 13, 10, 14,  3,  6,  7,  1,  9,  4 } ,
+		  {  7,  9,  3,  1, 13, 12, 11, 14,  2,  6,  5, 10,  4,  0, 15,  8 } ,
+		  {  9,  0,  5,  7,  2,  4, 10, 15, 14,  1, 11, 12,  6,  8,  3, 13 } ,
+		  {  2, 12,  6, 10,  0, 11,  8,  3,  4, 13,  7,  5, 15, 14,  1,  9 } ,
+		  { 12,  5,  1, 15, 14, 13,  4, 10,  0,  7,  6,  3,  9,  2,  8, 11 } ,
+		  { 13, 11,  7, 14, 12,  1,  3,  9,  5,  0, 15,  4,  8,  6,  2, 10 } ,
+		  {  6, 15, 14,  9, 11,  3,  0,  8, 12,  2, 13,  7,  1,  4, 10,  5 } ,
+		  { 10,  2,  8,  4,  7,  6,  1,  5, 15, 11,  9, 14,  3, 12, 13 , 0 } ,
+		  {  0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14, 15 } ,
+		  { 14, 10,  4,  8,  9, 15, 13,  6,  1, 12,  0,  2, 11,  7,  5,  3 }
+		};
+	
+	private final static int BLOCK_LENGTH_BYTES = 128;// bytes
+	private final static int H_LEN = 64; 
+
+<span class="fc" id="L63">	private int vIndex = 0; // used as vertex index for Catena</span>
+
+<span class="fc" id="L65">	private byte[] buffer = null;//new byte[BLOCK_LENGTH_BYTES];</span>
+<span class="fc" id="L66">	private boolean halfBuffer = false;</span>
+
+<span class="fc" id="L68">	private long[] internalState = new long[16]; // In the Blake2b paper it is called: v</span>
+<span class="fc" id="L69">	private long[] chainValue = null; // state vector, in the Blake2b paper it is called: h</span>
+	
+<span class="fc" id="L71">	private long t0 = 0L; // holds last significant bits, counter (counts bytes)</span>
+<span class="fc" id="L72">	private long t1 = 0L; // counter: Length up to 2^128 are supported</span>
+	
+<span class="fc" id="L74">	public Blake2b_1() {</span>
+<span class="fc" id="L75">		buffer = new byte[BLOCK_LENGTH_BYTES];</span>
+<span class="fc" id="L76">		init();</span>
+<span class="fc" id="L77">	}</span>
+
+	// initialize chainValue
+	private void init() {
+		
+<span class="pc bpc" id="L82" title="1 of 2 branches missed.">		if (chainValue == null){</span>
+<span class="fc" id="L83">			chainValue = new long[8];</span>
+<span class="fc" id="L84">			chainValue[0] = blake2b_IV0;</span>
+<span class="fc" id="L85">			chainValue[1] = blake2b_IV[1];</span>
+<span class="fc" id="L86">			chainValue[2] = blake2b_IV[2];		</span>
+<span class="fc" id="L87">			chainValue[3] = blake2b_IV[3];			</span>
+<span class="fc" id="L88">			chainValue[4] = blake2b_IV[4];</span>
+<span class="fc" id="L89">			chainValue[5] = blake2b_IV[5];			</span>
+<span class="fc" id="L90">			chainValue[6] = blake2b_IV[6];</span>
+<span class="fc" id="L91">			chainValue[7] = blake2b_IV[7];</span>
+		}
+<span class="fc" id="L93">	}</span>
+	
+	private void initializeInternalState(){
+		
+		// initialize v:
+<span class="fc" id="L98">		System.arraycopy(chainValue, 0, internalState, 0, chainValue.length);</span>
+<span class="fc" id="L99">		System.arraycopy(blake2b_IV, 0, internalState, chainValue.length, 4);</span>
+<span class="fc" id="L100">		internalState[12] = t0 ^ blake2b_IV[4];</span>
+<span class="fc" id="L101">		internalState[13] = t1 ^ blake2b_IV[5];</span>
+<span class="fc" id="L102">		internalState[14] = 0xFFFFFFFFFFFFFFFFL ^ blake2b_IV[6];</span>
+<span class="fc" id="L103">		internalState[15] = blake2b_IV[7];</span>
+<span class="fc" id="L104">	}</span>
+	
+	/**
+	 * Processes the given message
+	 * 
+	 * @param message
+	 *            byte array containing the message to be processed
+	 */
+	public void update(byte[] message) {
+//		System.out.println(&quot;B2B1 mess.l: &quot; + message.length);
+//		System.out.println(&quot;input b2b1: &quot; + helper.bytes2hex(message));
+		
+<span class="pc bpc" id="L116" title="1 of 2 branches missed.">		if (message.length == 128){</span>
+<span class="fc" id="L117">			update(Arrays.copyOfRange(message, 0, 64), 0, H_LEN);</span>
+<span class="fc" id="L118">			update(Arrays.copyOfRange(message, 64, 128), 0, H_LEN);</span>
+		} else {
+<span class="nc" id="L120">			update(message, 0, H_LEN);</span>
+		}
+<span class="fc" id="L122">	}</span>
+	
+	/**
+	 * Processes one single byte
+	 * 
+	 * @param b
+	 *            single byte to be processed
+	 */
+<span class="nc" id="L130">	public void update(byte b) {}</span>
+	
+	/**
+	 * Processes a number of bytes of the given message 
+	 * from a start position up to offset+len
+	 * 
+	 * @param message
+	 *            byte array containing the message to be processed
+	 * @param offset
+	 *            position of message to start from
+	 * @param len
+	 *            number of bytes to be processed.
+	 */
+	public void update(byte[] message, int offset, int len) {
+
+<span class="fc bfc" id="L145" title="All 2 branches covered.">		if (!halfBuffer){</span>
+<span class="fc" id="L146">			System.arraycopy(message,  offset, buffer, 0, H_LEN);</span>
+<span class="fc" id="L147">			halfBuffer = true;			</span>
+		} else {
+<span class="fc" id="L149">			System.arraycopy(message,  offset, buffer, H_LEN, H_LEN);			</span>
+<span class="fc" id="L150">			halfBuffer = false;</span>
+		}
+<span class="fc" id="L152">	}</span>
+	
+	/**
+	 * Calculates the final digest value atus
+	 */	
+	public byte[] doFinal() {
+<span class="fc" id="L158">		byte[] out = new byte[H_LEN];</span>
+<span class="fc" id="L159">		t0 += BLOCK_LENGTH_BYTES;</span>
+		// simplified because increment is always 128
+<span class="pc bpc" id="L161" title="1 of 2 branches missed.">		if ( (t0 == 0)){</span>
+<span class="nc" id="L162">			t1++;</span>
+		}
+//		Helper h = new Helper();
+//		System.out.println(&quot;Buffer: &quot; + h.bytes2hex(buffer));
+		
+<span class="fc" id="L167">		compress(buffer, 0);</span>
+<span class="fc" id="L168">		halfBuffer = false;</span>
+		
+		// increment counter by one
+<span class="fc" id="L171">		vIndex = (vIndex+1) % 12;</span>
+
+<span class="fc bfc" id="L173" title="All 2 branches covered.">		for (int i = 0; i &lt; chainValue.length; i++) {</span>
+<span class="fc" id="L174">			System.arraycopy(long2bytes(chainValue[i]), 0, out, i * 8, 8);</span>
+		}
+<span class="fc" id="L176">		return out;</span>
+	}
+	
+	/**
+	 * Reset the hash function to use again after doFinal().
+	 * This will not work for keyed digests. 
+	 */
+	public void reset() {
+//		System.out.println(&quot;--- RESET B2B1---&quot;);
+<span class="fc" id="L185">		halfBuffer = false;</span>
+<span class="fc" id="L186">		t0 = 0L;</span>
+<span class="fc" id="L187">		t1 = 0L;</span>
+<span class="fc" id="L188">		Arrays.fill(buffer,  (byte) 0);</span>
+<span class="fc" id="L189">		Arrays.fill(chainValue, 0L);	</span>
+<span class="fc" id="L190">		Arrays.fill(internalState, 0L);</span>
+<span class="fc" id="L191">		chainValue = null;</span>
+		
+<span class="fc" id="L193">		vIndex = 0;</span>
+		
+<span class="fc" id="L195">		init();</span>
+<span class="fc" id="L196">	}</span>
+	
+	private void compress(byte[] message, int messagePos) {
+
+<span class="fc" id="L200">		initializeInternalState();</span>
+		
+<span class="fc" id="L202">		long[] m = new long[16];</span>
+<span class="fc bfc" id="L203" title="All 2 branches covered.">		for (int j = 0; j &lt; 16; j++) {</span>
+<span class="fc" id="L204">			m[j] = bytes2long(message, messagePos + j*8);</span>
+		}
+		// single round: Catenas H'
+		// G apply to columns of internalState:m[blake2b_sigma[round][2 * blockPos]] /+1
+<span class="fc" id="L208">	    G(m[blake2b_sigma[vIndex][0]], m[blake2b_sigma[vIndex][1]], 0,4,8,12); </span>
+<span class="fc" id="L209">	    G(m[blake2b_sigma[vIndex][2]], m[blake2b_sigma[vIndex][3]], 1,5,9,13); </span>
+<span class="fc" id="L210">	    G(m[blake2b_sigma[vIndex][4]], m[blake2b_sigma[vIndex][5]], 2,6,10,14); </span>
+<span class="fc" id="L211">	    G(m[blake2b_sigma[vIndex][6]], m[blake2b_sigma[vIndex][7]], 3,7,11,15); </span>
+	    // G apply to diagonals of internalState:
+<span class="fc" id="L213">	    G(m[blake2b_sigma[vIndex][8]], m[blake2b_sigma[vIndex][9]], 0,5,10,15); </span>
+<span class="fc" id="L214">	    G(m[blake2b_sigma[vIndex][10]], m[blake2b_sigma[vIndex][11]], 1,6,11,12); </span>
+<span class="fc" id="L215">	    G(m[blake2b_sigma[vIndex][12]], m[blake2b_sigma[vIndex][13]], 2,7,8,13); </span>
+<span class="fc" id="L216">	    G(m[blake2b_sigma[vIndex][14]], m[blake2b_sigma[vIndex][15]], 3,4,9,14); </span>
+	    
+		// update chain values: 
+<span class="fc bfc" id="L219" title="All 2 branches covered.">		for( int offset = 0; offset &lt; 8; offset++ ) {</span>
+<span class="fc" id="L220">			chainValue[offset] = chainValue[offset] ^ internalState[offset] ^ internalState[offset + 8];	</span>
+		}
+<span class="fc" id="L222">	}</span>
+	
+
+	private void G(long m1, long m2, int posA, int posB, int posC, int posD) {
+
+<span class="fc" id="L227">		internalState[posA] = internalState[posA] + internalState[posB] + m1; </span>
+<span class="fc" id="L228">	    internalState[posD] = rotr64(internalState[posD] ^ internalState[posA], 32); </span>
+<span class="fc" id="L229">	    internalState[posC] = internalState[posC] + internalState[posD]; </span>
+<span class="fc" id="L230">	    internalState[posB] = rotr64(internalState[posB] ^ internalState[posC], 24); // replaces 25 of BLAKE</span>
+<span class="fc" id="L231">	    internalState[posA] = internalState[posA] + internalState[posB] + m2; </span>
+<span class="fc" id="L232">	    internalState[posD] = rotr64(internalState[posD] ^ internalState[posA], 16); </span>
+<span class="fc" id="L233">	    internalState[posC] = internalState[posC] + internalState[posD]; </span>
+<span class="fc" id="L234">	    internalState[posB] = rotr64(internalState[posB] ^ internalState[posC], 63); // replaces 11 of BLAKE</span>
+<span class="fc" id="L235">	}</span>
+	
+	private long rotr64(long x, int rot) {
+<span class="fc" id="L238">		return x &gt;&gt;&gt; rot | (x &lt;&lt; (64 - rot));</span>
+	}
+	
+
+	public String getName(){
+<span class="nc" id="L243">		return &quot;Catena_Blake2b_1&quot;;</span>
+	}
+	/**
+	 * This function is used for password hashing scheme
+	 * Catenas round-reduced version H'
+	 * 
+	 * @param _vIndex 	some index
+	 */
+	public void setVertexIndex(int _vIndex) {
+		
+<span class="fc" id="L253">		vIndex = _vIndex % 12;</span>
+<span class="fc" id="L254">	}</span>
+	// convert one long value in byte array
+	// little-endian byte order!
+	public final static byte[] long2bytes(long longValue) {
+<span class="fc" id="L258">	    return new byte[] {	        </span>
+		    (byte) longValue,
+	        (byte) (longValue &gt;&gt; 8),
+	        (byte) (longValue &gt;&gt; 16),
+	        (byte) (longValue &gt;&gt; 24),
+	        (byte) (longValue &gt;&gt; 32),
+	        (byte) (longValue &gt;&gt; 40),
+	        (byte) (longValue &gt;&gt; 48),
+	        (byte) (longValue &gt;&gt; 56)};
+	}
+	// little-endian byte order!
+	public final static long bytes2long(byte[] byteArray, int offset) {
+	      
+<span class="fc" id="L271">	      return (	    		  </span>
+				  ((long) byteArray[offset] &amp; 0xFF ) |
+				  (((long) byteArray[offset + 1] &amp; 0xFF ) &lt;&lt; 8) |
+				  (((long) byteArray[offset + 2] &amp; 0xFF ) &lt;&lt; 16) |
+				  (((long) byteArray[offset + 3] &amp; 0xFF ) &lt;&lt; 24) |
+			      (((long) byteArray[offset + 4] &amp; 0xFF ) &lt;&lt; 32) |
+			      (((long) byteArray[offset + 5] &amp; 0xFF ) &lt;&lt; 40) |
+			      (((long) byteArray[offset + 6] &amp; 0xFF ) &lt;&lt; 48) |
+			      (((long) byteArray[offset + 7] &amp; 0xFF ) &lt;&lt; 56) ) ;  	    			    		  
+	}
+
+
+	public int getOutputSize() {
+<span class="fc" id="L284">		return H_LEN;</span>
+	}	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

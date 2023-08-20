@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SaltMixTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java.components.gamma.algorithms</a> &gt; <span class="el_source">SaltMixTest.java</span></div><h1>SaltMixTest.java</h1><pre class="source lang-java linenums">package test.java.components.gamma.algorithms;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+import main.java.Helper;
+import main.java.components.gamma.GammaInterface;
+import main.java.components.gamma.algorithms.SaltMix;
+import main.java.components.hash.HashInterface;
+import main.java.components.hash.algorithms.Blake2b;
+
+<span class="fc" id="L17">public class SaltMixTest {</span>
+	
+<span class="fc" id="L19">	private String path = &quot;src/test/resources/testvectors/saltmixAnyFull.json&quot;;</span>
+<span class="fc" id="L20">	private File testFileSaltMix = new File(path);</span>
+	
+<span class="fc" id="L22">	Helper helper = new Helper();</span>
+
+	@Test
+	public void testSaltMix() {
+<span class="fc" id="L26">		HashInterface h = new Blake2b();</span>
+<span class="fc" id="L27">		HashInterface hPrime = new Blake2b();</span>
+<span class="fc" id="L28">		GammaInterface gamma = new SaltMix();</span>
+<span class="fc" id="L29">		gamma.setH(h);</span>
+<span class="fc" id="L30">		gamma.setHPrime(hPrime);</span>
+		
+		
+<span class="fc" id="L33">		JSONArray jsonObj = helper.jsonParserArr(testFileSaltMix);</span>
+		
+<span class="fc bfc" id="L35" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L36">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L38">			JSONObject inputs  = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L39">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L41">			String hashIn = inputs.getString(&quot;hash&quot;);</span>
+<span class="fc" id="L42">			byte[][] in = helper.oneDimByteArrToTwoDim(helper.hex2bytes(hashIn), 64);</span>
+<span class="fc" id="L43">			int garlic = inputs.getInt(&quot;garlic&quot;);</span>
+<span class="fc" id="L44">			String salt = inputs.getString(&quot;salt&quot;);</span>
+			
+<span class="fc" id="L46">			String exp = outputs.getString(&quot;output_hash&quot;);</span>
+			
+<span class="fc" id="L48">			byte[] s = helper.hex2bytes(salt);			</span>
+			
+<span class="fc" id="L50">			byte[][] output = gamma.gamma(garlic, in, s);</span>
+			
+<span class="fc" id="L52">			assertTrue(exp.equals(helper.bytes2hex(helper.twoDimByteArrayToOne(output)).toLowerCase()));</span>
+		}
+<span class="fc" id="L54">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

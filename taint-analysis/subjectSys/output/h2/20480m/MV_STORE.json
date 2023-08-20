@@ -1,0 +1,72 @@
+[
+  {
+    "packageName": "org.h2.security.auth",
+    "className": "DefaultAuthenticator",
+    "methodSignature": "<org.h2.security.auth.DefaultAuthenticator: updateRoles(Lorg/h2/security/auth/AuthenticationInfo;Lorg/h2/engine/User;Lorg/h2/engine/Database;)Z>",
+    "javaLine": 314,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "MV_STORE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor $stack29",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "Database",
+    "methodSignature": "<org.h2.engine.Database: updateMeta(Lorg/h2/engine/SessionLocal;Lorg/h2/engine/DbObject;)V>",
+    "javaLine": 1481,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "MV_STORE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor $stack8#4",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.util",
+    "className": "DebuggingThreadLocal",
+    "methodSignature": "<org.h2.util.DebuggingThreadLocal: set(Ljava/lang/Object;)V>",
+    "javaLine": 22,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "MV_STORE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack2.<java.util.concurrent.ConcurrentHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack5, value)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: openMap(ILorg/h2/mvstore/MVMap$MapBuilder;)Lorg/h2/mvstore/MVMap;>",
+    "javaLine": 686,
+    "bytecodeIndex": -1,
+    "operationType": "loopNewArrSink",
+    "options": [
+      "MV_STORE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack14 = newarray (java.lang.Object)[1]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: setAutoCommitDelay(I)V>",
+    "javaLine": 3399,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "MV_STORE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack15 = virtualinvoke $stack14.<java.util.concurrent.atomic.AtomicReference: boolean compareAndSet(java.lang.Object,java.lang.Object)>(null, $stack11)",
+    "mayValues": []
+  }
+]

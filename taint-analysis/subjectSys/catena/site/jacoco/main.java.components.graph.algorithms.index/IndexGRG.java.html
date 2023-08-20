@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IndexGRG.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">main.java.components.graph.algorithms.index</a> &gt; <span class="el_source">IndexGRG.java</span></div><h1>IndexGRG.java</h1><pre class="source lang-java linenums">package main.java.components.graph.algorithms.index;
+
+import main.java.Helper;
+import main.java.components.graph.algorithms.IdxInterface;
+
+public class IndexGRG implements IdxInterface {
+	
+	int _l;
+<span class="fc" id="L9">	Helper h = new Helper();</span>
+	
+<span class="fc" id="L11">	public IndexGRG (int l){</span>
+<span class="fc" id="L12">		_l = l;</span>
+<span class="fc" id="L13">	}</span>
+	
+	
+	public int getIndex(int i, int g) {
+<span class="fc" id="L17">		IndexBRG brg = new IndexBRG();</span>
+<span class="fc" id="L18">		return (brg.getIndex(i, g))^</span>
+<span class="fc" id="L19">				(brg.getIndex((1 &lt;&lt; g) - 1 - i, g)</span>
+<span class="fc" id="L20">				&gt;&gt;(int)Math.ceil((float)g/(float)_l));</span>
+	}
+
+	public long getIndex(long i, int g) {
+<span class="fc" id="L24">		IndexBRG brg = new IndexBRG();</span>
+<span class="fc" id="L25">		return (brg.getIndex(i, g))^</span>
+<span class="fc" id="L26">				(brg.getIndex((1 &lt;&lt; g) - 1 - i, g)</span>
+<span class="fc" id="L27">				&gt;&gt;(int)Math.ceil((float)g/(float)_l));</span>
+	}
+
+	public int getIndex(int i, int j, int g) {
+<span class="fc" id="L31">		return -1;</span>
+	}
+
+	public long getIndex(long i, long j, int g) {
+<span class="fc" id="L35">		return -1;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CatenaPhi.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">main.java.components.phi.algorithms</a> &gt; <span class="el_source">CatenaPhi.java</span></div><h1>CatenaPhi.java</h1><pre class="source lang-java linenums">package main.java.components.phi.algorithms;
+
+import main.java.Helper;
+import main.java.components.hash.HashInterface;
+import main.java.components.phi.PhiInterface;
+
+public class CatenaPhi implements PhiInterface {
+
+<span class="fc" id="L9">	Helper helper = new Helper();</span>
+	
+	IdxStateInterface _idx;
+	HashInterface _h;
+	HashInterface _hPrime;
+	
+<span class="fc" id="L15">	public CatenaPhi(IdxStateInterface idx){</span>
+<span class="fc" id="L16">		_idx = idx; </span>
+<span class="fc" id="L17">	}</span>
+	
+	public byte[][] phi(int garlic, byte[][] b, byte[] m) {
+<span class="fc" id="L20">		int j = _idx.getLsbIndex(m, garlic);</span>
+<span class="fc" id="L21">		byte[][] tmp = new byte[b.length][_h.getOutputSize()];</span>
+		
+<span class="fc" id="L23">		System.arraycopy(b, 0, tmp, 0, b.length);</span>
+		
+		
+		
+<span class="fc" id="L27">		_hPrime.update(helper.concateByteArrays(b[b.length-1], b[j]));</span>
+<span class="fc" id="L28">		tmp[0] = _hPrime.doFinal();</span>
+<span class="fc" id="L29">		_hPrime.reset();</span>
+		
+<span class="fc bfc" id="L31" title="All 2 branches covered.">		for (int i = 1; i &lt; b.length; ++i){</span>
+<span class="fc" id="L32">			j = _idx.getLsbIndex(tmp[i-1], garlic);</span>
+			
+<span class="fc" id="L34">			_hPrime.update(helper.concateByteArrays(tmp[i-1], tmp[j]));</span>
+<span class="fc" id="L35">			tmp[i] = _hPrime.doFinal();</span>
+<span class="fc" id="L36">			_hPrime.reset(); </span>
+		}
+		
+<span class="fc" id="L39">		return tmp;</span>
+	}
+
+	public void setH(HashInterface h) {
+<span class="fc" id="L43">		_h = h;</span>
+<span class="fc" id="L44">	}</span>
+
+	public void setHPrime(HashInterface hPrime) {
+<span class="fc" id="L47">		_hPrime = hPrime;</span>
+<span class="fc" id="L48">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

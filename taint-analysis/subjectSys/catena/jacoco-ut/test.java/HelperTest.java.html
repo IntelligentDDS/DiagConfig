@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>HelperTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java</a> &gt; <span class="el_source">HelperTest.java</span></div><h1>HelperTest.java</h1><pre class="source lang-java linenums">package test.java;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import main.java.Helper;
+
+
+<span class="fc" id="L10">public class HelperTest {</span>
+	
+<span class="fc" id="L12">	private Helper helper = new Helper();</span>
+	
+<span class="fc" id="L14">	String hash1XORING = &quot;1568&quot;;</span>
+<span class="fc" id="L15">	String hash2XORING = &quot;10ab&quot;;</span>
+
+	@Test
+	public void testConcateByteArrays() {
+<span class="fc" id="L19">		byte[] a = new byte[2];</span>
+<span class="fc" id="L20">		byte[] b = new byte[3];</span>
+		
+<span class="fc" id="L22">		byte[] c = helper.concateByteArrays(a, b);</span>
+		
+<span class="fc" id="L24">		assertEquals(c.length, a.length+b.length);</span>
+<span class="fc" id="L25">	}</span>
+	
+	@Test
+	public void testoneDimByteArrToTwoDim(){
+<span class="fc" id="L29">		int len = 64;</span>
+<span class="fc" id="L30">		byte[] b = helper.hex2bytes(&quot;3d6d5d5b1b159210437827d4956b9775bfd3&quot;</span>
+				+ &quot;dab68f98e958cff9f64f62155168b432f1e248b41573918&quot;
+				+ &quot;7dc7894e2c53167e0c3142dea5a8e4faac7d29fdac127b7&quot;
+				+ &quot;7b4f34758083a59b44e9c22917d6ee598485f414500bbd0&quot;
+				+ &quot;69c142177fba6b7815ab47fe7a6a01e7ab20f9217a5549a&quot;
+				+ &quot;f3aaba255957bb979f46db5e2014cbb733e161e765fa206&quot;
+				+ &quot;42ef4e1c18a8b7fee7339cd547aaf9bdbdbe5f11739118b&quot;
+				+ &quot;b3f6c9abce48337e6cfaff168d7910fbcb0aa3c265ba426&quot;
+				+ &quot;ff71ff5d2c2d74c5f769716a0ee29b7bf4ad1f1f9eab0a4&quot;
+				+ &quot;58cf222a89f0a1822c5d21b3d7db9092aacabaee9cd97b6&quot;
+				+ &quot;870987b9fddf97180cbd496c2e459eca027eae9f9798acc&quot;
+				+ &quot;255835&quot;);
+		
+<span class="fc" id="L43">		byte[][] expected = new byte[4][64];</span>
+<span class="fc" id="L44">		expected[0] = helper.hex2bytes(&quot;3d6d5d5b1b159210437827d4956&quot;</span>
+				+ &quot;b9775bfd3dab68f98e958cff9f64f62155168b432f1e248b&quot;
+				+ &quot;415739187dc7894e2c53167e0c3142dea5a8e4faac7d29fd&quot;
+				+ &quot;ac127&quot;);
+<span class="fc" id="L48">		expected[1] = helper.hex2bytes(&quot;b77b4f34758083a59b44e9c2291&quot;</span>
+				+ &quot;7d6ee598485f414500bbd069c142177fba6b7815ab47fe7a&quot;
+				+ &quot;6a01e7ab20f9217a5549af3aaba255957bb979f46db5e201&quot;
+				+ &quot;4cbb7&quot;);
+<span class="fc" id="L52">		expected[2] = helper.hex2bytes(&quot;33e161e765fa20642ef4e1c18a8&quot;</span>
+				+ &quot;b7fee7339cd547aaf9bdbdbe5f11739118bb3f6c9abce483&quot;
+				+ &quot;37e6cfaff168d7910fbcb0aa3c265ba426ff71ff5d2c2d74&quot;
+				+ &quot;c5f76&quot;);
+<span class="fc" id="L56">		expected[3] = helper.hex2bytes(&quot;9716a0ee29b7bf4ad1f1f9eab0a&quot;</span>
+				+ &quot;458cf222a89f0a1822c5d21b3d7db9092aacabaee9cd97b6&quot;
+				+ &quot;870987b9fddf97180cbd496c2e459eca027eae9f9798acc2&quot;
+				+ &quot;55835&quot;);
+
+<span class="fc" id="L61">		byte[][] out = helper.oneDimByteArrToTwoDim(b, len);</span>
+		
+<span class="fc bfc" id="L63" title="All 2 branches covered.">		for (int i = 0; i &lt; expected.length; ++i){</span>
+<span class="fc" id="L64">			assertArrayEquals(expected[i], out[i]);</span>
+		}
+<span class="fc" id="L66">	}</span>
+	
+	@Test
+	public void testXor(){
+<span class="fc" id="L70">		byte[] a = new byte[]{0,1,0,1};</span>
+<span class="fc" id="L71">		byte[] b = new byte[]{1,1,0,1};</span>
+		
+<span class="fc" id="L73">		byte[] res = new byte[]{1,0,0,0};</span>
+		
+<span class="fc" id="L75">		byte[] c = helper.xor(a, b);</span>
+<span class="fc bfc" id="L76" title="All 2 branches covered.">		for (int i=0; i&lt;res.length; ++i){</span>
+<span class="fc" id="L77">			assertEquals(res[i], c[i]);</span>
+		}
+<span class="fc" id="L79">	}</span>
+	
+	@Test
+	public void testXorHash(){
+<span class="fc" id="L83">		byte[] a = helper.hex2bytes(hash1XORING);</span>
+<span class="fc" id="L84">		byte[] b = helper.hex2bytes(hash1XORING);</span>
+<span class="fc" id="L85">		byte[] c = helper.hex2bytes(hash2XORING);</span>
+		
+<span class="fc" id="L87">		byte[] x = helper.xor(a, b);</span>
+<span class="fc" id="L88">		byte[] y = helper.xor(a, c);</span>
+		
+<span class="fc" id="L90">		byte[] resAB = helper.hex2bytes(&quot;0000&quot;);</span>
+<span class="fc" id="L91">		byte[] resAC = helper.hex2bytes(&quot;05c3&quot;);</span>
+		
+<span class="fc" id="L93">		assertArrayEquals(resAB, x);</span>
+<span class="fc" id="L94">		assertArrayEquals(resAC, y);</span>
+<span class="fc" id="L95">	}</span>
+	
+	@Test
+	public void testIntToByteArray2(){
+<span class="fc" id="L99">		int input = 12;</span>
+<span class="fc" id="L100">		byte[] exp = {0,12};</span>
+		
+<span class="fc" id="L102">		byte[] act = helper.intToByteArray(input, 2);</span>
+		
+<span class="fc" id="L104">		assertArrayEquals(exp, act);</span>
+<span class="fc" id="L105">	}</span>
+	
+	@Test
+	public void testIntToByteArray4(){
+<span class="fc" id="L109">		int input = 12;</span>
+<span class="fc" id="L110">		byte[] exp = {0, 0, 0, 12};</span>
+		
+<span class="fc" id="L112">		byte[] act = helper.intToByteArray(input, 4);</span>
+		
+<span class="fc" id="L114">		assertArrayEquals(exp, act);</span>
+<span class="fc" id="L115">	}</span>
+	
+	@Test
+	public void testIntToByteArray0(){
+<span class="fc" id="L119">		int input = 12;</span>
+<span class="fc" id="L120">		byte[] exp = new byte[1];</span>
+		
+<span class="fc" id="L122">		byte[] act = helper.intToByteArray(input, 0);</span>
+		
+<span class="fc" id="L124">		assertArrayEquals(exp, act);</span>
+<span class="fc" id="L125">	}</span>
+	
+	@Test
+	public void testBytesToInt(){
+<span class="fc" id="L129">		byte[] bytes = {0,0,0,12};</span>
+<span class="fc" id="L130">		int act = helper.bytesToInt(bytes);</span>
+<span class="fc" id="L131">		int exp = 12;</span>
+		
+<span class="fc" id="L133">		assertEquals(exp, act);</span>
+<span class="fc" id="L134">	}</span>
+	
+	@Test
+	public void testIntToBytes(){
+<span class="fc" id="L138">		byte[] exp = {0,0,0,12};</span>
+<span class="fc" id="L139">		byte[] act = helper.intToBytes(12);</span>
+
+<span class="fc" id="L141">		assertArrayEquals(exp, act);</span>
+<span class="fc" id="L142">	}</span>
+	
+	@Test
+	public void testBytesToLong(){
+<span class="fc" id="L146">		byte[] bytes = {0,0,0,0,0,0,0,12};</span>
+<span class="fc" id="L147">		long act = helper.bytesToLong(bytes);</span>
+<span class="fc" id="L148">		long exp = 12;</span>
+		
+<span class="fc" id="L150">		assertEquals(exp, act);</span>
+<span class="fc" id="L151">	}</span>
+	
+	@Test
+	public void testLongToBytes(){
+<span class="fc" id="L155">		byte[] exp = {0,0,0,0,0,0,0,12};</span>
+<span class="fc" id="L156">		byte[] act = helper.longToBytes(12);</span>
+
+<span class="fc" id="L158">		assertArrayEquals(exp, act);</span>
+<span class="fc" id="L159">	}</span>
+	
+	@Test
+	public void testPaddWithZero(){
+<span class="fc" id="L163">		byte[] inp = {12,13,14};</span>
+<span class="fc" id="L164">		int l = 10;</span>
+<span class="fc" id="L165">		byte[] act = helper.paddWithZero(inp, l);</span>
+<span class="fc" id="L166">		byte[] exp = {12,13,14,0,0,0,0,0,0,0};</span>
+		
+<span class="fc" id="L168">		assertArrayEquals(exp, act);</span>
+<span class="fc" id="L169">	}</span>
+	
+	@Test
+	public void testintToByteArrayLittleEndian(){
+<span class="fc" id="L173">		int input = 12;</span>
+<span class="fc" id="L174">		int bytes = 4;</span>
+<span class="fc" id="L175">		byte[] actual = helper.intToByteArrayLittleEndian(input, bytes);</span>
+<span class="fc" id="L176">		byte[] expected = {12,0,0,0};</span>
+<span class="fc" id="L177">		assertArrayEquals(expected, actual);</span>
+<span class="fc" id="L178">	}</span>
+	
+	@Test
+	public void testintToByteArrayLittleEndian0(){
+<span class="fc" id="L182">		int input = 12;</span>
+<span class="fc" id="L183">		int bytes = 1;</span>
+<span class="fc" id="L184">		byte[] actual = helper.intToByteArrayLittleEndian(input, bytes);</span>
+<span class="fc" id="L185">		byte[] expected = new byte[1];</span>
+<span class="fc" id="L186">		assertArrayEquals(expected, actual);</span>
+<span class="fc" id="L187">	}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

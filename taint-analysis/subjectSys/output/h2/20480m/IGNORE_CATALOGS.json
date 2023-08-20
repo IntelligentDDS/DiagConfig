@@ -1,0 +1,86 @@
+[
+  {
+    "packageName": "org.h2.value",
+    "className": "Transfer",
+    "methodSignature": "<org.h2.value.Transfer: writeString(Ljava/lang/String;)Lorg/h2/value/Transfer;>",
+    "javaLine": 347,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "IGNORE_CATALOGS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack5.<java.io.DataOutputStream: void writeInt(int)>($i0)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "Database",
+    "methodSignature": "<org.h2.engine.Database: lockMetaAssertion(Lorg/h2/engine/SessionLocal;)V>",
+    "javaLine": 782,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "IGNORE_CATALOGS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack25.<java.lang.ThreadLocal: void set(java.lang.Object)>(session)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionRemote",
+    "methodSignature": "<org.h2.engine.SessionRemote: connectServer(Lorg/h2/engine/ConnectionInfo;)V>",
+    "javaLine": 431,
+    "bytecodeIndex": -1,
+    "operationType": "loopNewArrSink",
+    "options": [
+      "IGNORE_CATALOGS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack115 = newarray (java.lang.String)[1]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.db",
+    "className": "MVTable",
+    "methodSignature": "<org.h2.mvstore.db.MVTable: syncLastModificationIdWithDatabase()V>",
+    "javaLine": 667,
+    "bytecodeIndex": -1,
+    "operationType": "loopLockSink",
+    "options": [
+      "IGNORE_CATALOGS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack8 = virtualinvoke $stack7.<java.util.concurrent.atomic.AtomicLong: long get()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.db",
+    "className": "MVTable",
+    "methodSignature": "<org.h2.mvstore.db.MVTable: syncLastModificationIdWithDatabase()V>",
+    "javaLine": 667,
+    "bytecodeIndex": -1,
+    "operationType": "loopLockSink",
+    "options": [
+      "IGNORE_CATALOGS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack11 = virtualinvoke $stack10.<java.util.concurrent.atomic.AtomicLong: boolean compareAndSet(long,long)>($stack8, $stack6)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.store.fs",
+    "className": "FilePath",
+    "methodSignature": "<org.h2.store.fs.FilePath: <clinit>()V>",
+    "javaLine": 59,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "IGNORE_CATALOGS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack7.<java.util.concurrent.ConcurrentHashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>($stack14, p#3)",
+    "mayValues": []
+  }
+]

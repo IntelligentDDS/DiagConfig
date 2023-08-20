@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Blake2bTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java.components.hash.algorithms</a> &gt; <span class="el_source">Blake2bTest.java</span></div><h1>Blake2bTest.java</h1><pre class="source lang-java linenums">package test.java.components.hash.algorithms;
+
+/**
+ * @author Max Weber
+ * hex2bytes and bytes2hex are from 
+ * https://github.com/BLAKE2/
+ */
+import static org.junit.Assert.*;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+import main.java.Helper;
+import main.java.components.hash.algorithms.Blake2b;
+
+<span class="fc" id="L21">public class Blake2bTest {</span>
+	
+	static class TestVector {
+		public String Input, Key, Hash;
+		
+<span class="nc" id="L26">		public TestVector(String in, String key, String hash){</span>
+<span class="nc" id="L27">			Input = in;</span>
+<span class="nc" id="L28">			Key = key;</span>
+<span class="nc" id="L29">			Hash = hash;			</span>
+<span class="nc" id="L30">		}</span>
+	};
+	 
+<span class="fc" id="L33">	private Helper helper = new Helper();</span>
+	
+	private static final String testVectorSource = 
+			&quot;src/test/resources/testvectors/blake2b.json&quot;;
+<span class="fc" id="L37">	private static final File fileBlake2b = new File(testVectorSource);</span>
+	
+<span class="fc" id="L39">	String input1 = &quot;&quot;;</span>
+<span class="fc" id="L40">	String key = &quot;000102030405060708090a0b0c0d0e0f10111213&quot;</span>
+			+ &quot;1415161718191a1b1c1d1e1f2021222324252627282&quot;
+			+ &quot;92a2b2c2d2e2f303132333435363738393a3b3c3d3e&quot;
+			+ &quot;3f&quot;;
+<span class="fc" id="L44">	String hash1 = &quot;10ebb67700b1868efb4417987acf4690ae9d97&quot;</span>
+			+ &quot;2fb7a590c2f02871799aaa4786b5e996e8f0f4eb981&quot;
+			+ &quot;fc214b005f42d2ff4233499391653df7aefcbc13fc5&quot;
+			+ &quot;1568&quot;;
+<span class="fc" id="L48">	String zeroes = &quot;0000000000000000000000000000000000000&quot;</span>
+			+ &quot;0000000000000000000000000000000000000000000&quot;
+			+ &quot;0000000000000000000000000000000000000000000&quot;
+			+ &quot;0000000&quot;;
+<span class="fc" id="L52">	String zeroesRes = &quot;061D94FA094482C5688AB83995F17AEC64&quot;</span>
+			+ &quot;F955D59E9EB406EA9BBA84DF7D6DA86D1C88D519669&quot;
+			+ &quot;159E409A926A1D9E151A4F69EF110EAD0A1E5B62A42&quot;
+			+ &quot;E15C396F&quot;;
+<span class="fc" id="L56">	String zeroes2 = &quot;0100000000000000000000000000000000000&quot;</span>
+			+ &quot;0000000000000000000000000000000000000000000&quot;
+			+ &quot;0000000000000000000000000000000000000000000&quot;
+			+ &quot;0000000&quot;;
+<span class="fc" id="L60">	String zeroesRes2 = &quot;A4C37D9E1FD03BA5E8EB64D307225A959&quot;</span>
+			+ &quot;50A2211BDC83B4C1009600DCAD956182B5B5639B860&quot;
+			+ &quot;E8FC583A4A482FAC45E8CBA97996737B4E376C884C8&quot;
+			+ &quot;0BFD7D010&quot;;
+	
+	/**
+	 * simple test example for Blake2b
+	 * one vector from &quot;https://github.com/BLAKE2/&quot;
+	 */
+	@Test
+	public void testsimple() {
+		
+<span class="fc" id="L72">		byte[] anyByteArray1 = helper.hex2bytes(input1);</span>
+<span class="fc" id="L73">		byte[] exp = helper.hex2bytes(hash1);</span>
+<span class="fc" id="L74">		byte[] keyInBytes = helper.hex2bytes(key);</span>
+		
+<span class="fc" id="L76">		Blake2b b = new Blake2b(keyInBytes);</span>
+<span class="fc" id="L77">		b.update( anyByteArray1 );</span>
+<span class="fc" id="L78">		byte[] hash = new byte[64];</span>
+<span class="fc" id="L79">		hash = b.doFinal();</span>
+		  
+<span class="fc" id="L81">		assertTrue(helper.bytes2hex(hash).equals(helper.bytes2hex(exp)));</span>
+<span class="fc" id="L82">	}</span>
+	
+	@Test
+	public void testsimple2 () {
+<span class="fc" id="L86">		byte[] anyByteArray1 = helper.hex2bytes(input1);</span>
+		
+<span class="fc" id="L88">		byte[] exp = helper.hex2bytes(hash1);</span>
+<span class="fc" id="L89">		byte[] keyInBytes = helper.hex2bytes(key);</span>
+		
+<span class="fc" id="L91">		Blake2b b = new Blake2b(keyInBytes);</span>
+<span class="fc" id="L92">		b.update( anyByteArray1 );</span>
+<span class="fc" id="L93">		byte[] hash = new byte[64];</span>
+<span class="fc" id="L94">		hash = b.doFinal();</span>
+		  
+<span class="fc" id="L96">		assertTrue(helper.bytes2hex(hash).equals(helper.bytes2hex(exp)));</span>
+<span class="fc" id="L97">	}</span>
+	
+	@Test
+	public void testZeroes(){
+<span class="fc" id="L101">		byte[] anyByteArray1 = helper.hex2bytes(zeroes);</span>
+<span class="fc" id="L102">		byte[] exp = helper.hex2bytes(zeroesRes);</span>
+		
+<span class="fc" id="L104">		Blake2b b = new Blake2b();</span>
+<span class="fc" id="L105">		b.update( anyByteArray1 );</span>
+<span class="fc" id="L106">		byte[] hash = new byte[64];</span>
+<span class="fc" id="L107">		hash = b.doFinal();</span>
+		
+<span class="fc" id="L109">		assertTrue(helper.bytes2hex(hash).equals(helper.bytes2hex(exp)));</span>
+<span class="fc" id="L110">	}</span>
+	
+	@Test
+	public void testZeroes2(){
+<span class="fc" id="L114">		byte[] anyByteArray1 = helper.hex2bytes(zeroes2);</span>
+<span class="fc" id="L115">		byte[] exp = helper.hex2bytes(zeroesRes2);</span>
+		
+<span class="fc" id="L117">		Blake2b b = new Blake2b();</span>
+<span class="fc" id="L118">		b.update( anyByteArray1 );</span>
+<span class="fc" id="L119">		byte[] hash = new byte[64];</span>
+<span class="fc" id="L120">		hash = b.doFinal();</span>
+		
+//		System.out.println(helper.bytes2hex(hash));
+		
+<span class="fc" id="L124">		assertTrue(helper.bytes2hex(hash).equals(helper.bytes2hex(exp)));</span>
+<span class="fc" id="L125">	}</span>
+	
+	/**
+	 * parsing and testing against all official test vectors 
+	 * from &quot;https://github.com/BLAKE2/&quot;
+	 */
+	@Test
+	public void testAllVectors() {
+		
+<span class="fc" id="L134">		JSONArray jsonObj = jsonParser(fileBlake2b);</span>
+<span class="fc bfc" id="L135" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L136">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L138">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L139">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L141">			String in = inputs.getString(&quot;in&quot;);</span>
+<span class="fc" id="L142">			String k = inputs.getString(&quot;key&quot;);</span>
+			
+<span class="fc" id="L144">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L146">			byte[] input = helper.hex2bytes(in);</span>
+<span class="fc" id="L147">			byte[] key   = helper.hex2bytes(k);</span>
+<span class="fc" id="L148">			byte[] hash  = helper.hex2bytes(res);</span>
+		
+<span class="fc" id="L150">			Blake2b b = new Blake2b(key);</span>
+<span class="fc" id="L151">			b.update(input);</span>
+<span class="fc" id="L152">			byte[] output = new byte[64];</span>
+<span class="fc" id="L153">			output = b.doFinal();</span>
+			
+<span class="fc" id="L155">			assertTrue(helper.bytes2hex(hash).equals(helper.bytes2hex(output)));</span>
+		}
+<span class="fc" id="L157">	}</span>
+	
+	/**
+	 * Test output Length of h with keyed hashing
+	 */
+	@Test
+	public void testOutputLength1(){
+<span class="fc" id="L164">		byte[] anyByteArray1 = helper.hex2bytes(input1);</span>
+<span class="fc" id="L165">		byte[] keyInBytes = helper.hex2bytes(key);</span>
+		
+<span class="fc" id="L167">		Blake2b b = new Blake2b(keyInBytes);</span>
+<span class="fc" id="L168">		b.update( anyByteArray1 );</span>
+<span class="fc" id="L169">		byte[] hash = new byte[64];</span>
+<span class="fc" id="L170">		hash = b.doFinal();</span>
+		
+<span class="pc bpc" id="L172" title="1 of 2 branches missed.">		assertTrue(hash.length==b.getOutputSize());</span>
+<span class="fc" id="L173">	}</span>
+	
+	/**
+	 * Test output Length of h without keyed hashing
+	 */
+	@Test
+	public void testOutputLength2(){
+<span class="fc" id="L180">		byte[] anyByteArray1 = helper.hex2bytes(input1);</span>
+		
+<span class="fc" id="L182">		Blake2b b = new Blake2b();</span>
+<span class="fc" id="L183">		b.update( anyByteArray1 );</span>
+<span class="fc" id="L184">		byte[] hash = new byte[64];</span>
+<span class="fc" id="L185">		hash = b.doFinal();</span>
+		
+<span class="pc bpc" id="L187" title="1 of 2 branches missed.">		assertTrue(hash.length==b.getOutputSize());</span>
+<span class="fc" id="L188">	}</span>
+	
+	/**
+	 * Test output Length of h without key and
+	 * empty input
+	 */
+	@Test
+	public void testOutputLength3(){
+<span class="fc" id="L196">		Blake2b b = new Blake2b();</span>
+<span class="fc" id="L197">		byte[] hash = new byte[64];</span>
+<span class="fc" id="L198">		hash = b.doFinal();</span>
+		
+<span class="pc bpc" id="L200" title="1 of 2 branches missed.">		assertTrue(hash.length==b.getOutputSize());</span>
+<span class="fc" id="L201">	}</span>
+	
+	@Test
+	public void testBlake2bConstructor(){
+<span class="fc" id="L205">		byte[] key = {};</span>
+<span class="fc" id="L206">		byte[] _salt = new byte[16];</span>
+<span class="fc" id="L207">		int _digestLength = 1;</span>
+<span class="fc" id="L208">		byte[]_personalization = new byte[16];</span>
+		
+<span class="fc" id="L210">		new Blake2b(key, _digestLength, _salt, _personalization);</span>
+		
+<span class="fc" id="L212">		byte[] act = {};</span>
+<span class="fc" id="L213">		byte[] exp = {};</span>
+		
+<span class="fc" id="L215">		assertArrayEquals(exp, act);</span>
+<span class="fc" id="L216">	}</span>
+	
+		
+//====================================================================
+// Helper functions:
+	
+	/**
+	 * Helper-function
+	 * reads test vector file
+	 * creates test vector object 
+	 */
+	
+	private JSONArray jsonParser(File f){
+		BufferedReader br;
+<span class="fc" id="L230">		String all = &quot;&quot;;</span>
+		try {
+<span class="fc" id="L232">			br = new BufferedReader(new FileReader(f));</span>
+			String line;
+<span class="fc bfc" id="L234" title="All 2 branches covered.">			while ((line = br.readLine()) != null) {</span>
+<span class="fc" id="L235">				all+=line;</span>
+			}
+<span class="nc" id="L237">		}catch (Exception e) {</span>
+<span class="fc" id="L238">		}</span>
+<span class="fc" id="L239">		return new JSONArray(all);</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

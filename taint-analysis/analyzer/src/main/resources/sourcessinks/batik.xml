@@ -1,0 +1,138 @@
+<sinkSources>
+    <category id="ALL">
+<!--        sources-->
+        <method signature="&lt;org.apache.batik.apps.rasterizer.SVGConverter: java.io.File getDst()&gt;">
+
+            <return type="java.io.File">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+
+        </method>
+<!--        sinks-->
+
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void sink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+<!--        lock-->
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void directlyLockSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void ifLockSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void loopLockSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+<!--        io-->
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void directlyIoSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void ifIoSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void loopIoSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+<!--        newarr-->
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void directlyNewArrSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void ifNewArrSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void loopNewArrSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void directlyThreadSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void ifThreadSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+        <method signature="&lt;edu.sysu.jimmy.analysis.option.MySink: void loopThreadSink(java.lang.Object)&gt;">
+            <param index="0" type="java.lang.Object">
+                <accessPath isSource="false" isSink="true">
+                    <!-- Wenn leer, dann primitiver Datentyp (int, double, String,...)-->
+                </accessPath>
+            </param>
+        </method>
+    </category>
+    <!-- <category id="EXAMPLE">
+        <method signature="&lt;com.example.androidtest.Sources: java.lang.String sourceTest(com.example.androidtest.MyTestObject,int)&gt;">
+            <base type="com.example.androidtest.Sources">
+                <accessPath isSource="false" isSink="true" />
+            </base>
+            <return type="java.lang.String">
+                <accessPath isSource="true" isSink="false" />
+            </return>
+            <param index="0" type="com.example.androidtest.MyTestObject">
+                <accessPath isSource="false" isSink="true">
+                    <pathElement type="SomeClassA" field="c" />
+                    <pathElement type="java.lang.String" field="s" />
+                </accessPath>
+                <accessPath isSource="true" isSink="false">
+                    <pathElement type="SomeClassB" field="d" />
+                </accessPath>
+            </param>
+            <param index="1" type="int">
+                <accessPath isSource="true" isSink="false" />
+            </param>
+        </method>
+        <method signature="&lt;com.example.androidtest.Sinks: void sinkTest(double,double)&gt;">
+            <param index="0" type="double">
+                <accessPath isSource="false" isSink="true">
+
+                </accessPath>
+            </param>
+        </method>
+    </category> -->
+</sinkSources>

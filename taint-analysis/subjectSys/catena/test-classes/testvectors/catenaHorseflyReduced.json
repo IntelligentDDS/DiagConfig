@@ -1,0 +1,50 @@
+[
+  {
+    "inputs": {
+      "pwd": "012345",
+      "salt": "6789ab",
+      "gamma": "6789ab",
+      "aData": "000000",
+      "outputLength": 64
+    },
+    "outputs": {
+      "res": "1ba238ee84957d609262a8074889475d14ca096ff9cd9465d3e4986bd9765bbc28c76f8c1c6fc2b9589a696c1b331ef36fc89d5bab9c76efc78ab9872cf06bb8"
+    }
+  },
+  {
+    "inputs": {
+      "pwd": "012345012345",
+      "salt": "6789ab6789ab",
+      "gamma": "6789ab6789ab",
+      "aData": "000000000000",
+      "outputLength": 64
+    },
+    "outputs": {
+      "res": "ede112058b8db781a5f359fd4c77676c93b2edfb69f497e2031566a0ba3a9110626455719b8d73f74f42600b26fdcce1e78037c4c94b455a2cb7833008094a8c"
+    }
+  },
+  {
+    "inputs": {
+      "pwd": "012345012345",
+      "salt": "6789ab6789ab",
+      "gamma": "6789ab6789ab",
+      "aData": "000000000000",
+      "outputLength": 4
+    },
+    "outputs": {
+      "res": "125188f1"
+    }
+  },
+  {
+    "inputs": {
+      "pwd": "012345012345",
+      "salt": "6789ab6789ab",
+      "gamma": "6789ab6789ab",
+      "aData": "000000000000",
+      "outputLength": 0
+    },
+    "outputs": {
+      "res": ""
+    }
+  }
+]

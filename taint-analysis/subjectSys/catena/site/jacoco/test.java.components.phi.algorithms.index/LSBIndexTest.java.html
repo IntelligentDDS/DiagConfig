@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LSBIndexTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java.components.phi.algorithms.index</a> &gt; <span class="el_source">LSBIndexTest.java</span></div><h1>LSBIndexTest.java</h1><pre class="source lang-java linenums">package test.java.components.phi.algorithms.index;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+import main.java.Helper;
+import main.java.components.phi.algorithms.IdxStateInterface;
+import main.java.components.phi.algorithms.index.LSBIndex;
+
+<span class="fc" id="L15">public class LSBIndexTest {</span>
+
+<span class="fc" id="L17">	Helper helper = new Helper();</span>
+	
+	
+<span class="fc" id="L20">	String pathlsbIndex = &quot;src/test/resources/testvectors/lsbIndex.json&quot;;</span>
+<span class="fc" id="L21">	File fileLSBIndex = new File(pathlsbIndex); </span>
+	
+	@Test
+	public void test() {
+<span class="fc" id="L25">		IdxStateInterface idx = new LSBIndex();</span>
+	
+<span class="fc" id="L27">		JSONArray jsonObj = helper.jsonParserArr(fileLSBIndex);</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L29">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L31">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L32">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L34">			String state = inputs.getString(&quot;state&quot;);</span>
+<span class="fc" id="L35">			int numBits = inputs.getInt(&quot;num_bits&quot;);</span>
+<span class="fc" id="L36">			byte[] stateArr = helper.hex2bytes(state);</span>
+
+<span class="fc" id="L38">			int expRes = outputs.getInt(&quot;res&quot;);</span>
+<span class="fc" id="L39">			int actRes = idx.getLsbIndex(stateArr, numBits);</span>
+			
+<span class="fc" id="L41">			assertEquals(expRes, actRes);</span>
+		}
+<span class="fc" id="L43">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

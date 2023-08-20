@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IndexSBRG.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">main.java.components.graph.algorithms.index</a> &gt; <span class="el_source">IndexSBRG.java</span></div><h1>IndexSBRG.java</h1><pre class="source lang-java linenums">package main.java.components.graph.algorithms.index;
+
+import main.java.components.graph.algorithms.IdxInterface;
+
+public class IndexSBRG implements IdxInterface {
+	
+	int _c;
+<span class="fc" id="L8">	public IndexSBRG(int c) {</span>
+<span class="fc" id="L9">		_c = c;</span>
+<span class="fc" id="L10">	}</span>
+
+	public int getIndex(int i, int g) {
+<span class="fc" id="L13">		IndexBRG brg = new IndexBRG();</span>
+<span class="fc" id="L14">		return ((brg.getIndex(i, g)+_c)&amp;((1&lt;&lt;g)-1));</span>
+	}
+
+	public long getIndex(long i, int g) {
+<span class="fc" id="L18">		IndexBRG brg = new IndexBRG();</span>
+<span class="fc" id="L19">		return ((brg.getIndex(i, g)+_c)&amp;((1&lt;&lt;g)-1));</span>
+	}
+
+	public int getIndex(int i, int j, int g) {
+<span class="fc" id="L23">		return 0;</span>
+	}
+
+	public long getIndex(long i, long j, int g) {
+<span class="fc" id="L27">		return 0;</span>
+	}
+	
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

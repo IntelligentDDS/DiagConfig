@@ -1,0 +1,86 @@
+[
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: resetThreadLocalSession(Lorg/h2/engine/Session;)V>",
+    "javaLine": 2065,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "OPTIMIZE_IN_SELECT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack2.<java.lang.ThreadLocal: void set(java.lang.Object)>(oldSession)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.db",
+    "className": "MVTable",
+    "methodSignature": "<org.h2.mvstore.db.MVTable: syncLastModificationIdWithDatabase()V>",
+    "javaLine": 668,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "OPTIMIZE_IN_SELECT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack11 = virtualinvoke $stack10.<java.util.concurrent.atomic.AtomicLong: boolean compareAndSet(long,long)>($stack8, $stack6)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: shutdownExecutor(Ljava/util/concurrent/ThreadPoolExecutor;)V>",
+    "javaLine": 1362,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "OPTIMIZE_IN_SELECT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack3 = virtualinvoke executor.<java.util.concurrent.ThreadPoolExecutor: boolean awaitTermination(long,java.util.concurrent.TimeUnit)>(1000L, $stack2)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.tx",
+    "className": "Transaction",
+    "methodSignature": "<org.h2.mvstore.tx.Transaction: rollbackToSavepoint(J)V>",
+    "javaLine": 541,
+    "bytecodeIndex": -1,
+    "operationType": "loopLockSink",
+    "options": [
+      "OPTIMIZE_IN_SELECT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack43 = virtualinvoke $stack42.<java.util.concurrent.atomic.AtomicLong: boolean compareAndSet(long,long)>($stack40, $stack41)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.tx",
+    "className": "Transaction",
+    "methodSignature": "<org.h2.mvstore.tx.Transaction: rollbackToSavepoint(J)V>",
+    "javaLine": 541,
+    "bytecodeIndex": -1,
+    "operationType": "loopLockSink",
+    "options": [
+      "OPTIMIZE_IN_SELECT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack45 = virtualinvoke $stack44.<java.util.concurrent.atomic.AtomicLong: long get()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.tx",
+    "className": "Transaction",
+    "methodSignature": "<org.h2.mvstore.tx.Transaction: setStatus(I)J>",
+    "javaLine": 255,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "OPTIMIZE_IN_SELECT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack17 = virtualinvoke $stack16.<java.util.concurrent.atomic.AtomicLong: boolean compareAndSet(long,long)>($stack11, $stack15)",
+    "mayValues": []
+  }
+]

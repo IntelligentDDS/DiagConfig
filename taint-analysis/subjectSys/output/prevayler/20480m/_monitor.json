@@ -1,0 +1,44 @@
+[
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 218,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_monitor"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack17 = virtualinvoke $stack15.<java.nio.channels.FileChannel: long position()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 218,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_monitor"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack16.<java.nio.channels.FileChannel: java.nio.channels.FileChannel truncate(long)>($stack17)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "Chunking",
+    "methodSignature": "<org.prevayler.foundation.Chunking: readChunk(Ljava/io/InputStream;)Lorg/prevayler/foundation/Chunk;>",
+    "javaLine": 71,
+    "bytecodeIndex": -1,
+    "operationType": "loopIoSink",
+    "options": [
+      "_monitor"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack28 = virtualinvoke stream.<java.io.InputStream: int read(byte[],int,int)>(name#3, value#4, $stack27)",
+    "mayValues": []
+  }
+]

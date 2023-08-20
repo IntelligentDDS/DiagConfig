@@ -1,0 +1,114 @@
+[
+  {
+    "packageName": "org.h2.engine",
+    "className": "Engine",
+    "methodSignature": "<org.h2.engine.Engine: openSession(Lorg/h2/engine/ConnectionInfo;)Lorg/h2/engine/SessionLocal;>",
+    "javaLine": 223,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "LOB_TIMEOUT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "staticinvoke <java.lang.Thread: void sleep(long)>(1L)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: waitIfExclusiveModeEnabled()V>",
+    "javaLine": 1472,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "LOB_TIMEOUT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "staticinvoke <java.lang.Thread: void sleep(long)>(100L)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: waitIfExclusiveModeEnabled()V>",
+    "javaLine": 1472,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "LOB_TIMEOUT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack10 = staticinvoke <java.lang.Thread: boolean holdsLock(java.lang.Object)>($stack9)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.value",
+    "className": "Transfer",
+    "methodSignature": "<org.h2.value.Transfer: writeString(Ljava/lang/String;)Lorg/h2/value/Transfer;>",
+    "javaLine": 350,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "LOB_TIMEOUT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack4.<java.io.DataOutputStream: void writeChars(java.lang.String)>(s)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: closeStore(ZI)V>",
+    "javaLine": 1299,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "LOB_TIMEOUT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack36 = virtualinvoke $stack35.<java.util.concurrent.ConcurrentHashMap: java.util.Collection values()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: closeStore(ZI)V>",
+    "javaLine": 1299,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "LOB_TIMEOUT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack20.<java.util.concurrent.ConcurrentHashMap: void clear()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: closeStore(ZI)V>",
+    "javaLine": 1299,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "LOB_TIMEOUT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack15#44 = virtualinvoke $stack14#42.<java.util.concurrent.ConcurrentHashMap: java.util.Collection values()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: closeStore(ZI)V>",
+    "javaLine": 1299,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "LOB_TIMEOUT"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack21.<java.util.concurrent.ConcurrentHashMap: void clear()>()",
+    "mayValues": []
+  }
+]

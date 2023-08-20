@@ -1,0 +1,72 @@
+[
+  {
+    "packageName": "org.h2.engine",
+    "className": "Database",
+    "methodSignature": "<org.h2.engine.Database: lockMetaAssertion(Lorg/h2/engine/SessionLocal;)V>",
+    "javaLine": 782,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "QUERY_CACHE_SIZE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack25.<java.lang.ThreadLocal: void set(java.lang.Object)>(session)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.result",
+    "className": "DefaultRow",
+    "methodSignature": "<org.h2.result.DefaultRow: <init>(I)V>",
+    "javaLine": 30,
+    "bytecodeIndex": -1,
+    "operationType": "directlyNewArrSink",
+    "options": [
+      "QUERY_CACHE_SIZE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack2 = newarray (org.h2.value.Value)[columnCount]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: waitIfExclusiveModeEnabled()V>",
+    "javaLine": 1472,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "QUERY_CACHE_SIZE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack10 = staticinvoke <java.lang.Thread: boolean holdsLock(java.lang.Object)>($stack9)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: waitIfExclusiveModeEnabled()V>",
+    "javaLine": 1472,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "QUERY_CACHE_SIZE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "staticinvoke <java.lang.Thread: void sleep(long)>(100L)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: analyzeTables()V>",
+    "javaLine": 691,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "QUERY_CACHE_SIZE"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack6 = staticinvoke <java.lang.Thread: boolean holdsLock(java.lang.Object)>(this)",
+    "mayValues": []
+  }
+]

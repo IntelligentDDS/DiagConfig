@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IndexDBGTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java.components.graph.algorithms.index</a> &gt; <span class="el_source">IndexDBGTest.java</span></div><h1>IndexDBGTest.java</h1><pre class="source lang-java linenums">package test.java.components.graph.algorithms.index;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+import main.java.Helper;
+import main.java.components.graph.GraphInterface;
+import main.java.components.graph.algorithms.DoubleButterflyGraph;
+import main.java.components.graph.algorithms.IdxInterface;
+import main.java.components.graph.algorithms.index.IndexDBG;
+import main.java.components.hash.HashInterface;
+import main.java.components.hash.algorithms.Blake2b;
+import main.java.components.hash.algorithms.Blake2b_1;
+
+<span class="fc" id="L20">public class IndexDBGTest {</span>
+	
+<span class="fc" id="L22">	Helper helper = new Helper();</span>
+
+<span class="fc" id="L24">	private String pathDbhAny = &quot;src/test/resources/testvectors/dbhAny.json&quot;;</span>
+<span class="fc" id="L25">	private File fileDbhAny = new File(pathDbhAny);</span>
+	
+<span class="fc" id="L27">	private String pathDbhAnyFull = &quot;src/test/resources/testvectors/dbhAnyFull.json&quot;;</span>
+<span class="fc" id="L28">	private File fileDbhAnyFull = new File(pathDbhAnyFull);</span>
+	
+<span class="fc" id="L30">	private String pathDbhIndex = &quot;src/test/resources/testvectors/dbhIndex.json&quot;;</span>
+<span class="fc" id="L31">	private File fileDbhIndex = new File(pathDbhIndex);</span>
+
+	@Test
+	public void testDbhAny(){
+		
+<span class="fc" id="L36">		GraphInterface graph = new DoubleButterflyGraph();</span>
+		
+<span class="fc" id="L38">		HashInterface h = new Blake2b();</span>
+<span class="fc" id="L39">		HashInterface hPrime = new Blake2b_1();</span>
+<span class="fc" id="L40">		IdxInterface idx = new IndexDBG();</span>
+		
+<span class="fc" id="L42">		graph.setH(h);</span>
+<span class="fc" id="L43">		graph.setHPrime(hPrime);</span>
+<span class="fc" id="L44">		graph.setIndexing(idx);</span>
+		
+<span class="fc" id="L46">		JSONArray jsonObj = helper.jsonParserArr(fileDbhAny);</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+			
+<span class="fc" id="L49">			hPrime.reset();</span>
+			
+<span class="fc" id="L51">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L53">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L54">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L56">			int garlic = inputs.getInt(&quot;garlic&quot;);</span>
+<span class="fc" id="L57">			String state = inputs.getString(&quot;state&quot;);</span>
+<span class="fc" id="L58">			int lambda = inputs.getInt(&quot;lambda&quot;);</span>
+			
+<span class="fc" id="L60">			byte[] stateArr = helper.hex2bytes(state);</span>
+<span class="fc" id="L61">			byte[][] twoDimStateArr = helper.oneDimByteArrToTwoDim(stateArr, 64);</span>
+
+<span class="fc" id="L63">			String res = outputs.getString(&quot;res&quot;);</span>
+
+<span class="fc" id="L65">			byte[][] graphOutput = graph.graph(garlic, twoDimStateArr, lambda);</span>
+<span class="fc" id="L66">			byte[] output = helper.twoDimByteArrayToOne(graphOutput);</span>
+			
+<span class="fc" id="L68">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L70">	}</span>
+	
+	@Test
+	public void testDbhAnyFull(){
+		
+<span class="fc" id="L75">		GraphInterface graph = new DoubleButterflyGraph();</span>
+		
+<span class="fc" id="L77">		HashInterface h = new Blake2b();</span>
+<span class="fc" id="L78">		HashInterface hPrime = new Blake2b();</span>
+<span class="fc" id="L79">		IdxInterface idx = new IndexDBG();</span>
+		
+<span class="fc" id="L81">		graph.setH(h);</span>
+<span class="fc" id="L82">		graph.setHPrime(hPrime);</span>
+<span class="fc" id="L83">		graph.setIndexing(idx);</span>
+		
+<span class="fc" id="L85">		JSONArray jsonObj = helper.jsonParserArr(fileDbhAnyFull);</span>
+<span class="fc bfc" id="L86" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+			
+<span class="fc" id="L88">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L90">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L91">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L93">			int garlic = inputs.getInt(&quot;garlic&quot;);</span>
+<span class="fc" id="L94">			String state = inputs.getString(&quot;state&quot;);</span>
+<span class="fc" id="L95">			int lambda = inputs.getInt(&quot;lambda&quot;);</span>
+			
+<span class="fc" id="L97">			byte[] stateArr = helper.hex2bytes(state);</span>
+<span class="fc" id="L98">			byte[][] twoDimStateArr = helper.oneDimByteArrToTwoDim(stateArr, 64);</span>
+
+<span class="fc" id="L100">			String res = outputs.getString(&quot;res&quot;);</span>
+
+<span class="fc" id="L102">			byte[][] graphOutput = graph.graph(garlic, twoDimStateArr, lambda);</span>
+<span class="fc" id="L103">			byte[] output = helper.twoDimByteArrayToOne(graphOutput);</span>
+			
+<span class="fc" id="L105">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L107">	}</span>
+	
+	@Test
+	public void testDBHIndexing(){
+		
+<span class="fc" id="L112">		IdxInterface idx = new IndexDBG();</span>
+		
+<span class="fc" id="L114">		JSONArray jsonObj = helper.jsonParserArr(fileDbhIndex);</span>
+<span class="fc bfc" id="L115" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L116">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L118">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L119">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L121">			int g = inputs.getInt(&quot;g&quot;);</span>
+<span class="fc" id="L122">			int j = inputs.getInt(&quot;j&quot;);</span>
+<span class="fc" id="L123">			int i_in = inputs.getInt(&quot;i&quot;);</span>
+
+<span class="fc" id="L125">			long exp = outputs.getLong(&quot;res&quot;);</span>
+			
+<span class="fc" id="L127">			long act = idx.getIndex(g, j, i_in);</span>
+			
+<span class="fc" id="L129">			assertEquals(exp, act);</span>
+		}
+<span class="fc" id="L131">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

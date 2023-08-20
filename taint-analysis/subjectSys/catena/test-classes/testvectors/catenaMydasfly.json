@@ -1,0 +1,26 @@
+[
+  {
+    "inputs": {
+      "pwd": "012345",
+      "salt": "6789ab",
+      "gamma": "6789ab",
+      "aData": "000000",
+      "outputLength": 64
+    },
+    "outputs": {
+      "res": "16ee0a6276947ffdacca5b3e9e2d9e3bf00ff1db1403e018099f30e0b3fdd4f9d4f10f49a2401f34efd50c09fbcd900837a34f63bb68c7b8085bbac3bb5b4dd9"
+    }
+  },
+  {
+    "inputs": {
+      "pwd": "012345012345",
+      "salt": "6789ab6789ab",
+      "gamma": "6789ab6789ab",
+      "aData": "000000000000",
+      "outputLength": 64
+    },
+    "outputs": {
+      "res": "dc8420f647001c69b28b7ec915a2b7845d20e6394834c24121e6825839f8486ceef0d1a4b287fd0dd3e8fc6b978d8c27835520016799cb2d8cadf6c6f2ea7d57"
+    }
+  }
+]

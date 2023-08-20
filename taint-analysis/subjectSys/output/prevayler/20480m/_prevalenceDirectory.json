@@ -1,0 +1,128 @@
+[
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 218,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack16.<java.nio.channels.FileChannel: java.nio.channels.FileChannel truncate(long)>($stack17)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 218,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack17 = virtualinvoke $stack15.<java.nio.channels.FileChannel: long position()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: preallocate()V>",
+    "javaLine": 98,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack21.<java.nio.channels.FileChannel: int write(java.nio.ByteBuffer,long)>($stack22, $stack24)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.implementation",
+    "className": "PrevaylerDirectory",
+    "methodSignature": "<org.prevayler.implementation.PrevaylerDirectory: <init>(Ljava/lang/String;)V>",
+    "javaLine": 29,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke $stack2.<java.io.File: void <init>(java.lang.String)>(directory)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 212,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack16.<java.nio.channels.FileChannel: java.nio.channels.FileChannel truncate(long)>($stack17)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 212,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack17 = virtualinvoke $stack15.<java.nio.channels.FileChannel: long position()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 212,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack13 = virtualinvoke $stack12.<java.nio.channels.FileChannel: boolean isOpen()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 212,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack9#3.<java.io.FileOutputStream: void close()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: waitUntilSynced(I)V>",
+    "javaLine": 168,
+    "bytecodeIndex": -1,
+    "operationType": "ifLockSink",
+    "options": [
+      "_prevalenceDirectory"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor $stack11",
+    "mayValues": []
+  }
+]

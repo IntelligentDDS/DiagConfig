@@ -1,0 +1,100 @@
+[
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: waitIfExclusiveModeEnabled()V>",
+    "javaLine": 1470,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "CASE_INSENSITIVE_IDENTIFIERS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack10 = staticinvoke <java.lang.Thread: boolean holdsLock(java.lang.Object)>($stack9)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: waitIfExclusiveModeEnabled()V>",
+    "javaLine": 1470,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "CASE_INSENSITIVE_IDENTIFIERS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "staticinvoke <java.lang.Thread: void sleep(long)>(100L)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.command",
+    "className": "CommandRemote",
+    "methodSignature": "<org.h2.command.CommandRemote: executeQuery(JZ)Lorg/h2/result/ResultInterface;>",
+    "javaLine": 153,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "CASE_INSENSITIVE_IDENTIFIERS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor $stack12",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.tx",
+    "className": "Transaction",
+    "methodSignature": "<org.h2.mvstore.tx.Transaction: rollbackToSavepoint(J)V>",
+    "javaLine": 541,
+    "bytecodeIndex": -1,
+    "operationType": "loopLockSink",
+    "options": [
+      "CASE_INSENSITIVE_IDENTIFIERS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack21 = virtualinvoke $stack20.<java.util.concurrent.atomic.AtomicLong: boolean compareAndSet(long,long)>($stack18, $stack19)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.tx",
+    "className": "Transaction",
+    "methodSignature": "<org.h2.mvstore.tx.Transaction: rollbackToSavepoint(J)V>",
+    "javaLine": 541,
+    "bytecodeIndex": -1,
+    "operationType": "loopLockSink",
+    "options": [
+      "CASE_INSENSITIVE_IDENTIFIERS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack30 = virtualinvoke $stack29.<java.util.concurrent.atomic.AtomicLong: long get()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore.tx",
+    "className": "TransactionStore",
+    "methodSignature": "<org.h2.mvstore.tx.TransactionStore: registerTransaction(IILjava/lang/String;JIILorg/h2/engine/IsolationLevel;Lorg/h2/mvstore/tx/TransactionStore$RollbackListener;)Lorg/h2/mvstore/tx/Transaction;>",
+    "javaLine": 416,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "CASE_INSENSITIVE_IDENTIFIERS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack24 = virtualinvoke $stack23.<java.util.concurrent.atomic.AtomicReference: boolean compareAndSet(java.lang.Object,java.lang.Object)>($stack26, $stack21)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.command.ddl",
+    "className": "Analyze",
+    "methodSignature": "<org.h2.command.ddl.Analyze: analyzeTable(Lorg/h2/engine/SessionLocal;Lorg/h2/table/Table;IZ)V>",
+    "javaLine": 192,
+    "bytecodeIndex": -1,
+    "operationType": "directlyNewArrSink",
+    "options": [
+      "CASE_INSENSITIVE_IDENTIFIERS"
+    ],
+    "optionCount": 1,
+    "originalStmt": "array#5 = newarray (org.h2.command.ddl.Analyze$SelectivityData)[columnCount]",
+    "mayValues": []
+  }
+]

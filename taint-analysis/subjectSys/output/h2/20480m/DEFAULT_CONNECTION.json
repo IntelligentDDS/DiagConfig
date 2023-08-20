@@ -1,0 +1,58 @@
+[
+  {
+    "packageName": "org.h2.jdbc.meta",
+    "className": "DatabaseMetaRemote",
+    "methodSignature": "<org.h2.jdbc.meta.DatabaseMetaRemote: executeQuery(I[Lorg/h2/value/Value;)Lorg/h2/result/ResultInterface;>",
+    "javaLine": 333,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "DEFAULT_CONNECTION"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor $stack12",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "Engine",
+    "methodSignature": "<org.h2.engine.Engine: openSession(Lorg/h2/engine/ConnectionInfo;ZZLjava/lang/String;)Lorg/h2/engine/SessionLocal;>",
+    "javaLine": 63,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "DEFAULT_CONNECTION"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor databaseHolder#4",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: waitIfExclusiveModeEnabled()V>",
+    "javaLine": 1472,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "DEFAULT_CONNECTION"
+    ],
+    "optionCount": 1,
+    "originalStmt": "staticinvoke <java.lang.Thread: void sleep(long)>(100L)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "SessionLocal",
+    "methodSignature": "<org.h2.engine.SessionLocal: waitIfExclusiveModeEnabled()V>",
+    "javaLine": 1472,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "DEFAULT_CONNECTION"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack10 = staticinvoke <java.lang.Thread: boolean holdsLock(java.lang.Object)>($stack9)",
+    "mayValues": []
+  }
+]

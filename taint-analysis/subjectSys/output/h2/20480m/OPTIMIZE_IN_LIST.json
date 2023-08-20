@@ -1,0 +1,58 @@
+[
+  {
+    "packageName": "org.h2.value",
+    "className": "Transfer",
+    "methodSignature": "<org.h2.value.Transfer: writeString(Ljava/lang/String;)Lorg/h2/value/Transfer;>",
+    "javaLine": 347,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "OPTIMIZE_IN_LIST"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack5.<java.io.DataOutputStream: void writeInt(int)>($i0)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: writeStoreHeader()V>",
+    "javaLine": 1248,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "OPTIMIZE_IN_LIST"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack18.<java.nio.ByteBuffer: java.nio.ByteBuffer put(byte[])>($stack17)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "Engine",
+    "methodSignature": "<org.h2.engine.Engine: openSession(Lorg/h2/engine/ConnectionInfo;)Lorg/h2/engine/SessionLocal;>",
+    "javaLine": 223,
+    "bytecodeIndex": -1,
+    "operationType": "loopThreadSink",
+    "options": [
+      "OPTIMIZE_IN_LIST"
+    ],
+    "optionCount": 1,
+    "originalStmt": "staticinvoke <java.lang.Thread: void sleep(long)>(1L)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.command",
+    "className": "CommandRemote",
+    "methodSignature": "<org.h2.command.CommandRemote: executeQuery(JZ)Lorg/h2/result/ResultInterface;>",
+    "javaLine": 153,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "OPTIMIZE_IN_LIST"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor $stack12",
+    "mayValues": []
+  }
+]

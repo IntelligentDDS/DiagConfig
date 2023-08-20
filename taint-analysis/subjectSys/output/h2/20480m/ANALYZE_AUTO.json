@@ -1,0 +1,72 @@
+[
+  {
+    "packageName": "org.h2.engine",
+    "className": "ConnectionInfo",
+    "methodSignature": "<org.h2.engine.ConnectionInfo: getKeys()[Ljava/lang/String;>",
+    "javaLine": 514,
+    "bytecodeIndex": -1,
+    "operationType": "directlyNewArrSink",
+    "options": [
+      "ANALYZE_AUTO"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack5 = newarray (java.lang.String)[$stack4]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "Database",
+    "methodSignature": "<org.h2.engine.Database: findSetting(Ljava/lang/String;)Lorg/h2/engine/Setting;>",
+    "javaLine": 986,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "ANALYZE_AUTO"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack3 = virtualinvoke $stack2.<java.util.concurrent.ConcurrentHashMap: java.lang.Object get(java.lang.Object)>(name)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.engine",
+    "className": "Database",
+    "methodSignature": "<org.h2.engine.Database: removeSession(Lorg/h2/engine/SessionLocal;)V>",
+    "javaLine": 1065,
+    "bytecodeIndex": -1,
+    "operationType": "ifNewArrSink",
+    "options": [
+      "ANALYZE_AUTO"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack23 = newarray (java.lang.Object)[1]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: setOldestVersionToKeep(J)V>",
+    "javaLine": 2775,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "ANALYZE_AUTO"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack13 = virtualinvoke $stack12.<java.util.concurrent.atomic.AtomicLong: boolean compareAndSet(long,long)>($stack7, oldestVersionToKeep)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.h2.mvstore",
+    "className": "MVStore",
+    "methodSignature": "<org.h2.mvstore.MVStore: beforeWrite(Lorg/h2/mvstore/MVMap;)V>",
+    "javaLine": 2858,
+    "bytecodeIndex": -1,
+    "operationType": "ifLockSink",
+    "options": [
+      "ANALYZE_AUTO"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack6 = virtualinvoke $stack5.<java.util.concurrent.locks.ReentrantLock: boolean isHeldByCurrentThread()>()",
+    "mayValues": []
+  }
+]

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Argon2CF.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">main.java.components.hash.algorithms</a> &gt; <span class="el_source">Argon2CF.java</span></div><h1>Argon2CF.java</h1><pre class="source lang-java linenums">package main.java.components.hash.algorithms;
+
+import java.util.Arrays;
+
+import main.java.Helper;
+import main.java.components.hash.HashInterface;
+
+public class Argon2CF implements HashInterface {
+
+<span class="fc" id="L10">	Helper helper = new Helper();</span>
+	
+<span class="fc" id="L12">	private String name = &quot;Argon2 hash function.&quot;;</span>
+<span class="fc" id="L13">	private int anzByte = 1024;</span>
+	// use GL if 1 else use GB
+	private boolean _useGL;
+	
+<span class="fc" id="L17">	private long[] _v = new long[128];</span>
+	
+	private byte[] _z;
+	
+<span class="fc" id="L21">	public Argon2CF (boolean useGL){</span>
+<span class="fc" id="L22">		_useGL = useGL;</span>
+<span class="fc" id="L23">	}</span>
+	
+	public void update(byte[] message) {
+
+<span class="pc bpc" id="L27" title="1 of 2 branches missed.">		if (message.length != 2048){</span>
+<span class="nc" id="L28">			return;</span>
+		}
+		
+<span class="fc" id="L31">		byte [] x = new byte[anzByte];</span>
+<span class="fc" id="L32">		byte [] y = new byte[anzByte];</span>
+		
+<span class="fc" id="L34">		System.arraycopy(message, 0, x, 0, anzByte);</span>
+<span class="fc" id="L35">		System.arraycopy(message, 1024, y, 0, anzByte);</span>
+		
+<span class="fc" id="L37">		byte [] R = helper.xor(x, y);</span>
+<span class="fc" id="L38">		byte [] Q = new byte[R.length];</span>
+		
+		// updating rows
+<span class="fc" id="L41">		pWrapper(Arrays.copyOfRange(R, 0,   128), 0);</span>
+<span class="fc" id="L42">		pWrapper(Arrays.copyOfRange(R, 128, 256), 1);</span>
+<span class="fc" id="L43">		pWrapper(Arrays.copyOfRange(R, 256, 384), 2);</span>
+<span class="fc" id="L44">		pWrapper(Arrays.copyOfRange(R, 384, 512), 3);</span>
+<span class="fc" id="L45">		pWrapper(Arrays.copyOfRange(R, 512, 640), 4);</span>
+<span class="fc" id="L46">		pWrapper(Arrays.copyOfRange(R, 640, 768), 5);</span>
+<span class="fc" id="L47">		pWrapper(Arrays.copyOfRange(R, 768, 896), 6);</span>
+<span class="fc" id="L48">		pWrapper(Arrays.copyOfRange(R, 896, 1024), 7);</span>
+		
+		
+		// inverting elements of array _v
+//		for (int i = 0; i&lt;_v.length; ++i){
+//			byte[] tmp = long2bytes(_v[i]);
+//			
+//			for (int k = 0; k &lt; tmp.length/2; k++) {
+//			    byte temp = tmp[k];
+//			    tmp[k] = tmp[tmp.length-(1+k)];
+//			    tmp[tmp.length-(1+k)] = temp;
+//			}
+//			_v[i] = bytes2long(tmp, 0);
+//		}
+		
+		// updating columns
+<span class="fc bfc" id="L64" title="All 2 branches covered.">		for (int i = 0; i&lt;=7; ++i){</span>
+<span class="fc" id="L65">			int i0 = i*2;</span>
+<span class="fc" id="L66">			int i1 = i0+16;</span>
+<span class="fc" id="L67">			int i2 = i1+16;</span>
+<span class="fc" id="L68">			int i3 = i2+16;</span>
+<span class="fc" id="L69">			int i4 = i3+16;</span>
+<span class="fc" id="L70">			int i5 = i4+16;</span>
+<span class="fc" id="L71">			int i6 = i5+16;</span>
+<span class="fc" id="L72">			int i7 = i6+16;</span>
+			
+<span class="fc" id="L74">			p(i0, i1, i2, i3, i4, i5, i6, i7);</span>
+		}
+		
+		// inverting elements of array _v
+//		for (int i = 0; i&lt;_v.length; ++i){
+//			byte[] tmp = long2bytes(_v[i]);
+//			
+//			for (int k = 0; k &lt; tmp.length/2; k++) {
+//			    byte temp = tmp[k];
+//			    tmp[k] = tmp[tmp.length-(1+k)];
+//			    tmp[tmp.length-(1+k)] = temp;
+//			}
+//			_v[i] = bytes2long(tmp, 0);
+//		}
+		
+<span class="fc bfc" id="L89" title="All 2 branches covered.">		for (int i=0; i&lt;_v.length; ++i){</span>
+<span class="fc" id="L90">			byte[] tmp = long2bytes(_v[i]);</span>
+<span class="fc" id="L91">			System.arraycopy(tmp, 0, Q, i*8, 8);</span>
+		}
+				
+<span class="fc" id="L94">		_z = helper.xor(R, Q);</span>
+<span class="fc" id="L95">	}</span>
+
+	private void p(int i0, int i1, int i2, int i3, int i4, int i5, int i6, int i7){
+		
+<span class="fc bfc" id="L99" title="All 2 branches covered.">		if(_useGL){</span>
+<span class="fc" id="L100">			GL(i0,   i2,   i4,   i6);</span>
+<span class="fc" id="L101">			GL(i0+1, i2+1, i4+1, i6+1);</span>
+<span class="fc" id="L102">			GL(i1,   i3,   i5,   i7);</span>
+<span class="fc" id="L103">			GL(i1+1, i3+1, i5+1, i7+1);</span>
+<span class="fc" id="L104">			GL(i0,   i2+1, i5,   i7+1);</span>
+<span class="fc" id="L105">			GL(i0+1, i3,   i5+1, i6);</span>
+<span class="fc" id="L106">			GL(i1,   i3+1, i4,   i6+1);</span>
+<span class="fc" id="L107">			GL(i1+1, i2,   i4+1, i7);</span>
+		} else {
+<span class="fc" id="L109">			GB(i0,   i2,   i4,   i6);</span>
+<span class="fc" id="L110">			GB(i0+1, i2+1, i4+1, i6+1);</span>
+<span class="fc" id="L111">			GB(i1,   i3,   i5,   i7);</span>
+<span class="fc" id="L112">			GB(i1+1, i3+1, i5+1, i7+1);</span>
+<span class="fc" id="L113">			GB(i0,   i2+1, i5,   i7+1);</span>
+<span class="fc" id="L114">			GB(i0+1, i3,   i5+1, i6);</span>
+<span class="fc" id="L115">			GB(i1,   i3+1, i4,   i6+1);</span>
+<span class="fc" id="L116">			GB(i1+1, i2,   i4+1, i7);</span>
+		}
+		
+<span class="fc" id="L119">	}</span>
+
+	private void pWrapper(byte[] vIn, int idx){
+<span class="fc" id="L122">		pAndInit(Arrays.copyOfRange(vIn, 0, 16), Arrays.copyOfRange(vIn, 16, 32), </span>
+<span class="fc" id="L123">				Arrays.copyOfRange(vIn, 32, 48), Arrays.copyOfRange(vIn, 48, 64), </span>
+<span class="fc" id="L124">				Arrays.copyOfRange(vIn, 64, 80), Arrays.copyOfRange(vIn, 80, 96), </span>
+<span class="fc" id="L125">				Arrays.copyOfRange(vIn, 96, 112), Arrays.copyOfRange(vIn, 112, 128), </span>
+				idx);
+<span class="fc" id="L127">	}</span>
+	
+	private void pAndInit(byte[] p1, byte[] p2, byte[] p3, byte[] p4, byte[] p5, byte[] p6, byte[] p7, byte[] p8,
+			int idx){
+		
+		// initialize v (global array)
+<span class="fc" id="L133">		_v[0+(idx*16)] = bytes2long(Arrays.copyOfRange(p1, 0, 8),0);</span>
+<span class="fc" id="L134">		_v[1+(idx*16)] = bytes2long(Arrays.copyOfRange(p1, 8, 16),0);</span>
+		
+<span class="fc" id="L136">		_v[2+(idx*16)] = bytes2long(Arrays.copyOfRange(p2, 0, 8),0);</span>
+<span class="fc" id="L137">		_v[3+(idx*16)] = bytes2long(Arrays.copyOfRange(p2, 8, 16),0);</span>
+		
+<span class="fc" id="L139">		_v[4+(idx*16)] = bytes2long(Arrays.copyOfRange(p3, 0, 8),0);</span>
+<span class="fc" id="L140">		_v[5+(idx*16)] = bytes2long(Arrays.copyOfRange(p3, 8, 16),0);</span>
+		
+<span class="fc" id="L142">		_v[6+(idx*16)] = bytes2long(Arrays.copyOfRange(p4, 0, 8),0);</span>
+<span class="fc" id="L143">		_v[7+(idx*16)] = bytes2long(Arrays.copyOfRange(p4, 8, 16),0);</span>
+		
+<span class="fc" id="L145">		_v[8+(idx*16)] = bytes2long(Arrays.copyOfRange(p5, 0, 8),0);</span>
+<span class="fc" id="L146">		_v[9+(idx*16)] = bytes2long(Arrays.copyOfRange(p5, 8, 16),0);</span>
+		
+<span class="fc" id="L148">		_v[10+(idx*16)] = bytes2long(Arrays.copyOfRange(p6, 0, 8),0);</span>
+<span class="fc" id="L149">		_v[11+(idx*16)] = bytes2long(Arrays.copyOfRange(p6, 8, 16),0);</span>
+		
+<span class="fc" id="L151">		_v[12+(idx*16)] = bytes2long(Arrays.copyOfRange(p7, 0, 8),0);</span>
+<span class="fc" id="L152">		_v[13+(idx*16)] = bytes2long(Arrays.copyOfRange(p7, 8, 16),0);</span>
+		
+<span class="fc" id="L154">		_v[14+(idx*16)] = bytes2long(Arrays.copyOfRange(p8, 0, 8),0);</span>
+<span class="fc" id="L155">		_v[15+(idx*16)] = bytes2long(Arrays.copyOfRange(p8, 8, 16),0);</span>
+			
+<span class="fc bfc" id="L157" title="All 2 branches covered.">		if(_useGL){</span>
+<span class="fc" id="L158">			GL(0+(idx*16), 4+(idx*16), 8+(idx*16), 12+(idx*16));</span>
+<span class="fc" id="L159">			GL(1+(idx*16), 5+(idx*16), 9+(idx*16), 13+(idx*16));</span>
+<span class="fc" id="L160">			GL(2+(idx*16), 6+(idx*16), 10+(idx*16), 14+(idx*16));</span>
+<span class="fc" id="L161">			GL(3+(idx*16), 7+(idx*16), 11+(idx*16), 15+(idx*16));</span>
+<span class="fc" id="L162">			GL(0+(idx*16), 5+(idx*16), 10+(idx*16), 15+(idx*16));</span>
+<span class="fc" id="L163">			GL(1+(idx*16), 6+(idx*16), 11+(idx*16), 12+(idx*16));</span>
+<span class="fc" id="L164">			GL(2+(idx*16), 7+(idx*16), 8+(idx*16), 13+(idx*16));</span>
+<span class="fc" id="L165">			GL(3+(idx*16), 4+(idx*16), 9+(idx*16), 14+(idx*16));</span>
+		} else {
+<span class="fc" id="L167">			GB(0+(idx*16), 4+(idx*16), 8+(idx*16), 12+(idx*16));</span>
+<span class="fc" id="L168">			GB(1+(idx*16), 5+(idx*16), 9+(idx*16), 13+(idx*16));</span>
+<span class="fc" id="L169">			GB(2+(idx*16), 6+(idx*16), 10+(idx*16), 14+(idx*16));</span>
+<span class="fc" id="L170">			GB(3+(idx*16), 7+(idx*16), 11+(idx*16), 15+(idx*16));</span>
+<span class="fc" id="L171">			GB(0+(idx*16), 5+(idx*16), 10+(idx*16), 15+(idx*16));</span>
+<span class="fc" id="L172">			GB(1+(idx*16), 6+(idx*16), 11+(idx*16), 12+(idx*16));</span>
+<span class="fc" id="L173">			GB(2+(idx*16), 7+(idx*16), 8+(idx*16), 13+(idx*16));</span>
+<span class="fc" id="L174">			GB(3+(idx*16), 4+(idx*16), 9+(idx*16), 14+(idx*16));</span>
+		}
+<span class="fc" id="L176">	}</span>
+
+	public byte[] doFinal() {
+<span class="fc" id="L179">		return _z;</span>
+	}
+	
+	private void GL(int posA, int posB, int posC, int posD) {
+
+<span class="fc" id="L184">		_v[posA] = _v[posA] + _v[posB];</span>
+<span class="fc" id="L185">	    _v[posD] = rotr64(_v[posD] ^ _v[posA], 32); </span>
+<span class="fc" id="L186">	    _v[posC] = _v[posC] + _v[posD]; </span>
+<span class="fc" id="L187">	    _v[posB] = rotr64(_v[posB] ^ _v[posC], 24); // replaces 25 of BLAKE</span>
+<span class="fc" id="L188">	    _v[posA] = _v[posA] + _v[posB]; </span>
+<span class="fc" id="L189">	    _v[posD] = rotr64(_v[posD] ^ _v[posA], 16); </span>
+<span class="fc" id="L190">	    _v[posC] = _v[posC] + _v[posD]; </span>
+<span class="fc" id="L191">	    _v[posB] = rotr64(_v[posB] ^ _v[posC], 63); // replaces 11 of BLAKE</span>
+<span class="fc" id="L192">	}</span>
+
+	private void GB(int posA, int posB, int posC, int posD) {
+
+<span class="fc" id="L196">		_v[posA] = _v[posA] + _v[posB] + </span>
+				2 * (_v[posA] &amp; 0x00000000FFFFFFFFL) 
+				* (_v[posB] &amp; 0x00000000FFFFFFFFL);
+<span class="fc" id="L199">	    _v[posD] = rotr64(_v[posD] ^ _v[posA], 32); </span>
+<span class="fc" id="L200">	    _v[posC] = _v[posC] + _v[posD] + </span>
+				2 * (_v[posC] &amp; 0x00000000FFFFFFFFL) 
+				* (_v[posD] &amp; 0x00000000FFFFFFFFL); 
+<span class="fc" id="L203">	    _v[posB] = rotr64(_v[posB] ^ _v[posC], 24); // replaces 25 of BLAKE</span>
+<span class="fc" id="L204">	    _v[posA] = _v[posA] + _v[posB] + </span>
+				2 * (_v[posA] &amp; 0x00000000FFFFFFFFL) 
+				* (_v[posB] &amp; 0x00000000FFFFFFFFL); 
+<span class="fc" id="L207">	    _v[posD] = rotr64(_v[posD] ^ _v[posA], 16); </span>
+<span class="fc" id="L208">	    _v[posC] = _v[posC] + _v[posD] + </span>
+				2 * (_v[posC] &amp; 0x00000000FFFFFFFFL) 
+				* (_v[posD] &amp; 0x00000000FFFFFFFFL); 
+<span class="fc" id="L211">	    _v[posB] = rotr64(_v[posB] ^ _v[posC], 63); // replaces 11 of BLAKE</span>
+<span class="fc" id="L212">	}</span>
+	
+	private long rotr64(long x, int rot) {
+<span class="fc" id="L215">		return x &gt;&gt;&gt; rot | (x &lt;&lt; (64 - rot));</span>
+	}
+	
+	// convert one long value in byte array
+	// little-endian byte order!
+	private final static byte[] long2bytes(long longValue) {
+<span class="fc" id="L221">	    return new byte[] {	        </span>
+		    (byte) longValue,
+	        (byte) (longValue &gt;&gt; 8),
+	        (byte) (longValue &gt;&gt; 16),
+	        (byte) (longValue &gt;&gt; 24),
+	        (byte) (longValue &gt;&gt; 32),
+	        (byte) (longValue &gt;&gt; 40),
+	        (byte) (longValue &gt;&gt; 48),
+	        (byte) (longValue &gt;&gt; 56)};
+	}
+	
+	// little-endian byte order!
+	private final static long bytes2long(byte[] byteArray, int offset) {
+	      
+<span class="fc" id="L235">		return (</span>
+				((long) byteArray[offset] &amp; 0xFF ) |
+				(((long) byteArray[offset + 1] &amp; 0xFF ) &lt;&lt; 8) |
+				(((long) byteArray[offset + 2] &amp; 0xFF ) &lt;&lt; 16) |
+				(((long) byteArray[offset + 3] &amp; 0xFF ) &lt;&lt; 24) |
+				(((long) byteArray[offset + 4] &amp; 0xFF ) &lt;&lt; 32) |
+				(((long) byteArray[offset + 5] &amp; 0xFF ) &lt;&lt; 40) |
+				(((long) byteArray[offset + 6] &amp; 0xFF ) &lt;&lt; 48) |
+				(((long) byteArray[offset + 7] &amp; 0xFF ) &lt;&lt; 56) ) ;
+	}
+
+	public void reset() {
+<span class="fc" id="L247">		_v = new long[128];</span>
+<span class="fc" id="L248">	}</span>
+	
+	public void update(byte b) {
+<span class="nc" id="L251">		return;</span>
+	}
+
+	public void update(byte[] message, int offset, int len) {
+<span class="nc" id="L255">		return;</span>
+	}
+
+	public void setVertexIndex(int r) {
+<span class="nc" id="L259">		return;</span>
+	}
+
+	public String getName() {
+<span class="nc" id="L263">		return name;</span>
+	}
+
+	public int getOutputSize() {
+<span class="fc" id="L267">		return anzByte;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

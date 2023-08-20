@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IndexSBRGTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java.components.graph.algorithms.index</a> &gt; <span class="el_source">IndexSBRGTest.java</span></div><h1>IndexSBRGTest.java</h1><pre class="source lang-java linenums">package test.java.components.graph.algorithms.index;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import java.io.File;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+import main.java.Helper;
+import main.java.components.graph.GraphInterface;
+import main.java.components.graph.algorithms.GenericGraph;
+import main.java.components.graph.algorithms.IdxInterface;
+import main.java.components.graph.algorithms.index.IndexGRG;
+import main.java.components.graph.algorithms.index.IndexSBRG;
+import main.java.components.hash.HashInterface;
+import main.java.components.hash.algorithms.Blake2b;
+import main.java.components.hash.algorithms.Blake2b_1;
+
+<span class="fc" id="L22">public class IndexSBRGTest {</span>
+<span class="fc" id="L23">	Helper helper = new Helper();</span>
+
+<span class="fc" id="L25">	private String pathSbrgIndex = &quot;src/test/resources/testvectors/sbrgIndex.json&quot;;</span>
+<span class="fc" id="L26">	private File fileSbrgIndex = new File(pathSbrgIndex);</span>
+	
+<span class="fc" id="L28">	private String pathSbrgAny = &quot;src/test/resources/testvectors/sbrgAny.json&quot;;</span>
+<span class="fc" id="L29">	private File fileSbrgAny = new File(pathSbrgAny);</span>
+	
+<span class="fc" id="L31">	private String pathSbrgAnyFull = &quot;src/test/resources/testvectors/sbrgAnyFull.json&quot;;</span>
+<span class="fc" id="L32">	private File fileSbrgAnyFull = new File(pathSbrgAnyFull);</span>
+	
+
+	@Test
+	public void testIndexing(){
+<span class="fc" id="L37">		JSONArray jsonObj = helper.jsonParserArr(fileSbrgIndex);</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L39">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L41">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L42">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L44">			long index = inputs.getLong(&quot;index&quot;);</span>
+<span class="fc" id="L45">			int g = inputs.getInt(&quot;g&quot;);</span>
+<span class="fc" id="L46">			int c = inputs.getInt(&quot;c&quot;);</span>
+
+<span class="fc" id="L48">			long exp = outputs.getLong(&quot;res&quot;);</span>
+			
+<span class="fc" id="L50">			IdxInterface idx = new IndexGRG(c);</span>
+<span class="fc" id="L51">			long act = idx.getIndex(index, g);</span>
+			
+<span class="fc" id="L53">			assertEquals(exp, act);</span>
+		}
+<span class="fc" id="L55">	}</span>
+	
+	@Test
+	public void testGrgAny(){
+<span class="fc" id="L59">		JSONArray jsonObj = helper.jsonParserArr(fileSbrgAny);</span>
+<span class="fc bfc" id="L60" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L61">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L63">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L64">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L66">			int garlic = inputs.getInt(&quot;garlic&quot;);</span>
+<span class="fc" id="L67">			String state = inputs.getString(&quot;state&quot;);</span>
+<span class="fc" id="L68">			int lambda = inputs.getInt(&quot;lambda&quot;);</span>
+<span class="fc" id="L69">			int c = inputs.getInt(&quot;c&quot;);</span>
+			
+<span class="fc" id="L71">			GraphInterface graph = new GenericGraph();</span>
+			
+<span class="fc" id="L73">			HashInterface h = new Blake2b();</span>
+<span class="fc" id="L74">			HashInterface hPrime = new Blake2b_1();</span>
+<span class="fc" id="L75">			IdxInterface idx = new IndexSBRG(c);</span>
+			
+<span class="fc" id="L77">			graph.setH(h);</span>
+<span class="fc" id="L78">			graph.setHPrime(hPrime);</span>
+<span class="fc" id="L79">			graph.setIndexing(idx);</span>
+			
+<span class="fc" id="L81">			byte[] stateArr = helper.hex2bytes(state);</span>
+<span class="fc" id="L82">			byte[][] twoDimStateArr = helper.oneDimByteArrToTwoDim(stateArr, 64);</span>
+
+<span class="fc" id="L84">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L86">			byte[][] graphOutput = graph.graph(garlic, twoDimStateArr, lambda);</span>
+<span class="fc" id="L87">			byte[] output = helper.twoDimByteArrayToOne(graphOutput);</span>
+			
+<span class="fc" id="L89">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L91">	}</span>
+	
+	@Test
+	public void testGrgAnyFull(){
+<span class="fc" id="L95">		JSONArray jsonObj = helper.jsonParserArr(fileSbrgAnyFull);</span>
+<span class="fc bfc" id="L96" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L97">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L99">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L100">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L102">			int garlic = inputs.getInt(&quot;garlic&quot;);</span>
+<span class="fc" id="L103">			String state = inputs.getString(&quot;state&quot;);</span>
+<span class="fc" id="L104">			int lambda = inputs.getInt(&quot;lambda&quot;);</span>
+<span class="fc" id="L105">			int c = inputs.getInt(&quot;c&quot;);</span>
+			
+<span class="fc" id="L107">			GraphInterface graph = new GenericGraph();</span>
+			
+<span class="fc" id="L109">			HashInterface h = new Blake2b();</span>
+<span class="fc" id="L110">			HashInterface hPrime = new Blake2b();</span>
+<span class="fc" id="L111">			IdxInterface idx = new IndexSBRG(c);</span>
+			
+<span class="fc" id="L113">			graph.setH(h);</span>
+<span class="fc" id="L114">			graph.setHPrime(hPrime);</span>
+<span class="fc" id="L115">			graph.setIndexing(idx);</span>
+			
+<span class="fc" id="L117">			byte[] stateArr = helper.hex2bytes(state);</span>
+<span class="fc" id="L118">			byte[][] twoDimStateArr = helper.oneDimByteArrToTwoDim(stateArr, 64);</span>
+
+<span class="fc" id="L120">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L122">			byte[][] graphOutput = graph.graph(garlic, twoDimStateArr, lambda);</span>
+<span class="fc" id="L123">			byte[] output = helper.twoDimByteArrayToOne(graphOutput);</span>
+			
+<span class="fc" id="L125">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L127">	}</span>
+	
+	@Test
+	public void testIndexSBRG0(){
+<span class="fc" id="L131">		int inpint = 0; </span>
+<span class="fc" id="L132">		long inplong = 0;</span>
+<span class="fc" id="L133">		IdxInterface idx = new IndexSBRG(2);</span>
+<span class="fc" id="L134">		long actual = idx.getIndex(inplong, inpint);</span>
+<span class="fc" id="L135">		long expected = 0;</span>
+<span class="fc" id="L136">		assertEquals(expected, actual);</span>
+<span class="fc" id="L137">	}</span>
+	
+	@Test
+	public void testIndexSBRG1(){
+<span class="fc" id="L141">		int input1 = 0;</span>
+<span class="fc" id="L142">		int input2 = 0;</span>
+<span class="fc" id="L143">		int input3 = 0;</span>
+<span class="fc" id="L144">		IdxInterface idx = new IndexSBRG(2);</span>
+<span class="fc" id="L145">		long actual = idx.getIndex(input1, input2, input3);</span>
+<span class="fc" id="L146">		long expected = 0;</span>
+<span class="fc" id="L147">		assertEquals(expected, actual);</span>
+<span class="fc" id="L148">	}</span>
+	
+	@Test
+	public void testIndexSBRG2(){
+<span class="fc" id="L152">		long input1 = 0;</span>
+<span class="fc" id="L153">		long input2 = 0;</span>
+<span class="fc" id="L154">		int input3 = 0;</span>
+<span class="fc" id="L155">		IdxInterface idx = new IndexSBRG(2);</span>
+<span class="fc" id="L156">		long actual = idx.getIndex(input1, input2, input3);</span>
+<span class="fc" id="L157">		long expected = 0;</span>
+<span class="fc" id="L158">		assertEquals(expected, actual);</span>
+<span class="fc" id="L159">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

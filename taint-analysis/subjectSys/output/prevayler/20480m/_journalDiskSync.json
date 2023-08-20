@@ -1,0 +1,86 @@
+[
+  {
+    "packageName": "org.prevayler.implementation.journal",
+    "className": "PersistentJournal",
+    "methodSignature": "<org.prevayler.implementation.journal.PersistentJournal: isOutputJournalTooBig()Z>",
+    "javaLine": 116,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_journalDiskSync"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack5 = virtualinvoke $stack4.<java.io.File: long length()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: waitUntilSynced(I)V>",
+    "javaLine": 170,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "_journalDiskSync"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor $stack11",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 218,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_journalDiskSync"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack13 = virtualinvoke $stack12.<java.nio.channels.FileChannel: boolean isOpen()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 218,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_journalDiskSync"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack17 = virtualinvoke $stack15.<java.nio.channels.FileChannel: long position()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 218,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "_journalDiskSync"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack16.<java.nio.channels.FileChannel: java.nio.channels.FileChannel truncate(long)>($stack17)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation",
+    "className": "DurableOutputStream",
+    "methodSignature": "<org.prevayler.foundation.DurableOutputStream: close()V>",
+    "javaLine": 219,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "_journalDiskSync"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack16.<java.nio.channels.FileChannel: java.nio.channels.FileChannel truncate(long)>($stack17)",
+    "mayValues": []
+  }
+]

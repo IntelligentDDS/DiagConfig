@@ -1,0 +1,1226 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CatenaTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java</a> &gt; <span class="el_source">CatenaTest.java</span></div><h1>CatenaTest.java</h1><pre class="source lang-java linenums">package test.java;
+
+import static org.junit.Assert.*;
+
+import java.io.File;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+import main.java.Catena;
+import main.java.Catena.POWstruct;
+import main.java.DefaultInstances;
+import main.java.Helper;
+
+<span class="fc" id="L16">public class CatenaTest {</span>
+	
+<span class="fc" id="L18">	Helper helper = new Helper();</span>
+	
+<span class="fc" id="L20">	private String pathHInit = &quot;src/test/resources/testvectors/hInitAnyFull.json&quot;;</span>
+<span class="fc" id="L21">	private File fileHInit = new File(pathHInit);</span>
+	
+	
+<span class="fc" id="L24">	private String pathtweakButterfly = &quot;src/test/resources/testvectors/tweakButterfly.json&quot;;</span>
+<span class="fc" id="L25">	private File filetweakButterfly = new File(pathtweakButterfly);</span>
+	
+<span class="fc" id="L27">	private String pathtweakButterflyFull = &quot;src/test/resources/testvectors/tweakButterflyFull.json&quot;;</span>
+<span class="fc" id="L28">	private File filetweakButterflyFull = new File(pathtweakButterflyFull);</span>
+	
+<span class="fc" id="L30">	private String pathtweakDragonfly = &quot;src/test/resources/testvectors/tweakDragonfly.json&quot;;</span>
+<span class="fc" id="L31">	private File filetweakDragonfly = new File(pathtweakDragonfly);</span>
+	
+<span class="fc" id="L33">	private String pathtweakDragonflyFull = &quot;src/test/resources/testvectors/tweakDragonflyFull.json&quot;;</span>
+<span class="fc" id="L34">	private File filetweakDragonflyFull = new File(pathtweakDragonflyFull);</span>
+	
+	
+<span class="fc" id="L37">	private String pathFlapDragonfly = &quot;src/test/resources/testvectors/flapDragonfly.json&quot;;</span>
+<span class="fc" id="L38">	private File fileFlapDragonfly = new File(pathFlapDragonfly);</span>
+	
+<span class="fc" id="L40">	private String pathFlapDragonflyFull = &quot;src/test/resources/testvectors/flapDragonflyFull.json&quot;;</span>
+<span class="fc" id="L41">	private File fileFlapDragonflyFull = new File(pathFlapDragonflyFull);</span>
+	
+<span class="fc" id="L43">	private String pathFlapButterfly = &quot;src/test/resources/testvectors/flapButterfly.json&quot;;</span>
+<span class="fc" id="L44">	private File fileFlapButterfly = new File(pathFlapButterfly);</span>
+	
+<span class="fc" id="L46">	private String pathFlapButterflyFull = &quot;src/test/resources/testvectors/flapButterflyFull.json&quot;;</span>
+<span class="fc" id="L47">	private File fileFlapButterflyFull = new File(pathFlapButterflyFull);</span>
+	
+	
+	
+<span class="fc" id="L51">	private String pathciUpdateDragonflyReduced = &quot;src/test/resources/testvectors/ciUpdateDragonflyReduced.json&quot;;</span>
+<span class="fc" id="L52">	private File fileciUpdateDragonflyReduced = new File(pathciUpdateDragonflyReduced);</span>
+	
+<span class="fc" id="L54">	private String pathciUpdateKeyedDragonflyReduced = &quot;src/test/resources/testvectors/ciUpdateKeyedDragonflyReduced.json&quot;;</span>
+<span class="fc" id="L55">	private File fileciUpdateKeyedDragonflyReduced = new File(pathciUpdateKeyedDragonflyReduced);</span>
+	
+//	private String pathkeyDerivationButterfly = &quot;src/test/resources/keyDerivationButterfly.json&quot;;
+//	private File filekeyDerivationButterfly = new File(pathkeyDerivationButterfly);
+//
+//	private String pathkeyDerivationButterflyFull = &quot;src/test/resources/keyDerivationButterflyFull.json&quot;;
+//	private File filekeyDerivationButterflyFull = new File(pathkeyDerivationButterflyFull);
+	
+<span class="fc" id="L63">	private String pathkeyDerivationButterflyReduced = &quot;src/test/resources/testvectors/keyDerivationButterflyReduced.json&quot;;</span>
+<span class="fc" id="L64">	private File filekeyDerivationButterflyReduced = new File(pathkeyDerivationButterflyReduced);</span>
+	
+//	private String pathkeyDerivationDragonfly = &quot;src/test/resources/keyDerivationDragonfly.json&quot;;
+//	private File filekeyDerivationDragonfly = new File(pathkeyDerivationDragonfly);
+//	
+//	private String pathkeyDerivationDragonflyFull = &quot;src/test/resources/keyDerivationDragonflyFull.json&quot;;
+//	private File filekeyDerivationDragonflyFull = new File(pathkeyDerivationDragonflyFull);
+	
+<span class="fc" id="L72">	private String pathkeyDerivationDragonflyReduced = &quot;src/test/resources/testvectors/keyDerivationDragonflyReduced.json&quot;;</span>
+<span class="fc" id="L73">	private File filekeyDerivationDragonflyReduced = new File(pathkeyDerivationDragonflyReduced);</span>
+	
+//	private String pathkeyedHashButterfly = &quot;src/test/resources/keyedHashButterfly.json&quot;;
+//	private File filekeyedHashButterfly = new File(pathkeyedHashButterfly);
+//	
+//	private String pathkeyedHashButterflyFull = &quot;src/test/resources/keyedHashButterflyFull.json&quot;;
+//	private File filekeyedHashButterflyFull = new File(pathkeyedHashButterflyFull);
+	
+<span class="fc" id="L81">	private String pathkeyedHashButterflyReduced = &quot;src/test/resources/testvectors/keyedHashButterflyReduced.json&quot;;</span>
+<span class="fc" id="L82">	private File filekeyedHashButterflyReduced = new File(pathkeyedHashButterflyReduced);</span>
+	
+//	private String pathkeyedHashDragonfly = &quot;src/test/resources/keyedHashDragonfly.json&quot;;
+//	private File filekeyedHashDragonfly = new File(pathkeyedHashDragonfly);
+//	
+//	private String pathkeyedHashDragonflyFull = &quot;src/test/resources/keyedHashDragonflyFull.json&quot;;
+//	private File filekeyedHashDragonflyFull = new File(pathkeyedHashDragonflyFull);
+	
+<span class="fc" id="L90">	private String pathkeyedHashDragonflyReduced = &quot;src/test/resources/testvectors/keyedHashDragonflyReduced.json&quot;;</span>
+<span class="fc" id="L91">	private File filekeyedHashDragonflyReduced = new File(pathkeyedHashDragonflyReduced);</span>
+	
+<span class="fc" id="L93">	private String pathserverReliefClientButterflyReducedDifferentG = &quot;src/test/resources/testvectors/serverReliefClientButterflyReducedDifferentG.json&quot;;</span>
+<span class="fc" id="L94">	private File fileserverReliefClientButterflyReducedDifferentG = new File(pathserverReliefClientButterflyReducedDifferentG);</span>
+	
+<span class="fc" id="L96">	private String pathserverReliefClientButterflyReduced = &quot;src/test/resources/testvectors/serverReliefClientButterflyReduced.json&quot;;</span>
+<span class="fc" id="L97">	private File fileserverReliefClientButterflyReduced = new File(pathserverReliefClientButterflyReduced);</span>
+	
+<span class="fc" id="L99">	private String pathserverReliefClientDragonflyReduced = &quot;src/test/resources/testvectors/serverReliefClientDragonflyReduced.json&quot;;</span>
+<span class="fc" id="L100">	private File fileserverReliefClientDragonflyReduced = new File(pathserverReliefClientDragonflyReduced);</span>
+	
+<span class="fc" id="L102">	private String pathserverReliefServerButterflyReduced = &quot;src/test/resources/testvectors/serverReliefServerButterflyReduced.json&quot;;</span>
+<span class="fc" id="L103">	private File fileserverReliefServerButterflyReduced = new File(pathserverReliefServerButterflyReduced);</span>
+	
+<span class="fc" id="L105">	private String pathserverReliefServerDragonflyReduced = &quot;src/test/resources/testvectors/serverReliefServerDragonflyReduced.json&quot;;</span>
+<span class="fc" id="L106">	private File fileserverReliefServerDragonflyReduced = new File(pathserverReliefServerDragonflyReduced);</span>
+	
+<span class="fc" id="L108">	private String pathproofOfWorkServerSaltButterflyReduced = &quot;src/test/resources/testvectors/proofOfWorkServerSaltButterflyReduced.json&quot;;</span>
+<span class="fc" id="L109">	private File fileproofOfWorkServerSaltButterflyReduced = new File(pathproofOfWorkServerSaltButterflyReduced);</span>
+	
+<span class="fc" id="L111">	private String pathproofOfWorkServerPwdButterflyReduced = &quot;src/test/resources/testvectors/proofOfWorkServerPwdButterflyReduced.json&quot;;</span>
+<span class="fc" id="L112">	private File fileproofOfWorkServerPwdButterflyReduced = new File(pathproofOfWorkServerPwdButterflyReduced);</span>
+	
+<span class="fc" id="L114">	private String pathproofOfWorkClientPwdButterflyReduced = &quot;src/test/resources/testvectors/proofOfWorkClientPwdButterflyReduced.json&quot;;</span>
+<span class="fc" id="L115">	private File fileproofOfWorkClientPwdButterflyReduced = new File(pathproofOfWorkClientPwdButterflyReduced);</span>
+	
+<span class="fc" id="L117">	private String pathproofOfWorkClientSaltButterflyReduced = &quot;src/test/resources/testvectors/proofOfWorkClientSaltButterflyReduced.json&quot;;</span>
+<span class="fc" id="L118">	private File fileproofOfWorkClientSaltButterflyReduced = new File(pathproofOfWorkClientSaltButterflyReduced);</span>
+	
+	
+	@Test
+	public void testServerReliefServerButterflyReduced(){
+<span class="fc" id="L123">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L124">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L126">		c.setGHigh(9);</span>
+<span class="fc" id="L127">		c.setGLow(9);</span>
+		
+<span class="fc" id="L129">		JSONArray jsonObj = helper.jsonParserArr(fileserverReliefServerButterflyReduced);</span>
+<span class="fc bfc" id="L130" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L131">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L133">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L134">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L136">			String hash = inputs.getString(&quot;hash&quot;);</span>
+<span class="fc" id="L137">			int outputLength = inputs.getInt(&quot;outputLength&quot;);</span>
+			
+<span class="fc" id="L139">			byte[] hashArr = helper.hex2bytes(hash);</span>
+			
+<span class="fc" id="L141">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L143">			byte[] output = c.serverReliefServer(outputLength, hashArr);</span>
+			
+<span class="fc" id="L145">			assertEquals(res,helper.bytes2hex(output).toLowerCase());</span>
+		}
+<span class="fc" id="L147">	}</span>
+	
+	@Test
+	public void testServerReliefServerDragonflyReduced(){
+<span class="fc" id="L151">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L152">		Catena c = instance.initDragonfly();</span>
+		
+<span class="fc" id="L154">		c.setGHigh(14);</span>
+<span class="fc" id="L155">		c.setGLow(14);</span>
+		
+<span class="fc" id="L157">		JSONArray jsonObj = helper.jsonParserArr(fileserverReliefServerDragonflyReduced);</span>
+<span class="fc bfc" id="L158" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L159">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L161">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L162">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L164">			String hash = inputs.getString(&quot;hash&quot;);</span>
+<span class="fc" id="L165">			int outputLength = inputs.getInt(&quot;outputLength&quot;);</span>
+			
+<span class="fc" id="L167">			byte[] hashArr = helper.hex2bytes(hash);</span>
+			
+<span class="fc" id="L169">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L171">			byte[] output = c.serverReliefServer(outputLength, hashArr);</span>
+			
+<span class="fc" id="L173">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L175">	}</span>
+	
+	@Test
+	public void testServerReliefClientButterflyReduceddifferentG(){
+<span class="fc" id="L179">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L180">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L182">		JSONArray jsonObj = helper.jsonParserArr(fileserverReliefClientButterflyReducedDifferentG);</span>
+<span class="fc bfc" id="L183" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L184">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L186">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L187">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L189">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L190">			String salt = inputs.getString(&quot;salt&quot;);</span>
+<span class="fc" id="L191">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L192">			String ad = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L193">			int outputLength = inputs.getInt(&quot;outputLength&quot;);</span>
+<span class="fc" id="L194">			int gLow = inputs.getInt(&quot;gLow&quot;);</span>
+<span class="fc" id="L195">			int gHigh = inputs.getInt(&quot;gHigh&quot;);</span>
+			
+<span class="fc" id="L197">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L198">			byte[] saltArr = helper.hex2bytes(salt);</span>
+<span class="fc" id="L199">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+<span class="fc" id="L200">			byte[] adArr = helper.hex2bytes(ad);</span>
+			
+<span class="fc" id="L202">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L204">			c.setGLow(gLow);</span>
+<span class="fc" id="L205">			c.setGHigh(gHigh);</span>
+			
+<span class="fc" id="L207">			byte[] output = c.serverReliefClient(pwdArr, saltArr, adArr, outputLength, gammaArr);</span>
+			
+<span class="fc" id="L209">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L211">	}</span>
+	
+	@Test
+	public void testServerReliefClientButterflyReduced(){
+<span class="fc" id="L215">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L216">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L218">		c.setGHigh(9);</span>
+<span class="fc" id="L219">		c.setGLow(9);</span>
+		
+<span class="fc" id="L221">		JSONArray jsonObj = helper.jsonParserArr(fileserverReliefClientButterflyReduced);</span>
+<span class="fc bfc" id="L222" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L223">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L225">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L226">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L228">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L229">			String salt = inputs.getString(&quot;salt&quot;);</span>
+<span class="fc" id="L230">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L231">			String ad = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L232">			int outputLength = inputs.getInt(&quot;outputLength&quot;);</span>
+			
+<span class="fc" id="L234">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L235">			byte[] saltArr = helper.hex2bytes(salt);</span>
+<span class="fc" id="L236">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+<span class="fc" id="L237">			byte[] adArr = helper.hex2bytes(ad);</span>
+			
+<span class="fc" id="L239">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L241">			byte[] output = c.serverReliefClient(pwdArr, saltArr, adArr, outputLength, gammaArr);</span>
+			
+<span class="fc" id="L243">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L245">	}</span>
+	
+	@Test
+	public void testServerReliefClientDragonflyReduced(){
+<span class="fc" id="L249">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L250">		Catena c = instance.initDragonfly();</span>
+		
+<span class="fc" id="L252">		c.setGHigh(14);</span>
+<span class="fc" id="L253">		c.setGLow(14);</span>
+		
+<span class="fc" id="L255">		JSONArray jsonObj = helper.jsonParserArr(fileserverReliefClientDragonflyReduced);</span>
+<span class="fc bfc" id="L256" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L257">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L259">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L260">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L262">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L263">			String salt = inputs.getString(&quot;salt&quot;);</span>
+<span class="fc" id="L264">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L265">			String ad = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L266">			int outputLength = inputs.getInt(&quot;outputLength&quot;);</span>
+			
+<span class="fc" id="L268">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L269">			byte[] saltArr = helper.hex2bytes(salt);</span>
+<span class="fc" id="L270">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+<span class="fc" id="L271">			byte[] adArr = helper.hex2bytes(ad);</span>
+			
+<span class="fc" id="L273">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L275">			byte[] output = c.serverReliefClient(pwdArr, saltArr, adArr, outputLength, gammaArr);</span>
+			
+<span class="fc" id="L277">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L279">	}</span>
+	
+
+//	@Test
+//	public void testKeyedHashButterfly(){
+//		DefaultInstances instance = new DefaultInstances();
+//		Catena c = instance.initButterfly();
+//		
+//		JSONArray jsonObj = helper.jsonParserArr(filekeyedHashButterfly);
+//		for (int i = 0; i&lt;jsonObj.length(); ++i ){
+//			JSONObject o = (JSONObject) jsonObj.get(i);
+//			
+//			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);
+//			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);
+//			
+//			String pwd = inputs.getString(&quot;pwd&quot;);
+//			String key = inputs.getString(&quot;key&quot;);
+//			String salt = inputs.getString(&quot;salt&quot;);
+//			String gamma = inputs.getString(&quot;gamma&quot;);
+//			String ad = inputs.getString(&quot;aData&quot;);
+//			int outputLength = inputs.getInt(&quot;outputLength&quot;);
+//			String userID = inputs.getString(&quot;userID&quot;);
+//			
+//			byte[] pwdArr = helper.hex2bytes(pwd);
+//			byte[] keyArr = helper.hex2bytes(key);
+//			byte[] saltArr = helper.hex2bytes(salt);
+//			byte[] gammaArr = helper.hex2bytes(gamma);
+//			byte[] adArr = helper.hex2bytes(ad);
+//			byte[] userIDArr = helper.hex2bytes(userID);
+//			
+//			String res = outputs.getString(&quot;res&quot;);
+//			
+//			byte[] output = c.keyedPasswordHashing(pwdArr, keyArr, saltArr, gammaArr, adArr, outputLength, userIDArr);
+//			
+//			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));
+//		}
+//	}
+
+	
+//	@Test
+//	public void testKeyedHashButterflyFull(){
+//		DefaultInstances instance = new DefaultInstances();
+//		Catena c = instance.initButterflyFull();
+//		
+//		JSONArray jsonObj = helper.jsonParserArr(filekeyedHashButterflyFull);
+//		for (int i = 0; i&lt;jsonObj.length(); ++i ){
+//			JSONObject o = (JSONObject) jsonObj.get(i);
+//			
+//			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);
+//			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);
+//			
+//			String pwd = inputs.getString(&quot;pwd&quot;);
+//			String key = inputs.getString(&quot;key&quot;);
+//			String salt = inputs.getString(&quot;salt&quot;);
+//			String gamma = inputs.getString(&quot;gamma&quot;);
+//			String ad = inputs.getString(&quot;aData&quot;);
+//			int outputLength = inputs.getInt(&quot;outputLength&quot;);
+//			String userID = inputs.getString(&quot;userID&quot;);
+//			
+//			byte[] pwdArr = helper.hex2bytes(pwd);
+//			byte[] keyArr = helper.hex2bytes(key);
+//			byte[] saltArr = helper.hex2bytes(salt);
+//			byte[] gammaArr = helper.hex2bytes(gamma);
+//			byte[] adArr = helper.hex2bytes(ad);
+//			byte[] userIDArr = helper.hex2bytes(userID);
+//			
+//			String res = outputs.getString(&quot;res&quot;);
+//			
+//			byte[] output = c.keyedPasswordHashing(pwdArr, keyArr, saltArr, gammaArr, adArr, outputLength, userIDArr);
+//			
+//			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));
+//		}
+//	}
+	
+	@Test
+	public void testKeyedHashButterflyReduced(){
+<span class="fc" id="L355">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L356">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L358">		c.setGHigh(9);</span>
+<span class="fc" id="L359">		c.setGLow(9);</span>
+		
+<span class="fc" id="L361">		JSONArray jsonObj = helper.jsonParserArr(filekeyedHashButterflyReduced);</span>
+<span class="fc bfc" id="L362" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L363">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L365">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L366">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L368">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L369">			String key = inputs.getString(&quot;key&quot;);</span>
+<span class="fc" id="L370">			String salt = inputs.getString(&quot;salt&quot;);</span>
+<span class="fc" id="L371">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L372">			String ad = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L373">			int outputLength = inputs.getInt(&quot;outputLength&quot;);</span>
+<span class="fc" id="L374">			String userID = inputs.getString(&quot;userID&quot;);</span>
+			
+<span class="fc" id="L376">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L377">			byte[] keyArr = helper.hex2bytes(key);</span>
+<span class="fc" id="L378">			byte[] saltArr = helper.hex2bytes(salt);</span>
+<span class="fc" id="L379">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+<span class="fc" id="L380">			byte[] adArr = helper.hex2bytes(ad);</span>
+<span class="fc" id="L381">			byte[] userIDArr = helper.hex2bytes(userID);</span>
+			
+<span class="fc" id="L383">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L385">			byte[] output = c.keyedPasswordHashing(pwdArr, keyArr, saltArr, gammaArr, adArr, outputLength, userIDArr);</span>
+			
+<span class="fc" id="L387">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L389">	}</span>
+	
+//	@Test
+//	public void testKeyedHashDragonfly(){
+//		DefaultInstances instance = new DefaultInstances();
+//		Catena c = instance.initDragonfly();
+//		
+//		JSONArray jsonObj = helper.jsonParserArr(filekeyedHashDragonfly);
+//		for (int i = 0; i&lt;jsonObj.length(); ++i ){
+//			JSONObject o = (JSONObject) jsonObj.get(i);
+//			
+//			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);
+//			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);
+//			
+//			String pwd = inputs.getString(&quot;pwd&quot;);
+//			String key = inputs.getString(&quot;key&quot;);
+//			String salt = inputs.getString(&quot;salt&quot;);
+//			String gamma = inputs.getString(&quot;gamma&quot;);
+//			String ad = inputs.getString(&quot;aData&quot;);
+//			int outputLength = inputs.getInt(&quot;outputLength&quot;);
+//			String userID = inputs.getString(&quot;userID&quot;);
+//			
+//			byte[] pwdArr = helper.hex2bytes(pwd);
+//			byte[] keyArr = helper.hex2bytes(key);
+//			byte[] saltArr = helper.hex2bytes(salt);
+//			byte[] gammaArr = helper.hex2bytes(gamma);
+//			byte[] adArr = helper.hex2bytes(ad);
+//			byte[] userIDArr = helper.hex2bytes(userID);
+//			
+//			String res = outputs.getString(&quot;res&quot;);
+//			
+//			byte[] output = c.keyedPasswordHashing(pwdArr, keyArr, saltArr, gammaArr, adArr, outputLength, userIDArr);
+//			
+//			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));
+//		}
+//	}
+	
+//	@Test
+//	public void testKeyedHashDragonflyFull(){
+//		DefaultInstances instance = new DefaultInstances();
+//		Catena c = instance.initDragonflyFull();
+//		
+//		JSONArray jsonObj = helper.jsonParserArr(filekeyedHashDragonflyFull);
+//		for (int i = 0; i&lt;jsonObj.length(); ++i ){
+//			JSONObject o = (JSONObject) jsonObj.get(i);
+//			
+//			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);
+//			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);
+//			
+//			String pwd = inputs.getString(&quot;pwd&quot;);
+//			String key = inputs.getString(&quot;key&quot;);
+//			String salt = inputs.getString(&quot;salt&quot;);
+//			String gamma = inputs.getString(&quot;gamma&quot;);
+//			String ad = inputs.getString(&quot;aData&quot;);
+//			int outputLength = inputs.getInt(&quot;outputLength&quot;);
+//			String userID = inputs.getString(&quot;userID&quot;);
+//			
+//			byte[] pwdArr = helper.hex2bytes(pwd);
+//			byte[] keyArr = helper.hex2bytes(key);
+//			byte[] saltArr = helper.hex2bytes(salt);
+//			byte[] gammaArr = helper.hex2bytes(gamma);
+//			byte[] adArr = helper.hex2bytes(ad);
+//			byte[] userIDArr = helper.hex2bytes(userID);
+//			
+//			String res = outputs.getString(&quot;res&quot;);
+//			
+//			byte[] output = c.keyedPasswordHashing(pwdArr, keyArr, saltArr, gammaArr, adArr, outputLength, userIDArr);
+//			
+//			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));
+//		}
+//	}
+
+	
+	@Test
+	public void testKeyedHashDragonflyReduced(){
+<span class="fc" id="L464">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L465">		Catena c = instance.initDragonfly();</span>
+		
+<span class="fc" id="L467">		c.setGHigh(14);</span>
+<span class="fc" id="L468">		c.setGLow(14);</span>
+		
+<span class="fc" id="L470">		JSONArray jsonObj = helper.jsonParserArr(filekeyedHashDragonflyReduced);</span>
+<span class="fc bfc" id="L471" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L472">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L474">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L475">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L477">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L478">			String key = inputs.getString(&quot;key&quot;);</span>
+<span class="fc" id="L479">			String salt = inputs.getString(&quot;salt&quot;);</span>
+<span class="fc" id="L480">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L481">			String ad = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L482">			int outputLength = inputs.getInt(&quot;outputLength&quot;);</span>
+<span class="fc" id="L483">			String userID = inputs.getString(&quot;userID&quot;);</span>
+			
+<span class="fc" id="L485">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L486">			byte[] keyArr = helper.hex2bytes(key);</span>
+<span class="fc" id="L487">			byte[] saltArr = helper.hex2bytes(salt);</span>
+<span class="fc" id="L488">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+<span class="fc" id="L489">			byte[] adArr = helper.hex2bytes(ad);</span>
+<span class="fc" id="L490">			byte[] userIDArr = helper.hex2bytes(userID);</span>
+			
+<span class="fc" id="L492">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L494">			byte[] output = c.keyedPasswordHashing(pwdArr, keyArr, saltArr, gammaArr, adArr, outputLength, userIDArr);</span>
+			
+<span class="fc" id="L496">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L498">	}</span>
+	
+
+//	@Test
+//	public void testKeyDerivationButterfly(){
+//		DefaultInstances instance = new DefaultInstances();
+//		Catena c = instance.initButterfly();
+//		
+//		JSONArray jsonObj = helper.jsonParserArr(filekeyDerivationButterfly);
+//		for (int i = 0; i&lt;jsonObj.length(); ++i ){
+//			JSONObject o = (JSONObject) jsonObj.get(i);
+//			
+//			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);
+//			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);
+//			
+//			String pwd = inputs.getString(&quot;pwd&quot;);
+//			String ad = inputs.getString(&quot;ad&quot;);
+//			String salt = inputs.getString(&quot;salt&quot;);
+//			String gamma = inputs.getString(&quot;gamma&quot;);
+//			String keyIdentifier = inputs.getString(&quot;key_identifier&quot;);
+//			int outputLength = inputs.getInt(&quot;output_length&quot;);
+//			int keySize = inputs.getInt(&quot;key_size&quot;);
+//			
+//			byte[] pwdArr = helper.hex2bytes(pwd);
+//			byte[] adArr = helper.hex2bytes(ad);
+//			byte[] saltArr = helper.hex2bytes(salt);
+//			byte[] gammaArr = helper.hex2bytes(gamma);
+//			byte[] keyIdentifierArr = helper.hex2bytes(keyIdentifier);
+//
+//			String res = outputs.getString(&quot;res&quot;);
+//			
+//			byte[] output = c.keyDerivation(pwdArr, saltArr, adArr, gammaArr, outputLength, keySize, keyIdentifierArr);
+//			
+//			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));
+//		}
+//	}
+//	
+
+
+//	@Test
+//	public void testKeyDerivationButterflyFull(){
+//		DefaultInstances instance = new DefaultInstances();
+//		Catena c = instance.initButterflyFull();
+//		
+//		JSONArray jsonObj = helper.jsonParserArr(filekeyDerivationButterflyFull);
+//		for (int i = 0; i&lt;jsonObj.length(); ++i ){
+//			JSONObject o = (JSONObject) jsonObj.get(i);
+//			
+//			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);
+//			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);
+//			
+//			String pwd = inputs.getString(&quot;pwd&quot;);
+//			String ad = inputs.getString(&quot;ad&quot;);
+//			String salt = inputs.getString(&quot;salt&quot;);
+//			String gamma = inputs.getString(&quot;gamma&quot;);
+//			String keyIdentifier = inputs.getString(&quot;key_identifier&quot;);
+//			int outputLength = inputs.getInt(&quot;output_length&quot;);
+//			int keySize = inputs.getInt(&quot;key_size&quot;);
+//			
+//			byte[] pwdArr = helper.hex2bytes(pwd);
+//			byte[] adArr = helper.hex2bytes(ad);
+//			byte[] saltArr = helper.hex2bytes(salt);
+//			byte[] gammaArr = helper.hex2bytes(gamma);
+//			byte[] keyIdentifierArr = helper.hex2bytes(keyIdentifier);
+//
+//			String res = outputs.getString(&quot;res&quot;);
+//			
+//			byte[] output = c.keyDerivation(pwdArr, saltArr, adArr, gammaArr, outputLength, keySize, keyIdentifierArr);
+//			
+//			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));
+//		}
+//	}
+	
+	@Test
+	public void testKeyDerivationButterflyReduced(){
+<span class="fc" id="L573">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L574">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L576">		c.setGLow(9);</span>
+<span class="fc" id="L577">		c.setGHigh(9);</span>
+		
+<span class="fc" id="L579">		JSONArray jsonObj = helper.jsonParserArr(filekeyDerivationButterflyReduced);</span>
+<span class="fc bfc" id="L580" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L581">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L583">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L584">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L586">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L587">			String ad = inputs.getString(&quot;ad&quot;);</span>
+<span class="fc" id="L588">			String salt = inputs.getString(&quot;salt&quot;);</span>
+<span class="fc" id="L589">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L590">			String keyIdentifier = inputs.getString(&quot;key_identifier&quot;);</span>
+<span class="fc" id="L591">			int outputLength = inputs.getInt(&quot;output_length&quot;);</span>
+<span class="fc" id="L592">			int keySize = inputs.getInt(&quot;key_size&quot;);</span>
+			
+<span class="fc" id="L594">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L595">			byte[] adArr = helper.hex2bytes(ad);</span>
+<span class="fc" id="L596">			byte[] saltArr = helper.hex2bytes(salt);</span>
+<span class="fc" id="L597">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+<span class="fc" id="L598">			byte[] keyIdentifierArr = helper.hex2bytes(keyIdentifier);</span>
+
+<span class="fc" id="L600">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L602">			byte[] output = c.keyDerivation(pwdArr, saltArr, adArr, gammaArr, outputLength, keySize, keyIdentifierArr);</span>
+			
+<span class="fc" id="L604">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L606">	}</span>
+	
+	
+//	@Test
+//	public void testKeyDerivationDragonfly(){
+//		DefaultInstances instance = new DefaultInstances();
+//		Catena c = instance.initDragonfly();
+//		
+//		JSONArray jsonObj = helper.jsonParserArr(filekeyDerivationDragonfly);
+//		for (int i = 0; i&lt;jsonObj.length(); ++i ){
+//			JSONObject o = (JSONObject) jsonObj.get(i);
+//			
+//			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);
+//			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);
+//			
+//			String pwd = inputs.getString(&quot;pwd&quot;);
+//			String ad = inputs.getString(&quot;ad&quot;);
+//			String salt = inputs.getString(&quot;salt&quot;);
+//			String gamma = inputs.getString(&quot;gamma&quot;);
+//			String keyIdentifier = inputs.getString(&quot;key_identifier&quot;);
+//			int outputLength = inputs.getInt(&quot;output_length&quot;);
+//			int keySize = inputs.getInt(&quot;key_size&quot;);
+//			
+//			byte[] pwdArr = helper.hex2bytes(pwd);
+//			byte[] adArr = helper.hex2bytes(ad);
+//			byte[] saltArr = helper.hex2bytes(salt);
+//			byte[] gammaArr = helper.hex2bytes(gamma);
+//			byte[] keyIdentifierArr = helper.hex2bytes(keyIdentifier);
+//
+//			String res = outputs.getString(&quot;res&quot;);
+//			
+//			byte[] output = c.keyDerivation(pwdArr, saltArr, adArr, gammaArr, outputLength, keySize, keyIdentifierArr);
+//			
+//			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));
+//		}
+//	}
+//	
+//	@Test
+//	public void testKeyDerivationDragonflyFull(){
+//		DefaultInstances instance = new DefaultInstances();
+//		Catena c = instance.initDragonflyFull();
+//		
+//		JSONArray jsonObj = helper.jsonParserArr(filekeyDerivationDragonflyFull);
+//		for (int i = 0; i&lt;jsonObj.length(); ++i ){
+//			JSONObject o = (JSONObject) jsonObj.get(i);
+//			
+//			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);
+//			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);
+//			
+//			String pwd = inputs.getString(&quot;pwd&quot;);
+//			String ad = inputs.getString(&quot;ad&quot;);
+//			String salt = inputs.getString(&quot;salt&quot;);
+//			String gamma = inputs.getString(&quot;gamma&quot;);
+//			String keyIdentifier = inputs.getString(&quot;key_identifier&quot;);
+//			int outputLength = inputs.getInt(&quot;output_length&quot;);
+//			int keySize = inputs.getInt(&quot;key_size&quot;);
+//			
+//			byte[] pwdArr = helper.hex2bytes(pwd);
+//			byte[] adArr = helper.hex2bytes(ad);
+//			byte[] saltArr = helper.hex2bytes(salt);
+//			byte[] gammaArr = helper.hex2bytes(gamma);
+//			byte[] keyIdentifierArr = helper.hex2bytes(keyIdentifier);
+//
+//			String res = outputs.getString(&quot;res&quot;);
+//			
+//			byte[] output = c.keyDerivation(pwdArr, saltArr, adArr, gammaArr, outputLength, keySize, keyIdentifierArr);
+//			
+//			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));
+//		}
+//	}
+
+	
+	@Test
+	public void testKeyDerivationDragonflyReduced(){
+<span class="fc" id="L680">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L681">		Catena c = instance.initDragonfly();</span>
+		
+<span class="fc" id="L683">		c.setGHigh(14);</span>
+<span class="fc" id="L684">		c.setGLow(14);</span>
+		
+<span class="fc" id="L686">		JSONArray jsonObj = helper.jsonParserArr(filekeyDerivationDragonflyReduced);</span>
+<span class="fc bfc" id="L687" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L688">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L690">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L691">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L693">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L694">			String ad = inputs.getString(&quot;ad&quot;);</span>
+<span class="fc" id="L695">			String salt = inputs.getString(&quot;salt&quot;);</span>
+<span class="fc" id="L696">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L697">			String keyIdentifier = inputs.getString(&quot;key_identifier&quot;);</span>
+<span class="fc" id="L698">			int outputLength = inputs.getInt(&quot;output_length&quot;);</span>
+<span class="fc" id="L699">			int keySize = inputs.getInt(&quot;key_size&quot;);</span>
+			
+<span class="fc" id="L701">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L702">			byte[] adArr = helper.hex2bytes(ad);</span>
+<span class="fc" id="L703">			byte[] saltArr = helper.hex2bytes(salt);</span>
+<span class="fc" id="L704">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+<span class="fc" id="L705">			byte[] keyIdentifierArr = helper.hex2bytes(keyIdentifier);</span>
+
+<span class="fc" id="L707">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L709">			byte[] output = c.keyDerivation(pwdArr, saltArr, adArr, gammaArr, outputLength, keySize, keyIdentifierArr);</span>
+			
+<span class="fc" id="L711">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L713">	}</span>
+	
+	@Test
+	public void testCIUpdateDragonflyReduced(){
+<span class="fc" id="L717">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L718">		Catena c = instance.initDragonfly();</span>
+		
+<span class="fc" id="L720">		int gOld = 14;</span>
+		
+<span class="fc" id="L722">		c.setGHigh(gOld);</span>
+<span class="fc" id="L723">		c.setGLow(gOld);</span>
+		
+<span class="fc" id="L725">		JSONArray jsonObj = helper.jsonParserArr(fileciUpdateDragonflyReduced);</span>
+<span class="fc bfc" id="L726" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L727">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L729">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L730">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L732">			String oldHash = inputs.getString(&quot;oldHash&quot;);</span>
+<span class="fc" id="L733">			int gNew = inputs.getInt(&quot;gNew&quot;);</span>
+<span class="fc" id="L734">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L735">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+			
+<span class="fc" id="L737">			byte[] oldHashArr = helper.hex2bytes(oldHash);</span>
+<span class="fc" id="L738">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+
+<span class="fc" id="L740">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L742">			byte[] output = new byte[0];</span>
+			try {
+<span class="fc" id="L744">				output = c.clientIndependentUpdate(oldHashArr, gOld, gNew, gammaArr, outLen);</span>
+<span class="nc" id="L745">			} catch (Exception e) {</span>
+<span class="nc" id="L746">				System.out.println(&quot;Could not update Hash.&quot;);</span>
+<span class="nc" id="L747">				e.printStackTrace();</span>
+<span class="fc" id="L748">			}</span>
+			
+<span class="fc" id="L750">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L752">	}</span>
+	
+	@Test
+	public void testCIUpdateKeyedDragonflyReduced(){
+<span class="fc" id="L756">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L757">		Catena c = instance.initDragonfly();</span>
+		
+<span class="fc" id="L759">		int gOld = 14;</span>
+		
+<span class="fc" id="L761">		c.setGHigh(gOld);</span>
+<span class="fc" id="L762">		c.setGLow(gOld);</span>
+		
+<span class="fc" id="L764">		JSONArray jsonObj = helper.jsonParserArr(fileciUpdateKeyedDragonflyReduced);</span>
+<span class="fc bfc" id="L765" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L766">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L768">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L769">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L771">			String oldHash = inputs.getString(&quot;oldHash&quot;);</span>
+<span class="fc" id="L772">			int gNew = inputs.getInt(&quot;gNew&quot;);</span>
+<span class="fc" id="L773">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+<span class="fc" id="L774">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L775">			String key = inputs.getString(&quot;key&quot;);</span>
+<span class="fc" id="L776">			String userID = inputs.getString(&quot;userID&quot;);</span>
+			
+<span class="fc" id="L778">			byte[] oldHashArr = helper.hex2bytes(oldHash);</span>
+<span class="fc" id="L779">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+<span class="fc" id="L780">			byte[] keyArr = helper.hex2bytes(key);</span>
+<span class="fc" id="L781">			byte[] userIDArr = helper.hex2bytes(userID);</span>
+
+<span class="fc" id="L783">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L785">			byte[] output = new byte[0];</span>
+			try {
+<span class="fc" id="L787">				output = c.keyedClientIndependentUpdate(oldHashArr, gOld, gNew, gammaArr, outLen, keyArr, userIDArr);</span>
+<span class="nc" id="L788">			} catch (Exception e) {</span>
+<span class="nc" id="L789">				System.out.println(&quot;Could not update Hash.&quot;);</span>
+<span class="nc" id="L790">				e.printStackTrace();</span>
+<span class="fc" id="L791">			}</span>
+			
+<span class="fc" id="L793">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L795">	}</span>
+	
+	@Test
+	public void testFlapButterfly(){
+		
+<span class="fc" id="L800">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L801">		Catena c = defaultInstance.initButterfly();</span>
+	
+<span class="fc" id="L803">		JSONArray jsonObj = helper.jsonParserArr(fileFlapButterfly);</span>
+<span class="fc bfc" id="L804" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L805">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L807">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L808">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L810">			int g = inputs.getInt(&quot;g&quot;);</span>
+<span class="fc" id="L811">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L812">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+			
+<span class="fc" id="L814">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L815">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+
+<span class="fc" id="L817">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L819">			byte[] output = c.flapPub(g, pwdArr, gammaArr);</span>
+			
+<span class="fc" id="L821">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L823">	}</span>
+	
+	@Test
+	public void testFlapButterflyFull(){
+<span class="fc" id="L827">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L828">		Catena c = defaultInstance.initButterflyFull();</span>
+	
+<span class="fc" id="L830">		JSONArray jsonObj = helper.jsonParserArr(fileFlapButterflyFull);</span>
+<span class="fc bfc" id="L831" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L832">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L834">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L835">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L837">			int g = inputs.getInt(&quot;g&quot;);</span>
+<span class="fc" id="L838">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L839">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+			
+<span class="fc" id="L841">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L842">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+
+<span class="fc" id="L844">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L846">			byte[] output = c.flapPub(g, pwdArr, gammaArr);</span>
+			
+<span class="fc" id="L848">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L850">	}</span>
+	
+	@Test
+	public void testFlapDragonfly(){
+<span class="fc" id="L854">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L855">		Catena c = defaultInstance.initDragonfly();</span>
+		
+<span class="fc" id="L857">		JSONArray jsonObj = helper.jsonParserArr(fileFlapDragonfly);</span>
+<span class="fc bfc" id="L858" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L859">			c = defaultInstance.initDragonfly();</span>
+			
+<span class="fc" id="L861">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L863">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L864">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L866">			int g = inputs.getInt(&quot;g&quot;);</span>
+<span class="fc" id="L867">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L868">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+			
+<span class="fc" id="L870">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L871">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+
+<span class="fc" id="L873">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L875">			byte[] output = c.flapPub(g, pwdArr, gammaArr);</span>
+			
+<span class="fc" id="L877">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L879">	}</span>
+	
+	@Test
+	public void testFlapDragonflyFull(){
+<span class="fc" id="L883">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L884">		Catena c = defaultInstance.initDragonflyFull();</span>
+	
+<span class="fc" id="L886">		JSONArray jsonObj = helper.jsonParserArr(fileFlapDragonflyFull);</span>
+<span class="fc bfc" id="L887" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L888">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L890">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L891">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L893">			int g = inputs.getInt(&quot;g&quot;);</span>
+<span class="fc" id="L894">			String pwd = inputs.getString(&quot;pwd&quot;);</span>
+<span class="fc" id="L895">			String gamma = inputs.getString(&quot;gamma&quot;);</span>
+			
+<span class="fc" id="L897">			byte[] pwdArr = helper.hex2bytes(pwd);</span>
+<span class="fc" id="L898">			byte[] gammaArr = helper.hex2bytes(gamma);</span>
+
+<span class="fc" id="L900">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L902">			byte[] output = c.flapPub(g, pwdArr, gammaArr);</span>
+			
+<span class="fc" id="L904">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L906">	}</span>
+	
+	@Test
+	public void testTweakButterfly(){
+<span class="fc" id="L910">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L911">		Catena c = defaultInstance.initButterfly();</span>
+	
+<span class="fc" id="L913">		JSONArray jsonObj = helper.jsonParserArr(filetweakButterfly);</span>
+<span class="fc bfc" id="L914" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L915">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L917">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L918">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L920">			int domain = inputs.getInt(&quot;d&quot;);</span>
+<span class="fc" id="L921">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L922">			int sLen = inputs.getInt(&quot;sLen&quot;);</span>
+<span class="fc" id="L923">			String aD = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L924">			byte[] aData = helper.string2Bytes(aD);</span>
+
+<span class="fc" id="L926">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L928">			byte[] output = c.testCompTweak(c.getVID(), domain, c.getLambda(), outLen, sLen, aData);</span>
+			
+<span class="fc" id="L930">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L932">	}</span>
+	
+	@Test
+	public void testTweakButterflyFull(){
+<span class="fc" id="L936">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L937">		Catena c = defaultInstance.initButterflyFull();</span>
+	
+<span class="fc" id="L939">		JSONArray jsonObj = helper.jsonParserArr(filetweakButterflyFull);</span>
+<span class="fc bfc" id="L940" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L941">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L943">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L944">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L946">			int domain = inputs.getInt(&quot;d&quot;);</span>
+<span class="fc" id="L947">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L948">			int sLen = inputs.getInt(&quot;sLen&quot;);</span>
+<span class="fc" id="L949">			String aD = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L950">			byte[] aData = helper.string2Bytes(aD);</span>
+
+<span class="fc" id="L952">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L954">			byte[] output = c.testCompTweak(c.getVID(), domain, c.getLambda(), outLen, sLen, aData);</span>
+			
+<span class="fc" id="L956">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L958">	}</span>
+	
+	@Test
+	public void testTweakDragonfly(){
+<span class="fc" id="L962">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L963">		Catena c = defaultInstance.initDragonfly();</span>
+	
+<span class="fc" id="L965">		JSONArray jsonObj = helper.jsonParserArr(filetweakDragonfly);</span>
+<span class="fc bfc" id="L966" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L967">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L969">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L970">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L972">			int domain = inputs.getInt(&quot;d&quot;);</span>
+<span class="fc" id="L973">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L974">			int sLen = inputs.getInt(&quot;sLen&quot;);</span>
+<span class="fc" id="L975">			String aD = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L976">			byte[] aData = helper.string2Bytes(aD);</span>
+
+<span class="fc" id="L978">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L980">			byte[] output = c.testCompTweak(c.getVID(), domain, c.getLambda(), outLen, sLen, aData);</span>
+			
+<span class="fc" id="L982">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L984">	}</span>
+	
+	@Test
+	public void testTweakDragonflyFull(){
+<span class="fc" id="L988">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L989">		Catena c = defaultInstance.initDragonflyFull();</span>
+	
+<span class="fc" id="L991">		JSONArray jsonObj = helper.jsonParserArr(filetweakDragonflyFull);</span>
+<span class="fc bfc" id="L992" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L993">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L995">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L996">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L998">			int domain = inputs.getInt(&quot;d&quot;);</span>
+<span class="fc" id="L999">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L1000">			int sLen = inputs.getInt(&quot;sLen&quot;);</span>
+<span class="fc" id="L1001">			String aD = inputs.getString(&quot;aData&quot;);</span>
+<span class="fc" id="L1002">			byte[] aData = helper.string2Bytes(aD);</span>
+
+<span class="fc" id="L1004">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L1006">			byte[] output = c.testCompTweak(c.getVID(), domain, c.getLambda(), outLen, sLen, aData);</span>
+			
+<span class="fc" id="L1008">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L1010">	}</span>
+	
+	@Test
+	public void testHInit(){
+		
+<span class="fc" id="L1015">		DefaultInstances defaultInstance = new DefaultInstances();</span>
+<span class="fc" id="L1016">		Catena c = defaultInstance.initDragonflyFull();</span>
+		
+<span class="fc" id="L1018">		JSONArray jsonObj = helper.jsonParserArr(fileHInit);</span>
+		
+<span class="fc bfc" id="L1020" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L1021">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L1023">			JSONObject inputs  = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L1024">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+
+<span class="fc" id="L1026">			String x 	  = inputs.getString(&quot;x&quot;);</span>
+<span class="fc" id="L1027">			byte[] xArray = helper.hex2bytes(x);</span>
+			
+<span class="fc" id="L1029">			JSONArray out = outputs.getJSONArray(&quot;v&quot;);</span>
+			
+<span class="fc" id="L1031">			String v0 = out.getString(0);</span>
+<span class="fc" id="L1032">			String v1 = out.getString(1);</span>
+			
+<span class="fc" id="L1034">			byte[] result = c.testHInit(xArray);</span>
+			
+<span class="fc" id="L1036">			String v = v0+v1;</span>
+			
+			
+<span class="fc" id="L1039">			assertTrue(v.equals(helper.bytes2hex(result)));</span>
+		}
+<span class="fc" id="L1041">	}</span>
+	
+	@Test
+	public void testProofOfWorkServerSaltButterflyReduced(){
+<span class="fc" id="L1045">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L1046">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L1048">		c.setGHigh(9);</span>
+<span class="fc" id="L1049">		c.setGLow(9);</span>
+		
+<span class="fc" id="L1051">		JSONArray jsonObj = helper.jsonParserArr(fileproofOfWorkServerSaltButterflyReduced);</span>
+		
+<span class="fc bfc" id="L1053" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L1054">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L1056">			JSONObject inputs  = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L1057">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+
+<span class="fc" id="L1059">			byte[] pwd = helper.hex2bytes(inputs.getString(&quot;pwd&quot;));</span>
+<span class="fc" id="L1060">			byte[] salt = helper.hex2bytes(inputs.getString(&quot;salt&quot;));</span>
+<span class="fc" id="L1061">			byte[] aData = helper.hex2bytes(inputs.getString(&quot;aData&quot;));</span>
+<span class="fc" id="L1062">			byte[] gamma = helper.hex2bytes(inputs.getString(&quot;gamma&quot;));</span>
+<span class="fc" id="L1063">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L1064">			int p = inputs.getInt(&quot;p&quot;);</span>
+<span class="fc" id="L1065">			int mode = inputs.getInt(&quot;mode&quot;);</span>
+			
+<span class="fc" id="L1067">			byte[] pwdExp = helper.hex2bytes(outputs.getString(&quot;pwd&quot;));</span>
+<span class="fc" id="L1068">			byte[] saltExp = helper.hex2bytes(outputs.getString(&quot;salt&quot;));</span>
+<span class="fc" id="L1069">			byte[] aDataExp = helper.hex2bytes(outputs.getString(&quot;aData&quot;));</span>
+<span class="fc" id="L1070">			byte[] gammaExp = helper.hex2bytes(outputs.getString(&quot;gamma&quot;));</span>
+<span class="fc" id="L1071">			int outLenExp = outputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L1072">			byte[] outHashExp = helper.hex2bytes(outputs.getString(&quot;outHash&quot;));</span>
+<span class="fc" id="L1073">			int pExp = outputs.getInt(&quot;p&quot;);</span>
+<span class="fc" id="L1074">			int modeExp = outputs.getInt(&quot;mode&quot;);</span>
+			
+			
+<span class="fc" id="L1077">			POWstruct output = c.proofOfWorkServer(pwd, salt, aData, outLen, gamma, p, mode);</span>
+			
+<span class="fc" id="L1079">			assertArrayEquals(pwdExp, output.pwd);</span>
+<span class="fc" id="L1080">			assertArrayEquals(saltExp, output.salt);</span>
+<span class="fc" id="L1081">			assertArrayEquals(aDataExp, output.aData);</span>
+<span class="fc" id="L1082">			assertArrayEquals(gammaExp, output.gamma);</span>
+<span class="fc" id="L1083">			assertArrayEquals(outHashExp, output.rHash);</span>
+<span class="fc" id="L1084">			assertEquals(outLenExp, output.outLen);</span>
+<span class="fc" id="L1085">			assertEquals(pExp, output.p);</span>
+<span class="fc" id="L1086">			assertEquals(modeExp, output.mode);</span>
+		}
+<span class="fc" id="L1088">	}</span>
+
+	
+	
+	@Test
+	public void testProofOfWorkServerPwdButterflyReduced(){
+<span class="fc" id="L1094">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L1095">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L1097">		c.setGHigh(9);</span>
+<span class="fc" id="L1098">		c.setGLow(9);</span>
+		
+<span class="fc" id="L1100">		JSONArray jsonObj = helper.jsonParserArr(fileproofOfWorkServerPwdButterflyReduced);</span>
+		
+<span class="fc bfc" id="L1102" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L1103">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L1105">			JSONObject inputs  = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L1106">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+
+<span class="fc" id="L1108">			byte[] pwd = helper.hex2bytes(inputs.getString(&quot;pwd&quot;));</span>
+<span class="fc" id="L1109">			byte[] salt = helper.hex2bytes(inputs.getString(&quot;salt&quot;));</span>
+<span class="fc" id="L1110">			byte[] aData = helper.hex2bytes(inputs.getString(&quot;aData&quot;));</span>
+<span class="fc" id="L1111">			byte[] gamma = helper.hex2bytes(inputs.getString(&quot;gamma&quot;));</span>
+<span class="fc" id="L1112">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L1113">			int p = inputs.getInt(&quot;p&quot;);</span>
+<span class="fc" id="L1114">			int mode = inputs.getInt(&quot;mode&quot;);</span>
+			
+<span class="fc" id="L1116">			byte[] pwdExp = helper.hex2bytes(outputs.getString(&quot;pwd&quot;));</span>
+<span class="fc" id="L1117">			byte[] saltExp = helper.hex2bytes(outputs.getString(&quot;salt&quot;));</span>
+<span class="fc" id="L1118">			byte[] aDataExp = helper.hex2bytes(outputs.getString(&quot;aData&quot;));</span>
+<span class="fc" id="L1119">			byte[] gammaExp = helper.hex2bytes(outputs.getString(&quot;gamma&quot;));</span>
+<span class="fc" id="L1120">			int outLenExp = outputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L1121">			byte[] outHashExp = helper.hex2bytes(outputs.getString(&quot;outHash&quot;));</span>
+<span class="fc" id="L1122">			int pExp = outputs.getInt(&quot;p&quot;);</span>
+<span class="fc" id="L1123">			int modeExp = outputs.getInt(&quot;mode&quot;);</span>
+			
+			
+<span class="fc" id="L1126">			POWstruct output = c.proofOfWorkServer(pwd, salt, aData, outLen, gamma, p, mode);</span>
+			
+<span class="fc" id="L1128">			assertArrayEquals(pwdExp, output.pwd);</span>
+<span class="fc" id="L1129">			assertArrayEquals(saltExp, output.salt);</span>
+<span class="fc" id="L1130">			assertArrayEquals(aDataExp, output.aData);</span>
+<span class="fc" id="L1131">			assertArrayEquals(gammaExp, output.gamma);</span>
+<span class="fc" id="L1132">			assertArrayEquals(outHashExp, output.rHash);</span>
+<span class="fc" id="L1133">			assertEquals(outLenExp, output.outLen);</span>
+<span class="fc" id="L1134">			assertEquals(pExp, output.p);</span>
+<span class="fc" id="L1135">			assertEquals(modeExp, output.mode);</span>
+		}
+<span class="fc" id="L1137">	}</span>
+	
+	@Test
+	public void testProofOfWorkClientPwdButterflyReduced(){
+<span class="fc" id="L1141">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L1142">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L1144">		c.setGHigh(9);</span>
+<span class="fc" id="L1145">		c.setGLow(9);</span>
+		
+<span class="fc" id="L1147">		JSONArray jsonObj = helper.jsonParserArr(fileproofOfWorkClientPwdButterflyReduced);</span>
+		
+<span class="fc bfc" id="L1149" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L1150">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L1152">			JSONObject inputs  = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L1153">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+
+<span class="fc" id="L1155">			byte[] pwd = helper.hex2bytes(inputs.getString(&quot;pwd&quot;));</span>
+<span class="fc" id="L1156">			byte[] salt = helper.hex2bytes(inputs.getString(&quot;salt&quot;));</span>
+<span class="fc" id="L1157">			byte[] aData = helper.hex2bytes(inputs.getString(&quot;aData&quot;));</span>
+<span class="fc" id="L1158">			byte[] gamma = helper.hex2bytes(inputs.getString(&quot;gamma&quot;));</span>
+<span class="fc" id="L1159">			byte[] hash = helper.hex2bytes(inputs.getString(&quot;hash&quot;));</span>
+<span class="fc" id="L1160">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L1161">			int p = inputs.getInt(&quot;p&quot;);</span>
+<span class="fc" id="L1162">			int mode = inputs.getInt(&quot;mode&quot;);</span>
+			
+<span class="fc" id="L1164">			byte[] resExp = helper.hex2bytes(outputs.getString(&quot;res&quot;));</span>
+			
+<span class="fc" id="L1166">			POWstruct input = c.new POWstruct();</span>
+<span class="fc" id="L1167">			input.pwd = pwd;</span>
+<span class="fc" id="L1168">			input.salt = salt;</span>
+<span class="fc" id="L1169">			input.aData = aData;</span>
+<span class="fc" id="L1170">			input.gamma = gamma;</span>
+<span class="fc" id="L1171">			input.outLen = outLen;</span>
+<span class="fc" id="L1172">			input.p = p;</span>
+<span class="fc" id="L1173">			input.mode = mode;</span>
+<span class="fc" id="L1174">			input.rHash = hash;</span>
+			
+<span class="fc" id="L1176">			byte[] actuals = c.proofOfWorkClient(input);</span>
+			
+<span class="fc" id="L1178">			assertArrayEquals(resExp, actuals);</span>
+		}
+<span class="fc" id="L1180">	}</span>
+	
+	@Test
+	public void testProofOfWorkClientSaltButterflyReduced(){
+<span class="fc" id="L1184">		DefaultInstances instance = new DefaultInstances();</span>
+<span class="fc" id="L1185">		Catena c = instance.initButterfly();</span>
+		
+<span class="fc" id="L1187">		c.setGHigh(9);</span>
+<span class="fc" id="L1188">		c.setGLow(9);</span>
+		
+<span class="fc" id="L1190">		JSONArray jsonObj = helper.jsonParserArr(fileproofOfWorkClientSaltButterflyReduced);</span>
+		
+<span class="fc bfc" id="L1192" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L1193">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L1195">			JSONObject inputs  = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L1196">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+
+<span class="fc" id="L1198">			byte[] pwd = helper.hex2bytes(inputs.getString(&quot;pwd&quot;));</span>
+<span class="fc" id="L1199">			byte[] salt = helper.hex2bytes(inputs.getString(&quot;salt&quot;));</span>
+<span class="fc" id="L1200">			byte[] aData = helper.hex2bytes(inputs.getString(&quot;aData&quot;));</span>
+<span class="fc" id="L1201">			byte[] gamma = helper.hex2bytes(inputs.getString(&quot;gamma&quot;));</span>
+<span class="fc" id="L1202">			byte[] hash = helper.hex2bytes(inputs.getString(&quot;hash&quot;));</span>
+<span class="fc" id="L1203">			int outLen = inputs.getInt(&quot;outLen&quot;);</span>
+<span class="fc" id="L1204">			int p = inputs.getInt(&quot;p&quot;);</span>
+<span class="fc" id="L1205">			int mode = inputs.getInt(&quot;mode&quot;);</span>
+			
+<span class="fc" id="L1207">			byte[] resExp = helper.hex2bytes(outputs.getString(&quot;res&quot;));</span>
+			
+<span class="fc" id="L1209">			POWstruct input = c.new POWstruct();</span>
+<span class="fc" id="L1210">			input.pwd = pwd;</span>
+<span class="fc" id="L1211">			input.salt = salt;</span>
+<span class="fc" id="L1212">			input.aData = aData;</span>
+<span class="fc" id="L1213">			input.gamma = gamma;</span>
+<span class="fc" id="L1214">			input.outLen = outLen;</span>
+<span class="fc" id="L1215">			input.p = p;</span>
+<span class="fc" id="L1216">			input.mode = mode;</span>
+<span class="fc" id="L1217">			input.rHash = hash;</span>
+			
+<span class="fc" id="L1219">			byte[] actuals = c.proofOfWorkClient(input);</span>
+			
+<span class="fc" id="L1221">			assertArrayEquals(resExp, actuals);</span>
+		}
+<span class="fc" id="L1223">	}</span>
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

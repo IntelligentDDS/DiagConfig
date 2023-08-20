@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Argon2CFTest.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java.components.hash.algorithms</a> &gt; <span class="el_source">Argon2CFTest.java</span></div><h1>Argon2CFTest.java</h1><pre class="source lang-java linenums">package test.java.components.hash.algorithms;
+
+import static org.junit.Assert.assertTrue;
+
+import java.io.File;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+import main.java.Helper;
+import main.java.components.hash.HashInterface;
+import main.java.components.hash.algorithms.Argon2CF;
+
+<span class="fc" id="L15">public class Argon2CFTest {</span>
+
+<span class="fc" id="L17">	Helper helper = new Helper();</span>
+	
+<span class="fc" id="L19">	String pathGL = &quot;src/test/resources/testvectors/cfArgon2Gl.json&quot;;</span>
+<span class="fc" id="L20">	File fileGL = new File(pathGL);</span>
+	
+<span class="fc" id="L22">	String pathGB = &quot;src/test/resources/testvectors/cfArgon2Gb.json&quot;;</span>
+<span class="fc" id="L23">	File fileGB = new File(pathGB);</span>
+	
+	@Test
+	public void testGL(){
+		
+<span class="fc" id="L28">		JSONArray jsonObj = helper.jsonParserArr(fileGL);</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L30">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L32">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L33">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L35">			String func = inputs.getString(&quot;mixFunc&quot;);</span>
+<span class="fc" id="L36">			String dataString = inputs.getString(&quot;data&quot;);</span>
+
+<span class="fc" id="L38">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L40">			boolean useGL = true;</span>
+			
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">			if (func.equals(&quot;G_{L}&quot;)){</span>
+<span class="fc" id="L43">				useGL = true;</span>
+			} else {
+<span class="nc" id="L45">				useGL = false;</span>
+			}
+			
+<span class="fc" id="L48">			HashInterface h = new Argon2CF(useGL);</span>
+<span class="fc" id="L49">			h.update(helper.hex2bytes(dataString));</span>
+<span class="fc" id="L50">			byte[] output = h.doFinal();</span>
+			
+<span class="fc" id="L52">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L54">	}</span>
+	
+	
+	@Test
+	public void testGB(){
+		
+<span class="fc" id="L60">		JSONArray jsonObj = helper.jsonParserArr(fileGB);</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L62">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L64">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L65">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L67">			String func = inputs.getString(&quot;mixFunc&quot;);</span>
+<span class="fc" id="L68">			String dataString = inputs.getString(&quot;data&quot;);</span>
+
+<span class="fc" id="L70">			String res = outputs.getString(&quot;res&quot;);</span>
+			
+<span class="fc" id="L72">			boolean useGL = false;</span>
+			
+<span class="pc bpc" id="L74" title="1 of 2 branches missed.">			if (func.equals(&quot;G_{B}&quot;)){</span>
+<span class="fc" id="L75">				useGL = false;</span>
+			} else {
+<span class="nc" id="L77">				useGL = true;</span>
+			}
+			
+<span class="fc" id="L80">			HashInterface h = new Argon2CF(useGL);</span>
+<span class="fc" id="L81">			h.update(helper.hex2bytes(dataString));</span>
+<span class="fc" id="L82">			byte[] output = h.doFinal();</span>
+			
+<span class="fc" id="L84">			assertTrue(res.equals(helper.bytes2hex(output).toLowerCase()));</span>
+		}
+<span class="fc" id="L86">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

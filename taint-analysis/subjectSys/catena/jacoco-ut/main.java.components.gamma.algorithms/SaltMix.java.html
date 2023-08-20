@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SaltMix.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">main.java.components.gamma.algorithms</a> &gt; <span class="el_source">SaltMix.java</span></div><h1>SaltMix.java</h1><pre class="source lang-java linenums">package main.java.components.gamma.algorithms;
+
+import main.java.Helper;
+import main.java.components.gamma.GammaInterface;
+import main.java.components.hash.HashInterface;
+
+/**
+ * Salt dependent pudate using xorShif1024* RNG
+ * @author max
+ *
+ */
+<span class="fc" id="L12">public class SaltMix implements GammaInterface {</span>
+	
+	private HashInterface _h;
+	private HashInterface _hPrime;
+<span class="fc" id="L16">	private Helper helper = new Helper();</span>
+	
+	private long[] r ;	// state of the Xorshift RNG
+	private int p; 		// position in state vector s
+	
+	/**
+	 * implements SaltMix with xorShift1024*
+	 * 
+	 * @param g			garlic
+	 * @param x			state
+	 * @param gamma		gamma
+	 * @return			updated state
+	 */
+	public byte[][] gamma (int g, byte[][] x, byte[] gamma){
+		
+<span class="fc" id="L31">		byte[] gammaByte = gamma;</span>
+		byte[] tmp1;
+		byte[] tmp2;
+		
+<span class="fc" id="L35">		_h.update(gammaByte);</span>
+<span class="fc" id="L36">		tmp1 = _h.doFinal();</span>
+<span class="fc" id="L37">		_h.reset();</span>
+<span class="fc" id="L38">		_h.update(tmp1);</span>
+<span class="fc" id="L39">		tmp2 = _h.doFinal();</span>
+<span class="fc" id="L40">		_h.reset();</span>
+		
+<span class="fc" id="L42">		transformBytesToLong(tmp1, tmp2);</span>
+		
+<span class="fc" id="L44">		p=0;</span>
+<span class="fc" id="L45">		long j1 = 0;</span>
+<span class="fc" id="L46">		long j2 = 0;</span>
+<span class="fc" id="L47">		int loopLimit = (int)Math.pow(2, Math.ceil(3.0*g/4.0));</span>
+		
+//		System.out.println(&quot;Looplimit: &quot; + loopLimit);
+		
+<span class="fc" id="L51">		_hPrime.reset();</span>
+		
+<span class="fc bfc" id="L53" title="All 2 branches covered.">		for (int i = 0; i &lt; loopLimit; ++i){</span>
+<span class="fc" id="L54">			j1 = xorshift1024star() &gt;&gt;&gt; (64 - g);</span>
+<span class="fc" id="L55">			j2 = xorshift1024star() &gt;&gt;&gt; (64 - g);</span>
+			
+<span class="fc" id="L57">			_hPrime.update(helper.concateByteArrays(x[(int)j1], x[(int)j2]));</span>
+<span class="fc" id="L58">			x[(int)j1] = _hPrime.doFinal();</span>
+			
+		}
+<span class="fc" id="L61">		return x;</span>
+	}
+	
+	public long xorshift1024star(){	
+		// computes random g-bit value j1 / j2
+		// in each iteration of the for-loop of saltMix 
+<span class="fc" id="L67">		long s0 = r[p];</span>
+<span class="fc" id="L68">		p = (p+1) &amp; 15;</span>
+<span class="fc" id="L69">		long s1 = r[ p];</span>
+<span class="fc" id="L70">		s1 ^= s1 &lt;&lt; 31; // a</span>
+<span class="fc" id="L71">		s1 ^= s1 &gt;&gt;&gt; 11; // b</span>
+<span class="fc" id="L72">		s0 ^= s0 &gt;&gt;&gt; 30; // c</span>
+<span class="fc" id="L73">		r[p] = s0 ^ s1;</span>
+<span class="fc" id="L74">		return r[p] * 1181783497276652981L;</span>
+	}
+	
+	void transformBytesToLong(byte[] a, byte[] b){ // seed the state with two hash values
+<span class="fc" id="L78">		r = new long[16];</span>
+
+<span class="fc" id="L80">		p = 0;</span>
+<span class="fc" id="L81">		int sIndex = 0;</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">		for ( int i = 0; i &lt; a.length; i+=8) {</span>
+<span class="fc" id="L83">			r[sIndex++] = bytes2long(a, i);</span>
+		}
+<span class="fc bfc" id="L85" title="All 2 branches covered.">		for ( int i = 0; i &lt; b.length; i+=8) {</span>
+<span class="fc" id="L86">			r[sIndex++] = bytes2long(b, i);</span>
+		}		
+<span class="fc" id="L88">	}</span>
+	
+	public final static long bytes2long(byte[] byteArray, int offset) {
+	      
+<span class="fc" id="L92">	      return (	    		  </span>
+				  (((long) byteArray[offset + 0] &amp; 0xFF )	   ) |
+				  (((long) byteArray[offset + 1] &amp; 0xFF ) &lt;&lt; 8 ) |
+				  (((long) byteArray[offset + 2] &amp; 0xFF ) &lt;&lt; 16) |
+				  (((long) byteArray[offset + 3] &amp; 0xFF ) &lt;&lt; 24) |
+			      (((long) byteArray[offset + 4] &amp; 0xFF ) &lt;&lt; 32) |
+			      (((long) byteArray[offset + 5] &amp; 0xFF ) &lt;&lt; 40) |
+			      (((long) byteArray[offset + 6] &amp; 0xFF ) &lt;&lt; 48) |
+			      (((long) byteArray[offset + 7] &amp; 0xFF ) &lt;&lt; 56) ) ;  	    			    		  
+	}
+	
+	@Override
+	public void setH(HashInterface h) {
+<span class="fc" id="L105">		_h = h;</span>
+<span class="fc" id="L106">	}</span>
+
+	@Override
+	public void setHPrime(HashInterface hPrime) {
+<span class="fc" id="L110">		_hPrime = hPrime;</span>
+<span class="fc" id="L111">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

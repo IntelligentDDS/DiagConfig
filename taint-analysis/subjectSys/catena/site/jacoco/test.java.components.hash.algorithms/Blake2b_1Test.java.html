@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Blake2b_1Test.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">test.java.components.hash.algorithms</a> &gt; <span class="el_source">Blake2b_1Test.java</span></div><h1>Blake2b_1Test.java</h1><pre class="source lang-java linenums">package test.java.components.hash.algorithms;
+
+import static org.junit.Assert.*;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.junit.Test;
+
+import main.java.Helper;
+import main.java.components.hash.HashInterface;
+import main.java.components.hash.algorithms.Blake2b_1;
+
+<span class="fc" id="L17">public class Blake2b_1Test {</span>
+	
+<span class="fc" id="L19">	Helper helper = new Helper();</span>
+	
+	private static final String testVectorSource = 
+			&quot;src/test/resources/testvectors/blake2b1.json&quot;;
+<span class="fc" id="L23">	private static final File file = new File(testVectorSource);</span>
+	
+	@Test
+	public void testAllVectors() {
+<span class="fc" id="L27">		Helper helper = new Helper();		</span>
+<span class="fc" id="L28">		HashInterface hPrime = new Blake2b_1();</span>
+		
+<span class="fc" id="L30">		byte[] actualResult = new byte[64];</span>
+		
+<span class="fc" id="L32">		boolean reset = false;</span>
+<span class="fc" id="L33">		int r = 0;</span>
+		
+<span class="fc" id="L35">		JSONArray jsonObj = jsonParser(file);</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">		for (int i = 0; i&lt;jsonObj.length(); ++i ){</span>
+<span class="fc" id="L37">			JSONObject o = (JSONObject) jsonObj.get(i);</span>
+			
+<span class="fc" id="L39">			JSONObject inputs = o.getJSONObject(&quot;inputs&quot;);</span>
+<span class="fc" id="L40">			JSONObject outputs = o.getJSONObject(&quot;outputs&quot;);</span>
+			
+<span class="fc" id="L42">			reset = inputs.getBoolean(&quot;reset&quot;);</span>
+<span class="fc" id="L43">			byte[] input = helper.hex2bytes(inputs.getString(&quot;data&quot;));</span>
+<span class="fc" id="L44">			r = inputs.getInt(&quot;r&quot;);</span>
+			
+<span class="fc" id="L46">			byte[] output = helper.hex2bytes(outputs.getString(&quot;res&quot;));</span>
+			
+<span class="fc bfc" id="L48" title="All 2 branches covered.">			if (reset){</span>
+<span class="fc" id="L49">				hPrime.reset();</span>
+			}
+			
+<span class="fc" id="L52">			hPrime.setVertexIndex(r);</span>
+<span class="fc" id="L53">			hPrime.update(input);</span>
+<span class="fc" id="L54">			actualResult = hPrime.doFinal();</span>
+			
+<span class="fc" id="L56">			assertTrue(helper.bytes2hex(actualResult).</span>
+<span class="fc" id="L57">					equals(helper.bytes2hex(output)));</span>
+		}
+<span class="fc" id="L59">	}</span>
+
+//		------------------- Helper Area
+		
+	private JSONArray jsonParser(File f){
+		BufferedReader br;
+<span class="fc" id="L65">		String all = &quot;&quot;;</span>
+		try {
+<span class="fc" id="L67">			br = new BufferedReader(new FileReader(f));</span>
+			String line;
+<span class="fc bfc" id="L69" title="All 2 branches covered.">			while ((line = br.readLine()) != null) {</span>
+<span class="fc" id="L70">				all+=line;</span>
+			}
+<span class="nc" id="L72">		}catch (Exception e) {</span>
+<span class="fc" id="L73">		}</span>
+<span class="fc" id="L74">		return new JSONArray(all);</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

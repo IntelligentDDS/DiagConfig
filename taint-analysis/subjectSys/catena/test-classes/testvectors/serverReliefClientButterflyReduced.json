@@ -1,0 +1,50 @@
+[
+  {
+    "inputs": {
+      "pwd": "012345",
+      "salt": "6789ab",
+      "gamma": "6789ab",
+      "aData": "000000",
+      "outputLength": 64
+    },
+    "outputs": {
+      "res": "c169b528797938a9a30c2107e1a2aafa099a6384355d826f2938c2eae5a4ab3b839407e1fe9133d92cc763a8dcab4944348dcfd6de31014f16dbed204da7fe23"
+    }
+  },
+  {
+    "inputs": {
+      "pwd": "012345012345",
+      "salt": "6789ab6789ab",
+      "gamma": "6789ab6789ab",
+      "aData": "000000000000",
+      "outputLength": 64
+    },
+    "outputs": {
+      "res": "1406b7904925c4eb0fc03a69f0a38457d01248b57f9ea6b34e49dfbf2ed033b9677d807afeda0148e4bc36092f72bcbda7de1aad615d779da32939be17ceec29"
+    }
+  },
+  {
+    "inputs": {
+      "pwd": "012345012345",
+      "salt": "6789ab6789ab",
+      "gamma": "6789ab6789ab",
+      "aData": "000000000000",
+      "outputLength": 4
+    },
+    "outputs": {
+      "res": "31ed7c182735342cc82dad587789eb83088549765b910540c4bedb3e4e30ceb811149fbbf677eb051dbef464cb0efbf8db5ef7a8b51bde486b345470de980f01"
+    }
+  },
+  {
+    "inputs": {
+      "pwd": "012345012345",
+      "salt": "6789ab6789ab",
+      "gamma": "6789ab6789ab",
+      "aData": "000000000000",
+      "outputLength": 0
+    },
+    "outputs": {
+      "res": "0203707c6d5e1b9af96456452139de0e9611575cd0c468a97ed8e638a0efe8d382ef0c2473991d9b055bc5b4362329a65ffe63836a74507359f713a35740a5fd"
+    }
+  }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IndexDBG.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">catena</a> &gt; <a href="index.source.html" class="el_package">main.java.components.graph.algorithms.index</a> &gt; <span class="el_source">IndexDBG.java</span></div><h1>IndexDBG.java</h1><pre class="source lang-java linenums">package main.java.components.graph.algorithms.index;
+
+import main.java.Helper;
+import main.java.components.graph.algorithms.IdxInterface;
+
+<span class="fc" id="L6">public class IndexDBG implements IdxInterface{</span>
+	
+<span class="fc" id="L8">	static Helper helper = new Helper();</span>
+
+	public int getIndex(int g, int j, int i) {
+<span class="fc" id="L11">		return (int)getIndex((long)g, (long)j, i);</span>
+	}
+
+	public long getIndex(long g, long j, int i) {
+<span class="fc bfc" id="L15" title="All 2 branches covered.">		if (j &lt;= g-1){</span>
+<span class="fc" id="L16">			long tmp =  (long)1 &lt;&lt; (g-1-j);</span>
+<span class="fc" id="L17">			return tmp ^ (long)i;</span>
+		} else {
+<span class="fc" id="L19">			long tmp = (long)1 &lt;&lt; (j-g+1);</span>
+<span class="fc" id="L20">			return tmp ^ (long)i;</span>
+		}
+	}
+
+	@Override
+	public int getIndex(int i, int g) {
+<span class="nc" id="L26">		return -1;</span>
+	}
+
+	@Override
+	public long getIndex(long i, int g) {
+<span class="nc" id="L31">		return -1;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

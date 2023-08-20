@@ -1,0 +1,100 @@
+[
+  {
+    "packageName": "org.prevayler.implementation",
+    "className": "PrevalentSystemGuard",
+    "methodSignature": "<org.prevayler.implementation.PrevalentSystemGuard: subscribeTo(Lorg/prevayler/implementation/publishing/TransactionPublisher;)V>",
+    "javaLine": 49,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "_journalSerializer"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor this",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.implementation",
+    "className": "PrevalentSystemGuard",
+    "methodSignature": "<org.prevayler.implementation.PrevalentSystemGuard: receive(Lorg/prevayler/implementation/TransactionTimestamp;)V>",
+    "javaLine": 59,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "_journalSerializer"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor this",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.implementation",
+    "className": "PrevalentSystemGuard",
+    "methodSignature": "<org.prevayler.implementation.PrevalentSystemGuard: takeSnapshot(Lorg/prevayler/implementation/snapshot/GenericSnapshotManager;)Ljava/io/File;>",
+    "javaLine": 100,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "_journalSerializer"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor this",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.implementation",
+    "className": "PrevalentSystemGuard",
+    "methodSignature": "<org.prevayler.implementation.PrevalentSystemGuard: prevalentSystem()Ljava/lang/Object;>",
+    "javaLine": 32,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "_journalSerializer"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor this",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation.serialization",
+    "className": "JavaSerializer",
+    "methodSignature": "<org.prevayler.foundation.serialization.JavaSerializer: writeObject(Ljava/io/OutputStream;Ljava/lang/Object;)V>",
+    "javaLine": 23,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "_journalSerializer"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke $stack4.<java.io.ObjectOutputStream: void <init>(java.io.OutputStream)>(stream)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.implementation",
+    "className": "PrevalentSystemGuard",
+    "methodSignature": "<org.prevayler.implementation.PrevalentSystemGuard: subscribeTo(Lorg/prevayler/implementation/publishing/TransactionPublisher;)V>",
+    "javaLine": 42,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "_journalSerializer"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor this",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.prevayler.foundation.serialization",
+    "className": "JavaSerializer",
+    "methodSignature": "<org.prevayler.foundation.serialization.JavaSerializer: writeObject(Ljava/io/OutputStream;Ljava/lang/Object;)V>",
+    "javaLine": 24,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "_journalSerializer"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack4.<java.io.ObjectOutputStream: void writeObject(java.lang.Object)>(object)",
+    "mayValues": []
+  }
+]
