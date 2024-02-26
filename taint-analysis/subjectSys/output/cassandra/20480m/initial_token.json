@@ -1,0 +1,114 @@
+[
+  {
+    "packageName": "org.apache.cassandra.utils.memory",
+    "className": "ByteBufferCloner",
+    "methodSignature": "<org.apache.cassandra.utils.memory.ByteBufferCloner: clone(Ljava/lang/Object;Lorg/apache/cassandra/db/marshal/ValueAccessor;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 75,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "initial_token"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack7.<java.nio.ByteBuffer: java.nio.Buffer reset()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils.memory",
+    "className": "ByteBufferCloner",
+    "methodSignature": "<org.apache.cassandra.utils.memory.ByteBufferCloner: clone(Ljava/lang/Object;Lorg/apache/cassandra/db/marshal/ValueAccessor;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 75,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "initial_token"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack7.<java.nio.ByteBuffer: java.nio.Buffer mark()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils",
+    "className": "ByteArrayUtil",
+    "methodSignature": "<org.apache.cassandra.utils.ByteArrayUtil: writeWithLength([BLjava/io/DataOutput;)V>",
+    "javaLine": 220,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "initial_token"
+    ],
+    "optionCount": 1,
+    "originalStmt": "interfaceinvoke out.<java.io.DataOutput: void writeInt(int)>($stack2)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils",
+    "className": "ByteArrayUtil",
+    "methodSignature": "<org.apache.cassandra.utils.ByteArrayUtil: writeWithLength([BLjava/io/DataOutput;)V>",
+    "javaLine": 221,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "initial_token"
+    ],
+    "optionCount": 1,
+    "originalStmt": "interfaceinvoke out.<java.io.DataOutput: void write(byte[])>(bytes)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.serializers",
+    "className": "InetAddressSerializer",
+    "methodSignature": "<org.apache.cassandra.serializers.InetAddressSerializer: serialize(Ljava/net/InetAddress;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 49,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "initial_token"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack3#1 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.marshal",
+    "className": "TimeUUIDType",
+    "methodSignature": "<org.apache.cassandra.db.marshal.TimeUUIDType: fromString(Ljava/lang/String;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 100,
+    "bytecodeIndex": -1,
+    "operationType": "ifNewArrSink",
+    "options": [
+      "initial_token"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack9 = newarray (java.lang.Object)[1]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.marshal",
+    "className": "ByteBufferAccessor",
+    "methodSignature": "<org.apache.cassandra.db.marshal.ByteBufferAccessor: write(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V>",
+    "javaLine": 66,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "initial_token"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke out.<java.nio.ByteBuffer: java.nio.ByteBuffer put(java.nio.ByteBuffer)>($stack3)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils",
+    "className": "ByteBufferUtil",
+    "methodSignature": "<org.apache.cassandra.utils.ByteBufferUtil: bytes(Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 249,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "initial_token"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack3 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2)",
+    "mayValues": []
+  }
+]

@@ -1,0 +1,576 @@
+[
+  {
+    "packageName": "org.apache.cassandra.utils.memory",
+    "className": "BufferPool",
+    "methodSignature": "<org.apache.cassandra.utils.memory.BufferPool: allocate(ILorg/apache/cassandra/io/compress/BufferType;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 216,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack4#1 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer allocate(int)>(size)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils.memory",
+    "className": "BufferPool",
+    "methodSignature": "<org.apache.cassandra.utils.memory.BufferPool: allocate(ILorg/apache/cassandra/io/compress/BufferType;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 216,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack4#1 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer allocateDirect(int)>(size)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.commitlog",
+    "className": "CommitLogSegment",
+    "methodSignature": "<org.apache.cassandra.db.commitlog.CommitLogSegment: writeCDCIndexFile(Lorg/apache/cassandra/db/commitlog/CommitLogDescriptor;IZ)V>",
+    "javaLine": 390,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke $stack9.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack10, $stack11)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.io",
+    "className": "FSReadError",
+    "methodSignature": "<org.apache.cassandra.io.FSReadError: <init>(Ljava/lang/Throwable;Ljava/lang/String;)V>",
+    "javaLine": 31,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke $stack3.<java.io.File: void <init>(java.lang.String)>(path)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.io.util",
+    "className": "FileUtils",
+    "methodSignature": "<org.apache.cassandra.io.util.FileUtils: createHardLink(Ljava/io/File;Ljava/io/File;)V>",
+    "javaLine": 188,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "staticinvoke <java.nio.file.Files: java.nio.file.Path createLink(java.nio.file.Path,java.nio.file.Path)>($stack5, $stack6)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: updateIsGlobalOrLocal()V>",
+    "javaLine": 812,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack9 = virtualinvoke $stack5.<java.nio.ByteBuffer: short getShort(int)>($stack8)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: updateIsGlobalOrLocal()V>",
+    "javaLine": 812,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack6 = virtualinvoke $stack4.<java.nio.ByteBuffer: int position()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: writeElementAtOffset(Ljava/nio/ByteBuffer;ILorg/apache/cassandra/utils/CounterId;JJ)V>",
+    "javaLine": 909,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack8.<java.nio.ByteBuffer: java.nio.Buffer position(int)>(offset)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.commitlog",
+    "className": "CommitLogReplayer",
+    "methodSignature": "<org.apache.cassandra.db.commitlog.CommitLogReplayer: handleCDCReplayCompletion(Ljava/io/File;)V>",
+    "javaLine": 173,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke $u0.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack14, $stack15)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.io.util",
+    "className": "RebufferingInputStream",
+    "methodSignature": "<org.apache.cassandra.io.util.RebufferingInputStream: readShort()S>",
+    "javaLine": 195,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack7 = virtualinvoke $stack6.<java.nio.ByteBuffer: short getShort()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: writeElementAtOffset(Ljava/nio/ByteBuffer;ILorg/apache/cassandra/utils/CounterId;JJ)V>",
+    "javaLine": 911,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack8.<java.nio.ByteBuffer: java.nio.ByteBuffer putLong(long)>(clock)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.io",
+    "className": "FSError",
+    "methodSignature": "<org.apache.cassandra.io.FSError: <init>(Ljava/lang/Throwable;Ljava/io/File;)V>",
+    "javaLine": 29,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke this.<java.io.IOError: void <init>(java.lang.Throwable)>(cause)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.commitlog",
+    "className": "CommitLogReplayer",
+    "methodSignature": "<org.apache.cassandra.db.commitlog.CommitLogReplayer: handleCDCReplayCompletion(Ljava/io/File;)V>",
+    "javaLine": 173,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke $u0.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack14, $stack15)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.rows",
+    "className": "BufferCell",
+    "methodSignature": "<org.apache.cassandra.db.rows.BufferCell: <init>(Lorg/apache/cassandra/schema/ColumnMetadata;JIILjava/nio/ByteBuffer;Lorg/apache/cassandra/db/rows/CellPath;)V>",
+    "javaLine": 48,
+    "bytecodeIndex": -1,
+    "operationType": "ifNewArrSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack22 = newarray (java.lang.Object)[6]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils",
+    "className": "ByteBufferUtil",
+    "methodSignature": "<org.apache.cassandra.utils.ByteBufferUtil: <clinit>()V>",
+    "javaLine": 84,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack5 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack4)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db",
+    "className": "SimpleBuilders$RowBuilder",
+    "methodSignature": "<org.apache.cassandra.db.SimpleBuilders$RowBuilder: add(Ljava/lang/String;Ljava/lang/Object;Z)Lorg/apache/cassandra/db/rows/Row$SimpleBuilder;>",
+    "javaLine": 394,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack69 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack68)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.cql3",
+    "className": "ColumnIdentifier",
+    "methodSignature": "<org.apache.cassandra.cql3.ColumnIdentifier: getInterned(Lorg/apache/cassandra/db/marshal/AbstractType;Ljava/nio/ByteBuffer;Ljava/lang/String;)Lorg/apache/cassandra/cql3/ColumnIdentifier;>",
+    "javaLine": 156,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack13 = interfaceinvoke $stack12.<java.util.concurrent.ConcurrentMap: java.lang.Object putIfAbsent(java.lang.Object,java.lang.Object)>($stack8, $stack11)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.commitlog",
+    "className": "CommitLogSegmentManagerCDC$CDCSizeTracker",
+    "methodSignature": "<org.apache.cassandra.db.commitlog.CommitLogSegmentManagerCDC$CDCSizeTracker: submitOverflowSizeRecalculation()V>",
+    "javaLine": 265,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "interfaceinvoke $stack2.<java.util.concurrent.ExecutorService: java.util.concurrent.Future submit(java.lang.Runnable)>($stack3)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.io.util",
+    "className": "RebufferingInputStream",
+    "methodSignature": "<org.apache.cassandra.io.util.RebufferingInputStream: readByte()B>",
+    "javaLine": 176,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack6 = virtualinvoke $stack5.<java.nio.ByteBuffer: boolean hasRemaining()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.rows",
+    "className": "BufferCell",
+    "methodSignature": "<org.apache.cassandra.db.rows.BufferCell: <init>(Lorg/apache/cassandra/schema/ColumnMetadata;JIILjava/nio/ByteBuffer;Lorg/apache/cassandra/db/rows/CellPath;)V>",
+    "javaLine": 48,
+    "bytecodeIndex": -1,
+    "operationType": "ifNewArrSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack22 = newarray (java.lang.Object)[6]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils.memory",
+    "className": "BufferPool",
+    "methodSignature": "<org.apache.cassandra.utils.memory.BufferPool: allocate(ILorg/apache/cassandra/io/compress/BufferType;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 217,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack4#1 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer allocate(int)>(size)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: writeElement(Lorg/apache/cassandra/utils/CounterId;JJZZ)V>",
+    "javaLine": 895,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack27.<java.nio.ByteBuffer: java.nio.ByteBuffer putShort(int,short)>($stack30, $stack33)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: writeElement(Lorg/apache/cassandra/utils/CounterId;JJZZ)V>",
+    "javaLine": 895,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack28 = virtualinvoke $stack26.<java.nio.ByteBuffer: int position()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: writeElement(Lorg/apache/cassandra/utils/CounterId;JJZZ)V>",
+    "javaLine": 895,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack14.<java.nio.ByteBuffer: java.nio.ByteBuffer putShort(int,short)>($stack17, $stack19)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: writeElement(Lorg/apache/cassandra/utils/CounterId;JJZZ)V>",
+    "javaLine": 895,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack15 = virtualinvoke $stack13.<java.nio.ByteBuffer: int position()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils",
+    "className": "ByteBufferUtil",
+    "methodSignature": "<org.apache.cassandra.utils.ByteBufferUtil: <clinit>()V>",
+    "javaLine": 82,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack3 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer wrap(byte[])>($stack2)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.cql3",
+    "className": "ColumnIdentifier",
+    "methodSignature": "<org.apache.cassandra.cql3.ColumnIdentifier: prefixComparison(Ljava/nio/ByteBuffer;)J>",
+    "javaLine": 95,
+    "bytecodeIndex": -1,
+    "operationType": "loopIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack18 = virtualinvoke $stack5.<java.nio.ByteBuffer: byte get()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.cql3",
+    "className": "ColumnIdentifier",
+    "methodSignature": "<org.apache.cassandra.cql3.ColumnIdentifier: prefixComparison(Ljava/nio/ByteBuffer;)J>",
+    "javaLine": 95,
+    "bytecodeIndex": -1,
+    "operationType": "loopIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack6 = virtualinvoke $stack5.<java.nio.ByteBuffer: boolean hasRemaining()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.io.util",
+    "className": "RebufferingInputStream",
+    "methodSignature": "<org.apache.cassandra.io.util.RebufferingInputStream: <init>(Ljava/nio/ByteBuffer;)V>",
+    "javaLine": 48,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack2 = virtualinvoke buffer.<java.nio.ByteBuffer: java.nio.ByteOrder order()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.commitlog",
+    "className": "CommitLogDescriptor",
+    "methodSignature": "<org.apache.cassandra.db.commitlog.CommitLogDescriptor: readHeader(Ljava/io/DataInput;Lorg/apache/cassandra/security/EncryptionContext;)Lorg/apache/cassandra/db/commitlog/CommitLogDescriptor;>",
+    "javaLine": 164,
+    "bytecodeIndex": -1,
+    "operationType": "directlyNewArrSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "parametersBytes = newarray (byte)[parametersLength]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils",
+    "className": "UUIDGen",
+    "methodSignature": "<org.apache.cassandra.utils.UUIDGen: createTimeSafe()J>",
+    "javaLine": 331,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack14 = virtualinvoke $stack13.<java.util.concurrent.atomic.AtomicLong: boolean compareAndSet(long,long)>($stack8, $stack17)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.commitlog",
+    "className": "CommitLogSegment",
+    "methodSignature": "<org.apache.cassandra.db.commitlog.CommitLogSegment: writeCDCIndexFile(Lorg/apache/cassandra/db/commitlog/CommitLogDescriptor;IZ)V>",
+    "javaLine": 390,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke $stack9.<java.io.File: void <init>(java.lang.String,java.lang.String)>($stack10, $stack11)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: writeElement(Lorg/apache/cassandra/utils/CounterId;JJZZ)V>",
+    "javaLine": 898,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack14.<java.nio.ByteBuffer: java.nio.ByteBuffer putShort(int,short)>($stack17, $stack19)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: updateIsGlobalOrLocal()V>",
+    "javaLine": 818,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack9 = virtualinvoke $stack5.<java.nio.ByteBuffer: short getShort(int)>($stack8)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.context",
+    "className": "CounterContext$ContextState",
+    "methodSignature": "<org.apache.cassandra.db.context.CounterContext$ContextState: writeElementAtOffset(Ljava/nio/ByteBuffer;ILorg/apache/cassandra/utils/CounterId;JJ)V>",
+    "javaLine": 910,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "virtualinvoke $stack8.<java.nio.ByteBuffer: java.nio.ByteBuffer put(java.nio.ByteBuffer)>($stack11)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.commitlog",
+    "className": "CommitLogSegmentManagerCDC$CDCSizeTracker",
+    "methodSignature": "<org.apache.cassandra.db.commitlog.CommitLogSegmentManagerCDC$CDCSizeTracker: start()V>",
+    "javaLine": 211,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke $stack1.<java.util.concurrent.ThreadPoolExecutor: void <init>(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.RejectedExecutionHandler)>(1, 1, 1000L, $stack6, $stack2, $stack7)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils.btree",
+    "className": "BTree$Builder",
+    "methodSignature": "<org.apache.cassandra.utils.btree.BTree$Builder: <init>(Ljava/util/Comparator;I)V>",
+    "javaLine": 1473,
+    "bytecodeIndex": -1,
+    "operationType": "directlyNewArrSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack3 = newarray (java.lang.Object)[initialCapacity#1]",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.io.util",
+    "className": "RebufferingInputStream",
+    "methodSignature": "<org.apache.cassandra.io.util.RebufferingInputStream: readInt()I>",
+    "javaLine": 219,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack6 = virtualinvoke $stack5.<java.nio.ByteBuffer: int getInt()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.db.commitlog",
+    "className": "CommitLogArchiver",
+    "methodSignature": "<org.apache.cassandra.db.commitlog.CommitLogArchiver: maybeRestoreArchive()V>",
+    "javaLine": 235,
+    "bytecodeIndex": -1,
+    "operationType": "ifIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack67 = virtualinvoke fromFile.<java.io.File: java.lang.String getPath()>()",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils.memory",
+    "className": "BufferPool",
+    "methodSignature": "<org.apache.cassandra.utils.memory.BufferPool: allocate(ILorg/apache/cassandra/io/compress/BufferType;)Ljava/nio/ByteBuffer;>",
+    "javaLine": 218,
+    "bytecodeIndex": -1,
+    "operationType": "directlyIoSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack4#1 = staticinvoke <java.nio.ByteBuffer: java.nio.ByteBuffer allocateDirect(int)>(size)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.utils.concurrent",
+    "className": "Ref$State",
+    "methodSignature": "<org.apache.cassandra.utils.concurrent.Ref$State: ensureReleased(Ljava/lang/Throwable;)Ljava/lang/Throwable;>",
+    "javaLine": 201,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "cdc_enabled"
+    ],
+    "optionCount": 1,
+    "originalStmt": "$stack3 = virtualinvoke $stack2.<java.util.concurrent.atomic.AtomicIntegerFieldUpdater: int getAndSet(java.lang.Object,int)>(this, 1)",
+    "mayValues": []
+  }
+]

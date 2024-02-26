@@ -1,0 +1,58 @@
+[
+  {
+    "packageName": "org.apache.cassandra.concurrent",
+    "className": "DebuggableThreadPoolExecutor",
+    "methodSignature": "<org.apache.cassandra.concurrent.DebuggableThreadPoolExecutor: <init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V>",
+    "javaLine": 100,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "concurrent_writes"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke this.<java.util.concurrent.ThreadPoolExecutor: void <init>(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory)>(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, threadFactory)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.concurrent",
+    "className": "Stage",
+    "methodSignature": "<org.apache.cassandra.concurrent.Stage: executor()Lorg/apache/cassandra/concurrent/LocalAwareExecutorService;>",
+    "javaLine": 142,
+    "bytecodeIndex": -1,
+    "operationType": "directlyLockSink",
+    "options": [
+      "concurrent_writes"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor this",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.concurrent",
+    "className": "DebuggableThreadPoolExecutor",
+    "methodSignature": "<org.apache.cassandra.concurrent.DebuggableThreadPoolExecutor: <init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V>",
+    "javaLine": 100,
+    "bytecodeIndex": -1,
+    "operationType": "directlyThreadSink",
+    "options": [
+      "concurrent_writes"
+    ],
+    "optionCount": 1,
+    "originalStmt": "specialinvoke this.<java.util.concurrent.ThreadPoolExecutor: void <init>(int,int,long,java.util.concurrent.TimeUnit,java.util.concurrent.BlockingQueue,java.util.concurrent.ThreadFactory)>(corePoolSize, maximumPoolSize, keepAliveTime, unit, workQueue, threadFactory)",
+    "mayValues": []
+  },
+  {
+    "packageName": "org.apache.cassandra.concurrent",
+    "className": "Stage",
+    "methodSignature": "<org.apache.cassandra.concurrent.Stage: executor()Lorg/apache/cassandra/concurrent/LocalAwareExecutorService;>",
+    "javaLine": 140,
+    "bytecodeIndex": -1,
+    "operationType": "ifLockSink",
+    "options": [
+      "concurrent_writes"
+    ],
+    "optionCount": 1,
+    "originalStmt": "entermonitor this",
+    "mayValues": []
+  }
+]
